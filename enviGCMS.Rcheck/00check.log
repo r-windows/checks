@@ -1,0 +1,17 @@
+* using log directory 'C:/Users/Jeroen/Documents/checks/enviGCMS.Rcheck'
+* using R version 3.6.0 Under development (Testing Rtools) (2019-03-14 r76238)
+* using platform: x86_64-w64-mingw32 (64-bit)
+* using session charset: ISO8859-1
+* using options '--no-manual --no-build-vignettes'
+* checking for file 'enviGCMS/DESCRIPTION' ... OK
+* checking extension type ... Package
+* this is package 'enviGCMS' version '0.5.0'
+* package encoding: UTF-8
+* checking package namespace information ... OK
+* checking package dependencies ... ERROR
+Packages required but not available: 'xcms', 'MSnbase'
+
+See section 'The DESCRIPTION file' in the 'Writing R Extensions'
+manual.
+* DONE
+Status: 1 ERROR

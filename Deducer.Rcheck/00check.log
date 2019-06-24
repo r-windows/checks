@@ -1,0 +1,15 @@
+* using log directory 'C:/Users/Jeroen/Documents/checks/Deducer.Rcheck'
+* using R version 3.7.0 Under development (Testing Rtools) (2019-06-11 r76694)
+* using platform: x86_64-w64-mingw32 (64-bit)
+* using session charset: ISO8859-1
+* using options '--no-manual --no-build-vignettes'
+* checking for file 'Deducer/DESCRIPTION' ... OK
+* this is package 'Deducer' version '0.7-9'
+* checking package namespace information ... OK
+* checking package dependencies ... ERROR
+Package required but not available: 'JGR'
+
+See section 'The DESCRIPTION file' in the 'Writing R Extensions'
+manual.
+* DONE
+Status: 1 ERROR

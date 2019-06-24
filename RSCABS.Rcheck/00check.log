@@ -1,0 +1,15 @@
+* using log directory 'C:/Users/Jeroen/Documents/checks/RSCABS.Rcheck'
+* using R version 3.6.0 Under development (Testing Rtools) (2019-03-14 r76238)
+* using platform: x86_64-w64-mingw32 (64-bit)
+* using session charset: ISO8859-1
+* using options '--no-manual --no-build-vignettes'
+* checking for file 'RSCABS/DESCRIPTION' ... OK
+* this is package 'RSCABS' version '0.9.3'
+* checking package namespace information ... OK
+* checking package dependencies ... ERROR
+Package required but not available: 'gWidgetsRGtk2'
+
+See section 'The DESCRIPTION file' in the 'Writing R Extensions'
+manual.
+* DONE
+Status: 1 ERROR

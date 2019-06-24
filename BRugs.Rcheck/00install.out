@@ -1,0 +1,21 @@
+* installing *source* package 'BRugs' ...
+** package 'BRugs' successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+  running 'src/Makefile.win' ...
+mkdir -p C:/Users/Jeroen/Documents/checks/BRugs.Rcheck/00LOCK-BRugs/00new/BRugs/exec
+/mingw32/bin/gcc  -O2 -Wall  -std=gnu99 -mtune=generic  -m32 -Wl,-rpath="`"C:/Progra~1/R/R-testing/bin/x64/Rscript" -e "source('../R/windows/findOpenBUGS.R');cat(findOpenBUGS()[['dir']])"`" BugsHelper.c "`"C:/Progra~1/R/R-testing/bin/x64/Rscript" -e "source('../R/windows/findOpenBUGS.R');cat(findOpenBUGS()[['dir']])"`/libOpenBUGS.dll" -o C:/Users/Jeroen/Documents/checks/BRugs.Rcheck/00LOCK-BRugs/00new/BRugs/exec/BugsHelper
+Warning message:
+In findOpenBUGS() : OpenBUGS 3.2.2 or greater must be installed
+(if so, this indicates missing registry keys of OpenBUGS).
+Setting the environment variable 'OpenBUGS_PATH' in advance of loading 'BRugs' overwrites the path.
+See ?loadOpenBUGS in order to load OpenBUGS manually.
+Warning message:
+In findOpenBUGS() : OpenBUGS 3.2.2 or greater must be installed
+(if so, this indicates missing registry keys of OpenBUGS).
+Setting the environment variable 'OpenBUGS_PATH' in advance of loading 'BRugs' overwrites the path.
+See ?loadOpenBUGS in order to load OpenBUGS manually.
+gcc.exe: error: C:/rtools40/libOpenBUGS.dll: No such file or directory
+make: *** [Makefile.win:8: BugsHelper] Error 1
+ERROR: compilation failed for package 'BRugs'
+* removing 'C:/Users/Jeroen/Documents/checks/BRugs.Rcheck/BRugs'

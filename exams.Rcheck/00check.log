@@ -1,0 +1,137 @@
+* using log directory 'C:/Users/Jeroen/Documents/checks/exams.Rcheck'
+* using R version 3.6.0 Under development (Testing Rtools) (2019-03-14 r76238)
+* using platform: x86_64-w64-mingw32 (64-bit)
+* using session charset: ISO8859-1
+* using options '--no-manual --no-build-vignettes'
+* checking for file 'exams/DESCRIPTION' ... OK
+* this is package 'exams' version '2.3-2'
+* checking package namespace information ... OK
+* checking package dependencies ... OK
+* checking if this is a source package ... OK
+* checking if there is a namespace ... OK
+* checking for executable files ... OK
+* checking for hidden files and directories ... OK
+* checking for portable file names ... OK
+* checking whether package 'exams' can be installed ... OK
+* checking installed package size ... OK
+* checking package directory ... OK
+* checking 'build' directory ... OK
+* checking DESCRIPTION meta-information ... OK
+* checking top-level files ... OK
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* checking whether the package can be loaded ... OK
+* checking whether the package can be loaded with stated dependencies ... OK
+* checking whether the package can be unloaded cleanly ... OK
+* checking whether the namespace can be loaded with stated dependencies ... OK
+* checking whether the namespace can be unloaded cleanly ... OK
+* checking loading without being on the library search path ... OK
+* checking dependencies in R code ... OK
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... OK
+* checking Rd files ... OK
+* checking Rd metadata ... OK
+* checking Rd cross-references ... OK
+* checking for missing documentation entries ... OK
+* checking for code/documentation mismatches ... OK
+* checking Rd \usage sections ... OK
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... OK
+* checking sizes of PDF files under 'inst/doc' ... OK
+* checking installed files from 'inst/doc' ... OK
+* checking files in 'vignettes' ... OK
+* checking examples ... ERROR
+Running examples in 'exams-Ex.R' failed
+The error most likely occurred in:
+
+> ### Name: exams
+> ### Title: Generation of Simple Exams
+> ### Aliases: exams print.exams_metainfo
+> ### Keywords: utilities
+> 
+> ### ** Examples
+> 
+> ## load package and enforce par(ask = FALSE)
+> library("exams")
+> options(device.ask.default = FALSE)
+> 
+> ## define an exams (= list of exercises)
+> myexam <- list(
++   "boxplots",
++   c("tstat", "ttest", "confint"),
++   c("regression", "anova"),
++   "scatterplot",
++   "relfreq"
++ )
+> 
+> if(interactive()) {
++ ## compile a single random exam (displayed on screen)
++ sol <- exams(myexam)
++ sol
++ }
+> 
+> ## generate multiple exams (stored in output directory)
+> odir <- tempfile()
+> sol <- exams(myexam, n = 3, dir = odir, template = c("exam", "solution"))
+Warning in exams(myexam, n = 3, dir = odir, template = c("exam", "solution")) :
+  The template exam.tex has been adapted to exams2pdf() and is not fully
+  compatible with exams() anymore. Template oexam.tex used instead.
+Warning in exams(myexam, n = 3, dir = odir, template = c("exam", "solution")) :
+  The template solution.tex has been adapted to exams2pdf() and is not
+  fully compatible with exams() anymore. Template osolution.tex used
+  instead.
+Error in texi2dvi(out_tex[j], pdf = TRUE, clean = TRUE, quiet = quiet) : 
+  pdflatex is not available
+Calls: exams -> texi2dvi
+Execution halted
+* checking for unstated dependencies in 'tests' ... OK
+* checking tests ... ERROR
+  Running 'encodings.R'
+Running the tests in 'tests/encodings.R' failed.
+Complete output:
+  > if(!identical(Sys.getlocale(), "C")) {
+  + library("exams")
+  + exams2pdf("currency8", encoding = "UTF-8",   template = "plain8", dir = ".")
+  + exams2pdf("currency9", encoding = "Latin-9", template = "plain9", dir = ".")
+  + }
+  Error in texi2dvi(out_tex[j], pdf = TRUE, clean = TRUE, quiet = quiet) : 
+    pdflatex is not available
+  Calls: exams2pdf -> xexams -> <Anonymous> -> texi2dvi
+  Execution halted
+* checking for unstated dependencies in vignettes ... OK
+* checking package vignettes in 'inst/doc' ... OK
+* checking running R code from vignettes ... ERROR
+Errors in running code in vignettes:
+when running code in 'exams.Rnw'
+  ...
+
+> set.seed(1090)
+
+> tdir <- tempdir()
+
+> tstat_ex <- exams2pdf("tstat.Rnw", dir = tdir)
+
+  When sourcing 'exams.R':
+Error: pdflatex is not available
+Execution halted
+when running code in 'exams2.Rnw'
+  ...
+  fully compatible with exams() anymore. Template oexam.tex used
+  instead.
+Warning in exams(myexam, n = 3, dir = odir, template = c("exam", "solution")) :
+  The template solution.tex has been adapted to exams2pdf() and is
+  not fully compatible with exams() anymore. Template osolution.tex
+  used instead.
+
+  When sourcing 'exams2.R':
+Error: pdflatex is not available
+Execution halted
+
+* checking re-building of vignette outputs ... SKIPPED
+* DONE
+Status: 3 ERRORs

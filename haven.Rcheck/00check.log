@@ -1,0 +1,94 @@
+* using log directory 'C:/Users/Jeroen/Documents/checks/haven.Rcheck'
+* using R version 3.7.0 Under development (Testing Rtools) (2019-06-11 r76694)
+* using platform: x86_64-w64-mingw32 (64-bit)
+* using session charset: ISO8859-1
+* using options '--no-manual --no-build-vignettes'
+* checking for file 'haven/DESCRIPTION' ... OK
+* this is package 'haven' version '2.1.0'
+* package encoding: UTF-8
+* checking package namespace information ... OK
+* checking package dependencies ... OK
+* checking if this is a source package ... OK
+* checking if there is a namespace ... OK
+* checking for executable files ... OK
+* checking for hidden files and directories ... OK
+* checking for portable file names ... OK
+* checking whether package 'haven' can be installed ... WARNING
+Found the following significant warnings:
+  readstat/readstat_convert.c:18:42: warning: passing argument 2 of 'libiconv' from incompatible pointer type [-Wincompatible-pointer-types]
+  readstat/readstat_writer.c:82:9: warning: 'strncpy' output truncated before terminating nul copying as many bytes from a string as its length [-Wstringop-truncation]
+  readstat/readstat_writer.c:276:5: warning: 'strncpy' specified bound 256 equals destination size [-Wstringop-truncation]
+  readstat/readstat_writer.c:331:9: warning: 'strncpy' output truncated before terminating nul copying as many bytes from a string as its length [-Wstringop-truncation]
+  readstat/sas/readstat_sas.c:284:5: warning: 'strncpy' output may be truncated copying 64 bytes from a string of length 99 [-Wstringop-truncation]
+  readstat/sas/readstat_sas.c:337:5: warning: 'strncpy' output may be truncated copying 8 bytes from a string of length 31 [-Wstringop-truncation]
+  readstat/sas/readstat_sas7bcat_write.c:108:5: warning: 'strncpy' output may be truncated copying 64 bytes from a string of length 99 [-Wstringop-truncation]
+  src/spss/readstat_sav_parse.rl:89:17: warning: passing argument 2 of 'libiconv' from incompatible pointer type [-Wincompatible-pointer-types]
+  src/spss/readstat_sav_parse.rl:197:17: warning: passing argument 2 of 'libiconv' from incompatible pointer type [-Wincompatible-pointer-types]
+  readstat/spss/readstat_por_write.c:205:5: warning: 'strncpy' output truncated before terminating nul copying 20 bytes from a string of the same length [-Wstringop-truncation]
+  readstat/spss/readstat_sav_write.c:156:5: warning: 'strncpy' output may be truncated copying 9 bytes from a string of length 9 [-Wstringop-truncation]
+  readstat/spss/readstat_sav_write.c:164:5: warning: 'strncpy' output may be truncated copying 8 bytes from a string of length 8 [-Wstringop-truncation]
+See 'C:/Users/Jeroen/Documents/checks/haven.Rcheck/00install.out' for details.
+* checking installed package size ... OK
+* checking package directory ... OK
+* checking 'build' directory ... OK
+* checking DESCRIPTION meta-information ... OK
+* checking top-level files ... OK
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* loading checks for arch 'i386'
+** checking whether the package can be loaded ... OK
+** checking whether the package can be loaded with stated dependencies ... OK
+** checking whether the package can be unloaded cleanly ... OK
+** checking whether the namespace can be loaded with stated dependencies ... OK
+** checking whether the namespace can be unloaded cleanly ... OK
+** checking loading without being on the library search path ... OK
+* loading checks for arch 'x64'
+** checking whether the package can be loaded ... OK
+** checking whether the package can be loaded with stated dependencies ... OK
+** checking whether the package can be unloaded cleanly ... OK
+** checking whether the namespace can be loaded with stated dependencies ... OK
+** checking whether the namespace can be unloaded cleanly ... OK
+** checking loading without being on the library search path ... OK
+* checking dependencies in R code ... OK
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... OK
+* checking Rd files ... OK
+* checking Rd metadata ... OK
+* checking Rd cross-references ... OK
+* checking for missing documentation entries ... OK
+* checking for code/documentation mismatches ... OK
+* checking Rd \usage sections ... OK
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... OK
+* checking line endings in C/C++/Fortran sources/headers ... OK
+* checking line endings in Makefiles ... OK
+* checking compilation flags in Makevars ... OK
+* checking for GNU extensions in Makefiles ... NOTE
+GNU make is a SystemRequirements.
+* checking for portable use of $(BLAS_LIBS) and $(LAPACK_LIBS) ... OK
+* checking use of PKG_*FLAGS in Makefiles ... OK
+* checking compiled code ... OK
+* checking installed files from 'inst/doc' ... OK
+* checking files in 'vignettes' ... OK
+* checking examples ...
+** running examples for arch 'i386' ... OK
+** running examples for arch 'x64' ... OK
+* checking for unstated dependencies in 'tests' ... OK
+* checking tests ...
+** running tests for arch 'i386' ... OK
+  Running 'testthat.R'
+** running tests for arch 'x64' ... OK
+  Running 'testthat.R'
+* checking for unstated dependencies in vignettes ... OK
+* checking package vignettes in 'inst/doc' ... OK
+* checking running R code from vignettes ... NONE
+  'datetimes.Rmd' using 'UTF-8'... OK
+  'semantics.Rmd' using 'UTF-8'... OK
+* checking re-building of vignette outputs ... SKIPPED
+* DONE
+Status: 1 WARNING, 1 NOTE

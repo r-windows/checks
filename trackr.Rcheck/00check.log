@@ -1,0 +1,35 @@
+* using log directory 'C:/Users/Jeroen/Documents/checks/trackr.Rcheck'
+* using R version 3.6.0 Under development (Testing Rtools) (2019-03-14 r76238)
+* using platform: x86_64-w64-mingw32 (64-bit)
+* using session charset: ISO8859-1
+* using options '--no-manual --no-build-vignettes'
+* checking for file 'trackr/DESCRIPTION' ... OK
+* checking extension type ... Package
+* this is package 'trackr' version '0.10.5'
+* checking package namespace information ... OK
+* checking package dependencies ... OK
+* checking if this is a source package ... OK
+* checking if there is a namespace ... OK
+* checking for executable files ... OK
+* checking for hidden files and directories ... OK
+* checking for portable file names ... OK
+* checking whether package 'trackr' can be installed ... OK
+* checking installed package size ... OK
+* checking package directory ... OK
+* checking 'build' directory ... OK
+* checking DESCRIPTION meta-information ... OK
+* checking top-level files ... OK
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* checking whether the package can be loaded ... ERROR
+Loading this package had a fatal error status code 1
+Loading log:
+Loading required package: histry
+Error: package or namespace load failed for 'trackr' in loadNamespace(j <- i[[1L]], c(lib.loc, .libPaths()), versionCheck = vI[[j]]):
+ there is no package called 'RCurl'
+Execution halted
+* DONE
+Status: 1 ERROR

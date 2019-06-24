@@ -1,0 +1,98 @@
+* using log directory 'C:/Users/Jeroen/Documents/checks/XML.Rcheck'
+* using R version 3.7.0 Under development (Testing Rtools) (2019-06-11 r76694)
+* using platform: x86_64-w64-mingw32 (64-bit)
+* using session charset: ISO8859-1
+* using options '--no-manual --no-build-vignettes'
+* checking for file 'XML/DESCRIPTION' ... OK
+* this is package 'XML' version '3.98-1.20'
+* checking package namespace information ... OK
+* checking package dependencies ... OK
+* checking if this is a source package ... OK
+* checking if there is a namespace ... OK
+* checking for executable files ... OK
+* checking for hidden files and directories ... OK
+* checking for portable file names ... OK
+* checking whether package 'XML' can be installed ... WARNING
+Found the following significant warnings:
+  RSDTD.c:298:23: warning: passing argument 2 of 'xmlHashScan' from incompatible pointer type [-Wincompatible-pointer-types]
+  RSDTD.c:372:23: warning: passing argument 2 of 'xmlHashScan' from incompatible pointer type [-Wincompatible-pointer-types]
+See 'C:/Users/Jeroen/Documents/checks/XML.Rcheck/00install.out' for details.
+* checking installed package size ... NOTE
+  installed size is 11.7Mb
+  sub-directories of 1Mb or more:
+    exampleData   1.3Mb
+    examples      4.5Mb
+    libs          4.6Mb
+* checking package directory ... OK
+* checking DESCRIPTION meta-information ... OK
+* checking top-level files ... OK
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* loading checks for arch 'i386'
+** checking whether the package can be loaded ... OK
+** checking whether the package can be loaded with stated dependencies ... OK
+** checking whether the package can be unloaded cleanly ... OK
+** checking whether the namespace can be loaded with stated dependencies ... OK
+** checking whether the namespace can be unloaded cleanly ... OK
+** checking loading without being on the library search path ... OK
+* loading checks for arch 'x64'
+** checking whether the package can be loaded ... OK
+** checking whether the package can be loaded with stated dependencies ... OK
+** checking whether the package can be unloaded cleanly ... OK
+** checking whether the namespace can be loaded with stated dependencies ... OK
+** checking whether the namespace can be unloaded cleanly ... OK
+** checking loading without being on the library search path ... OK
+* checking dependencies in R code ... OK
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... NOTE
+newXMLDoc: no visible binding for global variable 'doc'
+source: no visible binding for global variable 'use_file'
+xmlFlatListTree : f: no visible binding for global variable 'nodeNames'
+xmlFlatListTree : f: no visible binding for global variable 'idx'
+xmlFlatListTree : addNode: no visible binding for '<<-' assignment to
+  'nodeSet'
+xmlFlatListTree : addNode: no visible binding for global variable
+  'nodeSet'
+xmlFlatListTree : addNode: no visible binding for global variable 'idx'
+xmlFlatListTree : addNode: no visible binding for '<<-' assignment to
+  'nodeNames'
+xmlFlatListTree : addNode: no visible binding for global variable
+  'nodeNames'
+xmlFlatListTree : addNode: no visible binding for '<<-' assignment to
+  'idx'
+xmlFlatListTree : addNode: no visible binding for '<<-' assignment to
+  'parentCount'
+xmlFlatListTree : addNode: no visible binding for global variable
+  'parentCount'
+xmlFlatListTree : <anonymous>: no visible binding for global variable
+  'e'
+xmlFlatTree : <anonymous>: no visible binding for global variable 'e'
+Undefined global functions or variables:
+  doc e idx nodeNames nodeSet parentCount use_file
+* checking Rd files ... OK
+* checking Rd metadata ... OK
+* checking Rd cross-references ... OK
+* checking for missing documentation entries ... OK
+* checking for code/documentation mismatches ... OK
+* checking Rd \usage sections ... OK
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... OK
+* checking line endings in shell scripts ... OK
+* checking line endings in C/C++/Fortran sources/headers ... OK
+* checking line endings in Makefiles ... OK
+* checking compilation flags in Makevars ... OK
+* checking for GNU extensions in Makefiles ... OK
+* checking for portable use of $(BLAS_LIBS) and $(LAPACK_LIBS) ... OK
+* checking use of PKG_*FLAGS in Makefiles ... OK
+* checking include directives in Makefiles ... OK
+* checking compiled code ... OK
+* checking examples ...
+** running examples for arch 'i386' ... OK
+** running examples for arch 'x64' ... OK
+* DONE
+Status: 1 WARNING, 2 NOTEs

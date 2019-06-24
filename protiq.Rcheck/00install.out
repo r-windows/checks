@@ -1,0 +1,18 @@
+* installing *source* package 'protiq' ...
+** package 'protiq' successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** data
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+*** arch - i386
+Error: package or namespace load failed for 'protiq' in library.dynam(lib, package, package.lib):
+ DLL 'RBGL' not found: maybe not installed for this architecture?
+Error: loading failed
+Execution halted
+*** arch - x64
+ERROR: loading failed for 'i386'
+* removing 'C:/Users/Jeroen/Documents/checks/protiq.Rcheck/protiq'

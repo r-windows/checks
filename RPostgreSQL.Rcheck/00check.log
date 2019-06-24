@@ -1,0 +1,825 @@
+* using log directory 'C:/Users/Jeroen/Documents/checks/RPostgreSQL.Rcheck'
+* using R version 3.7.0 Under development (Testing Rtools) (2019-06-11 r76694)
+* using platform: x86_64-w64-mingw32 (64-bit)
+* using session charset: ISO8859-1
+* using options '--no-manual --no-build-vignettes'
+* checking for file 'RPostgreSQL/DESCRIPTION' ... OK
+* this is package 'RPostgreSQL' version '0.6-2'
+* checking package namespace information ... OK
+* checking package dependencies ... OK
+* checking if this is a source package ... OK
+* checking if there is a namespace ... OK
+* checking for executable files ... OK
+* checking for hidden files and directories ... OK
+* checking for portable file names ... OK
+* checking whether package 'RPostgreSQL' can be installed ... WARNING
+Found the following significant warnings:
+  fe-protocol2.c:1615:2: warning: 'strncpy' specified bound 32 equals destination size [-Wstringop-truncation]
+  fe-protocol2.c:1616:2: warning: 'strncpy' specified bound 64 equals destination size [-Wstringop-truncation]
+  fe-protocol2.c:1620:3: warning: 'strncpy' specified bound 64 equals destination size [-Wstringop-truncation]
+See 'C:/Users/Jeroen/Documents/checks/RPostgreSQL.Rcheck/00install.out' for details.
+* checking installed package size ... OK
+* checking package directory ... OK
+* checking DESCRIPTION meta-information ... OK
+* checking top-level files ... NOTE
+Found a 'configure.in' file: 'configure.ac' has long been preferred.
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* loading checks for arch 'i386'
+** checking whether the package can be loaded ... OK
+** checking whether the package can be loaded with stated dependencies ... OK
+** checking whether the package can be unloaded cleanly ... OK
+** checking whether the namespace can be loaded with stated dependencies ... OK
+** checking whether the namespace can be unloaded cleanly ... OK
+** checking loading without being on the library search path ... OK
+* loading checks for arch 'x64'
+** checking whether the package can be loaded ... OK
+** checking whether the package can be loaded with stated dependencies ... OK
+** checking whether the package can be unloaded cleanly ... OK
+** checking whether the namespace can be loaded with stated dependencies ... OK
+** checking whether the namespace can be unloaded cleanly ... OK
+** checking loading without being on the library search path ... OK
+* checking dependencies in R code ... OK
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... OK
+* checking Rd files ... OK
+* checking Rd metadata ... OK
+* checking Rd cross-references ... OK
+* checking for missing documentation entries ... OK
+* checking for code/documentation mismatches ... OK
+* checking Rd \usage sections ... OK
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... OK
+* checking line endings in shell scripts ... OK
+* checking line endings in C/C++/Fortran sources/headers ... OK
+* checking line endings in Makefiles ... OK
+* checking compilation flags in Makevars ... OK
+* checking for GNU extensions in Makefiles ... OK
+* checking for portable use of $(BLAS_LIBS) and $(LAPACK_LIBS) ... OK
+* checking use of PKG_*FLAGS in Makefiles ... OK
+* checking include directives in Makefiles ... NOTE
+Found the following Makefile(s) with an include directive with a pathname using R_HOME:
+  src-i386/libpq/Makefile.win
+  src-x64/libpq/Makefile.win
+  src/libpq/Makefile.win
+Even though not recommended, variable R_HOME may contain spaces.
+Makefile directives use space as a separator and there is no portable
+way to quote/escape the space in Make rules and directives.  However,
+one can and should quote pathnames when passed from Makefile to the
+shell, and this can be done specifically when invoking Make recursively.
+It is therefore recommended to use the Make '-f' option to include files
+in directories specified using R_HOME.  This option can be specified
+multiple times to include multiple Makefiles.  Note that 'Makeconf' is
+included automatically into top-level makefile of a package.
+More information can be found in 'Writing R Extensions'.
+* checking compiled code ... OK
+* checking examples ...
+** running examples for arch 'i386' ... OK
+** running examples for arch 'x64' ... OK
+* checking for unstated dependencies in 'tests' ... OK
+* checking tests ...
+** running tests for arch 'i386' ... OK
+  Running 'connectWithNull.R'
+  Comparing 'connectWithNull.Rout' to 'connectWithNull.Rout.save' ...40a41,42
+> <PostgreSQLConnection>
+> [1] TRUE
+  Running 'createTableMixedCaseTest.R'
+  Comparing 'createTableMixedCaseTest.Rout' to 'createTableMixedCaseTest.Rout.save' ...86a87,94
+> Test should create foo1 and Foo2 tables
+> Pass - Foo1 Table does not exist.
+> Pass - foo1 Table exists.
+> Pass - Foo2 Table exists.
+> Pass - foo2 Table does not exist.
+> Pass - "Foo2" Table does not exist.
+> Pass - "foo2" Table does not exist.
+> [1] TRUE
+  Running 'dataTypeTests.R'
+  Comparing 'dataTypeTests.Rout' to 'dataTypeTests.Rout.save' ...115a116,125
+> Read Numeric values
+> GOOD -- all numeric types are as expected
+> GOOD -- all numeric values are as expected
+> Read Logical values
+> GOOD -- all logical types are as expected
+> GOOD -- all logical values are as expected
+> Read Character values
+> GOOD -- all character types are as expected
+> GOOD -- all character values are as expected
+> DONE
+  Running 'dateTZ.R'
+  Comparing 'dateTZ.Rout' to 'dateTZ.Rout.save' ...89a90,163
+> [1] "2008-07-01 14:15:16 UTC" "2000-01-02 03:04:05 UTC"
+> testing UTC
+> 
+> **** Trying with  timestamp 
+> inserted string 1: 2008-07-01 14:15:16.123+00
+> inserted string 2: 2000-01-02 03:04:05.678+00
+> [1] "2008-07-01 14:15:16 UTC" "2000-01-02 03:04:05 UTC"
+> [1] "2008-07-01 14:15:16 UTC" "2000-01-02 03:04:05 UTC"
+> PASS
+> PASS
+> 
+> 
+> **** Trying with  timestamp with time zone 
+> inserted string 1: 2008-07-01 14:15:16.123+00
+> inserted string 2: 2000-01-02 03:04:05.678+00
+> [1] "2008-07-01 14:15:16 UTC" "2000-01-02 03:04:05 UTC"
+> [1] "2008-07-01 14:15:16 UTC" "2000-01-02 03:04:05 UTC"
+> PASS
+> PASS
+> testing Asia/Tokyo
+> 
+> **** Trying with  timestamp 
+> inserted string 1: 2008-07-01 14:15:16.123+00
+> inserted string 2: 2000-01-02 03:04:05.678+00
+> [1] "2008-07-01 14:15:16 UTC" "2000-01-02 03:04:05 UTC"
+> [1] "2008-07-01 14:15:16 UTC" "2000-01-02 03:04:05 UTC"
+> PASS
+> PASS
+> 
+> 
+> **** Trying with  timestamp with time zone 
+> inserted string 1: 2008-07-01 14:15:16.123+00
+> inserted string 2: 2000-01-02 03:04:05.678+00
+> [1] "2008-07-01 14:15:16 UTC" "2000-01-02 03:04:05 UTC"
+> [1] "2008-07-01 14:15:16 UTC" "2000-01-02 03:04:05 UTC"
+> PASS
+> PASS
+> testing Australlia/South
+> 
+> **** Trying with  timestamp 
+> inserted string 1: 2008-07-01 14:15:16.123+00
+> inserted string 2: 2000-01-02 03:04:05.678+00
+> [1] "2008-07-01 14:15:16 UTC" "2000-01-02 03:04:05 UTC"
+> [1] "2008-07-01 14:15:16 UTC" "2000-01-02 03:04:05 UTC"
+> PASS
+> PASS
+> 
+> 
+> **** Trying with  timestamp with time zone 
+> inserted string 1: 2008-07-01 14:15:16.123+00
+> inserted string 2: 2000-01-02 03:04:05.678+00
+> [1] "2008-07-01 14:15:16 UTC" "2000-01-02 03:04:05 UTC"
+> [1] "2008-07-01 14:15:16 UTC" "2000-01-02 03:04:05 UTC"
+> PASS
+> PASS
+> testing America/New_York
+> 
+> **** Trying with  timestamp 
+> inserted string 1: 2008-07-01 14:15:16.123+00
+> inserted string 2: 2000-01-02 03:04:05.678+00
+> [1] "2008-07-01 14:15:16 UTC" "2000-01-02 03:04:05 UTC"
+> [1] "2008-07-01 14:15:16 UTC" "2000-01-02 03:04:05 UTC"
+> PASS
+> PASS
+> 
+> 
+> **** Trying with  timestamp with time zone 
+> inserted string 1: 2008-07-01 14:15:16.123+00
+> inserted string 2: 2000-01-02 03:04:05.678+00
+> [1] "2008-07-01 14:15:16 UTC" "2000-01-02 03:04:05 UTC"
+> [1] "2008-07-01 14:15:16 UTC" "2000-01-02 03:04:05 UTC"
+> PASS
+> PASS
+> [1] TRUE
+  Running 'datetimeTests.R'
+  Comparing 'datetimeTests.Rout' to 'datetimeTests.Rout.save' ...67a68,88
+> 
+> 
+> **** Trying with  timestamp 
+>                    tt zz
+> 1 2008-07-01 14:15:16  1
+> 2 2000-01-02 03:04:05  2
+>   name  Sclass      type len precision scale nullOK
+> 1   tt POSIXct TIMESTAMP   8        -1    -1   TRUE
+> [1] "2008-07-01 14:15:16 UTC" "2000-01-02 03:04:05 UTC"
+> [1] "POSIXct" "POSIXt" 
+> 
+> 
+> **** Trying with  date 
+>           tt zz
+> 1 2008-07-01  1
+> 2 2000-01-02  2
+>   name Sclass type len precision scale nullOK
+> 1   tt   Date DATE   4        -1    -1   TRUE
+> [1] "2008-07-01" "2000-01-02"
+> [1] "Date"
+> [1] TRUE
+  Running 'datetimestampwrite.R'
+  Comparing 'datetimestampwrite.Rout' to 'datetimestampwrite.Rout.save' ...82a83,89
+> Read Date and TIMESTAMP values
+> PASS -- Date type is as expected
+> PASS -- TIMESTAMP is received as POSIXct
+> Check that read after write gets the same data types
+> PASS -- Date type is as expected
+> PASS -- TIMESTAMP is received as POSIXct
+> DONE
+  Running 'dbColumnInfo.R'
+  Comparing 'dbColumnInfo.Rout' to 'dbColumnInfo.Rout.save' ...49a50,66
+> NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "aa_pkey" for table "aa"
+> dbColumnInfo
+>       name  Sclass    type len precision scale nullOK
+> 1       pk integer INTEGER   4        -1    -1  FALSE
+> 2       v1  double  FLOAT8   8        -1    -1  FALSE
+> 3       v2  double  FLOAT8   8        -1    -1   TRUE
+> 4 ?column?  double  FLOAT8   8        -1    -1     NA
+>       name  Sclass    type len precision scale nullOK
+> 1       pk integer INTEGER   4        -1    -1  FALSE
+> 2       v1  double  FLOAT8   8        -1    -1  FALSE
+> 3       v2  double  FLOAT8   8        -1    -1   TRUE
+> 4 ?column?  double  FLOAT8   8        -1    -1     NA
+> SELECT result
+>   pk v1 v2 ?column?
+> 1  3  2 NA       NA
+> Removing "AA"
+> [1] TRUE
+  Running 'dbExistsIssue.R'
+  Comparing 'dbExistsIssue.Rout' to 'dbExistsIssue.Rout.save' ...56a57,60
+> Does rockdata exist? [1] TRUE
+> Does public.rockdata exist? [1] FALSE
+> [1] "Removing rockdata\n"
+> [1] TRUE
+  Running 'dbExistsq.R'
+  Comparing 'dbExistsq.Rout' to 'dbExistsq.Rout.save' ...57a58,62
+> Write rock'data
+> Does rock'data exist? [1] TRUE
+> Does "public.rock'data" exist? [1] FALSE
+> Removing rock'data
+> [1] TRUE
+  Running 'dbExistsqc.R'
+  Comparing 'dbExistsqc.Rout' to 'dbExistsqc.Rout.save' ...95a96,108
+> Does rock.data exist? 
+> PASS: true
+> create schema testschema and change the search_path
+> Does rock.data exist? 
+> PASS: false as the search_path changed
+> Does testschema."rock.data" exist? 
+> PASS: false as the testschema specified
+> Does public."rock.data" exist? 
+> PASS: true despite search_path change
+> write in current schema
+> Does rock.data exist? 
+> PASS: true
+> [1] TRUE
+  Running 'dbGetQueryParams.R'
+  Comparing 'dbGetQueryParams.Rout' to 'dbGetQueryParams.Rout.save' ...51a52,70
+>    row.names  area    peri    shape  perm
+> 1          6  7979 4010.15 0.167045  17.1
+> 2          7  9333 4345.75 0.189651  17.1
+> 3          8  8209 4344.75 0.164127  17.1
+> 4         11  9364 4480.05 0.150944 119.0
+> 5         13 10651 4036.54 0.228595  82.4
+> 6         17 10962 4608.66 0.204314  58.6
+> 7         18 10743 4787.62 0.262727  58.6
+> 8         19 11878 4864.22 0.200071  58.6
+> 9         20  9867 4479.41 0.144810  58.6
+> 10        22 11876 4353.14 0.291029 142.0
+>   row.names area    peri    shape  perm
+> 1         6 7979 4010.15 0.167045  17.1
+> 2         7 9333 4345.75 0.189651  17.1
+> 3         8 8209 4344.75 0.164127  17.1
+> 4        11 9364 4480.05 0.150944 119.0
+> 5        20 9867 4479.41 0.144810  58.6
+> [1] "Removing rockdata\n"
+> [1] TRUE
+  Running 'dbListFields.R'
+  Comparing 'dbListFields.Rout' to 'dbListFields.Rout.save' ...59a60,65
+> [1] "pk" "v1" "v2"
+> PASS: 3 fields returned
+> [1] "pid"  "name"
+> PASS: 2 fields returned
+> Removing "AA"
+> [1] TRUE
+  Running 'dbTransactionTests.R'
+  Comparing 'dbTransactionTests.Rout' to 'dbTransactionTests.Rout.save' ...95a96,109
+> begin transaction in con1
+> create table rockdata in con1
+> PASS rockdata is visible through con1
+> PASS rockdata is invisible through con2
+> commit in con1
+> PASS rockdata is visible through con2
+> remove the table from con1
+> PASS rockdata is invisible through con2
+> begin transaction in con1
+> create table rockdata in con1
+> PASS rockdata is visible through con1
+> RollBack con1
+> PASS rockdata is invisible through con1
+> [1] TRUE
+  Running 'dbWriteTableFailTest.R'
+  Comparing 'dbWriteTableFailTest.Rout' to 'dbWriteTableFailTest.Rout.save' ...72a73,86
+> create incompatible table rockdata
+> write table to rockdata with append=TRUE
+> Error in postgresqlpqExec(new.con, sql4) : 
+>   RS-DBI driver: (could not Retrieve the result : ERROR:  column "row.names" of relation "rockdata" does not exist
+> )
+> write table to rockdata
+> [1] FALSE
+> PASS as the return value is false
+> data frame with 0 columns and 0 rows
+> [1] "Removing rockdata\n"
+> [1] TRUE
+> Warning message:
+> In postgresqlWriteTable(conn, name, value, ...) :
+>   table rockdata exists in database: aborting assignTable
+  Running 'dbWriteTableSchema.R'
+  Comparing 'dbWriteTableSchema.Rout' to 'dbWriteTableSchema.Rout.save' ...52a53,65
+>    row.names area    peri     shape  perm
+> 1          1 4990 2791.90 0.0903296   6.3
+> 2          2 7002 3892.60 0.1486220   6.3
+> 3          3 7558 3930.66 0.1833120   6.3
+> 4          4 7352 3869.32 0.1170630   6.3
+> 5          5 7943 3948.54 0.1224170  17.1
+> 6          6 7979 4010.15 0.1670450  17.1
+> 7          7 9333 4345.75 0.1896510  17.1
+> 8          8 8209 4344.75 0.1641270  17.1
+> 9          9 8393 3682.04 0.2036540 119.0
+> 10        10 6425 3098.65 0.1623940 119.0
+> [1] "Removing rockdata\n"
+> [1] TRUE
+  Running 'dbWriteTableTest.R'
+  Comparing 'dbWriteTableTest.Rout' to 'dbWriteTableTest.Rout.save' ...52a53,65
+>    row.names area    peri     shape  perm
+> 1          1 4990 2791.90 0.0903296   6.3
+> 2          2 7002 3892.60 0.1486220   6.3
+> 3          3 7558 3930.66 0.1833120   6.3
+> 4          4 7352 3869.32 0.1170630   6.3
+> 5          5 7943 3948.54 0.1224170  17.1
+> 6          6 7979 4010.15 0.1670450  17.1
+> 7          7 9333 4345.75 0.1896510  17.1
+> 8          8 8209 4344.75 0.1641270  17.1
+> 9          9 8393 3682.04 0.2036540 119.0
+> 10        10 6425 3098.65 0.1623940 119.0
+> [1] "Removing rockdata\n"
+> [1] TRUE
+  Running 'dbWriteTabletypes.R'
+  Comparing 'dbWriteTabletypes.Rout' to 'dbWriteTabletypes.Rout.save' ...234a235,264
+>   row.names            strings
+> 1         1             normal
+> 2         2              t\tab
+> 3         3     v\vertical tab
+> 4         4          n\newline
+> 5         5 r carriage \retern
+> 6         6      back \\ slash
+> 7         7        f\form feed
+> [1] "Removing rockdata\n"
+> 1 	normal
+> 2 	müß
+> [1] "Removing rockdata\n"
+> PASS:  could write small umlaut u and ligature sz
+> 1 	normal
+> 2 	kanji漢字
+> [1] "Removing rockdata\n"
+> PASS:  could write kanji
+> Read Numeric values
+> PASS -- all integer is as expected
+> PASS integer value is preservedGOOD -- all numeric values are as expected
+> Read Logical values
+> GOOD -- all logical types are as expected
+> GOOD -- all logical values are as expected
+> Read Character values
+> GOOD -- all character types are as expected
+> GOOD -- all character values are as expected
+> Check that read after write gets the same data types
+> PASS -- Date type is as expected
+> PASS -- TIMESTAMP is received as POSIXct
+> DONE
+  Running 'dbtemptable.R'
+  Comparing 'dbtemptable.Rout' to 'dbtemptable.Rout.save' ...48a49,51
+>   name
+> 1  bar
+> PASS -- ended without segmentation fault
+  Running 'escape.R'
+  Comparing 'escape.Rout' to 'escape.Rout.save' ...42a43,45
+> [1] "aaa"
+> [1] "aa''a"
+> [1] TRUE
+  Running 'loadDriverAndConnect.R'
+  Comparing 'loadDriverAndConnect.Rout' to 'loadDriverAndConnect.Rout.save' ...39a40,43
+>     datname encoding datallowconn
+> 1 template0        6        FALSE
+> 2 template1        6         TRUE
+> [1] TRUE
+  Running 'openSendQuery.R'
+  Comparing 'openSendQuery.Rout' to 'openSendQuery.Rout.save' ...68a69,74
+> create temp table tmptest with dbGetQuery
+> data frame with 0 columns and 0 rows
+> create temp table tmptest with dbSendQuery
+> data frame with 0 columns and 0 rows
+> PASS tmptest disappeared after disconnection
+> [1] TRUE
+  Running 'selectWhereZero.R'
+  Comparing 'selectWhereZero.Rout' to 'selectWhereZero.Rout.save' ...55a56,67
+> Error in postgresqlExecStatement(conn, statement, ...) : 
+>   RS-DBI driver: (could not Retrieve the result : ERROR:  operator does not exist: text = integer
+> LINE 1: select * from tmpirisdata where "Species"=0
+>                                                  ^
+> HINT:  No operator matches the given name and argument type(s). You might need to add explicit type casts.
+> )
+> NULL
+> [1] "Removing tmpirisdata\n"
+> PASS:  reached to the end of the test code without segmentation fault
+> Warning message:
+> In postgresqlQuickSQL(conn, statement, ...) :
+>   Could not create execute: select * from tmpirisdata where "Species"=0
+  Running 'selectWithAlias.R'
+  Comparing 'selectWithAlias.Rout' to 'selectWithAlias.Rout.save' ...53a54,66
+>      ar      pe        sh    pr
+> 1  4990 2791.90 0.0903296   6.3
+> 2  7002 3892.60 0.1486220   6.3
+> 3  7558 3930.66 0.1833120   6.3
+> 4  7352 3869.32 0.1170630   6.3
+> 5  7943 3948.54 0.1224170  17.1
+> 6  7979 4010.15 0.1670450  17.1
+> 7  9333 4345.75 0.1896510  17.1
+> 8  8209 4344.75 0.1641270  17.1
+> 9  8393 3682.04 0.2036540 119.0
+> 10 6425 3098.65 0.1623940 119.0
+> [1] "Removing rockdata\n"
+> [1] TRUE
+  Running 'unknowntype.R'
+  Comparing 'unknowntype.Rout' to 'unknowntype.Rout.save' ...58a59,67
+> <PostgreSQLResult>
+>   name    Sclass    type len precision scale nullOK
+> 1   ra character UNKNOWN  -1        -1    -1   TRUE
+> data frame with 0 columns and 0 rows
+> [1] "Removing tmpirisdata\n"
+> PASS:  reached to the end of the test code without segmentation fault
+> Warning message:
+> In postgresqlDescribeFields(res, ...) :
+>   RS-DBI driver warning: (unknown (1021))
+** running tests for arch 'x64' ... OK
+  Running 'connectWithNull.R'
+  Comparing 'connectWithNull.Rout' to 'connectWithNull.Rout.save' ...40a41,42
+> <PostgreSQLConnection>
+> [1] TRUE
+  Running 'createTableMixedCaseTest.R'
+  Comparing 'createTableMixedCaseTest.Rout' to 'createTableMixedCaseTest.Rout.save' ...86a87,94
+> Test should create foo1 and Foo2 tables
+> Pass - Foo1 Table does not exist.
+> Pass - foo1 Table exists.
+> Pass - Foo2 Table exists.
+> Pass - foo2 Table does not exist.
+> Pass - "Foo2" Table does not exist.
+> Pass - "foo2" Table does not exist.
+> [1] TRUE
+  Running 'dataTypeTests.R'
+  Comparing 'dataTypeTests.Rout' to 'dataTypeTests.Rout.save' ...115a116,125
+> Read Numeric values
+> GOOD -- all numeric types are as expected
+> GOOD -- all numeric values are as expected
+> Read Logical values
+> GOOD -- all logical types are as expected
+> GOOD -- all logical values are as expected
+> Read Character values
+> GOOD -- all character types are as expected
+> GOOD -- all character values are as expected
+> DONE
+  Running 'dateTZ.R'
+  Comparing 'dateTZ.Rout' to 'dateTZ.Rout.save' ...89a90,163
+> [1] "2008-07-01 14:15:16 UTC" "2000-01-02 03:04:05 UTC"
+> testing UTC
+> 
+> **** Trying with  timestamp 
+> inserted string 1: 2008-07-01 14:15:16.123+00
+> inserted string 2: 2000-01-02 03:04:05.678+00
+> [1] "2008-07-01 14:15:16 UTC" "2000-01-02 03:04:05 UTC"
+> [1] "2008-07-01 14:15:16 UTC" "2000-01-02 03:04:05 UTC"
+> PASS
+> PASS
+> 
+> 
+> **** Trying with  timestamp with time zone 
+> inserted string 1: 2008-07-01 14:15:16.123+00
+> inserted string 2: 2000-01-02 03:04:05.678+00
+> [1] "2008-07-01 14:15:16 UTC" "2000-01-02 03:04:05 UTC"
+> [1] "2008-07-01 14:15:16 UTC" "2000-01-02 03:04:05 UTC"
+> PASS
+> PASS
+> testing Asia/Tokyo
+> 
+> **** Trying with  timestamp 
+> inserted string 1: 2008-07-01 14:15:16.123+00
+> inserted string 2: 2000-01-02 03:04:05.678+00
+> [1] "2008-07-01 14:15:16 UTC" "2000-01-02 03:04:05 UTC"
+> [1] "2008-07-01 14:15:16 UTC" "2000-01-02 03:04:05 UTC"
+> PASS
+> PASS
+> 
+> 
+> **** Trying with  timestamp with time zone 
+> inserted string 1: 2008-07-01 14:15:16.123+00
+> inserted string 2: 2000-01-02 03:04:05.678+00
+> [1] "2008-07-01 14:15:16 UTC" "2000-01-02 03:04:05 UTC"
+> [1] "2008-07-01 14:15:16 UTC" "2000-01-02 03:04:05 UTC"
+> PASS
+> PASS
+> testing Australlia/South
+> 
+> **** Trying with  timestamp 
+> inserted string 1: 2008-07-01 14:15:16.123+00
+> inserted string 2: 2000-01-02 03:04:05.678+00
+> [1] "2008-07-01 14:15:16 UTC" "2000-01-02 03:04:05 UTC"
+> [1] "2008-07-01 14:15:16 UTC" "2000-01-02 03:04:05 UTC"
+> PASS
+> PASS
+> 
+> 
+> **** Trying with  timestamp with time zone 
+> inserted string 1: 2008-07-01 14:15:16.123+00
+> inserted string 2: 2000-01-02 03:04:05.678+00
+> [1] "2008-07-01 14:15:16 UTC" "2000-01-02 03:04:05 UTC"
+> [1] "2008-07-01 14:15:16 UTC" "2000-01-02 03:04:05 UTC"
+> PASS
+> PASS
+> testing America/New_York
+> 
+> **** Trying with  timestamp 
+> inserted string 1: 2008-07-01 14:15:16.123+00
+> inserted string 2: 2000-01-02 03:04:05.678+00
+> [1] "2008-07-01 14:15:16 UTC" "2000-01-02 03:04:05 UTC"
+> [1] "2008-07-01 14:15:16 UTC" "2000-01-02 03:04:05 UTC"
+> PASS
+> PASS
+> 
+> 
+> **** Trying with  timestamp with time zone 
+> inserted string 1: 2008-07-01 14:15:16.123+00
+> inserted string 2: 2000-01-02 03:04:05.678+00
+> [1] "2008-07-01 14:15:16 UTC" "2000-01-02 03:04:05 UTC"
+> [1] "2008-07-01 14:15:16 UTC" "2000-01-02 03:04:05 UTC"
+> PASS
+> PASS
+> [1] TRUE
+  Running 'datetimeTests.R'
+  Comparing 'datetimeTests.Rout' to 'datetimeTests.Rout.save' ...67a68,88
+> 
+> 
+> **** Trying with  timestamp 
+>                    tt zz
+> 1 2008-07-01 14:15:16  1
+> 2 2000-01-02 03:04:05  2
+>   name  Sclass      type len precision scale nullOK
+> 1   tt POSIXct TIMESTAMP   8        -1    -1   TRUE
+> [1] "2008-07-01 14:15:16 UTC" "2000-01-02 03:04:05 UTC"
+> [1] "POSIXct" "POSIXt" 
+> 
+> 
+> **** Trying with  date 
+>           tt zz
+> 1 2008-07-01  1
+> 2 2000-01-02  2
+>   name Sclass type len precision scale nullOK
+> 1   tt   Date DATE   4        -1    -1   TRUE
+> [1] "2008-07-01" "2000-01-02"
+> [1] "Date"
+> [1] TRUE
+  Running 'datetimestampwrite.R'
+  Comparing 'datetimestampwrite.Rout' to 'datetimestampwrite.Rout.save' ...82a83,89
+> Read Date and TIMESTAMP values
+> PASS -- Date type is as expected
+> PASS -- TIMESTAMP is received as POSIXct
+> Check that read after write gets the same data types
+> PASS -- Date type is as expected
+> PASS -- TIMESTAMP is received as POSIXct
+> DONE
+  Running 'dbColumnInfo.R'
+  Comparing 'dbColumnInfo.Rout' to 'dbColumnInfo.Rout.save' ...49a50,66
+> NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "aa_pkey" for table "aa"
+> dbColumnInfo
+>       name  Sclass    type len precision scale nullOK
+> 1       pk integer INTEGER   4        -1    -1  FALSE
+> 2       v1  double  FLOAT8   8        -1    -1  FALSE
+> 3       v2  double  FLOAT8   8        -1    -1   TRUE
+> 4 ?column?  double  FLOAT8   8        -1    -1     NA
+>       name  Sclass    type len precision scale nullOK
+> 1       pk integer INTEGER   4        -1    -1  FALSE
+> 2       v1  double  FLOAT8   8        -1    -1  FALSE
+> 3       v2  double  FLOAT8   8        -1    -1   TRUE
+> 4 ?column?  double  FLOAT8   8        -1    -1     NA
+> SELECT result
+>   pk v1 v2 ?column?
+> 1  3  2 NA       NA
+> Removing "AA"
+> [1] TRUE
+  Running 'dbExistsIssue.R'
+  Comparing 'dbExistsIssue.Rout' to 'dbExistsIssue.Rout.save' ...56a57,60
+> Does rockdata exist? [1] TRUE
+> Does public.rockdata exist? [1] FALSE
+> [1] "Removing rockdata\n"
+> [1] TRUE
+  Running 'dbExistsq.R'
+  Comparing 'dbExistsq.Rout' to 'dbExistsq.Rout.save' ...57a58,62
+> Write rock'data
+> Does rock'data exist? [1] TRUE
+> Does "public.rock'data" exist? [1] FALSE
+> Removing rock'data
+> [1] TRUE
+  Running 'dbExistsqc.R'
+  Comparing 'dbExistsqc.Rout' to 'dbExistsqc.Rout.save' ...95a96,108
+> Does rock.data exist? 
+> PASS: true
+> create schema testschema and change the search_path
+> Does rock.data exist? 
+> PASS: false as the search_path changed
+> Does testschema."rock.data" exist? 
+> PASS: false as the testschema specified
+> Does public."rock.data" exist? 
+> PASS: true despite search_path change
+> write in current schema
+> Does rock.data exist? 
+> PASS: true
+> [1] TRUE
+  Running 'dbGetQueryParams.R'
+  Comparing 'dbGetQueryParams.Rout' to 'dbGetQueryParams.Rout.save' ...51a52,70
+>    row.names  area    peri    shape  perm
+> 1          6  7979 4010.15 0.167045  17.1
+> 2          7  9333 4345.75 0.189651  17.1
+> 3          8  8209 4344.75 0.164127  17.1
+> 4         11  9364 4480.05 0.150944 119.0
+> 5         13 10651 4036.54 0.228595  82.4
+> 6         17 10962 4608.66 0.204314  58.6
+> 7         18 10743 4787.62 0.262727  58.6
+> 8         19 11878 4864.22 0.200071  58.6
+> 9         20  9867 4479.41 0.144810  58.6
+> 10        22 11876 4353.14 0.291029 142.0
+>   row.names area    peri    shape  perm
+> 1         6 7979 4010.15 0.167045  17.1
+> 2         7 9333 4345.75 0.189651  17.1
+> 3         8 8209 4344.75 0.164127  17.1
+> 4        11 9364 4480.05 0.150944 119.0
+> 5        20 9867 4479.41 0.144810  58.6
+> [1] "Removing rockdata\n"
+> [1] TRUE
+  Running 'dbListFields.R'
+  Comparing 'dbListFields.Rout' to 'dbListFields.Rout.save' ...59a60,65
+> [1] "pk" "v1" "v2"
+> PASS: 3 fields returned
+> [1] "pid"  "name"
+> PASS: 2 fields returned
+> Removing "AA"
+> [1] TRUE
+  Running 'dbTransactionTests.R'
+  Comparing 'dbTransactionTests.Rout' to 'dbTransactionTests.Rout.save' ...95a96,109
+> begin transaction in con1
+> create table rockdata in con1
+> PASS rockdata is visible through con1
+> PASS rockdata is invisible through con2
+> commit in con1
+> PASS rockdata is visible through con2
+> remove the table from con1
+> PASS rockdata is invisible through con2
+> begin transaction in con1
+> create table rockdata in con1
+> PASS rockdata is visible through con1
+> RollBack con1
+> PASS rockdata is invisible through con1
+> [1] TRUE
+  Running 'dbWriteTableFailTest.R'
+  Comparing 'dbWriteTableFailTest.Rout' to 'dbWriteTableFailTest.Rout.save' ...72a73,86
+> create incompatible table rockdata
+> write table to rockdata with append=TRUE
+> Error in postgresqlpqExec(new.con, sql4) : 
+>   RS-DBI driver: (could not Retrieve the result : ERROR:  column "row.names" of relation "rockdata" does not exist
+> )
+> write table to rockdata
+> [1] FALSE
+> PASS as the return value is false
+> data frame with 0 columns and 0 rows
+> [1] "Removing rockdata\n"
+> [1] TRUE
+> Warning message:
+> In postgresqlWriteTable(conn, name, value, ...) :
+>   table rockdata exists in database: aborting assignTable
+  Running 'dbWriteTableSchema.R'
+  Comparing 'dbWriteTableSchema.Rout' to 'dbWriteTableSchema.Rout.save' ...52a53,65
+>    row.names area    peri     shape  perm
+> 1          1 4990 2791.90 0.0903296   6.3
+> 2          2 7002 3892.60 0.1486220   6.3
+> 3          3 7558 3930.66 0.1833120   6.3
+> 4          4 7352 3869.32 0.1170630   6.3
+> 5          5 7943 3948.54 0.1224170  17.1
+> 6          6 7979 4010.15 0.1670450  17.1
+> 7          7 9333 4345.75 0.1896510  17.1
+> 8          8 8209 4344.75 0.1641270  17.1
+> 9          9 8393 3682.04 0.2036540 119.0
+> 10        10 6425 3098.65 0.1623940 119.0
+> [1] "Removing rockdata\n"
+> [1] TRUE
+  Running 'dbWriteTableTest.R'
+  Comparing 'dbWriteTableTest.Rout' to 'dbWriteTableTest.Rout.save' ...52a53,65
+>    row.names area    peri     shape  perm
+> 1          1 4990 2791.90 0.0903296   6.3
+> 2          2 7002 3892.60 0.1486220   6.3
+> 3          3 7558 3930.66 0.1833120   6.3
+> 4          4 7352 3869.32 0.1170630   6.3
+> 5          5 7943 3948.54 0.1224170  17.1
+> 6          6 7979 4010.15 0.1670450  17.1
+> 7          7 9333 4345.75 0.1896510  17.1
+> 8          8 8209 4344.75 0.1641270  17.1
+> 9          9 8393 3682.04 0.2036540 119.0
+> 10        10 6425 3098.65 0.1623940 119.0
+> [1] "Removing rockdata\n"
+> [1] TRUE
+  Running 'dbWriteTabletypes.R'
+  Comparing 'dbWriteTabletypes.Rout' to 'dbWriteTabletypes.Rout.save' ...234a235,264
+>   row.names            strings
+> 1         1             normal
+> 2         2              t\tab
+> 3         3     v\vertical tab
+> 4         4          n\newline
+> 5         5 r carriage \retern
+> 6         6      back \\ slash
+> 7         7        f\form feed
+> [1] "Removing rockdata\n"
+> 1 	normal
+> 2 	müß
+> [1] "Removing rockdata\n"
+> PASS:  could write small umlaut u and ligature sz
+> 1 	normal
+> 2 	kanji漢字
+> [1] "Removing rockdata\n"
+> PASS:  could write kanji
+> Read Numeric values
+> PASS -- all integer is as expected
+> PASS integer value is preservedGOOD -- all numeric values are as expected
+> Read Logical values
+> GOOD -- all logical types are as expected
+> GOOD -- all logical values are as expected
+> Read Character values
+> GOOD -- all character types are as expected
+> GOOD -- all character values are as expected
+> Check that read after write gets the same data types
+> PASS -- Date type is as expected
+> PASS -- TIMESTAMP is received as POSIXct
+> DONE
+  Running 'dbtemptable.R'
+  Comparing 'dbtemptable.Rout' to 'dbtemptable.Rout.save' ...48a49,51
+>   name
+> 1  bar
+> PASS -- ended without segmentation fault
+  Running 'escape.R'
+  Comparing 'escape.Rout' to 'escape.Rout.save' ...42a43,45
+> [1] "aaa"
+> [1] "aa''a"
+> [1] TRUE
+  Running 'loadDriverAndConnect.R'
+  Comparing 'loadDriverAndConnect.Rout' to 'loadDriverAndConnect.Rout.save' ...39a40,43
+>     datname encoding datallowconn
+> 1 template0        6        FALSE
+> 2 template1        6         TRUE
+> [1] TRUE
+  Running 'openSendQuery.R'
+  Comparing 'openSendQuery.Rout' to 'openSendQuery.Rout.save' ...68a69,74
+> create temp table tmptest with dbGetQuery
+> data frame with 0 columns and 0 rows
+> create temp table tmptest with dbSendQuery
+> data frame with 0 columns and 0 rows
+> PASS tmptest disappeared after disconnection
+> [1] TRUE
+  Running 'selectWhereZero.R'
+  Comparing 'selectWhereZero.Rout' to 'selectWhereZero.Rout.save' ...55a56,67
+> Error in postgresqlExecStatement(conn, statement, ...) : 
+>   RS-DBI driver: (could not Retrieve the result : ERROR:  operator does not exist: text = integer
+> LINE 1: select * from tmpirisdata where "Species"=0
+>                                                  ^
+> HINT:  No operator matches the given name and argument type(s). You might need to add explicit type casts.
+> )
+> NULL
+> [1] "Removing tmpirisdata\n"
+> PASS:  reached to the end of the test code without segmentation fault
+> Warning message:
+> In postgresqlQuickSQL(conn, statement, ...) :
+>   Could not create execute: select * from tmpirisdata where "Species"=0
+  Running 'selectWithAlias.R'
+  Comparing 'selectWithAlias.Rout' to 'selectWithAlias.Rout.save' ...53a54,66
+>      ar      pe        sh    pr
+> 1  4990 2791.90 0.0903296   6.3
+> 2  7002 3892.60 0.1486220   6.3
+> 3  7558 3930.66 0.1833120   6.3
+> 4  7352 3869.32 0.1170630   6.3
+> 5  7943 3948.54 0.1224170  17.1
+> 6  7979 4010.15 0.1670450  17.1
+> 7  9333 4345.75 0.1896510  17.1
+> 8  8209 4344.75 0.1641270  17.1
+> 9  8393 3682.04 0.2036540 119.0
+> 10 6425 3098.65 0.1623940 119.0
+> [1] "Removing rockdata\n"
+> [1] TRUE
+  Running 'unknowntype.R'
+  Comparing 'unknowntype.Rout' to 'unknowntype.Rout.save' ...58a59,67
+> <PostgreSQLResult>
+>   name    Sclass    type len precision scale nullOK
+> 1   ra character UNKNOWN  -1        -1    -1   TRUE
+> data frame with 0 columns and 0 rows
+> [1] "Removing tmpirisdata\n"
+> PASS:  reached to the end of the test code without segmentation fault
+> Warning message:
+> In postgresqlDescribeFields(res, ...) :
+>   RS-DBI driver warning: (unknown (1021))
+* DONE
+Status: 1 WARNING, 2 NOTEs

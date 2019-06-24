@@ -1,0 +1,104 @@
+* using log directory 'C:/Users/Jeroen/Documents/checks/virtualspecies.Rcheck'
+* using R version 3.6.0 Under development (Testing Rtools) (2019-03-14 r76238)
+* using platform: x86_64-w64-mingw32 (64-bit)
+* using session charset: ISO8859-1
+* using options '--no-manual --no-build-vignettes'
+* checking for file 'virtualspecies/DESCRIPTION' ... OK
+* checking extension type ... Package
+* this is package 'virtualspecies' version '1.4-4'
+* checking package namespace information ... OK
+* checking package dependencies ... OK
+* checking if this is a source package ... OK
+* checking if there is a namespace ... OK
+* checking for executable files ... OK
+* checking for hidden files and directories ... OK
+* checking for portable file names ... OK
+* checking whether package 'virtualspecies' can be installed ... OK
+* checking installed package size ... OK
+* checking package directory ... OK
+* checking DESCRIPTION meta-information ... OK
+* checking top-level files ... OK
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* checking whether the package can be loaded ... OK
+* checking whether the package can be loaded with stated dependencies ... OK
+* checking whether the package can be unloaded cleanly ... OK
+* checking whether the namespace can be loaded with stated dependencies ... OK
+* checking whether the namespace can be unloaded cleanly ... OK
+* checking loading without being on the library search path ... OK
+* checking dependencies in R code ... OK
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... OK
+* checking Rd files ... OK
+* checking Rd metadata ... OK
+* checking Rd cross-references ... OK
+* checking for missing documentation entries ... OK
+* checking for code/documentation mismatches ... OK
+* checking Rd \usage sections ... OK
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... OK
+* checking examples ... ERROR
+Running examples in 'virtualspecies-Ex.R' failed
+The error most likely occurred in:
+
+> ### Name: generateRandomSp
+> ### Title: Generate a random virtual species distribution from
+> ###   environmental variables
+> ### Aliases: generateRandomSp
+> 
+> ### ** Examples
+> 
+> # Create an example stack with six environmental variables
+> a <- matrix(rep(dnorm(1:100, 50, sd = 25)), 
++             nrow = 100, ncol = 100, byrow = TRUE)
+> env <- stack(raster(a * dnorm(1:100, 50, sd = 25)),
++              raster(a * 1:100),
++              raster(a * logisticFun(1:100, alpha = 10, beta = 70)),
++              raster(t(a)),
++              raster(exp(a)),
++              raster(log(a)))
+> names(env) <- paste("Var", 1:6, sep = "")   
+> 
+> # More than 6 variables: by default a PCA approach will be used
+> generateRandomSp(env)
+ - Perfoming the pca
+
+ - Defining the response of the species along PCA axes
+
+ - Calculating suitability values
+
+ - Converting into Presence - Absence
+
+   --- Determing species.prevalence automatically according to alpha and beta
+
+
+Virtual species generated from 6 variables:
+ Var1, Var2, Var3, Var4, Var5, Var6
+
+- Approach used: Response to axes of a PCA
+- Axes:  1, 2 ;  81.71 % explained by these axes
+- Responses to axes:
+   .Axis 1  [min=-3.52; max=3.55] : dnorm (mean=1.399218; sd=2.969177)
+   .Axis 2  [min=-1.74; max=3.75] : dnorm (mean=0.2190712; sd=1.881691)
+- Environmental suitability was rescaled between 0 and 1
+
+- Converted into presence-absence:
+   .Method = probability
+   .alpha (slope)           = -0.1
+   .beta  (inflexion point) = 0.128128128128128
+   .species prevalence      = 0.914> 
+> # Manually choosing a response approach
+> generateRandomSp(env, approach = "response")
+ - Determining species' response to predictor variables
+
+Error in seq.default(cur.rast@data@min, cur.rast@data@max, length = 1000) : 
+  'from' must be a finite number
+Calls: generateRandomSp -> sample -> seq -> seq.default
+Execution halted
+* DONE
+Status: 1 ERROR

@@ -1,0 +1,149 @@
+* using log directory 'C:/Users/jeroen/Documents/checks/tth.Rcheck'
+* using R version 3.6.0 Under development (Testing Rtools) (2018-07-27 r75008)
+* using platform: x86_64-w64-mingw32 (64-bit)
+* using session charset: ISO8859-1
+* using options '--no-manual --no-build-vignettes'
+* checking for file 'tth/DESCRIPTION' ... OK
+* this is package 'tth' version '4.3-2-1'
+* checking package namespace information ... OK
+* checking package dependencies ... OK
+* checking if this is a source package ... OK
+* checking if there is a namespace ... OK
+* checking for executable files ... OK
+* checking for hidden files and directories ... OK
+* checking for portable file names ... OK
+* checking whether package 'tth' can be installed ... WARNING
+Found the following significant warnings:
+  tth.lex:1436:2: warning: 'strncat' specified bound 5 equals source length [-Wstringop-overflow=]
+  tth.lex:1557:3: warning: 'strncpy' output truncated before terminating nul copying 5 bytes from a string of the same length [-Wstringop-truncation]
+  tth.lex:1561:3: warning: 'strncpy' output truncated before terminating nul copying 5 bytes from a string of the same length [-Wstringop-truncation]
+  tth.lex:7603:44: warning: 'strncpy' output truncated before terminating nul copying 3 bytes from a string of the same length [-Wstringop-truncation]
+  tth.lex:7604:44: warning: 'strncpy' output truncated before terminating nul copying 3 bytes from a string of the same length [-Wstringop-truncation]
+  tth.lex:7605:46: warning: 'strncpy' output truncated before terminating nul copying 3 bytes from a string of the same length [-Wstringop-truncation]
+  tth.lex:7606:46: warning: 'strncpy' output truncated before terminating nul copying 3 bytes from a string of the same length [-Wstringop-truncation]
+  tth.lex:7608:2: warning: 'strncpy' output truncated before terminating nul copying 39 bytes from a string of the same length [-Wstringop-truncation]
+  tth.lex:8374:7: warning: 'strncpy' output truncated copying between 12 and 32 bytes from a string of length 45 [-Wstringop-truncation]
+  tth.lex:7882:22: warning: '%s' directive writing likely 3 or more bytes into a region of size between 0 and 149 [-Wformat-overflow=]
+  tth.lex:7895:19: warning: '%s' directive writing likely 3 or more bytes into a region of size between 0 and 149 [-Wformat-overflow=]
+  tth.lex:7896:21: warning: '%s' directive writing up to 149 bytes into a region of size between 143 and 146 [-Wformat-overflow=]
+  tth.lex:7906:23: warning: '_icon.' directive writing 6 bytes into a region of size between 1 and 150 [-Wformat-overflow=]
+  tth.lex:6682:25: warning: 'sprintf' may write a terminating nul past the end of the destination [-Wformat-overflow=]
+  tth.lex:6270:21: warning: '%s' directive writing up to 499 bytes into a region of size 486 [-Wformat-overflow=]
+  tth.lex:6201:6: warning: '%s' directive writing up to 499 bytes into a region of size between 447 and 452 [-Wformat-overflow=]
+  tth.lex:6196:6: warning: '%s' directive writing up to 499 bytes into a region of size between 440 and 450 [-Wformat-overflow=]
+  tth.lex:6048:25: warning: '%s' directive writing up to 499 bytes into a region of size 496 [-Wformat-overflow=]
+  tth.lex:6052:24: warning: '%s' directive writing up to 499 bytes into a region of size between 477 and 482 [-Wformat-overflow=]
+  tth.lex:6039:25: warning: '%s' directive writing up to 499 bytes into a region of size 496 [-Wformat-overflow=]
+  tth.lex:6043:24: warning: '%s' directive writing up to 499 bytes into a region of size between 472 and 482 [-Wformat-overflow=]
+  tth.lex:5539:27: warning: '%f' directive writing between 3 and 317 bytes into a region of size between 0 and 499 [-Wformat-overflow=]
+  tth.lex:5341:20: warning: '%s' directive writing up to 9999 bytes into a region of size 9995 [-Wformat-overflow=]
+  tth.lex:963:22: warning: '%s' directive writing up to 499 bytes into a region of size between 475 and 485 [-Wformat-overflow=]
+  tth.lex:967:19: warning: '%s' directive writing up to 499 bytes into a region of size 497 [-Wformat-overflow=]
+  tth.lex:7230:21: warning: '%s' directive writing up to 499 bytes into a region of size 493 [-Wformat-overflow=]
+  tth.lex:3666:24: warning: '%s' directive writing up to 19 bytes into a region of size 17 [-Wformat-overflow=]
+  tth.lex:3649:25: warning: '%s' directive writing up to 499 bytes into a region of size between 403 and 422 [-Wformat-overflow=]
+  tth.lex:3628:22: warning: '%s' directive writing up to 19 bytes into a region of size 16 [-Wformat-overflow=]
+  tth.lex:3576:24: warning: '%s' directive writing up to 499 bytes into a region of size 471 [-Wformat-overflow=]
+  tth.lex:3581:20: warning: '%s' directive writing up to 499 bytes into a region of size 493 [-Wformat-overflow=]
+  tth.lex:3358:27: warning: '%s' directive writing up to 499 bytes into a region of size 461 [-Wformat-overflow=]
+  tth.lex:3335:33: warning: '%s' directive writing up to 499 bytes into a region of size 487 [-Wformat-overflow=]
+  tth.lex:3332:24: warning: ' -o ' directive writing 4 bytes into a region of size between 1 and 500 [-Wformat-overflow=]
+  tth.lex:3345:19: warning: '%s' directive writing up to 499 bytes into a region of size 430 [-Wformat-overflow=]
+  tth.lex:3194:3: warning: '%s' directive writing up to 499 bytes into a region of size 471 [-Wformat-overflow=]
+  tth.lex:2927:27: warning: '%s' directive writing up to 499 bytes into a region of size between 445 and 463 [-Wformat-overflow=]
+  tth.lex:2858:5: warning: '%s' directive writing up to 499 bytes into a region of size between 468 and 469 [-Wformat-overflow=]
+  tth.lex:1552:21: warning: '%s' directive writing up to 499 bytes into a region of size 493 [-Wformat-overflow=]
+  tth.lex:1475:21: warning: '%s' directive writing up to 499 bytes into a region of size 493 [-Wformat-overflow=]
+  tth.lex:1075:3: warning: 'strncat' specified bound depends on the length of the source argument [-Wstringop-overflow=]
+  tth.lex:7585:5: warning: 'strncpy' specified bound depends on the length of the source argument [-Wstringop-overflow=]
+  tth.lex:7586:5: warning: 'strncpy' specified bound depends on the length of the source argument [-Wstringop-overflow=]
+  ttm.lex:1439:2: warning: 'strncat' specified bound 5 equals source length [-Wstringop-overflow=]
+  ttm.lex:1560:3: warning: 'strncpy' output truncated before terminating nul copying 5 bytes from a string of the same length [-Wstringop-truncation]
+  ttm.lex:1564:3: warning: 'strncpy' output truncated before terminating nul copying 5 bytes from a string of the same length [-Wstringop-truncation]
+  ttm.lex:7538:44: warning: 'strncpy' output truncated before terminating nul copying 3 bytes from a string of the same length [-Wstringop-truncation]
+  ttm.lex:7539:44: warning: 'strncpy' output truncated before terminating nul copying 3 bytes from a string of the same length [-Wstringop-truncation]
+  ttm.lex:7540:46: warning: 'strncpy' output truncated before terminating nul copying 3 bytes from a string of the same length [-Wstringop-truncation]
+  ttm.lex:7541:46: warning: 'strncpy' output truncated before terminating nul copying 3 bytes from a string of the same length [-Wstringop-truncation]
+  ttm.lex:7543:2: warning: 'strncpy' output truncated before terminating nul copying 39 bytes from a string of the same length [-Wstringop-truncation]
+  ttm.lex:7817:22: warning: '%s' directive writing likely 3 or more bytes into a region of size between 0 and 149 [-Wformat-overflow=]
+  ttm.lex:7830:19: warning: '%s' directive writing likely 3 or more bytes into a region of size between 0 and 149 [-Wformat-overflow=]
+  ttm.lex:7831:21: warning: '%s' directive writing up to 149 bytes into a region of size between 143 and 146 [-Wformat-overflow=]
+  ttm.lex:7841:23: warning: '_icon.' directive writing 6 bytes into a region of size between 1 and 150 [-Wformat-overflow=]
+  ttm.lex:6617:25: warning: 'sprintf' may write a terminating nul past the end of the destination [-Wformat-overflow=]
+  ttm.lex:6205:21: warning: '%s' directive writing up to 499 bytes into a region of size 486 [-Wformat-overflow=]
+  ttm.lex:6136:6: warning: '%s' directive writing up to 499 bytes into a region of size between 447 and 452 [-Wformat-overflow=]
+  ttm.lex:6131:6: warning: '%s' directive writing up to 499 bytes into a region of size between 440 and 450 [-Wformat-overflow=]
+  ttm.lex:5983:25: warning: '%s' directive writing up to 499 bytes into a region of size 496 [-Wformat-overflow=]
+  ttm.lex:5987:24: warning: '%s' directive writing up to 499 bytes into a region of size between 477 and 482 [-Wformat-overflow=]
+  ttm.lex:5974:25: warning: '%s' directive writing up to 499 bytes into a region of size 496 [-Wformat-overflow=]
+  ttm.lex:5978:24: warning: '%s' directive writing up to 499 bytes into a region of size between 472 and 482 [-Wformat-overflow=]
+  ttm.lex:5474:27: warning: '%f' directive writing between 3 and 317 bytes into a region of size between 0 and 499 [-Wformat-overflow=]
+  ttm.lex:5276:20: warning: '%s' directive writing up to 9999 bytes into a region of size 9995 [-Wformat-overflow=]
+  ttm.lex:3601:24: warning: '%s' directive writing up to 19 bytes into a region of size 17 [-Wformat-overflow=]
+  ttm.lex:3584:25: warning: '%s' directive writing up to 499 bytes into a region of size between 403 and 422 [-Wformat-overflow=]
+  ttm.lex:3563:22: warning: '%s' directive writing up to 19 bytes into a region of size 16 [-Wformat-overflow=]
+  ttm.lex:3511:24: warning: '%s' directive writing up to 499 bytes into a region of size 471 [-Wformat-overflow=]
+  ttm.lex:3516:20: warning: '%s' directive writing up to 499 bytes into a region of size 493 [-Wformat-overflow=]
+  ttm.lex:3293:27: warning: '%s' directive writing up to 499 bytes into a region of size 461 [-Wformat-overflow=]
+  ttm.lex:3270:33: warning: '%s' directive writing up to 499 bytes into a region of size 487 [-Wformat-overflow=]
+  ttm.lex:3267:24: warning: ' -o ' directive writing 4 bytes into a region of size between 1 and 500 [-Wformat-overflow=]
+  ttm.lex:3280:19: warning: '%s' directive writing up to 499 bytes into a region of size 430 [-Wformat-overflow=]
+  ttm.lex:3129:3: warning: '%s' directive writing up to 499 bytes into a region of size 471 [-Wformat-overflow=]
+  ttm.lex:7165:21: warning: '%s' directive writing up to 499 bytes into a region of size 493 [-Wformat-overflow=]
+  ttm.lex:2743:27: warning: '%s' directive writing up to 499 bytes into a region of size between 344 and 440 [-Wformat-overflow=]
+  ttm.lex:1555:21: warning: '%s' directive writing up to 499 bytes into a region of size 493 [-Wformat-overflow=]
+  ttm.lex:1478:21: warning: '%s' directive writing up to 499 bytes into a region of size 493 [-Wformat-overflow=]
+  ttm.lex:1078:3: warning: 'strncat' specified bound depends on the length of the source argument [-Wstringop-overflow=]
+  ttm.lex:7520:5: warning: 'strncpy' specified bound depends on the length of the source argument [-Wstringop-overflow=]
+  ttm.lex:7521:5: warning: 'strncpy' specified bound depends on the length of the source argument [-Wstringop-overflow=]
+See 'C:/Users/jeroen/Documents/checks/tth.Rcheck/00install.out' for details.
+* checking installed package size ... OK
+NB: this package is only installed for sub-architecture 'x64'
+* checking package directory ... OK
+* checking DESCRIPTION meta-information ... OK
+* checking top-level files ... OK
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* checking whether the package can be loaded ... OK
+* checking whether the package can be loaded with stated dependencies ... OK
+* checking whether the package can be unloaded cleanly ... OK
+* checking whether the namespace can be loaded with stated dependencies ... OK
+* checking whether the namespace can be unloaded cleanly ... OK
+* checking loading without being on the library search path ... OK
+* checking dependencies in R code ... OK
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... OK
+* checking Rd files ... OK
+* checking Rd metadata ... OK
+* checking Rd cross-references ... OK
+* checking for missing documentation entries ... OK
+* checking for code/documentation mismatches ... OK
+* checking Rd \usage sections ... OK
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... OK
+* checking line endings in C/C++/Fortran sources/headers ... OK
+* checking line endings in Makefiles ... OK
+* checking for GNU extensions in Makefiles ... OK
+* checking for portable use of $(BLAS_LIBS) and $(LAPACK_LIBS) ... OK
+* checking include directives in Makefiles ... NOTE
+Found the following Makefile(s) with an include directive with a pathname using R_HOME:
+  src/Makefile.win
+Even though not recommended, variable R_HOME may contain spaces.
+Makefile directives use space as a separator and there is no portable
+way to quote/escape the space in Make rules and directives.  However,
+one can and should quote pathnames when passed from Makefile to the
+shell, and this can be done specifically when invoking Make recursively.
+It is therefore recommended to use the Make '-f' option to include files
+in directories specified using R_HOME.  This option can be specified
+multiple times to include multiple Makefiles.  Note that 'Makeconf' is
+included automatically into top-level makefile of a package.
+More information can be found in 'Writing R Extensions'.
+* checking compiled code ... OK
+* checking examples ... OK
+* DONE
+Status: 1 WARNING, 1 NOTE

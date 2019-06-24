@@ -1,0 +1,23 @@
+* installing *source* package 'matchingMarkets' ...
+** package 'matchingMarkets' successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+
+*** arch - i386
+/mingw32/bin/g++  -std=gnu++11 -I"C:/Progra~1/R/R-testing/include" -DNDEBUG -I../inst/include/ -I"C:/R/library/Rcpp/include" -I"C:/R/library/RcppProgress/include" -I"C:/R/library/RcppArmadillo/include"     -fopenmp   -O2 -Wall  -mtune=generic -c Options.cc -o Options.o
+In file included from C:/rtools40/mingw32/include/zconf.h:475,
+                 from C:/rtools40/mingw32/include/zlib.h:34,
+                 from ../inst/include/ParseUtils.h:27,
+                 from ../inst/include/Options.h:30,
+                 from Options.cc:21:
+C:/rtools40/mingw32/i686-w64-mingw32/include/unistd.h: In function 'int ftruncate(int, off32_t)':
+C:/rtools40/mingw32/i686-w64-mingw32/include/unistd.h:67:10: error: '_chsize' was not declared in this scope
+   return _chsize (__fd, __length);
+          ^~~~~~~
+C:/rtools40/mingw32/i686-w64-mingw32/include/unistd.h:67:10: note: suggested alternative: '_msize'
+   return _chsize (__fd, __length);
+          ^~~~~~~
+          _msize
+make: *** [C:/Progra~1/R/R-testing/etc/i386/Makeconf:213: Options.o] Error 1
+ERROR: compilation failed for package 'matchingMarkets'
+* removing 'C:/Users/Jeroen/Documents/checks/matchingMarkets.Rcheck/matchingMarkets'

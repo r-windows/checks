@@ -1,0 +1,123 @@
+* using log directory 'C:/Users/Jeroen/Documents/checks/MigClim.Rcheck'
+* using R version 3.6.0 Under development (Testing Rtools) (2019-03-14 r76238)
+* using platform: x86_64-w64-mingw32 (64-bit)
+* using session charset: ISO8859-1
+* using options '--no-manual --no-build-vignettes'
+* checking for file 'MigClim/DESCRIPTION' ... OK
+* this is package 'MigClim' version '1.6'
+* checking package namespace information ... OK
+* checking package dependencies ... OK
+* checking if this is a source package ... OK
+* checking if there is a namespace ... OK
+* checking for executable files ... OK
+* checking for hidden files and directories ... OK
+* checking for portable file names ... OK
+* checking whether package 'MigClim' can be installed ... WARNING
+Found the following significant warnings:
+  migrate.c:179:30: warning: '%d' directive writing between 1 and 10 bytes into a region of size between 1 and 128 [-Wformat-overflow=]
+  migrate.c:186:26: warning: '.asc' directive writing 4 bytes into a region of size between 1 and 128 [-Wformat-overflow=]
+  migrate.c:199:28: warning: '.asc' directive writing 4 bytes into a region of size between 1 and 128 [-Wformat-overflow=]
+  migrate.c:286:27: warning: '%s' directive writing up to 127 bytes into a region of size between 0 and 127 [-Wformat-overflow=]
+  migrate.c:312:29: warning: '%d' directive writing between 1 and 8 bytes into a region of size between 1 and 128 [-Wformat-overflow=]
+  migrate.c:559:31: warning: '%s' directive writing up to 127 bytes into a region of size between 0 and 127 [-Wformat-overflow=]
+  migrate.c:595:27: warning: '%s' directive writing up to 127 bytes into a region of size between 0 and 127 [-Wformat-overflow=]
+  migrate.c:603:27: warning: '%s' directive writing up to 127 bytes into a region of size between 0 and 127 [-Wformat-overflow=]
+See 'C:/Users/Jeroen/Documents/checks/MigClim.Rcheck/00install.out' for details.
+* checking installed package size ... OK
+* checking package directory ... OK
+* checking DESCRIPTION meta-information ... OK
+* checking top-level files ... OK
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* loading checks for arch 'i386'
+** checking whether the package can be loaded ... OK
+** checking whether the package can be loaded with stated dependencies ... OK
+** checking whether the package can be unloaded cleanly ... OK
+** checking whether the namespace can be loaded with stated dependencies ... OK
+** checking whether the namespace can be unloaded cleanly ... OK
+** checking loading without being on the library search path ... OK
+* loading checks for arch 'x64'
+** checking whether the package can be loaded ... OK
+** checking whether the package can be loaded with stated dependencies ... OK
+** checking whether the package can be unloaded cleanly ... OK
+** checking whether the namespace can be loaded with stated dependencies ... OK
+** checking whether the namespace can be unloaded cleanly ... OK
+** checking loading without being on the library search path ... OK
+* checking dependencies in R code ... NOTE
+Packages in Depends field not imported from:
+  'SDMTools' 'raster'
+  These packages need to be imported from (in the NAMESPACE file)
+  for when this namespace is loaded but not attached.
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... NOTE
+MigClim.genClust: no visible global function definition for 'raster'
+MigClim.migrate: no visible global function definition for 'raster'
+MigClim.migrate: no visible global function definition for
+  'dataframe2asc'
+MigClim.migrate: no visible global function definition for
+  'writeRaster'
+MigClim.migrate: no visible global function definition for 'cellStats'
+MigClim.migrate: no visible global function definition for 'read.table'
+MigClim.migrate: no visible global function definition for
+  'write.table'
+MigClim.plot: no visible global function definition for 'raster'
+MigClim.plot: no visible global function definition for 'rainbow'
+MigClim.plot: no visible global function definition for 'jpeg'
+MigClim.plot: no visible global function definition for 'ymax'
+MigClim.plot: no visible global function definition for 'ymin'
+MigClim.plot: no visible global function definition for 'xmax'
+MigClim.plot: no visible global function definition for 'xmin'
+MigClim.plot: no visible global function definition for 'image'
+MigClim.plot: no visible global function definition for 'dev.off'
+MigClim.plot: no visible global function definition for 'png'
+MigClim.plot: no visible global function definition for 'dev.new'
+MigClim.plot: no visible global function definition for 'plot'
+Undefined global functions or variables:
+  cellStats dataframe2asc dev.new dev.off image jpeg plot png rainbow
+  raster read.table write.table writeRaster xmax xmin ymax ymin
+Consider adding
+  importFrom("grDevices", "dev.new", "dev.off", "jpeg", "png", "rainbow")
+  importFrom("graphics", "image", "plot")
+  importFrom("utils", "read.table", "write.table")
+to your NAMESPACE file.
+* checking Rd files ... OK
+* checking Rd metadata ... OK
+* checking Rd cross-references ... OK
+* checking for missing documentation entries ... OK
+* checking for code/documentation mismatches ... OK
+* checking Rd \usage sections ... OK
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... OK
+* checking contents of 'data' directory ... OK
+* checking data for non-ASCII characters ... OK
+* checking data for ASCII and uncompressed saves ... OK
+* checking line endings in C/C++/Fortran sources/headers ... OK
+* checking compiled code ... NOTE
+File 'MigClim/libs/i386/MigClim.dll':
+  Found 'rand', possibly from 'rand' (C)
+    Objects: 'genclust.o', 'migrate.o', 'src_cell.o', 'validate.o'
+  Found 'srand', possibly from 'srand' (C)
+    Objects: 'genclust.o', 'migrate.o'
+File 'MigClim/libs/x64/MigClim.dll':
+  Found 'rand', possibly from 'rand' (C)
+    Objects: 'genclust.o', 'migrate.o', 'src_cell.o', 'validate.o'
+  Found 'srand', possibly from 'srand' (C)
+    Objects: 'genclust.o', 'migrate.o'
+
+Compiled code should not call entry points which might terminate R nor
+write to stdout/stderr instead of to the console, nor use Fortran I/O
+nor system RNGs.
+
+See 'Writing portable packages' in the 'Writing R Extensions' manual.
+* checking sizes of PDF files under 'inst/doc' ... OK
+* checking installed files from 'inst/doc' ... OK
+* checking examples ...
+** running examples for arch 'i386' ... OK
+** running examples for arch 'x64' ... OK
+* DONE
+Status: 1 WARNING, 3 NOTEs

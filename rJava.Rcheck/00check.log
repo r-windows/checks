@@ -1,0 +1,96 @@
+* using log directory 'C:/Users/Jeroen/Documents/checks/rJava.Rcheck'
+* using R version 3.7.0 Under development (Testing Rtools) (2019-06-11 r76694)
+* using platform: x86_64-w64-mingw32 (64-bit)
+* using session charset: ISO8859-1
+* using options '--no-manual --no-build-vignettes'
+* checking for file 'rJava/DESCRIPTION' ... OK
+* this is package 'rJava' version '0.9-11'
+* checking package namespace information ... OK
+* checking package dependencies ... OK
+* checking if this is a source package ... OK
+* checking if there is a namespace ... OK
+* checking for executable files ... OK
+* checking for hidden files and directories ... OK
+* checking for portable file names ... OK
+* checking whether package 'rJava' can be installed ... WARNING
+Found the following significant warnings:
+  Rinit.c:251:21: warning: assignment to 'blah1' {aka 'int (*)(const char *, char *, int,  int)'} from incompatible pointer type 'int (*)(const char *, unsigned char *, int,  int)' [-Wincompatible-pointer-types]
+  Rinit.c:257:21: warning: assignment to 'blah5' {aka 'int (*)(const char *)'} from incompatible pointer type 'int (*)(char *)' [-Wincompatible-pointer-types]
+See 'C:/Users/Jeroen/Documents/checks/rJava.Rcheck/00install.out' for details.
+* checking installed package size ... OK
+NB: this package is only installed for sub-architecture 'x64'
+* checking package directory ... OK
+* checking DESCRIPTION meta-information ... OK
+* checking top-level files ... OK
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* checking whether the package can be loaded ... OK
+* checking whether the package can be loaded with stated dependencies ... OK
+* checking whether the package can be unloaded cleanly ... OK
+* checking whether the namespace can be loaded with stated dependencies ... OK
+* checking whether the namespace can be unloaded cleanly ... OK
+* checking loading without being on the library search path ... OK
+* checking dependencies in R code ... OK
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... NOTE
+Found the following possibly unsafe calls:
+File 'rJava/R/import.R':
+  unlockBinding(IMPORTER, env = env)
+  assignInNamespace(IMPORTER, importer, envir = env)
+File 'rJava/R/jinit.R':
+  unlockBinding(x, .env)
+  unlockBinding(x, pe)
+* checking Rd files ... OK
+* checking Rd metadata ... OK
+* checking Rd cross-references ... OK
+* checking for missing documentation entries ... OK
+* checking for code/documentation mismatches ... OK
+* checking Rd \usage sections ... OK
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... OK
+* checking line endings in shell scripts ... OK
+* checking line endings in C/C++/Fortran sources/headers ... OK
+* checking line endings in Makefiles ... OK
+* checking compilation flags in Makevars ... OK
+* checking for GNU extensions in Makefiles ... NOTE
+GNU make is a SystemRequirements.
+* checking for portable use of $(BLAS_LIBS) and $(LAPACK_LIBS) ... OK
+* checking use of PKG_*FLAGS in Makefiles ... OK
+* checking include directives in Makefiles ... NOTE
+Found the following Makefile(s) with an include directive with a pathname using R_HOME:
+  jri/src/Makefile
+  jri/src/Makefile.win
+  jri/src/win32/Makefile
+  src/jvm-w32/Makefile
+Even though not recommended, variable R_HOME may contain spaces.
+Makefile directives use space as a separator and there is no portable
+way to quote/escape the space in Make rules and directives.  However,
+one can and should quote pathnames when passed from Makefile to the
+shell, and this can be done specifically when invoking Make recursively.
+It is therefore recommended to use the Make '-f' option to include files
+in directories specified using R_HOME.  This option can be specified
+multiple times to include multiple Makefiles.  Note that 'Makeconf' is
+included automatically into top-level makefile of a package.
+More information can be found in 'Writing R Extensions'.
+* checking compiled code ... NOTE
+Note: information on .o files for x64 is not available
+File 'C:/Users/Jeroen/Documents/checks/rJava.Rcheck/rJava/libs/x64/rJava.dll':
+  Found 'abort', possibly from 'abort' (C), 'runtime' (Fortran)
+File 'rJava/libs/x64/rJava.dll':
+  Found non-API call to R: 'R_GlobalContext'
+
+Compiled code should not call entry points which might terminate R nor
+write to stdout/stderr instead of to the console, nor use Fortran I/O
+nor system RNGs. The detected symbols are linked into the code but
+might come from libraries and not actually be called.
+Compiled code should not call non-API entry points in R.
+
+See 'Writing portable packages' in the 'Writing R Extensions' manual.
+* checking examples ... OK
+* DONE
+Status: 1 WARNING, 4 NOTEs

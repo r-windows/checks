@@ -1,0 +1,73 @@
+* using log directory 'C:/Users/Jeroen/Documents/checks/structSSI.Rcheck'
+* using R version 3.6.0 Under development (Testing Rtools) (2019-03-14 r76238)
+* using platform: x86_64-w64-mingw32 (64-bit)
+* using session charset: ISO8859-1
+* using options '--no-manual --no-build-vignettes'
+* checking for file 'structSSI/DESCRIPTION' ... OK
+* checking extension type ... Package
+* this is package 'structSSI' version '1.1.1'
+* checking package namespace information ... OK
+* checking package dependencies ... NOTE
+Package suggested but not available for checking: 'phyloseq'
+* checking if this is a source package ... OK
+* checking if there is a namespace ... OK
+* checking for executable files ... OK
+* checking for hidden files and directories ... OK
+* checking for portable file names ... OK
+* checking whether package 'structSSI' can be installed ... OK
+* checking installed package size ... OK
+* checking package directory ... OK
+* checking DESCRIPTION meta-information ... OK
+* checking top-level files ... OK
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* checking whether the package can be loaded ... OK
+* checking whether the package can be loaded with stated dependencies ... OK
+* checking whether the package can be unloaded cleanly ... OK
+* checking whether the namespace can be loaded with stated dependencies ... OK
+* checking whether the namespace can be unloaded cleanly ... OK
+* checking loading without being on the library search path ... OK
+* checking dependencies in R code ... OK
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... NOTE
+PlotHypTree: no visible global function definition for 'browseURL'
+treePValues: no visible global function definition for 'lm'
+treePValues: no visible global function definition for 'pf'
+plot,GBH-ANY: no visible binding for global variable 'sorted.hyp'
+plot,GBH-ANY: no visible binding for global variable 'pval'
+plot,GBH-ANY: no visible binding for global variable 'group'
+plot,GBH-ANY: no visible binding for global variable 'type'
+Undefined global functions or variables:
+  browseURL group lm pf pval sorted.hyp type
+Consider adding
+  importFrom("stats", "lm", "pf")
+  importFrom("utils", "browseURL")
+to your NAMESPACE file.
+* checking Rd files ... OK
+* checking Rd metadata ... OK
+* checking Rd cross-references ... OK
+* checking for missing documentation entries ... OK
+* checking for code/documentation mismatches ... OK
+* checking Rd \usage sections ... OK
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... OK
+* checking contents of 'data' directory ... OK
+* checking data for non-ASCII characters ... WARNING
+  Error loading dataset 'chlamydiae':
+   Error in .requirePackage(package) : 
+    unable to find required package 'phyloseq'
+  
+  The dataset(s) may use package(s) not declared in the DESCRIPTION file.
+* checking data for ASCII and uncompressed saves ... OK
+* checking examples ... OK
+* checking for unstated dependencies in 'tests' ... OK
+* checking tests ... OK
+  Running 'testGBHProcedures.R'
+  Running 'testHierarchicalMethods.R'
+* DONE
+Status: 1 WARNING, 2 NOTEs

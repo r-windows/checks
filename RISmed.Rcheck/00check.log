@@ -1,0 +1,67 @@
+* using log directory 'C:/Users/Jeroen/Documents/checks/RISmed.Rcheck'
+* using R version 3.7.0 Under development (Testing Rtools) (2019-06-11 r76694)
+* using platform: x86_64-w64-mingw32 (64-bit)
+* using session charset: ISO8859-1
+* using options '--no-manual --no-build-vignettes'
+* checking for file 'RISmed/DESCRIPTION' ... OK
+* checking extension type ... Package
+* this is package 'RISmed' version '2.1.7'
+* checking package namespace information ... OK
+* checking package dependencies ... OK
+* checking if this is a source package ... OK
+* checking if there is a namespace ... OK
+* checking for executable files ... OK
+* checking for hidden files and directories ... OK
+* checking for portable file names ... OK
+* checking whether package 'RISmed' can be installed ... OK
+* checking installed package size ... OK
+* checking package directory ... OK
+* checking DESCRIPTION meta-information ... OK
+* checking top-level files ... OK
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* checking whether the package can be loaded ... OK
+* checking whether the package can be loaded with stated dependencies ... OK
+* checking whether the package can be unloaded cleanly ... OK
+* checking whether the namespace can be loaded with stated dependencies ... OK
+* checking whether the namespace can be unloaded cleanly ... OK
+* checking loading without being on the library search path ... OK
+* checking dependencies in R code ... OK
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... OK
+* checking Rd files ... OK
+* checking Rd metadata ... OK
+* checking Rd cross-references ... OK
+* checking for missing documentation entries ... OK
+* checking for code/documentation mismatches ... OK
+* checking Rd \usage sections ... OK
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... OK
+* checking contents of 'data' directory ... OK
+* checking data for non-ASCII characters ... NOTE
+  Note: found 12 marked UTF-8 strings
+* checking data for ASCII and uncompressed saves ... OK
+* checking examples ... ERROR
+Running examples in 'RISmed-Ex.R' failed
+The error most likely occurred in:
+
+> ### Name: Cited
+> ### Title: Number of citations
+> ### Aliases: Cited
+> 
+> ### ** Examples
+> 
+> res <- EUtilsSummary("myeloma[ti]", mindate = "2002/01/01", maxdate = "2002/02/01", retmax = 5)
+> Cited(res)
+Warning in readLines(the_url) :
+  cannot open URL 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/elink.fcgi?retmode=xml&dbfrom=pubmed&id=11818668&cmd=neighbor': HTTP status was '429 Too Many Requests'
+Error in readLines(the_url) : cannot open the connection
+Calls: Cited -> Cited -> sapply -> lapply -> FUN -> readLines
+Execution halted
+* DONE
+Status: 1 ERROR, 1 NOTE

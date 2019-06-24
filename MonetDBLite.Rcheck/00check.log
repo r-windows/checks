@@ -1,0 +1,118 @@
+* using log directory 'C:/Users/Jeroen/Documents/checks/MonetDBLite.Rcheck'
+* using R version 3.6.0 Under development (Testing Rtools) (2019-03-14 r76238)
+* using platform: x86_64-w64-mingw32 (64-bit)
+* using session charset: ISO8859-1
+* using options '--no-manual --no-build-vignettes'
+* checking for file 'MonetDBLite/DESCRIPTION' ... OK
+* this is package 'MonetDBLite' version '0.6.0'
+* package encoding: UTF-8
+* checking package namespace information ... OK
+* checking package dependencies ... OK
+* checking if this is a source package ... OK
+* checking if there is a namespace ... OK
+* checking for executable files ... OK
+* checking for hidden files and directories ... OK
+* checking for portable file names ... OK
+* checking whether package 'MonetDBLite' can be installed ... WARNING
+Found the following significant warnings:
+  monetdblite/src/gdk/gdk_heap.c:189:3: warning: 'strncpy' output truncated before terminating nul copying 9 bytes from a string of the same length [-Wstringop-truncation]
+  monetdblite/src/gdk/gdk_heap.c:260:30: warning: '%s' directive writing likely 3 or more bytes into a region of size between 0 and 99 [-Wformat-overflow=]
+  monetdblite/src/mal/sqlbackend/rel_bin.c:2949:2: warning: 'strncpy' output truncated before terminating nul copying as many bytes from a string as its length [-Wstringop-truncation]
+  monetdblite/src/mal/sqlbackend/rel_bin.c:1083:2: warning: 'strncpy' output truncated before terminating nul copying as many bytes from a string as its length [-Wstringop-truncation]
+  monetdblite/src/mal/sqlbackend/sql_statement.c:3193:3: warning: 'strncpy' output truncated before terminating nul copying as many bytes from a string as its length [-Wstringop-truncation]
+  monetdblite/src/mal/sqlbackend/sql_statement.c:3196:3: warning: 'strncpy' output truncated before terminating nul copying as many bytes from a string as its length [-Wstringop-truncation]
+  monetdblite/src/mal/sqlbackend/sql_statement.c:3186:3: warning: 'strncpy' output truncated before terminating nul copying as many bytes from a string as its length [-Wstringop-truncation]
+  monetdblite/src/sql/server/rel_planner.c:82:4: warning: 'strncpy' output truncated before terminating nul copying as many bytes from a string as its length [-Wstringop-truncation]
+  monetdblite/src/sql/server/rel_semantic.c:54:2: warning: 'strncpy' output truncated before terminating nul copying as many bytes from a string as its length [-Wstringop-truncation]
+  monetdblite/src/sql/server/rel_updates.c:1729:2: warning: 'strncpy' output truncated before terminating nul copying as many bytes from a string as its length [-Wstringop-truncation]
+See 'C:/Users/Jeroen/Documents/checks/MonetDBLite.Rcheck/00install.out' for details.
+* checking installed package size ... NOTE
+  installed size is 11.6Mb
+  sub-directories of 1Mb or more:
+    libs  11.2Mb
+* checking package directory ... OK
+* checking DESCRIPTION meta-information ... OK
+* checking top-level files ... OK
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* loading checks for arch 'i386'
+** checking whether the package can be loaded ... OK
+** checking whether the package can be loaded with stated dependencies ... OK
+** checking whether the package can be unloaded cleanly ... OK
+** checking whether the namespace can be loaded with stated dependencies ... OK
+** checking whether the namespace can be unloaded cleanly ... OK
+** checking loading without being on the library search path ... OK
+* loading checks for arch 'x64'
+** checking whether the package can be loaded ... OK
+** checking whether the package can be loaded with stated dependencies ... OK
+** checking whether the package can be unloaded cleanly ... OK
+** checking whether the namespace can be loaded with stated dependencies ... OK
+** checking whether the namespace can be unloaded cleanly ... OK
+** checking loading without being on the library search path ... OK
+* checking dependencies in R code ... OK
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... OK
+* checking Rd files ... OK
+* checking Rd metadata ... OK
+* checking Rd cross-references ... OK
+* checking for missing documentation entries ... OK
+* checking for code/documentation mismatches ... OK
+* checking Rd \usage sections ... OK
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... OK
+* checking line endings in C/C++/Fortran sources/headers ... OK
+* checking line endings in Makefiles ... OK
+* checking compilation flags in Makevars ... OK
+* checking for GNU extensions in Makefiles ... OK
+* checking for portable use of $(BLAS_LIBS) and $(LAPACK_LIBS) ... OK
+* checking compiled code ... OK
+* checking examples ...
+** running examples for arch 'i386' ... OK
+** running examples for arch 'x64' ... OK
+* checking for unstated dependencies in 'tests' ... OK
+* checking tests ...
+** running tests for arch 'i386' ... ERROR
+  Running 'testthat.R'
+Running the tests in 'tests/testthat.R' failed.
+Last 13 lines of output:
+  -- 5. Failure: db allows svyby commands (@test_05_survey.R#69)  ----------------
+  round(confint(a, df = degf(rclus1))[2, 2], 2) not equal to 30808.26.
+  1/1 mismatches
+  [1] 33252 - 30808 == 2443
+  
+  == testthat results  ===========================================================
+  OK: 296 SKIPPED: 13 FAILED: 5
+  1. Failure: db allows svyby commands (@test_05_survey.R#60) 
+  2. Failure: db allows svyby commands (@test_05_survey.R#62) 
+  3. Failure: db allows svyby commands (@test_05_survey.R#66) 
+  4. Failure: db allows svyby commands (@test_05_survey.R#67) 
+  5. Failure: db allows svyby commands (@test_05_survey.R#69) 
+  
+  Error: testthat unit tests failed
+  Execution halted
+** running tests for arch 'x64' ... ERROR
+  Running 'testthat.R'
+Running the tests in 'tests/testthat.R' failed.
+Last 13 lines of output:
+  -- 5. Failure: db allows svyby commands (@test_05_survey.R#69)  ----------------
+  round(confint(a, df = degf(rclus1))[2, 2], 2) not equal to 30808.26.
+  1/1 mismatches
+  [1] 33252 - 30808 == 2443
+  
+  == testthat results  ===========================================================
+  OK: 296 SKIPPED: 16 FAILED: 5
+  1. Failure: db allows svyby commands (@test_05_survey.R#60) 
+  2. Failure: db allows svyby commands (@test_05_survey.R#62) 
+  3. Failure: db allows svyby commands (@test_05_survey.R#66) 
+  4. Failure: db allows svyby commands (@test_05_survey.R#67) 
+  5. Failure: db allows svyby commands (@test_05_survey.R#69) 
+  
+  Error: testthat unit tests failed
+  Execution halted
+* DONE
+Status: 2 ERRORs, 1 WARNING, 1 NOTE

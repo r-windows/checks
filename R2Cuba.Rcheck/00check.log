@@ -1,0 +1,591 @@
+* using log directory 'C:/Users/jeroen/Documents/checks/R2Cuba.Rcheck'
+* using R Under development (unstable) (2018-06-29 r74942)
+* using platform: x86_64-w64-mingw32 (64-bit)
+* using session charset: ISO8859-1
+* using options '--no-manual --ignore-vignettes'
+* checking for file 'R2Cuba/DESCRIPTION' ... OK
+* this is package 'R2Cuba' version '1.1-0'
+* package encoding: UTF-8
+* checking package namespace information ... OK
+* checking package dependencies ... OK
+* checking if this is a source package ... OK
+* checking if there is a namespace ... OK
+* checking for executable files ... OK
+* checking for hidden files and directories ... OK
+* checking for portable file names ... OK
+* checking whether package 'R2Cuba' can be installed ... WARNING
+Found the following significant warnings:
+  vegas_Vegas.c:164:5: warning: 'strncpy' specified bound 128 equals destination size [-Wstringop-truncation]
+See 'C:/Users/jeroen/Documents/checks/R2Cuba.Rcheck/00install.out' for details.
+* checking installed package size ... OK
+* checking package directory ... OK
+* checking DESCRIPTION meta-information ... OK
+* checking top-level files ... OK
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* loading checks for arch 'i386'
+** checking whether the package can be loaded ... OK
+** checking whether the package can be loaded with stated dependencies ... OK
+** checking whether the package can be unloaded cleanly ... OK
+** checking whether the namespace can be loaded with stated dependencies ... OK
+** checking whether the namespace can be unloaded cleanly ... OK
+** checking loading without being on the library search path ... OK
+* loading checks for arch 'x64'
+** checking whether the package can be loaded ... OK
+** checking whether the package can be loaded with stated dependencies ... OK
+** checking whether the package can be unloaded cleanly ... OK
+** checking whether the namespace can be loaded with stated dependencies ... OK
+** checking whether the namespace can be unloaded cleanly ... OK
+** checking loading without being on the library search path ... OK
+* checking dependencies in R code ... OK
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... OK
+* checking Rd files ... OK
+* checking Rd metadata ... OK
+* checking Rd cross-references ... OK
+* checking for missing documentation entries ... OK
+* checking for code/documentation mismatches ... OK
+* checking Rd \usage sections ... OK
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... OK
+* checking line endings in C/C++/Fortran sources/headers ... OK
+* checking compiled code ... OK
+* checking examples ...
+** running examples for arch 'i386' ... OK
+** running examples for arch 'x64' ... OK
+* checking for unstated dependencies in 'tests' ... OK
+* checking tests ...
+** running tests for arch 'i386' ... OK
+  Running 'Gtilde2.R'
+  Comparing 'Gtilde2.Rout' to 'Gtilde2.Rout.save' ...145c145
+< [1] 0.166667 +- 2.09743e-016  	chisq 0 (0 df)
+---
+> [1] 0.166667 +- 2.49532e-16  	chisq 0 (0 df)
+401,403c401,403
+< [1] 0.166667 +- 2.34524e-016  	chisq 0.000461578 (1 df)
+< integral: 0.1666667 (+-2.3e-16)
+< nregions: 2; number of evaluations:  381; probability:  0.01714073 
+---
+> [1] 0.166667 +- 3.99319e-16  	chisq 0.125 (1 df)
+> integral: 0.1666667 (+-4e-16)
+> nregions: 2; number of evaluations:  381; probability:  0.2763264 
+  Running 'MWE.R'
+  Comparing 'MWE.Rout' to 'MWE.Rout.save' ...58c58
+< [1] 3.42534e-024 +- 8.58915e-023
+---
+> [1] 3.42534e-24 +- 8.58915e-23
+63c63
+< [1] 3.42534e-024 +- 8.58915e-023
+---
+> [1] 3.42534e-24 +- 8.58915e-23
+67,68c67,68
+< [1] 3.42534e-024 +- 1.57009e-016  	chisq 4.75944e-016 (1 df)
+< [2] 0 +- 1.57009e-016  	chisq 0 (1 df)
+---
+> [1] 3.42534e-24 +- 1.57009e-16  	chisq 4.75944e-16 (1 df)
+> [2] 0 +- 1.57009e-16  	chisq 0 (1 df)
+  Running 'cuhre.R'
+  Comparing 'cuhre.Rout' to 'cuhre.Rout.save' ...28c28
+<   abs.tol 1e-012
+---
+>   abs.tol 1e-12
+36c36
+< [1] 0.66467 +- 7.2682e-010  	chisq 0 (0 df)
+---
+> [1] 0.66467 +- 7.2682e-10  	chisq 0 (0 df)
+38c38
+< [1] 0.66467 +- 3.33021e-011  	chisq 7.06677e-010 (1 df)
+---
+> [1] 0.66467 +- 3.33018e-11  	chisq 0 (1 df)
+40c40
+< nregions: 2; number of evaluations:  381; probability:  2.121049e-05 
+---
+> nregions: 2; number of evaluations:  381; probability:  0 
+43c43
+< [1] 0.66467 +- 7.2682e-010  	chisq 0 (0 df)
+---
+> [1] 0.66467 +- 7.2682e-10  	chisq 0 (0 df)
+45c45
+< [1] 0.66467 +- 3.33021e-011  	chisq 7.06677e-010 (1 df)
+---
+> [1] 0.66467 +- 3.33018e-11  	chisq 0 (1 df)
+47c47
+< nregions: 2; number of evaluations:  381; probability:  2.121049e-05 
+---
+> nregions: 2; number of evaluations:  381; probability:  0 
+62c62
+<   abs.tol 4.93038e-032
+---
+>   abs.tol 4.93038e-32
+72c72
+< [1] 0.66467 +- 7.2682e-010
+---
+> [1] 0.66467 +- 7.2682e-10
+74c74
+< [1] 0.66467 +- 7.2682e-010  	chisq 0 (0 df)
+---
+> [1] 0.66467 +- 7.2682e-10  	chisq 0 (0 df)
+78c78
+< [1] 0.25094 +- 1.25788e-011
+---
+> [1] 0.25094 +- 1.25788e-11
+82c82
+< [1] 0.41373 +- 2.0739e-011
+---
+> [1] 0.41373 +- 2.0739e-11
+84c84
+< [1] 0.66467 +- 3.33022e-011  	chisq 7.08496e-010 (1 df)
+---
+> [1] 0.66467 +- 3.33019e-11  	chisq 0 (1 df)
+86c86
+< nregions: 2; number of evaluations:  381; probability:  2.123777e-05 
+---
+> nregions: 2; number of evaluations:  381; probability:  0 
+  Running 'divonne.R'
+  Comparing 'divonne.Rout' to 'divonne.Rout.save' ...24c24
+<   abs.tol 4.93038e-032
+---
+>   abs.tol 4.93038e-32
+81c81
+<     0.0734148 +- 0.000216954(0)  	chisq 3.01079e-005
+---
+>     0.0734148 +- 0.000216954(0)  	chisq 3.01079e-05
+86c86
+<     0.0445283 +- 0.000131589(0)  	chisq 3.01079e-005
+---
+>     0.0445283 +- 0.000131589(0)  	chisq 3.01079e-05
+116c116
+<     0.026641 +- 0.00017133(0)  	chisq 1.87223e-005
+---
+>     0.026641 +- 0.00017133(0)  	chisq 1.87223e-05
+126c126
+<     0.0571755 +- 0.000169152(0)  	chisq 3.00413e-005
+---
+>     0.0571755 +- 0.000169152(0)  	chisq 3.00413e-05
+136c136
+<     0.0207481 +- 0.000133848(0)  	chisq 1.86059e-005
+---
+>     0.0207481 +- 0.000133848(0)  	chisq 1.86059e-05
+141c141
+<     0.045926 +- 9.93288e-005(0)  	chisq 0.000518264
+---
+>     0.045926 +- 9.93288e-05(0)  	chisq 0.000518264
+146c146
+<     0.0346787 +- 0.000102596(0)  	chisq 3.00413e-005
+---
+>     0.0346787 +- 0.000102596(0)  	chisq 3.00413e-05
+150c150
+< nregions: 14; number of evaluations:  3052; probability:  4.044074e-17 
+---
+> nregions: 14; number of evaluations:  3052; probability:  1.110223e-16 
+163c163
+< nregions: 14; number of evaluations:  3052; probability:  4.13081e-17 
+---
+> nregions: 14; number of evaluations:  3052; probability:  1.110223e-16 
+180c180
+<   abs.tol 4.93038e-032
+---
+>   abs.tol 4.93038e-32
+237c237
+<     0.0734148 +- 0.000216954(0)  	chisq 3.01079e-005
+---
+>     0.0734148 +- 0.000216954(0)  	chisq 3.01079e-05
+242c242
+<     0.0445283 +- 0.000131589(0)  	chisq 3.01079e-005
+---
+>     0.0445283 +- 0.000131589(0)  	chisq 3.01079e-05
+272c272
+<     0.026641 +- 0.00017133(0)  	chisq 1.87223e-005
+---
+>     0.026641 +- 0.00017133(0)  	chisq 1.87223e-05
+282c282
+<     0.0571755 +- 0.000169152(0)  	chisq 3.00413e-005
+---
+>     0.0571755 +- 0.000169152(0)  	chisq 3.00413e-05
+292c292
+<     0.0207481 +- 0.000133848(0)  	chisq 1.86059e-005
+---
+>     0.0207481 +- 0.000133848(0)  	chisq 1.86059e-05
+297c297
+<     0.045926 +- 9.93288e-005(0)  	chisq 0.000518264
+---
+>     0.045926 +- 9.93288e-05(0)  	chisq 0.000518264
+302c302
+<     0.0346787 +- 0.000102596(0)  	chisq 3.00413e-005
+---
+>     0.0346787 +- 0.000102596(0)  	chisq 3.00413e-05
+306c306
+< nregions: 14; number of evaluations:  3052; probability:  8.565197e-18 
+---
+> nregions: 14; number of evaluations:  3052; probability:  1.110223e-16 
+315c315
+< nregions: 14; number of evaluations:  3052; probability:  4.13081e-17 
+---
+> nregions: 14; number of evaluations:  3052; probability:  1.110223e-16 
+331c331
+<   abs.tol 4.93038e-032
+---
+>   abs.tol 4.93038e-32
+403,404c403,404
+< [2] 0.0119927 +- 5.98026e-005(0)
+<     0.0119932 +- 1.04488e-005(0)  	chisq 6.88573e-005
+---
+> [2] 0.0119927 +- 5.98026e-05(0)
+>     0.0119932 +- 1.04488e-05(0)  	chisq 6.88573e-05
+409,411c409,411
+<     0.0204995 +- 0.000103916(0)  	chisq 1.9583e-007
+< [2] 0.0120539 +- 6.40207e-005(0)
+<     0.0120539 +- 1.11858e-005(0)  	chisq 1.18796e-006
+---
+>     0.0204995 +- 0.000103916(0)  	chisq 1.9583e-07
+> [2] 0.0120539 +- 6.40207e-05(0)
+>     0.0120539 +- 1.11858e-05(0)  	chisq 1.18796e-06
+432c432
+<     0.016818 +- 1.94724e-005(0)  	chisq 0.000215672
+---
+>     0.016818 +- 1.94724e-05(0)  	chisq 0.000215672
+438,439c438,439
+< [2] 0.0153507 +- 9.16558e-005(0)
+<     0.0153502 +- 1.60142e-005(0)  	chisq 3.48482e-005
+---
+> [2] 0.0153507 +- 9.16558e-05(0)
+>     0.0153502 +- 1.60142e-05(0)  	chisq 3.48482e-05
+446c446
+<     0.0217454 +- 2.85172e-005(0)  	chisq 0.000386072
+---
+>     0.0217454 +- 2.85172e-05(0)  	chisq 0.000386072
+452,453c452,453
+< [2] 0.0153509 +- 9.26384e-005(0)
+<     0.0153502 +- 1.61859e-005(0)  	chisq 5.72234e-005
+---
+> [2] 0.0153509 +- 9.26384e-05(0)
+>     0.0153502 +- 1.61859e-05(0)  	chisq 5.72234e-05
+460c460
+<     0.0179322 +- 2.71842e-005(0)  	chisq 0.000747781
+---
+>     0.0179322 +- 2.71842e-05(0)  	chisq 0.000747781
+465,467c465,467
+<     0.0593121 +- 0.000156944(0)  	chisq 5.99544e-006
+< [2] 0.0134977 +- 9.32652e-005(0)
+<     0.0134977 +- 1.62954e-005(0)  	chisq 3.57566e-008
+---
+>     0.0593121 +- 0.000156944(0)  	chisq 5.99544e-06
+> [2] 0.0134977 +- 9.32652e-05(0)
+>     0.0134977 +- 1.62954e-05(0)  	chisq 3.57566e-08
+472c472
+<     0.0466714 +- 9.24361e-005(0)  	chisq 0.0012081
+---
+>     0.0466714 +- 9.24361e-05(0)  	chisq 0.0012081
+474c474
+<     0.0264546 +- 5.37438e-005(0)  	chisq 0.000811867
+---
+>     0.0264546 +- 5.37438e-05(0)  	chisq 0.000811867
+479c479
+<     0.0359746 +- 9.51912e-005(0)  	chisq 5.99544e-006
+---
+>     0.0359746 +- 9.51912e-05(0)  	chisq 5.99544e-06
+481c481
+<     0.0179324 +- 2.701e-005(0)  	chisq 0.000175312
+---
+>     0.0179324 +- 2.701e-05(0)  	chisq 0.000175312
+486c486
+<     0.0211444 +- 9.33199e-005(0)  	chisq 0.00119049
+---
+>     0.0211444 +- 9.33199e-05(0)  	chisq 0.00119049
+488c488
+<     0.0202448 +- 3.46614e-005(0)  	chisq 0.00111542
+---
+>     0.0202448 +- 3.46614e-05(0)  	chisq 0.00111542
+493c493
+<     0.015965 +- 8.11826e-005(0)  	chisq 1.94614e-007
+---
+>     0.015965 +- 8.11826e-05(0)  	chisq 1.94614e-07
+495c495
+<     0.0136873 +- 1.77287e-005(0)  	chisq 0.000284013
+---
+>     0.0136873 +- 1.77287e-05(0)  	chisq 0.000284013
+502c502
+< nregions: 14; number of evaluations:  4082; probability:  0 0 
+---
+> nregions: 14; number of evaluations:  4082; probability:  1.110223e-16 0.000000e+00 
+518c518
+< nregions: 14; number of evaluations:  3052; probability:  4.13081e-17 
+---
+> nregions: 14; number of evaluations:  3052; probability:  1.110223e-16 
+536,537c536,537
+< integral: 0.664769 (+-0.00045)
+< nregions: 24; number of evaluations:  34634; probability:  1 
+---
+> integral: 0.6648221 (+-0.00047)
+> nregions: 24; number of evaluations:  34622; probability:  1 
+557c557
+< nregions: 14; number of evaluations:  3052; probability:  4.13081e-17 
+---
+> nregions: 14; number of evaluations:  3052; probability:  1.110223e-16 
+565c565
+< nregions: 14; number of evaluations:  3052; probability:  4.13081e-17 
+---
+> nregions: 14; number of evaluations:  3052; probability:  1.110223e-16 
+  Running 'peak.R'
+  Comparing 'peak.Rout' to 'peak.Rout.save' ...34c34
+< nregions: 14; number of evaluations:  3136; probability:  4.13081e-17 
+---
+> nregions: 14; number of evaluations:  3136; probability:  1.110223e-16 
+65c65
+< nregions: 14; number of evaluations:  3136; probability:  1.029992e-17 
+---
+> nregions: 14; number of evaluations:  3136; probability:  1.110223e-16 
+  Running 'suave.R'
+  Comparing 'suave.Rout' to 'suave.Rout.save' ...57c57
+<   abs.tol 4.93038e-032
+---
+>   abs.tol 4.93038e-32
+134c134
+<     0.0821404 +- 7.56023e-005 (705)  	chisq 0.158888 (3 df)
+---
+>     0.0821404 +- 7.56023e-05 (705)  	chisq 0.158888 (3 df)
+152c152
+<     0.0498517 +- 5.32669e-005 (672)  	chisq 1.6896 (3 df)
+---
+>     0.0498517 +- 5.32669e-05 (672)  	chisq 1.6896 (3 df)
+  Running 'vegas.R'
+** running tests for arch 'x64' ... OK
+  Running 'Gtilde2.R'
+  Comparing 'Gtilde2.Rout' to 'Gtilde2.Rout.save' ...145c145
+< [1] 0.166667 +- 2.49532e-016  	chisq 0 (0 df)
+---
+> [1] 0.166667 +- 2.49532e-16  	chisq 0 (0 df)
+401c401
+< [1] 0.166667 +- 3.99319e-016  	chisq 0.125 (1 df)
+---
+> [1] 0.166667 +- 3.99319e-16  	chisq 0.125 (1 df)
+  Running 'MWE.R'
+  Comparing 'MWE.Rout' to 'MWE.Rout.save' ...58c58
+< [1] 3.42534e-024 +- 8.58915e-023
+---
+> [1] 3.42534e-24 +- 8.58915e-23
+63c63
+< [1] 3.42534e-024 +- 8.58915e-023
+---
+> [1] 3.42534e-24 +- 8.58915e-23
+67,68c67,68
+< [1] 3.42534e-024 +- 1.57009e-016  	chisq 4.75944e-016 (1 df)
+< [2] 0 +- 1.57009e-016  	chisq 0 (1 df)
+---
+> [1] 3.42534e-24 +- 1.57009e-16  	chisq 4.75944e-16 (1 df)
+> [2] 0 +- 1.57009e-16  	chisq 0 (1 df)
+  Running 'cuhre.R'
+  Comparing 'cuhre.Rout' to 'cuhre.Rout.save' ...28c28
+<   abs.tol 1e-012
+---
+>   abs.tol 1e-12
+36c36
+< [1] 0.66467 +- 7.2682e-010  	chisq 0 (0 df)
+---
+> [1] 0.66467 +- 7.2682e-10  	chisq 0 (0 df)
+38c38
+< [1] 0.66467 +- 3.33018e-011  	chisq 0 (1 df)
+---
+> [1] 0.66467 +- 3.33018e-11  	chisq 0 (1 df)
+43c43
+< [1] 0.66467 +- 7.2682e-010  	chisq 0 (0 df)
+---
+> [1] 0.66467 +- 7.2682e-10  	chisq 0 (0 df)
+45c45
+< [1] 0.66467 +- 3.33018e-011  	chisq 0 (1 df)
+---
+> [1] 0.66467 +- 3.33018e-11  	chisq 0 (1 df)
+62c62
+<   abs.tol 4.93038e-032
+---
+>   abs.tol 4.93038e-32
+72c72
+< [1] 0.66467 +- 7.2682e-010
+---
+> [1] 0.66467 +- 7.2682e-10
+74c74
+< [1] 0.66467 +- 7.2682e-010  	chisq 0 (0 df)
+---
+> [1] 0.66467 +- 7.2682e-10  	chisq 0 (0 df)
+78c78
+< [1] 0.25094 +- 1.25788e-011
+---
+> [1] 0.25094 +- 1.25788e-11
+82c82
+< [1] 0.41373 +- 2.0739e-011
+---
+> [1] 0.41373 +- 2.0739e-11
+84c84
+< [1] 0.66467 +- 3.33019e-011  	chisq 0 (1 df)
+---
+> [1] 0.66467 +- 3.33019e-11  	chisq 0 (1 df)
+  Running 'divonne.R'
+  Comparing 'divonne.Rout' to 'divonne.Rout.save' ...24c24
+<   abs.tol 4.93038e-032
+---
+>   abs.tol 4.93038e-32
+81c81
+<     0.0734148 +- 0.000216954(0)  	chisq 3.01079e-005
+---
+>     0.0734148 +- 0.000216954(0)  	chisq 3.01079e-05
+86c86
+<     0.0445283 +- 0.000131589(0)  	chisq 3.01079e-005
+---
+>     0.0445283 +- 0.000131589(0)  	chisq 3.01079e-05
+116c116
+<     0.026641 +- 0.00017133(0)  	chisq 1.87223e-005
+---
+>     0.026641 +- 0.00017133(0)  	chisq 1.87223e-05
+126c126
+<     0.0571755 +- 0.000169152(0)  	chisq 3.00413e-005
+---
+>     0.0571755 +- 0.000169152(0)  	chisq 3.00413e-05
+136c136
+<     0.0207481 +- 0.000133848(0)  	chisq 1.86059e-005
+---
+>     0.0207481 +- 0.000133848(0)  	chisq 1.86059e-05
+141c141
+<     0.045926 +- 9.93288e-005(0)  	chisq 0.000518264
+---
+>     0.045926 +- 9.93288e-05(0)  	chisq 0.000518264
+146c146
+<     0.0346787 +- 0.000102596(0)  	chisq 3.00413e-005
+---
+>     0.0346787 +- 0.000102596(0)  	chisq 3.00413e-05
+180c180
+<   abs.tol 4.93038e-032
+---
+>   abs.tol 4.93038e-32
+237c237
+<     0.0734148 +- 0.000216954(0)  	chisq 3.01079e-005
+---
+>     0.0734148 +- 0.000216954(0)  	chisq 3.01079e-05
+242c242
+<     0.0445283 +- 0.000131589(0)  	chisq 3.01079e-005
+---
+>     0.0445283 +- 0.000131589(0)  	chisq 3.01079e-05
+272c272
+<     0.026641 +- 0.00017133(0)  	chisq 1.87223e-005
+---
+>     0.026641 +- 0.00017133(0)  	chisq 1.87223e-05
+282c282
+<     0.0571755 +- 0.000169152(0)  	chisq 3.00413e-005
+---
+>     0.0571755 +- 0.000169152(0)  	chisq 3.00413e-05
+292c292
+<     0.0207481 +- 0.000133848(0)  	chisq 1.86059e-005
+---
+>     0.0207481 +- 0.000133848(0)  	chisq 1.86059e-05
+297c297
+<     0.045926 +- 9.93288e-005(0)  	chisq 0.000518264
+---
+>     0.045926 +- 9.93288e-05(0)  	chisq 0.000518264
+302c302
+<     0.0346787 +- 0.000102596(0)  	chisq 3.00413e-005
+---
+>     0.0346787 +- 0.000102596(0)  	chisq 3.00413e-05
+331c331
+<   abs.tol 4.93038e-032
+---
+>   abs.tol 4.93038e-32
+403,404c403,404
+< [2] 0.0119927 +- 5.98026e-005(0)
+<     0.0119932 +- 1.04488e-005(0)  	chisq 6.88573e-005
+---
+> [2] 0.0119927 +- 5.98026e-05(0)
+>     0.0119932 +- 1.04488e-05(0)  	chisq 6.88573e-05
+409,411c409,411
+<     0.0204995 +- 0.000103916(0)  	chisq 1.9583e-007
+< [2] 0.0120539 +- 6.40207e-005(0)
+<     0.0120539 +- 1.11858e-005(0)  	chisq 1.18796e-006
+---
+>     0.0204995 +- 0.000103916(0)  	chisq 1.9583e-07
+> [2] 0.0120539 +- 6.40207e-05(0)
+>     0.0120539 +- 1.11858e-05(0)  	chisq 1.18796e-06
+432c432
+<     0.016818 +- 1.94724e-005(0)  	chisq 0.000215672
+---
+>     0.016818 +- 1.94724e-05(0)  	chisq 0.000215672
+438,439c438,439
+< [2] 0.0153507 +- 9.16558e-005(0)
+<     0.0153502 +- 1.60142e-005(0)  	chisq 3.48482e-005
+---
+> [2] 0.0153507 +- 9.16558e-05(0)
+>     0.0153502 +- 1.60142e-05(0)  	chisq 3.48482e-05
+446c446
+<     0.0217454 +- 2.85172e-005(0)  	chisq 0.000386072
+---
+>     0.0217454 +- 2.85172e-05(0)  	chisq 0.000386072
+452,453c452,453
+< [2] 0.0153509 +- 9.26384e-005(0)
+<     0.0153502 +- 1.61859e-005(0)  	chisq 5.72234e-005
+---
+> [2] 0.0153509 +- 9.26384e-05(0)
+>     0.0153502 +- 1.61859e-05(0)  	chisq 5.72234e-05
+460c460
+<     0.0179322 +- 2.71842e-005(0)  	chisq 0.000747781
+---
+>     0.0179322 +- 2.71842e-05(0)  	chisq 0.000747781
+465,467c465,467
+<     0.0593121 +- 0.000156944(0)  	chisq 5.99544e-006
+< [2] 0.0134977 +- 9.32652e-005(0)
+<     0.0134977 +- 1.62954e-005(0)  	chisq 3.57566e-008
+---
+>     0.0593121 +- 0.000156944(0)  	chisq 5.99544e-06
+> [2] 0.0134977 +- 9.32652e-05(0)
+>     0.0134977 +- 1.62954e-05(0)  	chisq 3.57566e-08
+472c472
+<     0.0466714 +- 9.24361e-005(0)  	chisq 0.0012081
+---
+>     0.0466714 +- 9.24361e-05(0)  	chisq 0.0012081
+474c474
+<     0.0264546 +- 5.37438e-005(0)  	chisq 0.000811867
+---
+>     0.0264546 +- 5.37438e-05(0)  	chisq 0.000811867
+479c479
+<     0.0359746 +- 9.51912e-005(0)  	chisq 5.99544e-006
+---
+>     0.0359746 +- 9.51912e-05(0)  	chisq 5.99544e-06
+481c481
+<     0.0179324 +- 2.701e-005(0)  	chisq 0.000175312
+---
+>     0.0179324 +- 2.701e-05(0)  	chisq 0.000175312
+486c486
+<     0.0211444 +- 9.33199e-005(0)  	chisq 0.00119049
+---
+>     0.0211444 +- 9.33199e-05(0)  	chisq 0.00119049
+488c488
+<     0.0202448 +- 3.46614e-005(0)  	chisq 0.00111542
+---
+>     0.0202448 +- 3.46614e-05(0)  	chisq 0.00111542
+493c493
+<     0.015965 +- 8.11826e-005(0)  	chisq 1.94614e-007
+---
+>     0.015965 +- 8.11826e-05(0)  	chisq 1.94614e-07
+495c495
+<     0.0136873 +- 1.77287e-005(0)  	chisq 0.000284013
+---
+>     0.0136873 +- 1.77287e-05(0)  	chisq 0.000284013
+  Running 'peak.R'
+  Comparing 'peak.Rout' to 'peak.Rout.save' ... OK
+  Running 'suave.R'
+  Comparing 'suave.Rout' to 'suave.Rout.save' ...57c57
+<   abs.tol 4.93038e-032
+---
+>   abs.tol 4.93038e-32
+134c134
+<     0.0821404 +- 7.56023e-005 (705)  	chisq 0.158888 (3 df)
+---
+>     0.0821404 +- 7.56023e-05 (705)  	chisq 0.158888 (3 df)
+152c152
+<     0.0498517 +- 5.32669e-005 (672)  	chisq 1.6896 (3 df)
+---
+>     0.0498517 +- 5.32669e-05 (672)  	chisq 1.6896 (3 df)
+  Running 'vegas.R'
+* DONE
+Status: 1 WARNING

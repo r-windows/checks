@@ -1,0 +1,216 @@
+* using log directory 'C:/Users/Jeroen/Documents/checks/survMisc.Rcheck'
+* using R version 3.6.0 Under development (Testing Rtools) (2019-03-14 r76238)
+* using platform: x86_64-w64-mingw32 (64-bit)
+* using session charset: ISO8859-1
+* using options '--no-manual --no-build-vignettes'
+* checking for file 'survMisc/DESCRIPTION' ... OK
+* checking extension type ... Package
+* this is package 'survMisc' version '0.5.5'
+* checking package namespace information ... OK
+* checking package dependencies ... OK
+* checking if this is a source package ... OK
+* checking if there is a namespace ... OK
+* checking for executable files ... OK
+* checking for hidden files and directories ... OK
+* checking for portable file names ... OK
+* checking whether package 'survMisc' can be installed ... OK
+* checking installed package size ... OK
+* checking package directory ... OK
+* checking 'build' directory ... OK
+* checking DESCRIPTION meta-information ... OK
+* checking top-level files ... OK
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* checking whether the package can be loaded ... OK
+* checking whether the package can be loaded with stated dependencies ...Loading required package: survival
+Error: package or namespace load failed for 'survMisc' in loadNamespace(j <- i[[1L]], c(lib.loc, .libPaths()), versionCheck = vI[[j]]):
+ there is no package called 'rlang'
+Execution halted
+
+It looks like this package (or one of its dependent packages) has an
+unstated dependence on a standard package.  All dependencies must be
+declared in DESCRIPTION.
+See section 'The DESCRIPTION file' in the 'Writing R Extensions'
+manual.
+* checking whether the package can be unloaded cleanly ... WARNING
+Error: package or namespace load failed for 'survMisc' in loadNamespace(j <- i[[1L]], c(lib.loc, .libPaths()), versionCheck = vI[[j]]):
+ there is no package called 'rlang'
+Execution halted
+* checking whether the namespace can be loaded with stated dependencies ... WARNING
+Error in loadNamespace(j <- i[[1L]], c(lib.loc, .libPaths()), versionCheck = vI[[j]]) : 
+  there is no package called 'rlang'
+Calls: <Anonymous> ... loadNamespace -> withRestarts -> withOneRestart -> doWithOneRestart
+Execution halted
+
+A namespace must be able to be loaded with just the base namespace
+loaded: otherwise if the namespace gets loaded by a saved object, the
+session will be unable to start.
+
+Probably some imports need to be declared in the NAMESPACE file.
+* checking whether the namespace can be unloaded cleanly ... WARNING
+Error in loadNamespace(j <- i[[1L]], c(lib.loc, .libPaths()), versionCheck = vI[[j]]) : 
+  there is no package called 'rlang'
+Calls: suppressMessages ... loadNamespace -> withRestarts -> withOneRestart -> doWithOneRestart
+Execution halted
+* checking loading without being on the library search path ... WARNING
+Loading required package: survival
+Error: package or namespace load failed for 'survMisc' in loadNamespace(j <- i[[1L]], c(lib.loc, .libPaths()), versionCheck = vI[[j]]):
+ there is no package called 'rlang'
+Execution halted
+
+It looks like this package has a loading problem when not on .libPaths:
+see the messages for details.
+* checking dependencies in R code ... NOTE
+Error: package or namespace load failed for 'survMisc' in loadNamespace(j <- i[[1L]], c(lib.loc, .libPaths()), versionCheck = vI[[j]]):
+ there is no package called 'rlang'
+Call sequence:
+6: stop(msg, call. = FALSE, domain = NA)
+5: value[[3L]](cond)
+4: tryCatchOne(expr, names, parentenv, handlers[[1L]])
+3: tryCatchList(expr, classes, parentenv, handlers)
+2: tryCatch({
+       attr(package, "LibPath") <- which.lib.loc
+       ns <- loadNamespace(package, lib.loc)
+       env <- attachNamespace(ns, pos = pos, deps)
+   }, error = function(e) {
+       P <- if (!is.null(cc <- conditionCall(e))) 
+           paste(" in", deparse(cc)[1L])
+       else ""
+       msg <- gettextf("package or namespace load failed for %s%s:\n %s", 
+           sQuote(package), P, conditionMessage(e))
+       if (logical.return) 
+           message(paste("Error:", msg), domain = NA)
+       else stop(msg, call. = FALSE, domain = NA)
+   })
+1: library(package, lib.loc = lib.loc, character.only = TRUE, verbose = FALSE)
+Execution halted
+* checking S3 generic/method consistency ... WARNING
+Error: package or namespace load failed for 'survMisc' in loadNamespace(j <- i[[1L]], c(lib.loc, .libPaths()), versionCheck = vI[[j]]):
+ there is no package called 'rlang'
+Call sequence:
+6: stop(msg, call. = FALSE, domain = NA)
+5: value[[3L]](cond)
+4: tryCatchOne(expr, names, parentenv, handlers[[1L]])
+3: tryCatchList(expr, classes, parentenv, handlers)
+2: tryCatch({
+       attr(package, "LibPath") <- which.lib.loc
+       ns <- loadNamespace(package, lib.loc)
+       env <- attachNamespace(ns, pos = pos, deps)
+   }, error = function(e) {
+       P <- if (!is.null(cc <- conditionCall(e))) 
+           paste(" in", deparse(cc)[1L])
+       else ""
+       msg <- gettextf("package or namespace load failed for %s%s:\n %s", 
+           sQuote(package), P, conditionMessage(e))
+       if (logical.return) 
+           message(paste("Error:", msg), domain = NA)
+       else stop(msg, call. = FALSE, domain = NA)
+   })
+1: library(package, lib.loc = lib.loc, character.only = TRUE, verbose = FALSE)
+Execution halted
+See section 'Generic functions and methods' in the 'Writing R
+Extensions' manual.
+* checking replacement functions ... WARNING
+Error: package or namespace load failed for 'survMisc' in loadNamespace(j <- i[[1L]], c(lib.loc, .libPaths()), versionCheck = vI[[j]]):
+ there is no package called 'rlang'
+Call sequence:
+6: stop(msg, call. = FALSE, domain = NA)
+5: value[[3L]](cond)
+4: tryCatchOne(expr, names, parentenv, handlers[[1L]])
+3: tryCatchList(expr, classes, parentenv, handlers)
+2: tryCatch({
+       attr(package, "LibPath") <- which.lib.loc
+       ns <- loadNamespace(package, lib.loc)
+       env <- attachNamespace(ns, pos = pos, deps)
+   }, error = function(e) {
+       P <- if (!is.null(cc <- conditionCall(e))) 
+           paste(" in", deparse(cc)[1L])
+       else ""
+       msg <- gettextf("package or namespace load failed for %s%s:\n %s", 
+           sQuote(package), P, conditionMessage(e))
+       if (logical.return) 
+           message(paste("Error:", msg), domain = NA)
+       else stop(msg, call. = FALSE, domain = NA)
+   })
+1: library(package, lib.loc = lib.loc, character.only = TRUE, verbose = FALSE)
+Execution halted
+The argument of a replacement function which corresponds to the right
+hand side must be named 'value'.
+* checking foreign function calls ... NOTE
+Error: package or namespace load failed for 'survMisc' in loadNamespace(j <- i[[1L]], c(lib.loc, .libPaths()), versionCheck = vI[[j]]):
+ there is no package called 'rlang'
+Call sequence:
+6: stop(msg, call. = FALSE, domain = NA)
+5: value[[3L]](cond)
+4: tryCatchOne(expr, names, parentenv, handlers[[1L]])
+3: tryCatchList(expr, classes, parentenv, handlers)
+2: tryCatch({
+       attr(package, "LibPath") <- which.lib.loc
+       ns <- loadNamespace(package, lib.loc)
+       env <- attachNamespace(ns, pos = pos, deps)
+   }, error = function(e) {
+       P <- if (!is.null(cc <- conditionCall(e))) 
+           paste(" in", deparse(cc)[1L])
+       else ""
+       msg <- gettextf("package or namespace load failed for %s%s:\n %s", 
+           sQuote(package), P, conditionMessage(e))
+       if (logical.return) 
+           message(paste("Error:", msg), domain = NA)
+       else stop(msg, call. = FALSE, domain = NA)
+   })
+1: library(package, lib.loc = lib.loc, character.only = TRUE, verbose = FALSE)
+Execution halted
+See chapter 'System and foreign language interfaces' in the 'Writing R
+Extensions' manual.
+* checking R code for possible problems ... NOTE
+Error in loadNamespace(j <- i[[1L]], c(lib.loc, .libPaths()), versionCheck = vI[[j]]) : 
+  there is no package called 'rlang'
+Calls: <Anonymous>
+Execution halted
+* checking Rd files ... OK
+* checking Rd metadata ... OK
+* checking Rd cross-references ... OK
+* checking for missing documentation entries ... ERROR
+Error: package or namespace load failed for 'survMisc' in loadNamespace(j <- i[[1L]], c(lib.loc, .libPaths()), versionCheck = vI[[j]]):
+ there is no package called 'rlang'
+Call sequence:
+6: stop(msg, call. = FALSE, domain = NA)
+5: value[[3L]](cond)
+4: tryCatchOne(expr, names, parentenv, handlers[[1L]])
+3: tryCatchList(expr, classes, parentenv, handlers)
+2: tryCatch({
+       attr(package, "LibPath") <- which.lib.loc
+       ns <- loadNamespace(package, lib.loc)
+       env <- attachNamespace(ns, pos = pos, deps)
+   }, error = function(e) {
+       P <- if (!is.null(cc <- conditionCall(e))) 
+           paste(" in", deparse(cc)[1L])
+       else ""
+       msg <- gettextf("package or namespace load failed for %s%s:\n %s", 
+           sQuote(package), P, conditionMessage(e))
+       if (logical.return) 
+           message(paste("Error:", msg), domain = NA)
+       else stop(msg, call. = FALSE, domain = NA)
+   })
+1: library(package, lib.loc = lib.loc, character.only = TRUE, verbose = FALSE)
+Execution halted
+* checking for code/documentation mismatches ... OK
+* checking Rd \usage sections ... OK
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... OK
+* checking contents of 'data' directory ... OK
+* checking data for non-ASCII characters ... OK
+* checking data for ASCII and uncompressed saves ... OK
+* checking sizes of PDF files under 'inst/doc' ... OK
+* checking installed files from 'inst/doc' ... OK
+* checking files in 'vignettes' ... OK
+* checking examples ... OK
+* checking for unstated dependencies in vignettes ... OK
+* checking package vignettes in 'inst/doc' ... OK
+* checking running R code from vignettes ... NONE
+* checking re-building of vignette outputs ... SKIPPED
+* DONE
+Status: 1 ERROR, 6 WARNINGs, 3 NOTEs
