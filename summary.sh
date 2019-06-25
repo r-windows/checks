@@ -1,8 +1,8 @@
 #!/bin/sh
 outfile="readme.md"
 echo '# Check results' > $outfile
-echo "Last update: $(date)" > $outfile
-echo "" > $outfile
+echo "Last update: $(date)" >> $outfile
+echo "" >> $outfile
 
 # Build failures
 echo '## Install failures' >> $outfile
