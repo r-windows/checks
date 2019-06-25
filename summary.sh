@@ -1,9 +1,11 @@
 #!/bin/sh
-outfile="summary.md"
+outfile="readme.md"
 echo '# Check results' > $outfile
+echo "Last update: $(date)" > $outfile
+echo "" > $outfile
 
 # Build failures
-echo '## Installation failures' >> $outfile
+echo '## Install failures' >> $outfile
 echo '```' >> $outfile
 grep "Installation failed" */00check.log >> $outfile
 echo '```' >> $outfile
