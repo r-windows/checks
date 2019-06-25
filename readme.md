@@ -1,5 +1,5 @@
 # Check results
-Last update: Tue, Jun 25, 2019 12:08:53 PM
+Last update: Tue, Jun 25, 2019  5:53:24 PM
 
 ## Install failures
 ```
@@ -28,7 +28,6 @@ antaresProcessing.Rcheck/00check.log:Status: 1 ERROR, 1 NOTE
 archetypes.Rcheck/00check.log:Status: 2 ERRORs, 2 NOTEs
 BIEN.Rcheck/00check.log:Status: 1 ERROR
 colorplaner.Rcheck/00check.log:Status: 2 ERRORs
-crul.Rcheck/00check.log:Status: 1 ERROR
 dbarts.Rcheck/00check.log:Status: 2 ERRORs
 dclone.Rcheck/00check.log:Status: 1 ERROR
 Deducer.Rcheck/00check.log:Status: 1 ERROR
@@ -66,7 +65,6 @@ MSeasy.Rcheck/00check.log:Status: 1 ERROR
 mudata2.Rcheck/00check.log:Status: 1 ERROR
 mvoutlier.Rcheck/00check.log:Status: 1 ERROR
 NanoStringNorm.Rcheck/00check.log:Status: 1 ERROR
-nloptr.Rcheck/00check.log:Status: 2 ERRORs, 1 NOTE
 OutbreakTools.Rcheck/00check.log:Status: 1 ERROR
 padr.Rcheck/00check.log:Status: 2 ERRORs, 1 NOTE
 pathological.Rcheck/00check.log:Status: 1 ERROR
@@ -94,7 +92,6 @@ rsgcc.Rcheck/00check.log:Status: 1 ERROR
 rtext.Rcheck/00check.log:Status: 1 ERROR, 2 NOTEs
 sessioninfo.Rcheck/00check.log:Status: 1 ERROR
 Seurat.Rcheck/00check.log:Status: 2 ERRORs, 1 NOTE
-sf.Rcheck/00check.log:Status: 2 ERRORs, 1 NOTE
 Smisc.Rcheck/00check.log:Status: 2 ERRORs
 SMITIDstruct.Rcheck/00check.log:Status: 1 ERROR
 survMisc.Rcheck/00check.log:Status: 1 ERROR, 6 WARNINGs, 3 NOTEs

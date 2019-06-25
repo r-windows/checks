@@ -46,7 +46,7 @@
 * checking Rd files ... OK
 * checking Rd metadata ... OK
 * checking Rd cross-references ... NOTE
-Packages unavailable to check Rd xrefs: 'seasonal', 'forecTheta'
+Package unavailable to check Rd xrefs: 'forecTheta'
 * checking for missing documentation entries ... OK
 * checking for code/documentation mismatches ... OK
 * checking Rd \usage sections ... OK
