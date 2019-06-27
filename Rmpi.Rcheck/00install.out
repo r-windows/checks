@@ -4,12 +4,12 @@
 ** libs
 
 *** arch - i386
-/mingw32/bin/gcc  -I"C:/Progra~1/R/R-testing/include" -DNDEBUG -I"C:/Program Files (x86)/Microsoft SDKs/MPI/Include" -DMPI2 -DWin32         -O2 -Wall  -std=gnu99 -mtune=generic -c Rmpi.c -o Rmpi.o
+/mingw32/bin/gcc  -I"C:/progra~1/R/R-testing/include" -DNDEBUG -I"C:/Program Files (x86)/Microsoft SDKs/MPI/Include" -DMPI2 -DWin32         -O2 -Wall  -std=gnu99 -mtune=generic -c Rmpi.c -o Rmpi.o
 In file included from Rmpi.c:18:
 Rmpi.h:2:10: fatal error: mpi.h: No such file or directory
  #include <mpi.h>
           ^~~~~~~
 compilation terminated.
-make: *** [C:/Progra~1/R/R-testing/etc/i386/Makeconf:208: Rmpi.o] Error 1
+make: *** [C:/progra~1/R/R-testing/etc/i386/Makeconf:208: Rmpi.o] Error 1
 ERROR: compilation failed for package 'Rmpi'
 * removing 'C:/Users/Jeroen/Documents/checks/Rmpi.Rcheck/Rmpi'

@@ -4,7 +4,7 @@
 ** libs
   running 'src/Makefile.win' ...
 mkdir -p C:/Users/Jeroen/Documents/checks/BRugs.Rcheck/00LOCK-BRugs/00new/BRugs/exec
-/mingw32/bin/gcc  -O2 -Wall  -std=gnu99 -mtune=generic  -m32 -Wl,-rpath="`"C:/Progra~1/R/R-testing/bin/x64/Rscript" -e "source('../R/windows/findOpenBUGS.R');cat(findOpenBUGS()[['dir']])"`" BugsHelper.c "`"C:/Progra~1/R/R-testing/bin/x64/Rscript" -e "source('../R/windows/findOpenBUGS.R');cat(findOpenBUGS()[['dir']])"`/libOpenBUGS.dll" -o C:/Users/Jeroen/Documents/checks/BRugs.Rcheck/00LOCK-BRugs/00new/BRugs/exec/BugsHelper
+/mingw32/bin/gcc  -O2 -Wall  -std=gnu99 -mtune=generic  -m32 -Wl,-rpath="`"C:/progra~1/R/R-testing/bin/x64/Rscript" -e "source('../R/windows/findOpenBUGS.R');cat(findOpenBUGS()[['dir']])"`" BugsHelper.c "`"C:/progra~1/R/R-testing/bin/x64/Rscript" -e "source('../R/windows/findOpenBUGS.R');cat(findOpenBUGS()[['dir']])"`/libOpenBUGS.dll" -o C:/Users/Jeroen/Documents/checks/BRugs.Rcheck/00LOCK-BRugs/00new/BRugs/exec/BugsHelper
 Warning message:
 In findOpenBUGS() : OpenBUGS 3.2.2 or greater must be installed
 (if so, this indicates missing registry keys of OpenBUGS).

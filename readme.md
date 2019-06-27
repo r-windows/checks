@@ -1,12 +1,11 @@
 # Check results
-Last update: Wed, Jun 26, 2019 12:14:13 PM
+Last update: Thu, Jun 27, 2019  3:40:17 PM
 
 ## Install failures
 ```
 BcDiag.Rcheck/00check.log:Installation failed.
 BRugs.Rcheck/00check.log:Installation failed.
 cairoDevice.Rcheck/00check.log:Installation failed.
-gdtools.Rcheck/00check.log:Installation failed.
 matchingMarkets.Rcheck/00check.log:Installation failed.
 pbdMPI.Rcheck/00check.log:Installation failed.
 PerfMeas.Rcheck/00check.log:Installation failed.
@@ -30,7 +29,6 @@ BIEN.Rcheck/00check.log:Status: 1 ERROR
 colorplaner.Rcheck/00check.log:Status: 2 ERRORs
 dbarts.Rcheck/00check.log:Status: 2 ERRORs
 dclone.Rcheck/00check.log:Status: 1 ERROR
-Deducer.Rcheck/00check.log:Status: 1 ERROR
 detrendr.Rcheck/00check.log:Status: 2 ERRORs, 1 NOTE
 document.Rcheck/00check.log:Status: 1 ERROR
 dodgr.Rcheck/00check.log:Status: 1 ERROR, 2 NOTEs
@@ -55,7 +53,6 @@ imbalance.Rcheck/00check.log:Status: 2 ERRORs
 infer.Rcheck/00check.log:Status: 1 ERROR
 IsoGene.Rcheck/00check.log:Status: 1 ERROR
 jmv.Rcheck/00check.log:Status: 1 ERROR, 1 NOTE
-kappalab.Rcheck/00check.log:Status: 1 ERROR
 latexpdf.Rcheck/00check.log:Status: 1 ERROR
 LCA.Rcheck/00check.log:Status: 1 ERROR, 1 NOTE
 LDheatmap.Rcheck/00check.log:Status: 1 ERROR
@@ -72,7 +69,6 @@ pbdBASE.Rcheck/00check.log:Status: 1 ERROR
 pbdDMAT.Rcheck/00check.log:Status: 1 ERROR
 pbdSLAP.Rcheck/00check.log:Status: 1 ERROR
 phylocomr.Rcheck/00check.log:Status: 2 ERRORs
-plotly.Rcheck/00check.log:Status: 1 ERROR, 1 NOTE
 prefmod.Rcheck/00check.log:Status: 1 ERROR
 proj4.Rcheck/00check.log:Status: 1 ERROR, 1 NOTE
 qtlnet.Rcheck/00check.log:Status: 1 ERROR
@@ -81,7 +77,6 @@ R2jags.Rcheck/00check.log:Status: 1 ERROR
 rags2ridges.Rcheck/00check.log:Status: 1 ERROR
 rbi.Rcheck/00check.log:Status: 2 ERRORs
 rCBA.Rcheck/00check.log:Status: 1 ERROR
-remotes.Rcheck/00check.log:Status: 1 ERROR
 rggobi.Rcheck/00check.log:Status: 1 ERROR
 RISmed.Rcheck/00check.log:Status: 1 ERROR, 1 NOTE
 RMark.Rcheck/00check.log:Status: 1 ERROR

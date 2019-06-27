@@ -18,8 +18,8 @@ echo 'X64_EXISTS = 0' >> Makeconf
 echo 'AMD64_EXISTS = 0' >> Makeconf
 echo 'X86_EXISTS = 0' >> Makeconf
 echo 'I386_EXISTS = 0' >> Makeconf
-/mingw32/bin/gcc  -I"C:/Progra~1/R/R-testing/include" -DNDEBUG -I"''" -DMPI2 -DWIN -DMSMPI_NO_DEPRECATE_20         -O2 -Wall  -std=gnu99 -mtune=generic -c comm_errors.c -o comm_errors.o
-/mingw32/bin/gcc  -I"C:/Progra~1/R/R-testing/include" -DNDEBUG -I"''" -DMPI2 -DWIN -DMSMPI_NO_DEPRECATE_20         -O2 -Wall  -std=gnu99 -mtune=generic -c comm_sort_double.c -o comm_sort_double.o
+/mingw32/bin/gcc  -I"C:/progra~1/R/R-testing/include" -DNDEBUG -I"''" -DMPI2 -DWIN -DMSMPI_NO_DEPRECATE_20         -O2 -Wall  -std=gnu99 -mtune=generic -c comm_errors.c -o comm_errors.o
+/mingw32/bin/gcc  -I"C:/progra~1/R/R-testing/include" -DNDEBUG -I"''" -DMPI2 -DWIN -DMSMPI_NO_DEPRECATE_20         -O2 -Wall  -std=gnu99 -mtune=generic -c comm_sort_double.c -o comm_sort_double.o
 In file included from spmd.h:7,
                  from comm_api.h:7,
                  from comm_sort_double.c:1:
@@ -27,6 +27,6 @@ pkg_global.h:16:10: fatal error: mpi.h: No such file or directory
  #include <mpi.h>
           ^~~~~~~
 compilation terminated.
-make: *** [C:/Progra~1/R/R-testing/etc/i386/Makeconf:208: comm_sort_double.o] Error 1
+make: *** [C:/progra~1/R/R-testing/etc/i386/Makeconf:208: comm_sort_double.o] Error 1
 ERROR: compilation failed for package 'pbdMPI'
 * removing 'C:/Users/Jeroen/Documents/checks/pbdMPI.Rcheck/pbdMPI'

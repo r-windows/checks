@@ -4,7 +4,7 @@
 ** libs
 
 *** arch - i386
-/mingw32/bin/gcc  -I"C:/Progra~1/R/R-testing/include" -DNDEBUG -D_R_=1 -DUSE_R=1 -mms-bitfields -I/include/gtk-2.0 -I/lib/gtk-2.0/include -I/include/atk-1.0 -I/include/cairo -I/include/pango-1.0 -I/include/glib-2.0 -I/lib/glib-2.0/include -I/include/libxml2  -I/include/gdk-pixbuf-2.0 -I/include -I.         -O2 -Wall  -std=gnu99 -mtune=generic -c RGtkDataFrame.c -o RGtkDataFrame.o
+/mingw32/bin/gcc  -I"C:/progra~1/R/R-testing/include" -DNDEBUG -D_R_=1 -DUSE_R=1 -mms-bitfields -I/include/gtk-2.0 -I/lib/gtk-2.0/include -I/include/atk-1.0 -I/include/cairo -I/include/pango-1.0 -I/include/glib-2.0 -I/lib/glib-2.0/include -I/include/libxml2  -I/include/gdk-pixbuf-2.0 -I/include -I.         -O2 -Wall  -std=gnu99 -mtune=generic -c RGtkDataFrame.c -o RGtkDataFrame.o
 In file included from ./RGtk2/atk.h:4,
                  from RGtk2/gtk.h:4,
                  from RGtkDataFrame.h:1,
@@ -13,6 +13,6 @@ In file included from ./RGtk2/atk.h:4,
  #include <glib.h>
           ^~~~~~~~
 compilation terminated.
-make: *** [C:/Progra~1/R/R-testing/etc/i386/Makeconf:208: RGtkDataFrame.o] Error 1
+make: *** [C:/progra~1/R/R-testing/etc/i386/Makeconf:208: RGtkDataFrame.o] Error 1
 ERROR: compilation failed for package 'RGtk2'
 * removing 'C:/Users/Jeroen/Documents/checks/RGtk2.Rcheck/RGtk2'

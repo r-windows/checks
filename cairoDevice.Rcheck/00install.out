@@ -4,13 +4,13 @@
 ** libs
 
 *** arch - i386
-/mingw32/bin/gcc  -I"C:/Progra~1/R/R-testing/include" -DNDEBUG -D_R_=1 -DUSE_R=1 -mms-bitfields -I/include/gtk-2.0 -I/lib/gtk-2.0/include -I/include/atk-1.0 -I/include/cairo -I/include/pango-1.0 -I/include/glib-2.0 -I/lib/glib-2.0/include -I/include/cairo -I/include/gdk-pixbuf-2.0 -I/include -IC:/Progra~1/R/R-testing/include         -O2 -Wall  -std=gnu99 -mtune=generic -c R_init_cairoDevice.c -o R_init_cairoDevice.o
-/mingw32/bin/gcc  -I"C:/Progra~1/R/R-testing/include" -DNDEBUG -D_R_=1 -DUSE_R=1 -mms-bitfields -I/include/gtk-2.0 -I/lib/gtk-2.0/include -I/include/atk-1.0 -I/include/cairo -I/include/pango-1.0 -I/include/glib-2.0 -I/lib/glib-2.0/include -I/include/cairo -I/include/gdk-pixbuf-2.0 -I/include -IC:/Progra~1/R/R-testing/include         -O2 -Wall  -std=gnu99 -mtune=generic -c cairoDevice.c -o cairoDevice.o
+/mingw32/bin/gcc  -I"C:/progra~1/R/R-testing/include" -DNDEBUG -D_R_=1 -DUSE_R=1 -mms-bitfields -I/include/gtk-2.0 -I/lib/gtk-2.0/include -I/include/atk-1.0 -I/include/cairo -I/include/pango-1.0 -I/include/glib-2.0 -I/lib/glib-2.0/include -I/include/cairo -I/include/gdk-pixbuf-2.0 -I/include -IC:/progra~1/R/R-testing/include         -O2 -Wall  -std=gnu99 -mtune=generic -c R_init_cairoDevice.c -o R_init_cairoDevice.o
+/mingw32/bin/gcc  -I"C:/progra~1/R/R-testing/include" -DNDEBUG -D_R_=1 -DUSE_R=1 -mms-bitfields -I/include/gtk-2.0 -I/lib/gtk-2.0/include -I/include/atk-1.0 -I/include/cairo -I/include/pango-1.0 -I/include/glib-2.0 -I/lib/glib-2.0/include -I/include/cairo -I/include/gdk-pixbuf-2.0 -I/include -IC:/progra~1/R/R-testing/include         -O2 -Wall  -std=gnu99 -mtune=generic -c cairoDevice.c -o cairoDevice.o
 In file included from cairoDevice.c:1:
 cairoDevice.h:1:10: fatal error: gtk/gtk.h: No such file or directory
  #include <gtk/gtk.h>
           ^~~~~~~~~~~
 compilation terminated.
-make: *** [C:/Progra~1/R/R-testing/etc/i386/Makeconf:208: cairoDevice.o] Error 1
+make: *** [C:/progra~1/R/R-testing/etc/i386/Makeconf:208: cairoDevice.o] Error 1
 ERROR: compilation failed for package 'cairoDevice'
 * removing 'C:/Users/Jeroen/Documents/checks/cairoDevice.Rcheck/cairoDevice'

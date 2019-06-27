@@ -4,12 +4,12 @@
 ** libs
 
 *** arch - i386
-/mingw32/bin/gcc  -I"C:/Progra~1/R/R-testing/include" -DNDEBUG -I"/include"          -O2 -Wall  -std=gnu99 -mtune=generic -c init.c -o init.o
-/mingw32/bin/g++  -I"C:/Progra~1/R/R-testing/include" -DNDEBUG -I"/include"          -O2 -Wall  -mtune=generic -c jags.cc -o jags.o
+/mingw32/bin/gcc  -I"C:/progra~1/R/R-testing/include" -DNDEBUG -I"/include"          -O2 -Wall  -std=gnu99 -mtune=generic -c init.c -o init.o
+/mingw32/bin/g++  -I"C:/progra~1/R/R-testing/include" -DNDEBUG -I"/include"          -O2 -Wall  -mtune=generic -c jags.cc -o jags.o
 jags.cc:26:10: fatal error: Console.h: No such file or directory
  #include <Console.h>
           ^~~~~~~~~~~
 compilation terminated.
-make: *** [C:/Progra~1/R/R-testing/etc/i386/Makeconf:213: jags.o] Error 1
+make: *** [C:/progra~1/R/R-testing/etc/i386/Makeconf:213: jags.o] Error 1
 ERROR: compilation failed for package 'rjags'
 * removing 'C:/Users/Jeroen/Documents/checks/rjags.Rcheck/rjags'
