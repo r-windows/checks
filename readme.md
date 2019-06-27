@@ -1,5 +1,5 @@
 # Check results
-Last update: Thu, Jun 27, 2019  3:40:17 PM
+Last update: Fri, Jun 28, 2019 12:25:53 AM
 
 ## Install failures
 ```
@@ -24,16 +24,16 @@ XLConnectJars.Rcheck/00check.log:Installation failed.
 ```
 adaptiveGPCA.Rcheck/00check.log:Status: 1 ERROR
 antaresProcessing.Rcheck/00check.log:Status: 1 ERROR, 1 NOTE
-archetypes.Rcheck/00check.log:Status: 2 ERRORs, 2 NOTEs
 BIEN.Rcheck/00check.log:Status: 1 ERROR
+blavaan.Rcheck/00check.log:Status: 1 ERROR, 1 NOTE
 colorplaner.Rcheck/00check.log:Status: 2 ERRORs
 dbarts.Rcheck/00check.log:Status: 2 ERRORs
 dclone.Rcheck/00check.log:Status: 1 ERROR
+dcmle.Rcheck/00check.log:Status: 1 ERROR
 detrendr.Rcheck/00check.log:Status: 2 ERRORs, 1 NOTE
 document.Rcheck/00check.log:Status: 1 ERROR
 dodgr.Rcheck/00check.log:Status: 1 ERROR, 2 NOTEs
 doMPI.Rcheck/00check.log:Status: 1 ERROR
-EML.Rcheck/00check.log:Status: 1 ERROR, 1 NOTE
 enviGCMS.Rcheck/00check.log:Status: 1 ERROR
 estimatr.Rcheck/00check.log:Status: 1 ERROR
 exams.Rcheck/00check.log:Status: 3 ERRORs
@@ -48,18 +48,20 @@ h5.Rcheck/00check.log:Status: 2 ERRORs, 1 NOTE
 harvestr.Rcheck/00check.log:Status: 1 ERROR
 hyperSpec.Rcheck/00check.log:Status: 1 ERROR, 1 NOTE
 IBDsim.Rcheck/00check.log:Status: 2 ERRORs
-ijtiff.Rcheck/00check.log:Status: 2 ERRORs, 1 NOTE
 imbalance.Rcheck/00check.log:Status: 2 ERRORs
 infer.Rcheck/00check.log:Status: 1 ERROR
 IsoGene.Rcheck/00check.log:Status: 1 ERROR
+jagsUI.Rcheck/00check.log:Status: 1 ERROR
 jmv.Rcheck/00check.log:Status: 1 ERROR, 1 NOTE
 latexpdf.Rcheck/00check.log:Status: 1 ERROR
 LCA.Rcheck/00check.log:Status: 1 ERROR, 1 NOTE
 LDheatmap.Rcheck/00check.log:Status: 1 ERROR
 lsbclust.Rcheck/00check.log:Status: 2 ERRORs
+miscF.Rcheck/00check.log:Status: 1 ERROR
 MonetDBLite.Rcheck/00check.log:Status: 2 ERRORs, 1 WARNING, 1 NOTE
 MSeasy.Rcheck/00check.log:Status: 1 ERROR
 mudata2.Rcheck/00check.log:Status: 1 ERROR
+MVN.Rcheck/00check.log:Status: 1 ERROR
 mvoutlier.Rcheck/00check.log:Status: 1 ERROR
 NanoStringNorm.Rcheck/00check.log:Status: 1 ERROR
 OutbreakTools.Rcheck/00check.log:Status: 1 ERROR
@@ -84,16 +86,17 @@ rngtools.Rcheck/00check.log:Status: 1 ERROR
 robustloggamma.Rcheck/00check.log:Status: 2 ERRORs
 RSCABS.Rcheck/00check.log:Status: 1 ERROR
 rsgcc.Rcheck/00check.log:Status: 1 ERROR
+rstpm2.Rcheck/00check.log:Status: 1 ERROR, 1 NOTE
 rtext.Rcheck/00check.log:Status: 1 ERROR, 2 NOTEs
 sessioninfo.Rcheck/00check.log:Status: 1 ERROR
 Seurat.Rcheck/00check.log:Status: 2 ERRORs, 1 NOTE
 Smisc.Rcheck/00check.log:Status: 2 ERRORs
 SMITIDstruct.Rcheck/00check.log:Status: 1 ERROR
 survMisc.Rcheck/00check.log:Status: 1 ERROR, 6 WARNINGs, 3 NOTEs
-switchr.Rcheck/00check.log:Status: 1 ERROR
 synbreed.Rcheck/00check.log:Status: 1 ERROR
 topologyGSA.Rcheck/00check.log:Status: 1 ERROR
 trackr.Rcheck/00check.log:Status: 1 ERROR
+vctrs.Rcheck/00check.log:Status: 2 ERRORs
 virtualspecies.Rcheck/00check.log:Status: 1 ERROR
 waterData.Rcheck/00check.log:Status: 1 ERROR
 wdman.Rcheck/00check.log:Status: 1 ERROR

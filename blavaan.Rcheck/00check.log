@@ -1,25 +1,20 @@
-* using log directory 'C:/Users/Jeroen/Documents/checks/EML.Rcheck'
-* using R version 3.6.0 Under development (Testing Rtools) (2019-03-14 r76238)
+* using log directory 'C:/Users/Jeroen/Documents/checks/blavaan.Rcheck'
+* using R version 3.7.0 Under development (Testing Rtools) (2019-06-25 r76738)
 * using platform: x86_64-w64-mingw32 (64-bit)
 * using session charset: ISO8859-1
-* using options '--no-manual --ignore-vignettes'
-* checking for file 'EML/DESCRIPTION' ... OK
-* checking extension type ... Package
-* this is package 'EML' version '1.0.3'
-* package encoding: UTF-8
+* using options '--no-manual --no-build-vignettes'
+* checking for file 'blavaan/DESCRIPTION' ... OK
+* this is package 'blavaan' version '0.3-4'
 * checking package namespace information ... OK
-* checking package dependencies ... OK
+* checking package dependencies ... NOTE
+Packages suggested but not available for checking: 'runjags', 'rjags'
 * checking if this is a source package ... OK
 * checking if there is a namespace ... OK
 * checking for executable files ... OK
 * checking for hidden files and directories ... OK
 * checking for portable file names ... OK
-* checking whether package 'EML' can be installed ... OK
-* checking installed package size ... NOTE
-  installed size is  8.2Mb
-  sub-directories of 1Mb or more:
-    R     1.8Mb
-    xsd   5.4Mb
+* checking whether package 'blavaan' can be installed ... OK
+* checking installed package size ... OK
 * checking package directory ... OK
 * checking DESCRIPTION meta-information ... OK
 * checking top-level files ... OK
@@ -47,26 +42,24 @@
 * checking Rd \usage sections ... OK
 * checking Rd contents ... OK
 * checking for unstated dependencies in examples ... OK
-* checking installed files from 'inst/doc' ... OK
-* checking files in 'vignettes' ... SKIPPED
 * checking examples ... OK
 * checking for unstated dependencies in 'tests' ... OK
 * checking tests ... ERROR
   Running 'testthat.R'
 Running the tests in 'tests/testthat.R' failed.
 Last 13 lines of output:
-  18: as(set_TextType(methods_file), "description")
-  19: .class1(object)
-  20: set_TextType(methods_file)
-  21: to_docbook(file)
-  22: pandoc_convert(basename(file), to = "docbook", output = normalizePath(docbook_file, 
-         winslash = "/", mustWork = FALSE), options = "-s")
-  23: stop("pandoc document conversion failed with error ", result, call. = FALSE)
+  blavaan NOTE: runjags not installed; using rstan instead.
+  DIAGNOSTIC(S) FROM PARSER:
+  Info:
+  Left-hand side of sampling statement (~) may contain a non-linear transform of a parameter or local variable.
+  If it does, you need to include a target += statement with the log absolute determinant of the Jacobian of the transform.
+  Left-hand-side of sampling statement:
+      eta ~ sem_lv_lpdf(...)
   
+  blavaan NOTE: runjags not installed; using rstan instead.
   == testthat results  ===========================================================
-  OK: 78 SKIPPED: 5 FAILED: 2
-  1. Error: We return TRUE when validating a valid just created eml object with latin1 encoding (@test-validation.R#75) 
-  2. Error: We return TRUE when validating a valid just created eml object (@test-validation.R#89) 
+  OK: 7 SKIPPED: 1 WARNINGS: 0 FAILED: 1
+  1. Failure: blavaan arguments (@tests.blavaan.R#13) 
   
   Error: testthat unit tests failed
   Execution halted

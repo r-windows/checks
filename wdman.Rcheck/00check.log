@@ -1,5 +1,5 @@
 * using log directory 'C:/Users/Jeroen/Documents/checks/wdman.Rcheck'
-* using R version 3.6.0 Under development (Testing Rtools) (2019-03-14 r76238)
+* using R version 3.7.0 Under development (Testing Rtools) (2019-06-25 r76738)
 * using platform: x86_64-w64-mingw32 (64-bit)
 * using session charset: ISO8859-1
 * using options '--no-manual --no-build-vignettes'
@@ -53,13 +53,13 @@
 Running the tests in 'tests/testthat.R' failed.
 Last 13 lines of output:
      })
-  8: eval_bare(get_expr(quo), get_env(quo))
+  8: eval_bare(get_expr(.quo), get_env(.quo))
   9: selenium()
   10: java_check()
   11: stop("PATH to JAVA not found. Please check JAVA is installed.")
   
   == testthat results  ===========================================================
-  OK: 64 SKIPPED: 0 FAILED: 4
+  OK: 64 SKIPPED: 0 WARNINGS: 0 FAILED: 4
   1. Error: canCallSelenium (@test-selenium.R#9) 
   2. Failure: pickUpErrorFromReturnCode (@test-selenium.R#97) 
   3. Failure: pickUpErrorFromPortInUse (@test-selenium.R#145) 
@@ -70,6 +70,7 @@ Last 13 lines of output:
 * checking for unstated dependencies in vignettes ... OK
 * checking package vignettes in 'inst/doc' ... OK
 * checking running R code from vignettes ... NONE
+  'basics.Rmd' using 'UTF-8'... OK
 * checking re-building of vignette outputs ... SKIPPED
 * DONE
 Status: 1 ERROR
