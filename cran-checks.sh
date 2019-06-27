@@ -7,7 +7,9 @@ pacman -S --needed --noconfirm $(pacman -Slq | grep mingw-w64-)
 
 # Make Latex, Pandoc available
 source setpath.sh
-pdflatex --help || exit 2
+pdflatex --version || exit 2
+pandoc --version || exit 2
+gswin64c --version || exit 2
 
 mkdir -p "$R_LIBS"
 
@@ -22,9 +24,9 @@ while read -r PKG; do
 		LOGLINE=$(grep "Status: " $LOGFILE)
 		echo "Previous result for $PKG: $LOGLINE"
 		if echo $LOGLINE | grep -Pq 'Status: (OK|[0-9]+ (NOTE|WARN))'; then
-			#echo "SKIPPING $PKG"
-			#continue
-			echo "Retrying..."
+			echo "SKIPPING $PKG"
+			continue
+			#echo "Retrying..."
 		fi
 	fi
 	if [ $(grep "^$PKG\\W*$" DoNotCheck) ] || [ $(grep "^$PKG\\W*$" DoNotCompile) ]; then
