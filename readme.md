@@ -1,5 +1,5 @@
 # Check results
-Last update: Fri, Jun 28, 2019 12:25:53 AM
+Last update: Fri, Jun 28, 2019  4:28:40 PM
 
 ## Install failures
 ```
@@ -7,6 +7,7 @@ BcDiag.Rcheck/00check.log:Installation failed.
 BRugs.Rcheck/00check.log:Installation failed.
 cairoDevice.Rcheck/00check.log:Installation failed.
 matchingMarkets.Rcheck/00check.log:Installation failed.
+pbdBASE.Rcheck/00check.log:Installation failed.
 pbdMPI.Rcheck/00check.log:Installation failed.
 PerfMeas.Rcheck/00check.log:Installation failed.
 protiq.Rcheck/00check.log:Installation failed.
@@ -32,7 +33,6 @@ dclone.Rcheck/00check.log:Status: 1 ERROR
 dcmle.Rcheck/00check.log:Status: 1 ERROR
 detrendr.Rcheck/00check.log:Status: 2 ERRORs, 1 NOTE
 document.Rcheck/00check.log:Status: 1 ERROR
-dodgr.Rcheck/00check.log:Status: 1 ERROR, 2 NOTEs
 doMPI.Rcheck/00check.log:Status: 1 ERROR
 enviGCMS.Rcheck/00check.log:Status: 1 ERROR
 estimatr.Rcheck/00check.log:Status: 1 ERROR
@@ -67,7 +67,6 @@ NanoStringNorm.Rcheck/00check.log:Status: 1 ERROR
 OutbreakTools.Rcheck/00check.log:Status: 1 ERROR
 padr.Rcheck/00check.log:Status: 2 ERRORs, 1 NOTE
 pathological.Rcheck/00check.log:Status: 1 ERROR
-pbdBASE.Rcheck/00check.log:Status: 1 ERROR
 pbdDMAT.Rcheck/00check.log:Status: 1 ERROR
 pbdSLAP.Rcheck/00check.log:Status: 1 ERROR
 phylocomr.Rcheck/00check.log:Status: 2 ERRORs
@@ -79,6 +78,7 @@ R2jags.Rcheck/00check.log:Status: 1 ERROR
 rags2ridges.Rcheck/00check.log:Status: 1 ERROR
 rbi.Rcheck/00check.log:Status: 2 ERRORs
 rCBA.Rcheck/00check.log:Status: 1 ERROR
+rerddap.Rcheck/00check.log:Status: 1 ERROR
 rggobi.Rcheck/00check.log:Status: 1 ERROR
 RISmed.Rcheck/00check.log:Status: 1 ERROR, 1 NOTE
 RMark.Rcheck/00check.log:Status: 1 ERROR

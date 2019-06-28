@@ -1,0 +1,190 @@
+* installing *source* package 'pbdBASE' ...
+** package 'pbdBASE' successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+
+*** arch - i386
+echo 'RNACI_CPPFLAGS = ' > Makeconf
+echo 'RNACI_LDFLAGS = ' >> Makeconf
+echo 'SLAP_LDFLAGS = C:/R/library/pbdSLAP/lib/i386/libslap.a' >> Makeconf
+echo 'MPI_ROOT = C:/Program Files (x86)/Microsoft SDKs/MPI/' >> Makeconf
+echo 'MPI_INCLUDE = C:/Program Files (x86)/Microsoft SDKs/MPI/Include/' >> Makeconf
+echo 'MPI_LIB = C:/PROGRA~2/Microsoft SDKs/MPI/Lib/x86/msmpi.lib' >> Makeconf
+echo 'PKG_CPPFLAGS = -I"C:/Program Files (x86)/Microsoft SDKs/MPI/Include/"  -I../inst/RNACI' >> Makeconf
+echo 'PKG_CFLAGS = ' >> Makeconf
+echo 'PKG_FFLAGS = ' >> Makeconf
+echo 'PKG_LIBS = "C:/R/library/pbdSLAP/lib/i386/libslap.a" -L"C:/progra~1/R/R-testing/bin/i386" -lRlapack -L"C:/progra~1/R/R-testing/bin/i386" -lRblas -lgfortran -lm -lquadmath "C:/PROGRA~2/Microsoft SDKs/MPI/Lib/x86/msmpi.lib" ' >> Makeconf
+/mingw32/bin/gcc  -I"C:/progra~1/R/R-testing/include" -DNDEBUG -I"C:/Program Files (x86)/Microsoft SDKs/MPI/Include/"  -I../inst/RNACI         -O2 -Wall  -std=gnu99 -mtune=generic -c base_qr.c -o base_qr.o
+/mingw32/bin/gcc  -I"C:/progra~1/R/R-testing/include" -DNDEBUG -I"C:/Program Files (x86)/Microsoft SDKs/MPI/Include/"  -I../inst/RNACI         -O2 -Wall  -std=gnu99 -mtune=generic -c pbdBASE_native.c -o pbdBASE_native.o
+/mingw32/bin/gcc  -I"C:/progra~1/R/R-testing/include" -DNDEBUG -I"C:/Program Files (x86)/Microsoft SDKs/MPI/Include/"  -I../inst/RNACI         -O2 -Wall  -std=gnu99 -mtune=generic -c descinit.c -o descinit.o
+/mingw32/bin/gcc  -I"C:/progra~1/R/R-testing/include" -DNDEBUG -I"C:/Program Files (x86)/Microsoft SDKs/MPI/Include/"  -I../inst/RNACI         -O2 -Wall  -std=gnu99 -mtune=generic -c base_mpi_blacs_reductions.c -o base_mpi_blacs_reductions.o
+/mingw32/bin/gcc  -I"C:/progra~1/R/R-testing/include" -DNDEBUG -I"C:/Program Files (x86)/Microsoft SDKs/MPI/Include/"  -I../inst/RNACI         -O2 -Wall  -std=gnu99 -mtune=generic -c base_scalapack_utility.c -o base_scalapack_utility.o
+/mingw32/bin/gcc  -I"C:/progra~1/R/R-testing/include" -DNDEBUG -I"C:/Program Files (x86)/Microsoft SDKs/MPI/Include/"  -I../inst/RNACI         -O2 -Wall  -std=gnu99 -mtune=generic -c base_plinalg.c -o base_plinalg.o
+/mingw32/bin/gcc  -I"C:/progra~1/R/R-testing/include" -DNDEBUG -I"C:/Program Files (x86)/Microsoft SDKs/MPI/Include/"  -I../inst/RNACI         -O2 -Wall  -std=gnu99 -mtune=generic -c base_p_matexp.c -o base_p_matexp.o
+/mingw32/bin/gcc  -I"C:/progra~1/R/R-testing/include" -DNDEBUG -I"C:/Program Files (x86)/Microsoft SDKs/MPI/Include/"  -I../inst/RNACI         -O2 -Wall  -std=gnu99 -mtune=generic -c base_prblas.c -o base_prblas.o
+In file included from pbdBASE.h:5,
+                 from base_prblas.c:7:
+../inst/RNACI/RNACI.h:86:21: warning: 'RNACI_ptct' defined but not used [-Wunused-variable]
+ static unsigned int RNACI_ptct = 0;
+                     ^~~~~~~~~~
+/mingw32/bin/gcc  -I"C:/progra~1/R/R-testing/include" -DNDEBUG -I"C:/Program Files (x86)/Microsoft SDKs/MPI/Include/"  -I../inst/RNACI         -O2 -Wall  -std=gnu99 -mtune=generic -c coords.c -o coords.o
+/mingw32/bin/gcc  -I"C:/progra~1/R/R-testing/include" -DNDEBUG -I"C:/Program Files (x86)/Microsoft SDKs/MPI/Include/"  -I../inst/RNACI         -O2 -Wall  -std=gnu99 -mtune=generic -c base_variance.c -o base_variance.o
+/mingw32/bin/gcc  -I"C:/progra~1/R/R-testing/include" -DNDEBUG -I"C:/Program Files (x86)/Microsoft SDKs/MPI/Include/"  -I../inst/RNACI         -O2 -Wall  -std=gnu99 -mtune=generic -c base_putil.c -o base_putil.o
+In file included from pbdBASE.h:5,
+                 from base_putil.c:7:
+../inst/RNACI/RNACI.h:86:21: warning: 'RNACI_ptct' defined but not used [-Wunused-variable]
+ static unsigned int RNACI_ptct = 0;
+                     ^~~~~~~~~~
+/mingw32/bin/gcc  -I"C:/progra~1/R/R-testing/include" -DNDEBUG -I"C:/Program Files (x86)/Microsoft SDKs/MPI/Include/"  -I../inst/RNACI         -O2 -Wall  -std=gnu99 -mtune=generic -c other.c -o other.o
+In file included from pbdBASE.h:5,
+                 from other.c:7:
+../inst/RNACI/RNACI.h:86:21: warning: 'RNACI_ptct' defined but not used [-Wunused-variable]
+ static unsigned int RNACI_ptct = 0;
+                     ^~~~~~~~~~
+/mingw32/bin/gcc  -I"C:/progra~1/R/R-testing/include" -DNDEBUG -I"C:/Program Files (x86)/Microsoft SDKs/MPI/Include/"  -I../inst/RNACI         -O2 -Wall  -std=gnu99 -mtune=generic -c redist.c -o redist.o
+/mingw32/bin/gcc  -I"C:/progra~1/R/R-testing/include" -DNDEBUG -I"C:/Program Files (x86)/Microsoft SDKs/MPI/Include/"  -I../inst/RNACI         -O2 -Wall  -std=gnu99 -mtune=generic -c base_pblas_level3.c -o base_pblas_level3.o
+/mingw32/bin/gcc  -I"C:/progra~1/R/R-testing/include" -DNDEBUG -I"C:/Program Files (x86)/Microsoft SDKs/MPI/Include/"  -I../inst/RNACI         -O2 -Wall  -std=gnu99 -mtune=generic -c base_mpi_blacs.c -o base_mpi_blacs.o
+/mingw32/bin/gcc  -I"C:/progra~1/R/R-testing/include" -DNDEBUG -I"C:/Program Files (x86)/Microsoft SDKs/MPI/Include/"  -I../inst/RNACI         -O2 -Wall  -std=gnu99 -mtune=generic -c base_matexp.c -o base_matexp.o
+/mingw32/bin/gcc  -I"C:/progra~1/R/R-testing/include" -DNDEBUG -I"C:/Program Files (x86)/Microsoft SDKs/MPI/Include/"  -I../inst/RNACI         -O2 -Wall  -std=gnu99 -mtune=generic -c comm_utils.c -o comm_utils.o
+In file included from pbdBASE.h:5,
+                 from comm_utils.c:7:
+../inst/RNACI/RNACI.h:86:21: warning: 'RNACI_ptct' defined but not used [-Wunused-variable]
+ static unsigned int RNACI_ptct = 0;
+                     ^~~~~~~~~~
+/mingw32/bin/gcc  -I"C:/progra~1/R/R-testing/include" -DNDEBUG -I"C:/Program Files (x86)/Microsoft SDKs/MPI/Include/"  -I../inst/RNACI         -O2 -Wall  -std=gnu99 -mtune=generic -c svd.c -o svd.o
+/mingw32/bin/gcc  -I"C:/progra~1/R/R-testing/include" -DNDEBUG -I"C:/Program Files (x86)/Microsoft SDKs/MPI/Include/"  -I../inst/RNACI         -O2 -Wall  -std=gnu99 -mtune=generic -c base_scalapack.c -o base_scalapack.o
+/mingw32/bin/gcc  -I"C:/progra~1/R/R-testing/include" -DNDEBUG -I"C:/Program Files (x86)/Microsoft SDKs/MPI/Include/"  -I../inst/RNACI         -O2 -Wall  -std=gnu99 -mtune=generic -c base_lm.c -o base_lm.o
+/mingw32/bin/gcc  -I"C:/progra~1/R/R-testing/include" -DNDEBUG -I"C:/Program Files (x86)/Microsoft SDKs/MPI/Include/"  -I../inst/RNACI         -O2 -Wall  -std=gnu99 -mtune=generic -c base/bprnt_c.c -o base/bprnt_c.o
+/mingw32/bin/gcc  -I"C:/progra~1/R/R-testing/include" -DNDEBUG -I"C:/Program Files (x86)/Microsoft SDKs/MPI/Include/"  -I../inst/RNACI         -O2 -Wall  -std=gnu99 -mtune=generic -c base/expm/pade_coefs.c -o base/expm/pade_coefs.o
+/mingw32/bin/gcc  -I"C:/progra~1/R/R-testing/include" -DNDEBUG -I"C:/Program Files (x86)/Microsoft SDKs/MPI/Include/"  -I../inst/RNACI         -O2 -Wall  -std=gnu99 -mtune=generic -c base/expm/p_matexp.c -o base/expm/p_matexp.o
+/mingw32/bin/gcc  -I"C:/progra~1/R/R-testing/include" -DNDEBUG -I"C:/Program Files (x86)/Microsoft SDKs/MPI/Include/"  -I../inst/RNACI         -O2 -Wall  -std=gnu99 -mtune=generic -c base/expm/matexp.c -o base/expm/matexp.o
+/mingw32/bin/gcc  -I"C:/progra~1/R/R-testing/include" -DNDEBUG -I"C:/Program Files (x86)/Microsoft SDKs/MPI/Include/"  -I../inst/RNACI         -O2 -Wall  -std=gnu99 -mtune=generic -c base/utils/scale.c -o base/utils/scale.o
+/mingw32/bin/gcc  -I"C:/progra~1/R/R-testing/include" -DNDEBUG -I"C:/Program Files (x86)/Microsoft SDKs/MPI/Include/"  -I../inst/RNACI         -O2 -Wall  -std=gnu99 -mtune=generic -c base/utils/redist.c -o base/utils/redist.o
+/mingw32/bin/gcc  -I"C:/progra~1/R/R-testing/include" -DNDEBUG -I"C:/Program Files (x86)/Microsoft SDKs/MPI/Include/"  -I../inst/RNACI         -O2 -Wall  -std=gnu99 -mtune=generic -c export_blacs/pkg_tools.c -o export_blacs/pkg_tools.o
+/mingw32/bin/gfortran      -O2  -mtune=generic -c base/bprnt.f -o base/bprnt.o
+/mingw32/bin/gfortran      -O2  -mtune=generic -c base/linalg/plm.f -o base/linalg/plm.o
+/mingw32/bin/gfortran      -O2  -mtune=generic -c base/utils/putil.f -o base/utils/putil.o
+/mingw32/bin/gfortran      -O2  -mtune=generic -c base/utils/dmat_redist.f -o base/utils/dmat_redist.o
+/mingw32/bin/gfortran      -O2  -mtune=generic -c  base/linalg/norms.f90 -o base/linalg/norms.o
+/mingw32/bin/gfortran      -O2  -mtune=generic -c  base/linalg/pcrossprod.f90 -o base/linalg/pcrossprod.o
+/mingw32/bin/gfortran      -O2  -mtune=generic -c  base/linalg/pinverse.f90 -o base/linalg/pinverse.o
+/mingw32/bin/gfortran      -O2  -mtune=generic -c  base/linalg/prblas.f90 -o base/linalg/prblas.o
+/mingw32/bin/gfortran      -O2  -mtune=generic -c  base/stats/variance.f90 -o base/stats/variance.o
+/mingw32/bin/gfortran      -O2  -mtune=generic -c  base/utils/blacs_util.f90 -o base/utils/blacs_util.o
+/mingw32/bin/gfortran      -O2  -mtune=generic -c  base/utils/indices.f90 -o base/utils/indices.o
+/mingw32/bin/gfortran      -O2  -mtune=generic -c  base/utils/util.f90 -o base/utils/util.o
+/mingw32/bin/gfortran      -O2  -mtune=generic -c  base/utils/special.f90 -o base/utils/special.o
+/mingw32/bin/gfortran      -O2  -mtune=generic -c  utils/swaps.f90 -o utils/swaps.o
+/mingw32/bin/gfortran      -O2  -mtune=generic -c  utils/quicksort_utils.f90 -o utils/quicksort_utils.o
+/mingw32/bin/gfortran      -O2  -mtune=generic -c  utils/strings.f90 -o utils/strings.o
+/mingw32/bin/gfortran      -O2  -mtune=generic -c  utils/interfaces.f90 -o utils/interfaces.o
+/mingw32/bin/gfortran      -O2  -mtune=generic -c  utils/fpmod.f90 -o utils/fpmod.o
+/mingw32/bin/gfortran      -O2  -mtune=generic -c  utils/sorts.f90 -o utils/sorts.o
+/mingw32/bin/gfortran      -O2  -mtune=generic -c  utils/subset_special.f90 -o utils/subset_special.o
+/mingw32/bin/gfortran      -O2  -mtune=generic -c  utils/gnu_timer.f90 -o utils/gnu_timer.o
+/mingw32/bin/gfortran      -O2  -mtune=generic -c  utils/signs.f90 -o utils/signs.o
+/mingw32/bin/gfortran      -O2  -mtune=generic -c  utils/subset_utils.f90 -o utils/subset_utils.o
+/mingw32/bin/gcc -shared -s -static-libgcc -o pbdBASE.dll tmp.def base_qr.o pbdBASE_native.o descinit.o base_mpi_blacs_reductions.o base_scalapack_utility.o base_plinalg.o base_p_matexp.o base_prblas.o coords.o base_variance.o base_putil.o other.o redist.o base_pblas_level3.o base_mpi_blacs.o base_matexp.o comm_utils.o svd.o base_scalapack.o base_lm.o base/bprnt_c.o base/expm/pade_coefs.o base/expm/p_matexp.o base/expm/matexp.o base/utils/scale.o base/utils/redist.o export_blacs/pkg_tools.o base/bprnt.o base/linalg/plm.o base/utils/putil.o base/utils/dmat_redist.o base/linalg/norms.o base/linalg/pcrossprod.o base/linalg/pinverse.o base/linalg/prblas.o base/stats/variance.o base/utils/blacs_util.o base/utils/indices.o base/utils/util.o base/utils/special.o utils/quicksort_utils.o utils/strings.o utils/swaps.o utils/interfaces.o utils/fpmod.o utils/subset_special.o utils/gnu_timer.o utils/signs.o utils/sorts.o utils/subset_utils.o C:/R/library/pbdSLAP/lib/i386/libslap.a -LC:/progra~1/R/R-testing/bin/i386 -lRlapack -LC:/progra~1/R/R-testing/bin/i386 -lRblas -lgfortran -lm -lquadmath C:/PROGRA~2/Microsoft SDKs/MPI/Lib/x86/msmpi.lib -LC:/progra~1/R/R-testing/bin/i386 -lR
+installing via 'install.libs.R' to C:/Users/Jeroen/Documents/checks/pbdBASE.Rcheck/00LOCK-pbdBASE/00new/pbdBASE
+
+*** arch - x64
+echo 'RNACI_CPPFLAGS = ' > Makeconf
+echo 'RNACI_LDFLAGS = ' >> Makeconf
+echo 'SLAP_LDFLAGS = C:/R/library/pbdSLAP/lib/x64/libslap.a' >> Makeconf
+echo 'MPI_ROOT = C:/Program Files (x86)/Microsoft SDKs/MPI/' >> Makeconf
+echo 'MPI_INCLUDE = C:/Program Files (x86)/Microsoft SDKs/MPI/Include/' >> Makeconf
+echo 'MPI_LIB = C:/R/library/00LOCK-pbdMPI/00new/pbdMPI/libs/x64/libmsmpi64.a' >> Makeconf
+echo 'PKG_CPPFLAGS = -I"C:/Program Files (x86)/Microsoft SDKs/MPI/Include/"  -I../inst/RNACI' >> Makeconf
+echo 'PKG_CFLAGS = ' >> Makeconf
+echo 'PKG_FFLAGS = ' >> Makeconf
+echo 'PKG_LIBS = "C:/R/library/pbdSLAP/lib/x64/libslap.a" -L"C:/progra~1/R/R-testing/bin/x64" -lRlapack -L"C:/progra~1/R/R-testing/bin/x64" -lRblas -lgfortran -lm -lquadmath "C:/R/library/00LOCK-pbdMPI/00new/pbdMPI/libs/x64/libmsmpi64.a" ' >> Makeconf
+/mingw64/bin/gcc  -I"C:/progra~1/R/R-testing/include" -DNDEBUG -I"C:/Program Files (x86)/Microsoft SDKs/MPI/Include/"  -I../inst/RNACI         -O2 -Wall  -std=gnu99 -mtune=generic -c base_qr.c -o base_qr.o
+/mingw64/bin/gcc  -I"C:/progra~1/R/R-testing/include" -DNDEBUG -I"C:/Program Files (x86)/Microsoft SDKs/MPI/Include/"  -I../inst/RNACI         -O2 -Wall  -std=gnu99 -mtune=generic -c pbdBASE_native.c -o pbdBASE_native.o
+/mingw64/bin/gcc  -I"C:/progra~1/R/R-testing/include" -DNDEBUG -I"C:/Program Files (x86)/Microsoft SDKs/MPI/Include/"  -I../inst/RNACI         -O2 -Wall  -std=gnu99 -mtune=generic -c descinit.c -o descinit.o
+/mingw64/bin/gcc  -I"C:/progra~1/R/R-testing/include" -DNDEBUG -I"C:/Program Files (x86)/Microsoft SDKs/MPI/Include/"  -I../inst/RNACI         -O2 -Wall  -std=gnu99 -mtune=generic -c base_mpi_blacs_reductions.c -o base_mpi_blacs_reductions.o
+/mingw64/bin/gcc  -I"C:/progra~1/R/R-testing/include" -DNDEBUG -I"C:/Program Files (x86)/Microsoft SDKs/MPI/Include/"  -I../inst/RNACI         -O2 -Wall  -std=gnu99 -mtune=generic -c base_scalapack_utility.c -o base_scalapack_utility.o
+/mingw64/bin/gcc  -I"C:/progra~1/R/R-testing/include" -DNDEBUG -I"C:/Program Files (x86)/Microsoft SDKs/MPI/Include/"  -I../inst/RNACI         -O2 -Wall  -std=gnu99 -mtune=generic -c base_plinalg.c -o base_plinalg.o
+/mingw64/bin/gcc  -I"C:/progra~1/R/R-testing/include" -DNDEBUG -I"C:/Program Files (x86)/Microsoft SDKs/MPI/Include/"  -I../inst/RNACI         -O2 -Wall  -std=gnu99 -mtune=generic -c base_p_matexp.c -o base_p_matexp.o
+/mingw64/bin/gcc  -I"C:/progra~1/R/R-testing/include" -DNDEBUG -I"C:/Program Files (x86)/Microsoft SDKs/MPI/Include/"  -I../inst/RNACI         -O2 -Wall  -std=gnu99 -mtune=generic -c base_prblas.c -o base_prblas.o
+In file included from pbdBASE.h:5,
+                 from base_prblas.c:7:
+../inst/RNACI/RNACI.h:86:21: warning: 'RNACI_ptct' defined but not used [-Wunused-variable]
+ static unsigned int RNACI_ptct = 0;
+                     ^~~~~~~~~~
+/mingw64/bin/gcc  -I"C:/progra~1/R/R-testing/include" -DNDEBUG -I"C:/Program Files (x86)/Microsoft SDKs/MPI/Include/"  -I../inst/RNACI         -O2 -Wall  -std=gnu99 -mtune=generic -c coords.c -o coords.o
+/mingw64/bin/gcc  -I"C:/progra~1/R/R-testing/include" -DNDEBUG -I"C:/Program Files (x86)/Microsoft SDKs/MPI/Include/"  -I../inst/RNACI         -O2 -Wall  -std=gnu99 -mtune=generic -c base_variance.c -o base_variance.o
+/mingw64/bin/gcc  -I"C:/progra~1/R/R-testing/include" -DNDEBUG -I"C:/Program Files (x86)/Microsoft SDKs/MPI/Include/"  -I../inst/RNACI         -O2 -Wall  -std=gnu99 -mtune=generic -c base_putil.c -o base_putil.o
+In file included from pbdBASE.h:5,
+                 from base_putil.c:7:
+../inst/RNACI/RNACI.h:86:21: warning: 'RNACI_ptct' defined but not used [-Wunused-variable]
+ static unsigned int RNACI_ptct = 0;
+                     ^~~~~~~~~~
+/mingw64/bin/gcc  -I"C:/progra~1/R/R-testing/include" -DNDEBUG -I"C:/Program Files (x86)/Microsoft SDKs/MPI/Include/"  -I../inst/RNACI         -O2 -Wall  -std=gnu99 -mtune=generic -c other.c -o other.o
+In file included from pbdBASE.h:5,
+                 from other.c:7:
+../inst/RNACI/RNACI.h:86:21: warning: 'RNACI_ptct' defined but not used [-Wunused-variable]
+ static unsigned int RNACI_ptct = 0;
+                     ^~~~~~~~~~
+/mingw64/bin/gcc  -I"C:/progra~1/R/R-testing/include" -DNDEBUG -I"C:/Program Files (x86)/Microsoft SDKs/MPI/Include/"  -I../inst/RNACI         -O2 -Wall  -std=gnu99 -mtune=generic -c redist.c -o redist.o
+/mingw64/bin/gcc  -I"C:/progra~1/R/R-testing/include" -DNDEBUG -I"C:/Program Files (x86)/Microsoft SDKs/MPI/Include/"  -I../inst/RNACI         -O2 -Wall  -std=gnu99 -mtune=generic -c base_pblas_level3.c -o base_pblas_level3.o
+/mingw64/bin/gcc  -I"C:/progra~1/R/R-testing/include" -DNDEBUG -I"C:/Program Files (x86)/Microsoft SDKs/MPI/Include/"  -I../inst/RNACI         -O2 -Wall  -std=gnu99 -mtune=generic -c base_mpi_blacs.c -o base_mpi_blacs.o
+/mingw64/bin/gcc  -I"C:/progra~1/R/R-testing/include" -DNDEBUG -I"C:/Program Files (x86)/Microsoft SDKs/MPI/Include/"  -I../inst/RNACI         -O2 -Wall  -std=gnu99 -mtune=generic -c base_matexp.c -o base_matexp.o
+/mingw64/bin/gcc  -I"C:/progra~1/R/R-testing/include" -DNDEBUG -I"C:/Program Files (x86)/Microsoft SDKs/MPI/Include/"  -I../inst/RNACI         -O2 -Wall  -std=gnu99 -mtune=generic -c comm_utils.c -o comm_utils.o
+In file included from pbdBASE.h:5,
+                 from comm_utils.c:7:
+../inst/RNACI/RNACI.h:86:21: warning: 'RNACI_ptct' defined but not used [-Wunused-variable]
+ static unsigned int RNACI_ptct = 0;
+                     ^~~~~~~~~~
+/mingw64/bin/gcc  -I"C:/progra~1/R/R-testing/include" -DNDEBUG -I"C:/Program Files (x86)/Microsoft SDKs/MPI/Include/"  -I../inst/RNACI         -O2 -Wall  -std=gnu99 -mtune=generic -c svd.c -o svd.o
+/mingw64/bin/gcc  -I"C:/progra~1/R/R-testing/include" -DNDEBUG -I"C:/Program Files (x86)/Microsoft SDKs/MPI/Include/"  -I../inst/RNACI         -O2 -Wall  -std=gnu99 -mtune=generic -c base_scalapack.c -o base_scalapack.o
+/mingw64/bin/gcc  -I"C:/progra~1/R/R-testing/include" -DNDEBUG -I"C:/Program Files (x86)/Microsoft SDKs/MPI/Include/"  -I../inst/RNACI         -O2 -Wall  -std=gnu99 -mtune=generic -c base_lm.c -o base_lm.o
+/mingw64/bin/gcc  -I"C:/progra~1/R/R-testing/include" -DNDEBUG -I"C:/Program Files (x86)/Microsoft SDKs/MPI/Include/"  -I../inst/RNACI         -O2 -Wall  -std=gnu99 -mtune=generic -c base/bprnt_c.c -o base/bprnt_c.o
+/mingw64/bin/gcc  -I"C:/progra~1/R/R-testing/include" -DNDEBUG -I"C:/Program Files (x86)/Microsoft SDKs/MPI/Include/"  -I../inst/RNACI         -O2 -Wall  -std=gnu99 -mtune=generic -c base/expm/pade_coefs.c -o base/expm/pade_coefs.o
+/mingw64/bin/gcc  -I"C:/progra~1/R/R-testing/include" -DNDEBUG -I"C:/Program Files (x86)/Microsoft SDKs/MPI/Include/"  -I../inst/RNACI         -O2 -Wall  -std=gnu99 -mtune=generic -c base/expm/p_matexp.c -o base/expm/p_matexp.o
+/mingw64/bin/gcc  -I"C:/progra~1/R/R-testing/include" -DNDEBUG -I"C:/Program Files (x86)/Microsoft SDKs/MPI/Include/"  -I../inst/RNACI         -O2 -Wall  -std=gnu99 -mtune=generic -c base/expm/matexp.c -o base/expm/matexp.o
+/mingw64/bin/gcc  -I"C:/progra~1/R/R-testing/include" -DNDEBUG -I"C:/Program Files (x86)/Microsoft SDKs/MPI/Include/"  -I../inst/RNACI         -O2 -Wall  -std=gnu99 -mtune=generic -c base/utils/scale.c -o base/utils/scale.o
+/mingw64/bin/gcc  -I"C:/progra~1/R/R-testing/include" -DNDEBUG -I"C:/Program Files (x86)/Microsoft SDKs/MPI/Include/"  -I../inst/RNACI         -O2 -Wall  -std=gnu99 -mtune=generic -c base/utils/redist.c -o base/utils/redist.o
+/mingw64/bin/gcc  -I"C:/progra~1/R/R-testing/include" -DNDEBUG -I"C:/Program Files (x86)/Microsoft SDKs/MPI/Include/"  -I../inst/RNACI         -O2 -Wall  -std=gnu99 -mtune=generic -c export_blacs/pkg_tools.c -o export_blacs/pkg_tools.o
+/mingw64/bin/gfortran      -O2  -mtune=generic -c base/bprnt.f -o base/bprnt.o
+/mingw64/bin/gfortran      -O2  -mtune=generic -c base/linalg/plm.f -o base/linalg/plm.o
+/mingw64/bin/gfortran      -O2  -mtune=generic -c base/utils/putil.f -o base/utils/putil.o
+/mingw64/bin/gfortran      -O2  -mtune=generic -c base/utils/dmat_redist.f -o base/utils/dmat_redist.o
+/mingw64/bin/gfortran      -O2  -mtune=generic -c  base/linalg/norms.f90 -o base/linalg/norms.o
+/mingw64/bin/gfortran      -O2  -mtune=generic -c  base/linalg/pcrossprod.f90 -o base/linalg/pcrossprod.o
+/mingw64/bin/gfortran      -O2  -mtune=generic -c  base/linalg/pinverse.f90 -o base/linalg/pinverse.o
+/mingw64/bin/gfortran      -O2  -mtune=generic -c  base/linalg/prblas.f90 -o base/linalg/prblas.o
+/mingw64/bin/gfortran      -O2  -mtune=generic -c  base/stats/variance.f90 -o base/stats/variance.o
+/mingw64/bin/gfortran      -O2  -mtune=generic -c  base/utils/blacs_util.f90 -o base/utils/blacs_util.o
+/mingw64/bin/gfortran      -O2  -mtune=generic -c  base/utils/indices.f90 -o base/utils/indices.o
+/mingw64/bin/gfortran      -O2  -mtune=generic -c  base/utils/util.f90 -o base/utils/util.o
+/mingw64/bin/gfortran      -O2  -mtune=generic -c  base/utils/special.f90 -o base/utils/special.o
+/mingw64/bin/gfortran      -O2  -mtune=generic -c  utils/swaps.f90 -o utils/swaps.o
+/mingw64/bin/gfortran      -O2  -mtune=generic -c  utils/quicksort_utils.f90 -o utils/quicksort_utils.o
+/mingw64/bin/gfortran      -O2  -mtune=generic -c  utils/strings.f90 -o utils/strings.o
+/mingw64/bin/gfortran      -O2  -mtune=generic -c  utils/interfaces.f90 -o utils/interfaces.o
+/mingw64/bin/gfortran      -O2  -mtune=generic -c  utils/fpmod.f90 -o utils/fpmod.o
+/mingw64/bin/gfortran      -O2  -mtune=generic -c  utils/sorts.f90 -o utils/sorts.o
+/mingw64/bin/gfortran      -O2  -mtune=generic -c  utils/subset_special.f90 -o utils/subset_special.o
+/mingw64/bin/gfortran      -O2  -mtune=generic -c  utils/gnu_timer.f90 -o utils/gnu_timer.o
+/mingw64/bin/gfortran      -O2  -mtune=generic -c  utils/signs.f90 -o utils/signs.o
+/mingw64/bin/gfortran      -O2  -mtune=generic -c  utils/subset_utils.f90 -o utils/subset_utils.o
+/mingw64/bin/gcc -shared -s -static-libgcc -o pbdBASE.dll tmp.def base_qr.o pbdBASE_native.o descinit.o base_mpi_blacs_reductions.o base_scalapack_utility.o base_plinalg.o base_p_matexp.o base_prblas.o coords.o base_variance.o base_putil.o other.o redist.o base_pblas_level3.o base_mpi_blacs.o base_matexp.o comm_utils.o svd.o base_scalapack.o base_lm.o base/bprnt_c.o base/expm/pade_coefs.o base/expm/p_matexp.o base/expm/matexp.o base/utils/scale.o base/utils/redist.o export_blacs/pkg_tools.o base/bprnt.o base/linalg/plm.o base/utils/putil.o base/utils/dmat_redist.o base/linalg/norms.o base/linalg/pcrossprod.o base/linalg/pinverse.o base/linalg/prblas.o base/stats/variance.o base/utils/blacs_util.o base/utils/indices.o base/utils/util.o base/utils/special.o utils/quicksort_utils.o utils/strings.o utils/swaps.o utils/interfaces.o utils/fpmod.o utils/subset_special.o utils/gnu_timer.o utils/signs.o utils/sorts.o utils/subset_utils.o C:/R/library/pbdSLAP/lib/x64/libslap.a -LC:/progra~1/R/R-testing/bin/x64 -lRlapack -LC:/progra~1/R/R-testing/bin/x64 -lRblas -lgfortran -lm -lquadmath C:/R/library/00LOCK-pbdMPI/00new/pbdMPI/libs/x64/libmsmpi64.a -LC:/progra~1/R/R-testing/bin/x64 -lR
+gcc.exe: error: C:/R/library/00LOCK-pbdMPI/00new/pbdMPI/libs/x64/libmsmpi64.a: No such file or directory
+installing via 'install.libs.R' to C:/Users/Jeroen/Documents/checks/pbdBASE.Rcheck/00LOCK-pbdBASE/00new/pbdBASE
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+   'pbdBASE-guide.Rnw' 
+** testing if installed package can be loaded from temporary location
+*** arch - i386
+*** arch - x64
+Error: package or namespace load failed for 'pbdBASE' in library.dynam(lib, package, package.lib):
+ DLL 'pbdBASE' not found: maybe not installed for this architecture?
+Error: loading failed
+Execution halted
+ERROR: loading failed for 'x64'
+* removing 'C:/Users/Jeroen/Documents/checks/pbdBASE.Rcheck/pbdBASE'

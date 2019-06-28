@@ -1,5 +1,5 @@
 * using log directory 'C:/Users/Jeroen/Documents/checks/pbdBASE.Rcheck'
-* using R version 3.6.0 Under development (Testing Rtools) (2019-03-14 r76238)
+* using R version 3.7.0 Under development (Testing Rtools) (2019-06-25 r76738)
 * using platform: x86_64-w64-mingw32 (64-bit)
 * using session charset: ISO8859-1
 * using options '--no-manual --no-build-vignettes'
@@ -7,10 +7,14 @@
 * checking extension type ... Package
 * this is package 'pbdBASE' version '0.5-0'
 * checking package namespace information ... OK
-* checking package dependencies ... ERROR
-Packages required but not available: 'pbdMPI', 'pbdSLAP'
-
-See section 'The DESCRIPTION file' in the 'Writing R Extensions'
-manual.
+* checking package dependencies ... OK
+* checking if this is a source package ... OK
+* checking if there is a namespace ... OK
+* checking for executable files ... OK
+* checking for hidden files and directories ... OK
+* checking for portable file names ... OK
+* checking whether package 'pbdBASE' can be installed ... ERROR
+Installation failed.
+See 'C:/Users/Jeroen/Documents/checks/pbdBASE.Rcheck/00install.out' for details.
 * DONE
 Status: 1 ERROR
