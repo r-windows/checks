@@ -7,7 +7,8 @@ Software installed on the server besides R and Rtools40:
  - Pandoc
  - Miktex
  - Ghostscript
- - JAGS
+ - JAGS (needed for rjags, runjags)
+ - OpenBugs (needed for BRugs)
  - InnoSetup
  - [Microsoft MPI SDK](https://docs.microsoft.com/en-us/message-passing-interface/microsoft-mpi#ms-mpi-downloads)
 
