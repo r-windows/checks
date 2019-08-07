@@ -1,10 +1,12 @@
-* using log directory 'C:/Users/Jeroen/Documents/checks/cairoDevice.Rcheck'
+* using log directory 'C:/Users/Jeroen/Documents/checks/BIGL.Rcheck'
 * using R version 3.7.0 Under development (Testing Rtools) (2019-07-30 r76907)
 * using platform: x86_64-w64-mingw32 (64-bit)
 * using session charset: ISO8859-1
 * using options '--no-manual --no-build-vignettes'
-* checking for file 'cairoDevice/DESCRIPTION' ... OK
-* this is package 'cairoDevice' version '2.27'
+* checking for file 'BIGL/DESCRIPTION' ... OK
+* checking extension type ... Package
+* this is package 'BIGL' version '1.4.1'
+* package encoding: UTF-8
 * checking package namespace information ... OK
 * checking package dependencies ... OK
 * checking if this is a source package ... OK
@@ -12,8 +14,8 @@
 * checking for executable files ... OK
 * checking for hidden files and directories ... OK
 * checking for portable file names ... OK
-* checking whether package 'cairoDevice' can be installed ... ERROR
+* checking whether package 'BIGL' can be installed ... ERROR
 Installation failed.
-See 'C:/Users/Jeroen/Documents/checks/cairoDevice.Rcheck/00install.out' for details.
+See 'C:/Users/Jeroen/Documents/checks/BIGL.Rcheck/00install.out' for details.
 * DONE
 Status: 1 ERROR

@@ -12,8 +12,8 @@
 
 *** arch - i386
 rm -f RQuantLib.dll RcppExports.o affine.o asian.o barrier_binary.o bermudan.o bonds.o calendars.o curves.o dates.o daycounter.o discount.o hullwhite.o implieds.o modules.o sabr.o schedule.o utils.o vanilla.o zero.o
-"C:/Progra~1/R/R-testing/bin/i386/Rscript.exe" "../tools/winlibs.R"
-/mingw32/bin/g++  -std=gnu++11 -I"C:/Progra~1/R/R-testing/include" -DNDEBUG -I../windows/quantlib-1.14/include -I../inst/include -I"C:/R/library/Rcpp/include"     -fopenmp -DBOOST_NO_AUTO_PTR -Wno-deprecated-declarations   -O2 -Wall  -mtune=generic -c RcppExports.cpp -o RcppExports.o
+"C:/progra~1/R/R-testing/bin/i386/Rscript.exe" "../tools/winlibs.R"
+/mingw32/bin/g++  -std=gnu++11 -I"C:/progra~1/R/R-testing/include" -DNDEBUG -I../windows/quantlib-1.14/include -I../inst/include -I'C:/R/library/Rcpp/include'     -fopenmp -DBOOST_NO_AUTO_PTR -Wno-deprecated-declarations   -O2 -Wall  -mtune=generic -c RcppExports.cpp -o RcppExports.o
 In file included from ../windows/quantlib-1.14/include/boost/numeric/ublas/matrix_sparse.hpp:17,
                  from ../windows/quantlib-1.14/include/ql/math/matrixutilities/sparsematrix.hpp:53,
                  from ../windows/quantlib-1.14/include/ql/methods/finitedifferences/operators/fdmlinearop.hpp:30,
@@ -33,402 +33,7 @@ In file included from ../windows/quantlib-1.14/include/boost/numeric/ublas/matri
 ../windows/quantlib-1.14/include/boost/numeric/ublas/matrix_expression.hpp:2227:21: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
                      if (it2_ != it2_end_) {
                      ^~
-In file included from C:/R/library/Rcpp/include/Rcpp/r/headers.h:61,
-                 from C:/R/library/Rcpp/include/RcppCommon.h:29,
-                 from ../inst/include/rquantlib_internal.h:30,
-                 from ../inst/include/RQuantLib.h:22,
-                 from RcppExports.cpp:4:
-RcppExports.cpp: In function 'SEXPREC* _RQuantLib_zeroPriceByYieldEngine_try(SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP)':
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:32:9: warning: unused variable 'nprot' [-Wunused-variable]
-     int nprot = 0;                                                                               \
-         ^~~~~
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:32:9: note: in definition of macro 'BEGIN_RCPP'
-     int nprot = 0;                                                                               \
-         ^~~~~
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:36:17: warning: unused variable 'stop_sym' [-Wunused-variable]
-     static SEXP stop_sym = Rf_install("stop");                                                   \
-                 ^~~~~~~~
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:36:17: note: in definition of macro 'BEGIN_RCPP'
-     static SEXP stop_sym = Rf_install("stop");                                                   \
-                 ^~~~~~~~
-RcppExports.cpp: In function 'SEXPREC* _RQuantLib_zeroYieldByPriceEngine_try(SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP)':
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:32:9: warning: unused variable 'nprot' [-Wunused-variable]
-     int nprot = 0;                                                                               \
-         ^~~~~
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:32:9: note: in definition of macro 'BEGIN_RCPP'
-     int nprot = 0;                                                                               \
-         ^~~~~
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:36:17: warning: unused variable 'stop_sym' [-Wunused-variable]
-     static SEXP stop_sym = Rf_install("stop");                                                   \
-                 ^~~~~~~~
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:36:17: note: in definition of macro 'BEGIN_RCPP'
-     static SEXP stop_sym = Rf_install("stop");                                                   \
-                 ^~~~~~~~
-RcppExports.cpp: In function 'SEXPREC* _RQuantLib_fixedRateBondYieldByPriceEngine_try(SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP)':
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:32:9: warning: unused variable 'nprot' [-Wunused-variable]
-     int nprot = 0;                                                                               \
-         ^~~~~
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:32:9: note: in definition of macro 'BEGIN_RCPP'
-     int nprot = 0;                                                                               \
-         ^~~~~
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:36:17: warning: unused variable 'stop_sym' [-Wunused-variable]
-     static SEXP stop_sym = Rf_install("stop");                                                   \
-                 ^~~~~~~~
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:36:17: note: in definition of macro 'BEGIN_RCPP'
-     static SEXP stop_sym = Rf_install("stop");                                                   \
-                 ^~~~~~~~
-RcppExports.cpp: In function 'SEXPREC* _RQuantLib_fixedRateBondPriceByYieldEngine_try(SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP)':
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:32:9: warning: unused variable 'nprot' [-Wunused-variable]
-     int nprot = 0;                                                                               \
-         ^~~~~
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:32:9: note: in definition of macro 'BEGIN_RCPP'
-     int nprot = 0;                                                                               \
-         ^~~~~
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:36:17: warning: unused variable 'stop_sym' [-Wunused-variable]
-     static SEXP stop_sym = Rf_install("stop");                                                   \
-                 ^~~~~~~~
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:36:17: note: in definition of macro 'BEGIN_RCPP'
-     static SEXP stop_sym = Rf_install("stop");                                                   \
-                 ^~~~~~~~
-RcppExports.cpp: In function 'SEXPREC* _RQuantLib_FloatBond1_try(SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP)':
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:32:9: warning: unused variable 'nprot' [-Wunused-variable]
-     int nprot = 0;                                                                               \
-         ^~~~~
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:32:9: note: in definition of macro 'BEGIN_RCPP'
-     int nprot = 0;                                                                               \
-         ^~~~~
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:36:17: warning: unused variable 'stop_sym' [-Wunused-variable]
-     static SEXP stop_sym = Rf_install("stop");                                                   \
-                 ^~~~~~~~
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:36:17: note: in definition of macro 'BEGIN_RCPP'
-     static SEXP stop_sym = Rf_install("stop");                                                   \
-                 ^~~~~~~~
-RcppExports.cpp: In function 'SEXPREC* _RQuantLib_FloatBond2_try(SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP)':
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:32:9: warning: unused variable 'nprot' [-Wunused-variable]
-     int nprot = 0;                                                                               \
-         ^~~~~
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:32:9: note: in definition of macro 'BEGIN_RCPP'
-     int nprot = 0;                                                                               \
-         ^~~~~
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:36:17: warning: unused variable 'stop_sym' [-Wunused-variable]
-     static SEXP stop_sym = Rf_install("stop");                                                   \
-                 ^~~~~~~~
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:36:17: note: in definition of macro 'BEGIN_RCPP'
-     static SEXP stop_sym = Rf_install("stop");                                                   \
-                 ^~~~~~~~
-RcppExports.cpp: In function 'SEXPREC* _RQuantLib_FloatBond3_try(SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP)':
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:32:9: warning: unused variable 'nprot' [-Wunused-variable]
-     int nprot = 0;                                                                               \
-         ^~~~~
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:32:9: note: in definition of macro 'BEGIN_RCPP'
-     int nprot = 0;                                                                               \
-         ^~~~~
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:36:17: warning: unused variable 'stop_sym' [-Wunused-variable]
-     static SEXP stop_sym = Rf_install("stop");                                                   \
-                 ^~~~~~~~
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:36:17: note: in definition of macro 'BEGIN_RCPP'
-     static SEXP stop_sym = Rf_install("stop");                                                   \
-                 ^~~~~~~~
-RcppExports.cpp: In function 'SEXPREC* _RQuantLib_FloatBond4_try(SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP)':
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:32:9: warning: unused variable 'nprot' [-Wunused-variable]
-     int nprot = 0;                                                                               \
-         ^~~~~
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:32:9: note: in definition of macro 'BEGIN_RCPP'
-     int nprot = 0;                                                                               \
-         ^~~~~
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:36:17: warning: unused variable 'stop_sym' [-Wunused-variable]
-     static SEXP stop_sym = Rf_install("stop");                                                   \
-                 ^~~~~~~~
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:36:17: note: in definition of macro 'BEGIN_RCPP'
-     static SEXP stop_sym = Rf_install("stop");                                                   \
-                 ^~~~~~~~
-RcppExports.cpp: In function 'SEXPREC* _RQuantLib_floatingWithRebuiltCurveEngine_try(SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP)':
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:32:9: warning: unused variable 'nprot' [-Wunused-variable]
-     int nprot = 0;                                                                               \
-         ^~~~~
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:32:9: note: in definition of macro 'BEGIN_RCPP'
-     int nprot = 0;                                                                               \
-         ^~~~~
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:36:17: warning: unused variable 'stop_sym' [-Wunused-variable]
-     static SEXP stop_sym = Rf_install("stop");                                                   \
-                 ^~~~~~~~
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:36:17: note: in definition of macro 'BEGIN_RCPP'
-     static SEXP stop_sym = Rf_install("stop");                                                   \
-                 ^~~~~~~~
-RcppExports.cpp: In function 'SEXPREC* _RQuantLib_FixedRateWithYield_try(SEXP, SEXP, SEXP, SEXP, SEXP)':
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:32:9: warning: unused variable 'nprot' [-Wunused-variable]
-     int nprot = 0;                                                                               \
-         ^~~~~
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:32:9: note: in definition of macro 'BEGIN_RCPP'
-     int nprot = 0;                                                                               \
-         ^~~~~
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:36:17: warning: unused variable 'stop_sym' [-Wunused-variable]
-     static SEXP stop_sym = Rf_install("stop");                                                   \
-                 ^~~~~~~~
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:36:17: note: in definition of macro 'BEGIN_RCPP'
-     static SEXP stop_sym = Rf_install("stop");                                                   \
-                 ^~~~~~~~
-RcppExports.cpp: In function 'SEXPREC* _RQuantLib_FixedRateWithPrice_try(SEXP, SEXP, SEXP, SEXP, SEXP)':
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:32:9: warning: unused variable 'nprot' [-Wunused-variable]
-     int nprot = 0;                                                                               \
-         ^~~~~
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:32:9: note: in definition of macro 'BEGIN_RCPP'
-     int nprot = 0;                                                                               \
-         ^~~~~
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:36:17: warning: unused variable 'stop_sym' [-Wunused-variable]
-     static SEXP stop_sym = Rf_install("stop");                                                   \
-                 ^~~~~~~~
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:36:17: note: in definition of macro 'BEGIN_RCPP'
-     static SEXP stop_sym = Rf_install("stop");                                                   \
-                 ^~~~~~~~
-RcppExports.cpp: In function 'SEXPREC* _RQuantLib_FixedRateWithRebuiltCurve_try(SEXP, SEXP, SEXP, SEXP, SEXP, SEXP)':
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:32:9: warning: unused variable 'nprot' [-Wunused-variable]
-     int nprot = 0;                                                                               \
-         ^~~~~
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:32:9: note: in definition of macro 'BEGIN_RCPP'
-     int nprot = 0;                                                                               \
-         ^~~~~
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:36:17: warning: unused variable 'stop_sym' [-Wunused-variable]
-     static SEXP stop_sym = Rf_install("stop");                                                   \
-                 ^~~~~~~~
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:36:17: note: in definition of macro 'BEGIN_RCPP'
-     static SEXP stop_sym = Rf_install("stop");                                                   \
-                 ^~~~~~~~
-RcppExports.cpp: In function 'SEXPREC* _RQuantLib_ZeroBondWithRebuiltCurve_try(SEXP, SEXP, SEXP, SEXP)':
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:32:9: warning: unused variable 'nprot' [-Wunused-variable]
-     int nprot = 0;                                                                               \
-         ^~~~~
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:32:9: note: in definition of macro 'BEGIN_RCPP'
-     int nprot = 0;                                                                               \
-         ^~~~~
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:36:17: warning: unused variable 'stop_sym' [-Wunused-variable]
-     static SEXP stop_sym = Rf_install("stop");                                                   \
-                 ^~~~~~~~
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:36:17: note: in definition of macro 'BEGIN_RCPP'
-     static SEXP stop_sym = Rf_install("stop");                                                   \
-                 ^~~~~~~~
-RcppExports.cpp: In function 'SEXPREC* _RQuantLib_convertibleZeroBondEngine_try(SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP)':
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:32:9: warning: unused variable 'nprot' [-Wunused-variable]
-     int nprot = 0;                                                                               \
-         ^~~~~
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:32:9: note: in definition of macro 'BEGIN_RCPP'
-     int nprot = 0;                                                                               \
-         ^~~~~
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:36:17: warning: unused variable 'stop_sym' [-Wunused-variable]
-     static SEXP stop_sym = Rf_install("stop");                                                   \
-                 ^~~~~~~~
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:36:17: note: in definition of macro 'BEGIN_RCPP'
-     static SEXP stop_sym = Rf_install("stop");                                                   \
-                 ^~~~~~~~
-RcppExports.cpp: In function 'SEXPREC* _RQuantLib_convertibleFixedBondEngine_try(SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP)':
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:32:9: warning: unused variable 'nprot' [-Wunused-variable]
-     int nprot = 0;                                                                               \
-         ^~~~~
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:32:9: note: in definition of macro 'BEGIN_RCPP'
-     int nprot = 0;                                                                               \
-         ^~~~~
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:36:17: warning: unused variable 'stop_sym' [-Wunused-variable]
-     static SEXP stop_sym = Rf_install("stop");                                                   \
-                 ^~~~~~~~
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:36:17: note: in definition of macro 'BEGIN_RCPP'
-     static SEXP stop_sym = Rf_install("stop");                                                   \
-                 ^~~~~~~~
-RcppExports.cpp: In function 'SEXPREC* _RQuantLib_convertibleFloatingBondEngine_try(SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP)':
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:32:9: warning: unused variable 'nprot' [-Wunused-variable]
-     int nprot = 0;                                                                               \
-         ^~~~~
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:32:9: note: in definition of macro 'BEGIN_RCPP'
-     int nprot = 0;                                                                               \
-         ^~~~~
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:36:17: warning: unused variable 'stop_sym' [-Wunused-variable]
-     static SEXP stop_sym = Rf_install("stop");                                                   \
-                 ^~~~~~~~
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:36:17: note: in definition of macro 'BEGIN_RCPP'
-     static SEXP stop_sym = Rf_install("stop");                                                   \
-                 ^~~~~~~~
-RcppExports.cpp: In function 'SEXPREC* _RQuantLib_callableBondEngine_try(SEXP, SEXP, SEXP, SEXP, SEXP)':
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:32:9: warning: unused variable 'nprot' [-Wunused-variable]
-     int nprot = 0;                                                                               \
-         ^~~~~
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:32:9: note: in definition of macro 'BEGIN_RCPP'
-     int nprot = 0;                                                                               \
-         ^~~~~
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:36:17: warning: unused variable 'stop_sym' [-Wunused-variable]
-     static SEXP stop_sym = Rf_install("stop");                                                   \
-                 ^~~~~~~~
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:36:17: note: in definition of macro 'BEGIN_RCPP'
-     static SEXP stop_sym = Rf_install("stop");                                                   \
-                 ^~~~~~~~
-RcppExports.cpp: In function 'SEXPREC* _RQuantLib_fittedBondCurveEngine_try(SEXP, SEXP, SEXP, SEXP, SEXP)':
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:32:9: warning: unused variable 'nprot' [-Wunused-variable]
-     int nprot = 0;                                                                               \
-         ^~~~~
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:32:9: note: in definition of macro 'BEGIN_RCPP'
-     int nprot = 0;                                                                               \
-         ^~~~~
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:36:17: warning: unused variable 'stop_sym' [-Wunused-variable]
-     static SEXP stop_sym = Rf_install("stop");                                                   \
-                 ^~~~~~~~
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:36:17: note: in definition of macro 'BEGIN_RCPP'
-     static SEXP stop_sym = Rf_install("stop");                                                   \
-                 ^~~~~~~~
-RcppExports.cpp: In function 'SEXPREC* _RQuantLib_advanceDate_try(SEXP, SEXP)':
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:32:9: warning: unused variable 'nprot' [-Wunused-variable]
-     int nprot = 0;                                                                               \
-         ^~~~~
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:32:9: note: in definition of macro 'BEGIN_RCPP'
-     int nprot = 0;                                                                               \
-         ^~~~~
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:36:17: warning: unused variable 'stop_sym' [-Wunused-variable]
-     static SEXP stop_sym = Rf_install("stop");                                                   \
-                 ^~~~~~~~
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:36:17: note: in definition of macro 'BEGIN_RCPP'
-     static SEXP stop_sym = Rf_install("stop");                                                   \
-                 ^~~~~~~~
-RcppExports.cpp: In function 'SEXPREC* _RQuantLib_dayCount_try(SEXP, SEXP, SEXP)':
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:32:9: warning: unused variable 'nprot' [-Wunused-variable]
-     int nprot = 0;                                                                               \
-         ^~~~~
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:32:9: note: in definition of macro 'BEGIN_RCPP'
-     int nprot = 0;                                                                               \
-         ^~~~~
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:36:17: warning: unused variable 'stop_sym' [-Wunused-variable]
-     static SEXP stop_sym = Rf_install("stop");                                                   \
-                 ^~~~~~~~
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:36:17: note: in definition of macro 'BEGIN_RCPP'
-     static SEXP stop_sym = Rf_install("stop");                                                   \
-                 ^~~~~~~~
-RcppExports.cpp: In function 'SEXPREC* _RQuantLib_yearFraction_try(SEXP, SEXP, SEXP)':
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:32:9: warning: unused variable 'nprot' [-Wunused-variable]
-     int nprot = 0;                                                                               \
-         ^~~~~
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:32:9: note: in definition of macro 'BEGIN_RCPP'
-     int nprot = 0;                                                                               \
-         ^~~~~
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:36:17: warning: unused variable 'stop_sym' [-Wunused-variable]
-     static SEXP stop_sym = Rf_install("stop");                                                   \
-                 ^~~~~~~~
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:36:17: note: in definition of macro 'BEGIN_RCPP'
-     static SEXP stop_sym = Rf_install("stop");                                                   \
-                 ^~~~~~~~
-RcppExports.cpp: In function 'SEXPREC* _RQuantLib_setEvaluationDate_try(SEXP)':
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:32:9: warning: unused variable 'nprot' [-Wunused-variable]
-     int nprot = 0;                                                                               \
-         ^~~~~
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:32:9: note: in definition of macro 'BEGIN_RCPP'
-     int nprot = 0;                                                                               \
-         ^~~~~
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:36:17: warning: unused variable 'stop_sym' [-Wunused-variable]
-     static SEXP stop_sym = Rf_install("stop");                                                   \
-                 ^~~~~~~~
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:36:17: note: in definition of macro 'BEGIN_RCPP'
-     static SEXP stop_sym = Rf_install("stop");                                                   \
-                 ^~~~~~~~
-RcppExports.cpp: In function 'SEXPREC* _RQuantLib_europeanOptionImpliedVolatilityEngine_try(SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP)':
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:32:9: warning: unused variable 'nprot' [-Wunused-variable]
-     int nprot = 0;                                                                               \
-         ^~~~~
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:32:9: note: in definition of macro 'BEGIN_RCPP'
-     int nprot = 0;                                                                               \
-         ^~~~~
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:36:17: warning: unused variable 'stop_sym' [-Wunused-variable]
-     static SEXP stop_sym = Rf_install("stop");                                                   \
-                 ^~~~~~~~
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:36:17: note: in definition of macro 'BEGIN_RCPP'
-     static SEXP stop_sym = Rf_install("stop");                                                   \
-                 ^~~~~~~~
-RcppExports.cpp: In function 'SEXPREC* _RQuantLib_americanOptionImpliedVolatilityEngine_try(SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP)':
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:32:9: warning: unused variable 'nprot' [-Wunused-variable]
-     int nprot = 0;                                                                               \
-         ^~~~~
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:32:9: note: in definition of macro 'BEGIN_RCPP'
-     int nprot = 0;                                                                               \
-         ^~~~~
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:36:17: warning: unused variable 'stop_sym' [-Wunused-variable]
-     static SEXP stop_sym = Rf_install("stop");                                                   \
-                 ^~~~~~~~
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:36:17: note: in definition of macro 'BEGIN_RCPP'
-     static SEXP stop_sym = Rf_install("stop");                                                   \
-                 ^~~~~~~~
-RcppExports.cpp: In function 'SEXPREC* _RQuantLib_CreateSchedule_try(SEXP)':
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:32:9: warning: unused variable 'nprot' [-Wunused-variable]
-     int nprot = 0;                                                                               \
-         ^~~~~
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:32:9: note: in definition of macro 'BEGIN_RCPP'
-     int nprot = 0;                                                                               \
-         ^~~~~
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:36:17: warning: unused variable 'stop_sym' [-Wunused-variable]
-     static SEXP stop_sym = Rf_install("stop");                                                   \
-                 ^~~~~~~~
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:36:17: note: in definition of macro 'BEGIN_RCPP'
-     static SEXP stop_sym = Rf_install("stop");                                                   \
-                 ^~~~~~~~
-RcppExports.cpp: In function 'SEXPREC* _RQuantLib_getQuantLibVersion_try()':
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:32:9: warning: unused variable 'nprot' [-Wunused-variable]
-     int nprot = 0;                                                                               \
-         ^~~~~
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:32:9: note: in definition of macro 'BEGIN_RCPP'
-     int nprot = 0;                                                                               \
-         ^~~~~
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:36:17: warning: unused variable 'stop_sym' [-Wunused-variable]
-     static SEXP stop_sym = Rf_install("stop");                                                   \
-                 ^~~~~~~~
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:36:17: note: in definition of macro 'BEGIN_RCPP'
-     static SEXP stop_sym = Rf_install("stop");                                                   \
-                 ^~~~~~~~
-RcppExports.cpp: In function 'SEXPREC* _RQuantLib_getQuantLibCapabilities_try()':
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:32:9: warning: unused variable 'nprot' [-Wunused-variable]
-     int nprot = 0;                                                                               \
-         ^~~~~
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:32:9: note: in definition of macro 'BEGIN_RCPP'
-     int nprot = 0;                                                                               \
-         ^~~~~
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:36:17: warning: unused variable 'stop_sym' [-Wunused-variable]
-     static SEXP stop_sym = Rf_install("stop");                                                   \
-                 ^~~~~~~~
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:36:17: note: in definition of macro 'BEGIN_RCPP'
-     static SEXP stop_sym = Rf_install("stop");                                                   \
-                 ^~~~~~~~
-RcppExports.cpp: In function 'SEXPREC* _RQuantLib_europeanOptionEngine_try(SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP)':
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:32:9: warning: unused variable 'nprot' [-Wunused-variable]
-     int nprot = 0;                                                                               \
-         ^~~~~
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:32:9: note: in definition of macro 'BEGIN_RCPP'
-     int nprot = 0;                                                                               \
-         ^~~~~
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:36:17: warning: unused variable 'stop_sym' [-Wunused-variable]
-     static SEXP stop_sym = Rf_install("stop");                                                   \
-                 ^~~~~~~~
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:36:17: note: in definition of macro 'BEGIN_RCPP'
-     static SEXP stop_sym = Rf_install("stop");                                                   \
-                 ^~~~~~~~
-RcppExports.cpp: In function 'SEXPREC* _RQuantLib_americanOptionEngine_try(SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP)':
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:32:9: warning: unused variable 'nprot' [-Wunused-variable]
-     int nprot = 0;                                                                               \
-         ^~~~~
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:32:9: note: in definition of macro 'BEGIN_RCPP'
-     int nprot = 0;                                                                               \
-         ^~~~~
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:36:17: warning: unused variable 'stop_sym' [-Wunused-variable]
-     static SEXP stop_sym = Rf_install("stop");                                                   \
-                 ^~~~~~~~
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:36:17: note: in definition of macro 'BEGIN_RCPP'
-     static SEXP stop_sym = Rf_install("stop");                                                   \
-                 ^~~~~~~~
-RcppExports.cpp: In function 'SEXPREC* _RQuantLib_europeanOptionArraysEngine_try(SEXP, SEXP)':
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:32:9: warning: unused variable 'nprot' [-Wunused-variable]
-     int nprot = 0;                                                                               \
-         ^~~~~
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:32:9: note: in definition of macro 'BEGIN_RCPP'
-     int nprot = 0;                                                                               \
-         ^~~~~
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:36:17: warning: unused variable 'stop_sym' [-Wunused-variable]
-     static SEXP stop_sym = Rf_install("stop");                                                   \
-                 ^~~~~~~~
-C:/R/library/Rcpp/include/Rcpp/macros/macros.h:36:17: note: in definition of macro 'BEGIN_RCPP'
-     static SEXP stop_sym = Rf_install("stop");                                                   \
-                 ^~~~~~~~
-/mingw32/bin/g++  -std=gnu++11 -I"C:/Progra~1/R/R-testing/include" -DNDEBUG -I../windows/quantlib-1.14/include -I../inst/include -I"C:/R/library/Rcpp/include"     -fopenmp -DBOOST_NO_AUTO_PTR -Wno-deprecated-declarations   -O2 -Wall  -mtune=generic -c affine.cpp -o affine.o
+/mingw32/bin/g++  -std=gnu++11 -I"C:/progra~1/R/R-testing/include" -DNDEBUG -I../windows/quantlib-1.14/include -I../inst/include -I'C:/R/library/Rcpp/include'     -fopenmp -DBOOST_NO_AUTO_PTR -Wno-deprecated-declarations   -O2 -Wall  -mtune=generic -c affine.cpp -o affine.o
 In file included from ../windows/quantlib-1.14/include/boost/numeric/ublas/matrix_sparse.hpp:17,
                  from ../windows/quantlib-1.14/include/ql/math/matrixutilities/sparsematrix.hpp:53,
                  from ../windows/quantlib-1.14/include/ql/methods/finitedifferences/operators/fdmlinearop.hpp:30,
@@ -447,7 +52,7 @@ In file included from ../windows/quantlib-1.14/include/boost/numeric/ublas/matri
 ../windows/quantlib-1.14/include/boost/numeric/ublas/matrix_expression.hpp:2227:21: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
                      if (it2_ != it2_end_) {
                      ^~
-/mingw32/bin/g++  -std=gnu++11 -I"C:/Progra~1/R/R-testing/include" -DNDEBUG -I../windows/quantlib-1.14/include -I../inst/include -I"C:/R/library/Rcpp/include"     -fopenmp -DBOOST_NO_AUTO_PTR -Wno-deprecated-declarations   -O2 -Wall  -mtune=generic -c asian.cpp -o asian.o
+/mingw32/bin/g++  -std=gnu++11 -I"C:/progra~1/R/R-testing/include" -DNDEBUG -I../windows/quantlib-1.14/include -I../inst/include -I'C:/R/library/Rcpp/include'     -fopenmp -DBOOST_NO_AUTO_PTR -Wno-deprecated-declarations   -O2 -Wall  -mtune=generic -c asian.cpp -o asian.o
 In file included from ../windows/quantlib-1.14/include/boost/numeric/ublas/matrix_sparse.hpp:17,
                  from ../windows/quantlib-1.14/include/ql/math/matrixutilities/sparsematrix.hpp:53,
                  from ../windows/quantlib-1.14/include/ql/methods/finitedifferences/operators/fdmlinearop.hpp:30,
@@ -466,7 +71,7 @@ In file included from ../windows/quantlib-1.14/include/boost/numeric/ublas/matri
 ../windows/quantlib-1.14/include/boost/numeric/ublas/matrix_expression.hpp:2227:21: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
                      if (it2_ != it2_end_) {
                      ^~
-/mingw32/bin/g++  -std=gnu++11 -I"C:/Progra~1/R/R-testing/include" -DNDEBUG -I../windows/quantlib-1.14/include -I../inst/include -I"C:/R/library/Rcpp/include"     -fopenmp -DBOOST_NO_AUTO_PTR -Wno-deprecated-declarations   -O2 -Wall  -mtune=generic -c barrier_binary.cpp -o barrier_binary.o
+/mingw32/bin/g++  -std=gnu++11 -I"C:/progra~1/R/R-testing/include" -DNDEBUG -I../windows/quantlib-1.14/include -I../inst/include -I'C:/R/library/Rcpp/include'     -fopenmp -DBOOST_NO_AUTO_PTR -Wno-deprecated-declarations   -O2 -Wall  -mtune=generic -c barrier_binary.cpp -o barrier_binary.o
 In file included from ../windows/quantlib-1.14/include/boost/numeric/ublas/matrix_sparse.hpp:17,
                  from ../windows/quantlib-1.14/include/ql/math/matrixutilities/sparsematrix.hpp:53,
                  from ../windows/quantlib-1.14/include/ql/methods/finitedifferences/operators/fdmlinearop.hpp:30,
@@ -485,7 +90,7 @@ In file included from ../windows/quantlib-1.14/include/boost/numeric/ublas/matri
 ../windows/quantlib-1.14/include/boost/numeric/ublas/matrix_expression.hpp:2227:21: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
                      if (it2_ != it2_end_) {
                      ^~
-/mingw32/bin/g++  -std=gnu++11 -I"C:/Progra~1/R/R-testing/include" -DNDEBUG -I../windows/quantlib-1.14/include -I../inst/include -I"C:/R/library/Rcpp/include"     -fopenmp -DBOOST_NO_AUTO_PTR -Wno-deprecated-declarations   -O2 -Wall  -mtune=generic -c bermudan.cpp -o bermudan.o
+/mingw32/bin/g++  -std=gnu++11 -I"C:/progra~1/R/R-testing/include" -DNDEBUG -I../windows/quantlib-1.14/include -I../inst/include -I'C:/R/library/Rcpp/include'     -fopenmp -DBOOST_NO_AUTO_PTR -Wno-deprecated-declarations   -O2 -Wall  -mtune=generic -c bermudan.cpp -o bermudan.o
 In file included from ../windows/quantlib-1.14/include/boost/numeric/ublas/matrix_sparse.hpp:17,
                  from ../windows/quantlib-1.14/include/ql/math/matrixutilities/sparsematrix.hpp:53,
                  from ../windows/quantlib-1.14/include/ql/methods/finitedifferences/operators/fdmlinearop.hpp:30,
@@ -504,7 +109,7 @@ In file included from ../windows/quantlib-1.14/include/boost/numeric/ublas/matri
 ../windows/quantlib-1.14/include/boost/numeric/ublas/matrix_expression.hpp:2227:21: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
                      if (it2_ != it2_end_) {
                      ^~
-/mingw32/bin/g++  -std=gnu++11 -I"C:/Progra~1/R/R-testing/include" -DNDEBUG -I../windows/quantlib-1.14/include -I../inst/include -I"C:/R/library/Rcpp/include"     -fopenmp -DBOOST_NO_AUTO_PTR -Wno-deprecated-declarations   -O2 -Wall  -mtune=generic -c bonds.cpp -o bonds.o
+/mingw32/bin/g++  -std=gnu++11 -I"C:/progra~1/R/R-testing/include" -DNDEBUG -I../windows/quantlib-1.14/include -I../inst/include -I'C:/R/library/Rcpp/include'     -fopenmp -DBOOST_NO_AUTO_PTR -Wno-deprecated-declarations   -O2 -Wall  -mtune=generic -c bonds.cpp -o bonds.o
 In file included from ../windows/quantlib-1.14/include/boost/numeric/ublas/matrix_sparse.hpp:17,
                  from ../windows/quantlib-1.14/include/ql/math/matrixutilities/sparsematrix.hpp:53,
                  from ../windows/quantlib-1.14/include/ql/methods/finitedifferences/operators/fdmlinearop.hpp:30,
@@ -523,7 +128,7 @@ In file included from ../windows/quantlib-1.14/include/boost/numeric/ublas/matri
 ../windows/quantlib-1.14/include/boost/numeric/ublas/matrix_expression.hpp:2227:21: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
                      if (it2_ != it2_end_) {
                      ^~
-/mingw32/bin/g++  -std=gnu++11 -I"C:/Progra~1/R/R-testing/include" -DNDEBUG -I../windows/quantlib-1.14/include -I../inst/include -I"C:/R/library/Rcpp/include"     -fopenmp -DBOOST_NO_AUTO_PTR -Wno-deprecated-declarations   -O2 -Wall  -mtune=generic -c calendars.cpp -o calendars.o
+/mingw32/bin/g++  -std=gnu++11 -I"C:/progra~1/R/R-testing/include" -DNDEBUG -I../windows/quantlib-1.14/include -I../inst/include -I'C:/R/library/Rcpp/include'     -fopenmp -DBOOST_NO_AUTO_PTR -Wno-deprecated-declarations   -O2 -Wall  -mtune=generic -c calendars.cpp -o calendars.o
 In file included from ../windows/quantlib-1.14/include/boost/numeric/ublas/matrix_sparse.hpp:17,
                  from ../windows/quantlib-1.14/include/ql/math/matrixutilities/sparsematrix.hpp:53,
                  from ../windows/quantlib-1.14/include/ql/methods/finitedifferences/operators/fdmlinearop.hpp:30,
@@ -542,7 +147,7 @@ In file included from ../windows/quantlib-1.14/include/boost/numeric/ublas/matri
 ../windows/quantlib-1.14/include/boost/numeric/ublas/matrix_expression.hpp:2227:21: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
                      if (it2_ != it2_end_) {
                      ^~
-/mingw32/bin/g++  -std=gnu++11 -I"C:/Progra~1/R/R-testing/include" -DNDEBUG -I../windows/quantlib-1.14/include -I../inst/include -I"C:/R/library/Rcpp/include"     -fopenmp -DBOOST_NO_AUTO_PTR -Wno-deprecated-declarations   -O2 -Wall  -mtune=generic -c curves.cpp -o curves.o
+/mingw32/bin/g++  -std=gnu++11 -I"C:/progra~1/R/R-testing/include" -DNDEBUG -I../windows/quantlib-1.14/include -I../inst/include -I'C:/R/library/Rcpp/include'     -fopenmp -DBOOST_NO_AUTO_PTR -Wno-deprecated-declarations   -O2 -Wall  -mtune=generic -c curves.cpp -o curves.o
 In file included from ../windows/quantlib-1.14/include/boost/numeric/ublas/matrix_sparse.hpp:17,
                  from ../windows/quantlib-1.14/include/ql/math/matrixutilities/sparsematrix.hpp:53,
                  from ../windows/quantlib-1.14/include/ql/methods/finitedifferences/operators/fdmlinearop.hpp:30,
@@ -561,7 +166,7 @@ In file included from ../windows/quantlib-1.14/include/boost/numeric/ublas/matri
 ../windows/quantlib-1.14/include/boost/numeric/ublas/matrix_expression.hpp:2227:21: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
                      if (it2_ != it2_end_) {
                      ^~
-/mingw32/bin/g++  -std=gnu++11 -I"C:/Progra~1/R/R-testing/include" -DNDEBUG -I../windows/quantlib-1.14/include -I../inst/include -I"C:/R/library/Rcpp/include"     -fopenmp -DBOOST_NO_AUTO_PTR -Wno-deprecated-declarations   -O2 -Wall  -mtune=generic -c dates.cpp -o dates.o
+/mingw32/bin/g++  -std=gnu++11 -I"C:/progra~1/R/R-testing/include" -DNDEBUG -I../windows/quantlib-1.14/include -I../inst/include -I'C:/R/library/Rcpp/include'     -fopenmp -DBOOST_NO_AUTO_PTR -Wno-deprecated-declarations   -O2 -Wall  -mtune=generic -c dates.cpp -o dates.o
 In file included from ../windows/quantlib-1.14/include/boost/numeric/ublas/matrix_sparse.hpp:17,
                  from ../windows/quantlib-1.14/include/ql/math/matrixutilities/sparsematrix.hpp:53,
                  from ../windows/quantlib-1.14/include/ql/methods/finitedifferences/operators/fdmlinearop.hpp:30,
@@ -580,7 +185,7 @@ In file included from ../windows/quantlib-1.14/include/boost/numeric/ublas/matri
 ../windows/quantlib-1.14/include/boost/numeric/ublas/matrix_expression.hpp:2227:21: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
                      if (it2_ != it2_end_) {
                      ^~
-/mingw32/bin/g++  -std=gnu++11 -I"C:/Progra~1/R/R-testing/include" -DNDEBUG -I../windows/quantlib-1.14/include -I../inst/include -I"C:/R/library/Rcpp/include"     -fopenmp -DBOOST_NO_AUTO_PTR -Wno-deprecated-declarations   -O2 -Wall  -mtune=generic -c daycounter.cpp -o daycounter.o
+/mingw32/bin/g++  -std=gnu++11 -I"C:/progra~1/R/R-testing/include" -DNDEBUG -I../windows/quantlib-1.14/include -I../inst/include -I'C:/R/library/Rcpp/include'     -fopenmp -DBOOST_NO_AUTO_PTR -Wno-deprecated-declarations   -O2 -Wall  -mtune=generic -c daycounter.cpp -o daycounter.o
 In file included from ../windows/quantlib-1.14/include/boost/numeric/ublas/matrix_sparse.hpp:17,
                  from ../windows/quantlib-1.14/include/ql/math/matrixutilities/sparsematrix.hpp:53,
                  from ../windows/quantlib-1.14/include/ql/methods/finitedifferences/operators/fdmlinearop.hpp:30,
@@ -599,7 +204,7 @@ In file included from ../windows/quantlib-1.14/include/boost/numeric/ublas/matri
 ../windows/quantlib-1.14/include/boost/numeric/ublas/matrix_expression.hpp:2227:21: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
                      if (it2_ != it2_end_) {
                      ^~
-/mingw32/bin/g++  -std=gnu++11 -I"C:/Progra~1/R/R-testing/include" -DNDEBUG -I../windows/quantlib-1.14/include -I../inst/include -I"C:/R/library/Rcpp/include"     -fopenmp -DBOOST_NO_AUTO_PTR -Wno-deprecated-declarations   -O2 -Wall  -mtune=generic -c discount.cpp -o discount.o
+/mingw32/bin/g++  -std=gnu++11 -I"C:/progra~1/R/R-testing/include" -DNDEBUG -I../windows/quantlib-1.14/include -I../inst/include -I'C:/R/library/Rcpp/include'     -fopenmp -DBOOST_NO_AUTO_PTR -Wno-deprecated-declarations   -O2 -Wall  -mtune=generic -c discount.cpp -o discount.o
 In file included from ../windows/quantlib-1.14/include/boost/numeric/ublas/matrix_sparse.hpp:17,
                  from ../windows/quantlib-1.14/include/ql/math/matrixutilities/sparsematrix.hpp:53,
                  from ../windows/quantlib-1.14/include/ql/methods/finitedifferences/operators/fdmlinearop.hpp:30,
@@ -618,7 +223,7 @@ In file included from ../windows/quantlib-1.14/include/boost/numeric/ublas/matri
 ../windows/quantlib-1.14/include/boost/numeric/ublas/matrix_expression.hpp:2227:21: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
                      if (it2_ != it2_end_) {
                      ^~
-/mingw32/bin/g++  -std=gnu++11 -I"C:/Progra~1/R/R-testing/include" -DNDEBUG -I../windows/quantlib-1.14/include -I../inst/include -I"C:/R/library/Rcpp/include"     -fopenmp -DBOOST_NO_AUTO_PTR -Wno-deprecated-declarations   -O2 -Wall  -mtune=generic -c hullwhite.cpp -o hullwhite.o
+/mingw32/bin/g++  -std=gnu++11 -I"C:/progra~1/R/R-testing/include" -DNDEBUG -I../windows/quantlib-1.14/include -I../inst/include -I'C:/R/library/Rcpp/include'     -fopenmp -DBOOST_NO_AUTO_PTR -Wno-deprecated-declarations   -O2 -Wall  -mtune=generic -c hullwhite.cpp -o hullwhite.o
 In file included from ../windows/quantlib-1.14/include/boost/numeric/ublas/matrix_sparse.hpp:17,
                  from ../windows/quantlib-1.14/include/ql/math/matrixutilities/sparsematrix.hpp:53,
                  from ../windows/quantlib-1.14/include/ql/methods/finitedifferences/operators/fdmlinearop.hpp:30,
@@ -637,7 +242,7 @@ In file included from ../windows/quantlib-1.14/include/boost/numeric/ublas/matri
 ../windows/quantlib-1.14/include/boost/numeric/ublas/matrix_expression.hpp:2227:21: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
                      if (it2_ != it2_end_) {
                      ^~
-/mingw32/bin/g++  -std=gnu++11 -I"C:/Progra~1/R/R-testing/include" -DNDEBUG -I../windows/quantlib-1.14/include -I../inst/include -I"C:/R/library/Rcpp/include"     -fopenmp -DBOOST_NO_AUTO_PTR -Wno-deprecated-declarations   -O2 -Wall  -mtune=generic -c implieds.cpp -o implieds.o
+/mingw32/bin/g++  -std=gnu++11 -I"C:/progra~1/R/R-testing/include" -DNDEBUG -I../windows/quantlib-1.14/include -I../inst/include -I'C:/R/library/Rcpp/include'     -fopenmp -DBOOST_NO_AUTO_PTR -Wno-deprecated-declarations   -O2 -Wall  -mtune=generic -c implieds.cpp -o implieds.o
 In file included from ../windows/quantlib-1.14/include/boost/numeric/ublas/matrix_sparse.hpp:17,
                  from ../windows/quantlib-1.14/include/ql/math/matrixutilities/sparsematrix.hpp:53,
                  from ../windows/quantlib-1.14/include/ql/methods/finitedifferences/operators/fdmlinearop.hpp:30,
@@ -656,7 +261,7 @@ In file included from ../windows/quantlib-1.14/include/boost/numeric/ublas/matri
 ../windows/quantlib-1.14/include/boost/numeric/ublas/matrix_expression.hpp:2227:21: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
                      if (it2_ != it2_end_) {
                      ^~
-/mingw32/bin/g++  -std=gnu++11 -I"C:/Progra~1/R/R-testing/include" -DNDEBUG -I../windows/quantlib-1.14/include -I../inst/include -I"C:/R/library/Rcpp/include"     -fopenmp -DBOOST_NO_AUTO_PTR -Wno-deprecated-declarations   -O2 -Wall  -mtune=generic -c modules.cpp -o modules.o
+/mingw32/bin/g++  -std=gnu++11 -I"C:/progra~1/R/R-testing/include" -DNDEBUG -I../windows/quantlib-1.14/include -I../inst/include -I'C:/R/library/Rcpp/include'     -fopenmp -DBOOST_NO_AUTO_PTR -Wno-deprecated-declarations   -O2 -Wall  -mtune=generic -c modules.cpp -o modules.o
 In file included from ../windows/quantlib-1.14/include/boost/numeric/ublas/matrix_sparse.hpp:17,
                  from ../windows/quantlib-1.14/include/ql/math/matrixutilities/sparsematrix.hpp:53,
                  from ../windows/quantlib-1.14/include/ql/methods/finitedifferences/operators/fdmlinearop.hpp:30,
@@ -675,7 +280,7 @@ In file included from ../windows/quantlib-1.14/include/boost/numeric/ublas/matri
 ../windows/quantlib-1.14/include/boost/numeric/ublas/matrix_expression.hpp:2227:21: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
                      if (it2_ != it2_end_) {
                      ^~
-/mingw32/bin/g++  -std=gnu++11 -I"C:/Progra~1/R/R-testing/include" -DNDEBUG -I../windows/quantlib-1.14/include -I../inst/include -I"C:/R/library/Rcpp/include"     -fopenmp -DBOOST_NO_AUTO_PTR -Wno-deprecated-declarations   -O2 -Wall  -mtune=generic -c sabr.cpp -o sabr.o
+/mingw32/bin/g++  -std=gnu++11 -I"C:/progra~1/R/R-testing/include" -DNDEBUG -I../windows/quantlib-1.14/include -I../inst/include -I'C:/R/library/Rcpp/include'     -fopenmp -DBOOST_NO_AUTO_PTR -Wno-deprecated-declarations   -O2 -Wall  -mtune=generic -c sabr.cpp -o sabr.o
 In file included from ../windows/quantlib-1.14/include/boost/numeric/ublas/matrix_sparse.hpp:17,
                  from ../windows/quantlib-1.14/include/ql/math/matrixutilities/sparsematrix.hpp:53,
                  from ../windows/quantlib-1.14/include/ql/methods/finitedifferences/operators/fdmlinearop.hpp:30,
@@ -694,7 +299,7 @@ In file included from ../windows/quantlib-1.14/include/boost/numeric/ublas/matri
 ../windows/quantlib-1.14/include/boost/numeric/ublas/matrix_expression.hpp:2227:21: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
                      if (it2_ != it2_end_) {
                      ^~
-/mingw32/bin/g++  -std=gnu++11 -I"C:/Progra~1/R/R-testing/include" -DNDEBUG -I../windows/quantlib-1.14/include -I../inst/include -I"C:/R/library/Rcpp/include"     -fopenmp -DBOOST_NO_AUTO_PTR -Wno-deprecated-declarations   -O2 -Wall  -mtune=generic -c schedule.cpp -o schedule.o
+/mingw32/bin/g++  -std=gnu++11 -I"C:/progra~1/R/R-testing/include" -DNDEBUG -I../windows/quantlib-1.14/include -I../inst/include -I'C:/R/library/Rcpp/include'     -fopenmp -DBOOST_NO_AUTO_PTR -Wno-deprecated-declarations   -O2 -Wall  -mtune=generic -c schedule.cpp -o schedule.o
 In file included from ../windows/quantlib-1.14/include/boost/numeric/ublas/matrix_sparse.hpp:17,
                  from ../windows/quantlib-1.14/include/ql/math/matrixutilities/sparsematrix.hpp:53,
                  from ../windows/quantlib-1.14/include/ql/methods/finitedifferences/operators/fdmlinearop.hpp:30,
@@ -713,7 +318,7 @@ In file included from ../windows/quantlib-1.14/include/boost/numeric/ublas/matri
 ../windows/quantlib-1.14/include/boost/numeric/ublas/matrix_expression.hpp:2227:21: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
                      if (it2_ != it2_end_) {
                      ^~
-/mingw32/bin/g++  -std=gnu++11 -I"C:/Progra~1/R/R-testing/include" -DNDEBUG -I../windows/quantlib-1.14/include -I../inst/include -I"C:/R/library/Rcpp/include"     -fopenmp -DBOOST_NO_AUTO_PTR -Wno-deprecated-declarations   -O2 -Wall  -mtune=generic -c utils.cpp -o utils.o
+/mingw32/bin/g++  -std=gnu++11 -I"C:/progra~1/R/R-testing/include" -DNDEBUG -I../windows/quantlib-1.14/include -I../inst/include -I'C:/R/library/Rcpp/include'     -fopenmp -DBOOST_NO_AUTO_PTR -Wno-deprecated-declarations   -O2 -Wall  -mtune=generic -c utils.cpp -o utils.o
 In file included from ../windows/quantlib-1.14/include/boost/numeric/ublas/matrix_sparse.hpp:17,
                  from ../windows/quantlib-1.14/include/ql/math/matrixutilities/sparsematrix.hpp:53,
                  from ../windows/quantlib-1.14/include/ql/methods/finitedifferences/operators/fdmlinearop.hpp:30,
@@ -732,7 +337,7 @@ In file included from ../windows/quantlib-1.14/include/boost/numeric/ublas/matri
 ../windows/quantlib-1.14/include/boost/numeric/ublas/matrix_expression.hpp:2227:21: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
                      if (it2_ != it2_end_) {
                      ^~
-/mingw32/bin/g++  -std=gnu++11 -I"C:/Progra~1/R/R-testing/include" -DNDEBUG -I../windows/quantlib-1.14/include -I../inst/include -I"C:/R/library/Rcpp/include"     -fopenmp -DBOOST_NO_AUTO_PTR -Wno-deprecated-declarations   -O2 -Wall  -mtune=generic -c vanilla.cpp -o vanilla.o
+/mingw32/bin/g++  -std=gnu++11 -I"C:/progra~1/R/R-testing/include" -DNDEBUG -I../windows/quantlib-1.14/include -I../inst/include -I'C:/R/library/Rcpp/include'     -fopenmp -DBOOST_NO_AUTO_PTR -Wno-deprecated-declarations   -O2 -Wall  -mtune=generic -c vanilla.cpp -o vanilla.o
 In file included from ../windows/quantlib-1.14/include/boost/numeric/ublas/matrix_sparse.hpp:17,
                  from ../windows/quantlib-1.14/include/ql/math/matrixutilities/sparsematrix.hpp:53,
                  from ../windows/quantlib-1.14/include/ql/methods/finitedifferences/operators/fdmlinearop.hpp:30,
@@ -751,7 +356,7 @@ In file included from ../windows/quantlib-1.14/include/boost/numeric/ublas/matri
 ../windows/quantlib-1.14/include/boost/numeric/ublas/matrix_expression.hpp:2227:21: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
                      if (it2_ != it2_end_) {
                      ^~
-/mingw32/bin/g++  -std=gnu++11 -I"C:/Progra~1/R/R-testing/include" -DNDEBUG -I../windows/quantlib-1.14/include -I../inst/include -I"C:/R/library/Rcpp/include"     -fopenmp -DBOOST_NO_AUTO_PTR -Wno-deprecated-declarations   -O2 -Wall  -mtune=generic -c zero.cpp -o zero.o
+/mingw32/bin/g++  -std=gnu++11 -I"C:/progra~1/R/R-testing/include" -DNDEBUG -I../windows/quantlib-1.14/include -I../inst/include -I'C:/R/library/Rcpp/include'     -fopenmp -DBOOST_NO_AUTO_PTR -Wno-deprecated-declarations   -O2 -Wall  -mtune=generic -c zero.cpp -o zero.o
 In file included from ../windows/quantlib-1.14/include/boost/numeric/ublas/matrix_sparse.hpp:17,
                  from ../windows/quantlib-1.14/include/ql/math/matrixutilities/sparsematrix.hpp:53,
                  from ../windows/quantlib-1.14/include/ql/methods/finitedifferences/operators/fdmlinearop.hpp:30,
@@ -770,7 +375,7 @@ In file included from ../windows/quantlib-1.14/include/boost/numeric/ublas/matri
 ../windows/quantlib-1.14/include/boost/numeric/ublas/matrix_expression.hpp:2227:21: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
                      if (it2_ != it2_end_) {
                      ^~
-/mingw32/bin/g++ -shared -s -static-libgcc -o RQuantLib.dll tmp.def RcppExports.o affine.o asian.o barrier_binary.o bermudan.o bonds.o calendars.o curves.o dates.o daycounter.o discount.o hullwhite.o implieds.o modules.o sabr.o schedule.o utils.o vanilla.o zero.o -L../windows/quantlib-1.14//i386/lib -lQuantLib -fopenmp -LC:/Progra~1/R/R-testing/bin/i386 -lR
+/mingw32/bin/g++ -shared -s -static-libgcc -o RQuantLib.dll tmp.def RcppExports.o affine.o asian.o barrier_binary.o bermudan.o bonds.o calendars.o curves.o dates.o daycounter.o discount.o hullwhite.o implieds.o modules.o sabr.o schedule.o utils.o vanilla.o zero.o -L../windows/quantlib-1.14//i386/lib -lQuantLib -fopenmp -LC:/progra~1/R/R-testing/bin/i386 -lR
 ../windows/quantlib-1.14//i386/lib/libQuantLib.a(cashflow.o): duplicate section `.rdata$_ZTVN5boost6detail17sp_counted_impl_pIN8QuantLib8SettingsEEE[__ZTVN5boost6detail17sp_counted_impl_pIN8QuantLib8SettingsEEE]' has different size
 ../windows/quantlib-1.14//i386/lib/libQuantLib.a(event.o): duplicate section `.rdata$_ZTVN5boost6detail17sp_counted_impl_pIN8QuantLib8SettingsEEE[__ZTVN5boost6detail17sp_counted_impl_pIN8QuantLib8SettingsEEE]' has different size
 ../windows/quantlib-1.14//i386/lib/libQuantLib.a(index.o): duplicate section `.rdata$_ZTVN5boost6detail17sp_counted_impl_pIN8QuantLib12IndexManagerEEE[__ZTVN5boost6detail17sp_counted_impl_pIN8QuantLib12IndexManagerEEE]' has different size

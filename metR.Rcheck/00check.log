@@ -1,10 +1,12 @@
-* using log directory 'C:/Users/Jeroen/Documents/checks/rbi.Rcheck'
+* using log directory 'C:/Users/Jeroen/Documents/checks/metR.Rcheck'
 * using R version 3.7.0 Under development (Testing Rtools) (2019-07-30 r76907)
 * using platform: x86_64-w64-mingw32 (64-bit)
 * using session charset: ISO8859-1
 * using options '--no-manual --no-build-vignettes'
-* checking for file 'rbi/DESCRIPTION' ... OK
-* this is package 'rbi' version '0.10.2'
+* checking for file 'metR/DESCRIPTION' ... OK
+* checking extension type ... Package
+* this is package 'metR' version '0.4.0'
+* package encoding: UTF-8
 * checking package namespace information ... OK
 * checking package dependencies ... OK
 * checking if this is a source package ... OK
@@ -12,7 +14,7 @@
 * checking for executable files ... OK
 * checking for hidden files and directories ... OK
 * checking for portable file names ... OK
-* checking whether package 'rbi' can be installed ... OK
+* checking whether package 'metR' can be installed ... OK
 * checking installed package size ... OK
 * checking package directory ... OK
 * checking 'build' directory ... OK
@@ -29,7 +31,9 @@
 * checking whether the namespace can be loaded with stated dependencies ... OK
 * checking whether the namespace can be unloaded cleanly ... OK
 * checking loading without being on the library search path ... OK
-* checking dependencies in R code ... OK
+* checking dependencies in R code ... NOTE
+Namespace in Imports field not imported from: 'curl'
+  All declared Imports should be used.
 * checking S3 generic/method consistency ... OK
 * checking replacement functions ... OK
 * checking foreign function calls ... OK
@@ -42,49 +46,37 @@
 * checking Rd \usage sections ... OK
 * checking Rd contents ... OK
 * checking for unstated dependencies in examples ... OK
+* checking contents of 'data' directory ... OK
+* checking data for non-ASCII characters ... OK
+* checking data for ASCII and uncompressed saves ... OK
 * checking installed files from 'inst/doc' ... OK
 * checking files in 'vignettes' ... OK
-* checking examples ... ERROR
-Running examples in 'rbi-Ex.R' failed
-The error most likely occurred in:
-
-> ### Name: attach_data
-> ### Title: Attach a new file or data set to a 'libbi' object
-> ### Aliases: attach_data attach_data.libbi
-> 
-> ### ** Examples
-> 
-> bi <- libbi(model = system.file(package="rbi", "PZ.bi"))
-> example_output <- bi_read(system.file(package="rbi", "example_output.nc"))
-Error in R_nc4_open: NetCDF: Unknown file format
-Error in nc_open(tools::file_path_as_absolute(x)) : 
-  Error in nc_open trying to open file C:/Users/Jeroen/Documents/checks/rbi.Rcheck/rbi/example_output.nc
-Calls: bi_read -> bi_open -> nc_open
-Execution halted
+* checking examples ... OK
 * checking for unstated dependencies in 'tests' ... OK
 * checking tests ... ERROR
   Running 'testthat.R'
 Running the tests in 'tests/testthat.R' failed.
 Last 13 lines of output:
-  > test_check("rbi")
-  Error in R_nc4_open: NetCDF: Unknown file format
-  -- 1. Error: (unknown) (@test-samples.r#4)  ------------------------------------
-  Error in nc_open trying to open file C:/Users/Jeroen/Documents/checks/rbi.Rcheck/rbi/example_output.nc
-  1: bi_read(system.file(package = "rbi", "example_output.nc")) at testthat/test-samples.r:4
-  2: bi_open(x)
-  3: nc_open(tools::file_path_as_absolute(x))
-  4: stop(paste("Error in nc_open trying to open file", filename))
+  2: quasi_label(enquo(object), arg = "object")
+  3: eval_bare(get_expr(quo), get_env(quo))
+  4: ReadNetCDF(file)
+  5: ncdf4::nc_open(file)
+  6: stop(paste("Error in nc_open trying to open file", filename))
   
   == testthat results  ===========================================================
-  OK: 145 SKIPPED: 6 WARNINGS: 0 FAILED: 1
-  1. Error: (unknown) (@test-samples.r#4) 
+  OK: 53 SKIPPED: 0 WARNINGS: 0 FAILED: 4
+  1. Error: returns a data.table (@test_ReadNetCDF.R#6) 
+  2. Error: subsetting works (@test_ReadNetCDF.R#11) 
+  3. Error: naming works (@test_ReadNetCDF.R#17) 
+  4. Error: different outs work (@test_ReadNetCDF.R#24) 
   
   Error: testthat unit tests failed
   Execution halted
 * checking for unstated dependencies in vignettes ... OK
 * checking package vignettes in 'inst/doc' ... OK
 * checking running R code from vignettes ... NONE
-  'introduction.Rmd.rsp'... OK
+  'Visualization-tools.Rmd' using 'UTF-8'... OK
+  'Working-with-data.Rmd' using 'UTF-8'... OK
 * checking re-building of vignette outputs ... SKIPPED
 * DONE
-Status: 2 ERRORs
+Status: 1 ERROR, 1 NOTE

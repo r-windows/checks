@@ -1,5 +1,5 @@
 * using log directory 'C:/Users/Jeroen/Documents/checks/h5.Rcheck'
-* using R version 3.6.0 Under development (Testing Rtools) (2019-03-14 r76238)
+* using R version 3.7.0 Under development (Testing Rtools) (2019-07-30 r76907)
 * using platform: x86_64-w64-mingw32 (64-bit)
 * using session charset: ISO8859-1
 * using options '--no-manual --no-build-vignettes'
@@ -60,6 +60,7 @@
 * checking compilation flags in Makevars ... OK
 * checking for GNU extensions in Makefiles ... OK
 * checking for portable use of $(BLAS_LIBS) and $(LAPACK_LIBS) ... OK
+* checking use of PKG_*FLAGS in Makefiles ... OK
 * checking compiled code ... OK
 * checking installed files from 'inst/doc' ... OK
 * checking files in 'vignettes' ... OK
@@ -73,7 +74,7 @@
 Running the tests in 'tests/testthat.R' failed.
 Last 13 lines of output:
   == testthat results  ===========================================================
-  OK: 203 SKIPPED: 0 FAILED: 68
+  OK: 134 SKIPPED: 0 WARNINGS: 97 FAILED: 68
   1. Failure: Attribute-Errors (@test-Attribute.R#66) 
   2. Failure: Attribute-H5Type-File (@test-Attribute.R#123) 
   3. Error: Attribute-list-attributes (@test-Attribute.R#129) 
@@ -92,7 +93,7 @@ Last 13 lines of output:
 Running the tests in 'tests/testthat.R' failed.
 Last 13 lines of output:
   == testthat results  ===========================================================
-  OK: 203 SKIPPED: 0 FAILED: 68
+  OK: 134 SKIPPED: 0 WARNINGS: 97 FAILED: 68
   1. Failure: Attribute-Errors (@test-Attribute.R#66) 
   2. Failure: Attribute-H5Type-File (@test-Attribute.R#123) 
   3. Error: Attribute-list-attributes (@test-Attribute.R#129) 
@@ -109,6 +110,8 @@ Last 13 lines of output:
 * checking for unstated dependencies in vignettes ... OK
 * checking package vignettes in 'inst/doc' ... OK
 * checking running R code from vignettes ... NONE
+  'RFin16.Rmd' using 'UTF-8'... OK
+  'h5-Intro.Rmd' using 'UTF-8'... OK
 * checking re-building of vignette outputs ... SKIPPED
 * DONE
 Status: 2 ERRORs, 1 NOTE

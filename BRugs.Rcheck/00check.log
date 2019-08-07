@@ -1,5 +1,5 @@
 * using log directory 'C:/Users/Jeroen/Documents/checks/BRugs.Rcheck'
-* using R version 3.7.0 Under development (Testing Rtools) (2019-06-25 r76738)
+* using R version 3.7.0 Under development (Testing Rtools) (2019-07-30 r76907)
 * using platform: x86_64-w64-mingw32 (64-bit)
 * using session charset: ISO8859-1
 * using options '--no-manual --no-build-vignettes'
@@ -12,8 +12,101 @@
 * checking for executable files ... OK
 * checking for hidden files and directories ... OK
 * checking for portable file names ... OK
-* checking whether package 'BRugs' can be installed ... ERROR
-Installation failed.
-See 'C:/Users/Jeroen/Documents/checks/BRugs.Rcheck/00install.out' for details.
+* checking whether package 'BRugs' can be installed ... OK
+* checking installed package size ... OK
+* checking package directory ... OK
+* checking DESCRIPTION meta-information ... OK
+* checking top-level files ... OK
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* checking whether the package can be loaded ... OK
+* checking whether the package can be loaded with stated dependencies ... OK
+* checking whether the package can be unloaded cleanly ... OK
+* checking whether the namespace can be loaded with stated dependencies ... OK
+* checking whether the namespace can be unloaded cleanly ... OK
+* checking loading without being on the library search path ... OK
+* checking dependencies in R code ... OK
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... WARNING
+Foreign function calls to a different package:
+  .C("CharArray", ..., PACKAGE = "libOpenBUGS")
+  .C("CmdInterpreter", ..., PACKAGE = "libOpenBUGS")
+  .C("Integer", ..., PACKAGE = "libOpenBUGS")
+  .C("RealArray", ..., PACKAGE = "libOpenBUGS")
+  .C("SetTempDir", ..., PACKAGE = "libOpenBUGS")
+  .C("SetWorkingDir", ..., PACKAGE = "libOpenBUGS")
+Undeclared package in foreign function calls:
+   'libOpenBUGS'
+See chapter 'System and foreign language interfaces' in the 'Writing R
+Extensions' manual.
+* checking R code for possible problems ... OK
+* checking Rd files ... OK
+* checking Rd metadata ... OK
+* checking Rd cross-references ... OK
+* checking for missing documentation entries ... OK
+* checking for code/documentation mismatches ... OK
+* checking Rd \usage sections ... OK
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... OK
+* checking contents of 'data' directory ... OK
+* checking data for non-ASCII characters ... OK
+* checking data for ASCII and uncompressed saves ... OK
+* checking line endings in shell scripts ... OK
+* checking line endings in C/C++/Fortran sources/headers ... OK
+* checking line endings in Makefiles ... OK
+* checking compilation flags in Makevars ... OK
+* checking for GNU extensions in Makefiles ... OK
+* checking for portable use of $(BLAS_LIBS) and $(LAPACK_LIBS) ... OK
+* checking use of PKG_*FLAGS in Makefiles ... OK
+* checking include directives in Makefiles ... NOTE
+Found the following Makefile(s) with an include directive with a pathname using R_HOME:
+  src/Makefile.win
+Even though not recommended, variable R_HOME may contain spaces.
+Makefile directives use space as a separator and there is no portable
+way to quote/escape the space in Make rules and directives.  However,
+one can and should quote pathnames when passed from Makefile to the
+shell, and this can be done specifically when invoking Make recursively.
+It is therefore recommended to use the Make '-f' option to include files
+in directories specified using R_HOME.  This option can be specified
+multiple times to include multiple Makefiles.  Note that 'Makeconf' is
+included automatically into top-level makefile of a package.
+More information can be found in 'Writing R Extensions'.
+* checking compiled code ... OK
+* checking examples ... OK
+* checking for unstated dependencies in 'tests' ... OK
+* checking tests ... OK
+  Running 'BRugs.R'
+  Comparing 'BRugs.Rout' to 'BRugs.Rout.save' ...65c65
+< Welcome to BRugs connected to OpenBUGS version 3.2.3
+---
+> Welcome to BRugs connected to OpenBUGS version 3.2.2
+  Running 'examples.R'
+  Comparing 'examples.Rout' to 'examples.Rout.save' ...55c55
+< Welcome to BRugs connected to OpenBUGS version 3.2.3
+---
+> Welcome to BRugs connected to OpenBUGS version 3.2.2
+106c106
+< 20000 updates took 1 s
+---
+> 20000 updates took 2 s
+205c205
+< 20000 updates took 1 s
+---
+> 20000 updates took 3 s
+218c218
+< 20000 updates took 1 s
+---
+> 20000 updates took 2 s
+  Running 'examples.stats.R'
+  Running 'functions.R'
+  Comparing 'functions.Rout' to 'functions.Rout.save' ...136c136
+< Welcome to BRugs connected to OpenBUGS version 3.2.3
+---
+> Welcome to BRugs connected to OpenBUGS version 3.2.2
+  Running 'local.R'
 * DONE
-Status: 1 ERROR
+Status: 1 WARNING, 1 NOTE

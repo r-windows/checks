@@ -1,5 +1,5 @@
 #library(dplyr)
-#setRepositories(ind = 1:3) # <- to also check bioconductor
+setRepositories(ind = 1:3) # <- to also check bioconductor
 options(repos = 'https://cloud.r-project.org')
 pkgs <- as.data.frame(available.packages(), stringsAsFactors = FALSE)
 
@@ -19,3 +19,4 @@ top_packages <- sort(table(all_counts), decreasing = TRUE)
 pkg_names <- names(top_packages)
 pkg_names <- pkg_names[pkg_names %in% pkgs$Package]
 writeLines(pkg_names)
+

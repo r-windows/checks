@@ -1,10 +1,10 @@
-* using log directory 'C:/Users/Jeroen/Documents/checks/pbdSLAP.Rcheck'
-* using R version 3.7.0 Under development (Testing Rtools) (2019-07-30 r76907)
+* using log directory 'C:/Users/Jeroen/Documents/checks/RInside.Rcheck'
+* using R version 3.7.0 Under development (Testing Rtools) (2019-06-25 r76738)
 * using platform: x86_64-w64-mingw32 (64-bit)
 * using session charset: ISO8859-1
 * using options '--no-manual --no-build-vignettes'
-* checking for file 'pbdSLAP/DESCRIPTION' ... OK
-* this is package 'pbdSLAP' version '0.2-6'
+* checking for file 'RInside/DESCRIPTION' ... OK
+* this is package 'RInside' version '0.2.15'
 * checking package namespace information ... OK
 * checking package dependencies ... OK
 * checking if this is a source package ... OK
@@ -12,22 +12,15 @@
 * checking for executable files ... OK
 * checking for hidden files and directories ... OK
 * checking for portable file names ... OK
-* checking whether package 'pbdSLAP' can be installed ... WARNING
+* checking whether package 'RInside' can be installed ... WARNING
 Found the following significant warnings:
-  igamx2d_.c:273:29: warning: passing argument 1 of 'MPI_Op_create' from incompatible pointer type [-Wincompatible-pointer-types]
-  igamx2d_.c:277:29: warning: passing argument 1 of 'MPI_Op_create' from incompatible pointer type [-Wincompatible-pointer-types]
-  dgamx2d_.c:274:29: warning: passing argument 1 of 'MPI_Op_create' from incompatible pointer type [-Wincompatible-pointer-types]
-  dgamx2d_.c:278:29: warning: passing argument 1 of 'MPI_Op_create' from incompatible pointer type [-Wincompatible-pointer-types]
-  igamn2d_.c:273:29: warning: passing argument 1 of 'MPI_Op_create' from incompatible pointer type [-Wincompatible-pointer-types]
-  igamn2d_.c:277:29: warning: passing argument 1 of 'MPI_Op_create' from incompatible pointer type [-Wincompatible-pointer-types]
-  dgamn2d_.c:274:29: warning: passing argument 1 of 'MPI_Op_create' from incompatible pointer type [-Wincompatible-pointer-types]
-  dgamn2d_.c:278:29: warning: passing argument 1 of 'MPI_Op_create' from incompatible pointer type [-Wincompatible-pointer-types]
-See 'C:/Users/Jeroen/Documents/checks/pbdSLAP.Rcheck/00install.out' for details.
+  RInside.cpp:169:12: warning: 'char* strncpy(char*, const char*, size_t)' specified bound 260 equals destination size [-Wstringop-truncation]
+See 'C:/Users/Jeroen/Documents/checks/RInside.Rcheck/00install.out' for details.
 * checking installed package size ... NOTE
-  installed size is 10.5Mb
+  installed size is 14.8Mb
   sub-directories of 1Mb or more:
-    lib    5.5Mb
-    libs   4.7Mb
+    lib    6.3Mb
+    libs   8.1Mb
 * checking package directory ... OK
 * checking DESCRIPTION meta-information ... OK
 * checking top-level files ... OK
@@ -71,17 +64,46 @@ See 'C:/Users/Jeroen/Documents/checks/pbdSLAP.Rcheck/00install.out' for details.
 * checking for portable use of $(BLAS_LIBS) and $(LAPACK_LIBS) ... OK
 * checking use of PKG_*FLAGS in Makefiles ... OK
 * checking include directives in Makefiles ... OK
-* checking compiled code ... OK
-* checking sizes of PDF files under 'inst/doc' ... OK
-* checking installed files from 'inst/doc' ... OK
-* checking files in 'vignettes' ... OK
-* checking examples ...
-** running examples for arch 'i386' ... OK
-** running examples for arch 'x64' ... OK
-* checking for unstated dependencies in vignettes ... OK
-* checking package vignettes in 'inst/doc' ... OK
-* checking running R code from vignettes ... NONE
-  'pbdSLAP-guide.Rnw'... OK
-* checking re-building of vignette outputs ... SKIPPED
+* checking compiled code ... NOTE
+File 'RInside/libs/i386/RInside.dll':
+  Found 'srand', possibly from 'srand' (C)
+    Object: 'RInside.o'
+File 'RInside/libs/x64/RInside.dll':
+  Found 'srand', possibly from 'srand' (C)
+    Object: 'RInside.o'
+File 'RInside/libs/i386/libRInside.dll':
+  Found 'srand', possibly from 'srand' (C)
+    Object: 'RInside.o'
+File 'RInside/libs/x64/libRInside.dll':
+  Found 'srand', possibly from 'srand' (C)
+    Object: 'RInside.o'
+File 'RInside/libs/i386/RInside.dll':
+  Found non-API calls to R: 'R_CleanTempDir', 'R_DefParams',
+    'R_ReplDLLdo1', 'R_ReplDLLinit', 'R_RunExitFinalizers',
+    'R_SetParams', 'R_TempDir', 'Rf_endEmbeddedR', 'Rf_initEmbeddedR',
+    'getRUser', 'get_R_HOME'
+File 'RInside/libs/x64/RInside.dll':
+  Found non-API calls to R: 'R_CleanTempDir', 'R_DefParams',
+    'R_ReplDLLdo1', 'R_ReplDLLinit', 'R_RunExitFinalizers',
+    'R_SetParams', 'R_TempDir', 'Rf_endEmbeddedR', 'Rf_initEmbeddedR',
+    'getRUser', 'get_R_HOME'
+File 'RInside/libs/i386/libRInside.dll':
+  Found non-API calls to R: 'R_CleanTempDir', 'R_DefParams',
+    'R_ReplDLLdo1', 'R_ReplDLLinit', 'R_RunExitFinalizers',
+    'R_SetParams', 'R_TempDir', 'Rf_endEmbeddedR', 'Rf_initEmbeddedR',
+    'getRUser', 'get_R_HOME'
+File 'RInside/libs/x64/libRInside.dll':
+  Found non-API calls to R: 'R_CleanTempDir', 'R_DefParams',
+    'R_ReplDLLdo1', 'R_ReplDLLinit', 'R_RunExitFinalizers',
+    'R_SetParams', 'R_TempDir', 'Rf_endEmbeddedR', 'Rf_initEmbeddedR',
+    'getRUser', 'get_R_HOME'
+
+Compiled code should not call entry points which might terminate R nor
+write to stdout/stderr instead of to the console, nor use Fortran I/O
+nor system RNGs.
+Compiled code should not call non-API entry points in R.
+
+See 'Writing portable packages' in the 'Writing R Extensions' manual.
+* checking examples ... NONE
 * DONE
-Status: 1 WARNING, 1 NOTE
+Status: 1 WARNING, 2 NOTEs

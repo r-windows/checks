@@ -1,5 +1,5 @@
 * using log directory 'C:/Users/Jeroen/Documents/checks/estimatr.Rcheck'
-* using R version 3.7.0 Under development (Testing Rtools) (2019-06-25 r76738)
+* using R version 3.7.0 Under development (Testing Rtools) (2019-07-30 r76907)
 * using platform: x86_64-w64-mingw32 (64-bit)
 * using session charset: ISO8859-1
 * using options '--no-manual --no-build-vignettes'
@@ -67,7 +67,11 @@
 * checking tests ...
 ** running tests for arch 'i386' ... ERROR
   Running 'sleep.R'
-  Comparing 'sleep.Rout' to 'sleep.Rout.save' ... OK
+  Comparing 'sleep.Rout' to 'sleep.Rout.save' ...8,11d7
+< Warning message:
+< Assigning non-quosure objects to quosure lists is deprecated as of rlang 0.3.0.
+< Please coerce to a bare list beforehand with `as.list()`
+< This warning is displayed once per session. 
   Running 'testthat.R'
 Running the tests in 'tests/testthat.R' failed.
 Last 13 lines of output:
@@ -79,7 +83,7 @@ Last 13 lines of output:
   [1] NA - 9.11e+15 == NA
   
   == testthat results  ===========================================================
-  OK: 1308 SKIPPED: 0 WARNINGS: 7 FAILED: 3
+  OK: 1308 SKIPPED: 0 WARNINGS: 8 FAILED: 3
   1. Failure: commarobust works with regular lm (@test-starprep.R#90) 
   2. Failure: commarobust works with regular lm (@test-starprep.R#90) 
   3. Failure: commarobust works with regular lm (@test-starprep.R#90) 
@@ -88,7 +92,11 @@ Last 13 lines of output:
   Execution halted
 ** running tests for arch 'x64' ... OK
   Running 'sleep.R'
-  Comparing 'sleep.Rout' to 'sleep.Rout.save' ... OK
+  Comparing 'sleep.Rout' to 'sleep.Rout.save' ...8,11d7
+< Warning message:
+< Assigning non-quosure objects to quosure lists is deprecated as of rlang 0.3.0.
+< Please coerce to a bare list beforehand with `as.list()`
+< This warning is displayed once per session. 
   Running 'testthat.R'
 * DONE
 Status: 1 ERROR
