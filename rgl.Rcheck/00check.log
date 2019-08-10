@@ -1,0 +1,92 @@
+* using log directory 'C:/Users/Jeroen/Documents/checks/rgl.Rcheck'
+* using R version 3.7.0 Under development (Testing Rtools) (2019-07-30 r76907)
+* using platform: x86_64-w64-mingw32 (64-bit)
+* using session charset: ISO8859-1
+* using options '--no-manual --no-build-vignettes'
+* checking for file 'rgl/DESCRIPTION' ... OK
+* this is package 'rgl' version '0.100.26'
+* checking package namespace information ... OK
+* checking package dependencies ... OK
+* checking if this is a source package ... OK
+* checking if there is a namespace ... OK
+* checking for executable files ... OK
+* checking for hidden files and directories ... OK
+* checking for portable file names ... OK
+* checking whether package 'rgl' can be installed ... OK
+* checking installed package size ... NOTE
+  installed size is  7.8Mb
+  sub-directories of 1Mb or more:
+    doc     3.6Mb
+    fonts   1.5Mb
+NB: this package is only installed for sub-architecture 'x64'
+* checking package directory ... OK
+* checking 'build' directory ... OK
+* checking DESCRIPTION meta-information ... OK
+* checking top-level files ... OK
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* checking whether the package can be loaded ... OK
+* checking whether the package can be loaded with stated dependencies ... OK
+* checking whether the package can be unloaded cleanly ... OK
+* checking whether the namespace can be loaded with stated dependencies ... OK
+* checking whether the namespace can be unloaded cleanly ... OK
+* checking loading without being on the library search path ... OK
+* checking dependencies in R code ... OK
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... OK
+* checking Rd files ... OK
+* checking Rd metadata ... OK
+* checking Rd cross-references ... NOTE
+Package unavailable to check Rd xrefs: 'tkrgl'
+* checking for missing documentation entries ... OK
+* checking for code/documentation mismatches ... OK
+* checking Rd \usage sections ... OK
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... OK
+* checking line endings in shell scripts ... OK
+* checking line endings in C/C++/Fortran sources/headers ... OK
+* checking line endings in Makefiles ... OK
+* checking compilation flags in Makevars ... OK
+* checking for GNU extensions in Makefiles ... OK
+* checking for portable use of $(BLAS_LIBS) and $(LAPACK_LIBS) ... OK
+* checking use of PKG_*FLAGS in Makefiles ... OK
+* checking include directives in Makefiles ... OK
+* checking compiled code ... OK
+* checking installed files from 'inst/doc' ... OK
+* checking files in 'vignettes' ... OK
+* checking examples ... ERROR
+Running examples in 'rgl-Ex.R' failed
+The error most likely occurred in:
+
+> ### Name: writeASY
+> ### Title: Write Asymptote code for an rgl scene
+> ### Aliases: writeASY
+> 
+> ### ** Examples
+> 
+> x <- rnorm(20)
+> y <- rnorm(20)
+> z <- rnorm(20)
+> plot3d(x, y, z, type = "s", col = "red")
+> olddir <- setwd(tempdir())
+> writeASY(title = "interactive")  # Produces interactive.pdf
+asy: warning: running with administrator privileges
+dvips: warning: running with administrator privileges
+dvips: warning: running with administrator privileges
+* checking for unstated dependencies in 'tests' ... OK
+* checking tests ... OK
+  Running 'demos.R'
+* checking for unstated dependencies in vignettes ... OK
+* checking package vignettes in 'inst/doc' ... OK
+* checking running R code from vignettes ... NONE
+  'WebGL.Rmd'... OK
+  'legacyWebGL.Rmd'... OK
+  'rgl.Rmd'... OK
+* checking re-building of vignette outputs ... SKIPPED
+* DONE
+Status: 1 ERROR, 2 NOTEs

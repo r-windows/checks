@@ -24,9 +24,9 @@ while read -r PKG; do
 		LOGLINE=$(grep "Status: " $LOGFILE)
 		echo "Previous result for $PKG: $LOGLINE"
 		if echo $LOGLINE | grep -Pq 'Status: (OK|[0-9]+ (NOTE|WARN))'; then
-			echo "SKIPPING $PKG"
-			continue
-			#echo "Retrying..."
+			#echo "SKIPPING $PKG"
+			#continue
+			echo "Retrying..."
 		fi
 	fi
 	if [ $(grep "^$PKG\\W*$" DoNotCheck) ] || [ $(grep "^$PKG\\W*$" DoNotCompile) ]; then

@@ -1,5 +1,5 @@
 # Check results
-Last update: Wed, Aug 07, 2019 11:21:22 AM
+Last update: Sat, Aug 10, 2019  4:57:10 PM
 
 ## Install failures
 ```
@@ -27,6 +27,7 @@ dyndimred.Rcheck/00check.log:Status: 1 ERROR, 2 NOTEs
 estimatr.Rcheck/00check.log:Status: 1 ERROR
 fanovaGraph.Rcheck/00check.log:Status: 1 ERROR
 GenomicTools.Rcheck/00check.log:Status: 1 ERROR
+ggplot2.Rcheck/00check.log:Status: 1 ERROR, 2 NOTEs
 gWidgets2RGtk2.Rcheck/00check.log:Status: 1 ERROR
 gWidgetsRGtk2.Rcheck/00check.log:Status: 1 ERROR
 h5.Rcheck/00check.log:Status: 2 ERRORs, 1 NOTE
@@ -45,6 +46,7 @@ prefmod.Rcheck/00check.log:Status: 1 ERROR
 proj4.Rcheck/00check.log:Status: 1 ERROR, 1 NOTE
 rbi.Rcheck/00check.log:Status: 2 ERRORs
 rggobi.Rcheck/00check.log:Status: 1 ERROR
+rgl.Rcheck/00check.log:Status: 1 ERROR, 2 NOTEs
 RISmed.Rcheck/00check.log:Status: 1 ERROR, 1 NOTE
 RMark.Rcheck/00check.log:Status: 1 ERROR
 rosr.Rcheck/00check.log:Status: 1 ERROR, 1 NOTE
