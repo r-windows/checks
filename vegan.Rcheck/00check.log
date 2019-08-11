@@ -1,11 +1,10 @@
-* using log directory 'C:/Users/Jeroen/Documents/checks/RcppParallel.Rcheck'
+* using log directory 'C:/Users/Jeroen/Documents/checks/vegan.Rcheck'
 * using R version 3.7.0 Under development (Testing Rtools) (2019-07-30 r76907)
 * using platform: x86_64-w64-mingw32 (64-bit)
 * using session charset: ISO8859-1
 * using options '--no-manual --no-build-vignettes'
-* checking for file 'RcppParallel/DESCRIPTION' ... OK
-* checking extension type ... Package
-* this is package 'RcppParallel' version '4.4.3'
+* checking for file 'vegan/DESCRIPTION' ... OK
+* this is package 'vegan' version '2.5-5'
 * checking package namespace information ... OK
 * checking package dependencies ... OK
 * checking if this is a source package ... OK
@@ -13,13 +12,10 @@
 * checking for executable files ... OK
 * checking for hidden files and directories ... OK
 * checking for portable file names ... OK
-* checking whether package 'RcppParallel' can be installed ... OK
-* checking installed package size ... NOTE
-  installed size is 15.6Mb
-  sub-directories of 1Mb or more:
-    include   1.9Mb
-    lib      13.2Mb
+* checking whether package 'vegan' can be installed ... OK
+* checking installed package size ... OK
 * checking package directory ... OK
+* checking 'build' directory ... OK
 * checking DESCRIPTION meta-information ... OK
 * checking top-level files ... OK
 * checking for left-over files ... OK
@@ -48,33 +44,57 @@
 * checking R code for possible problems ... OK
 * checking Rd files ... OK
 * checking Rd metadata ... OK
-* checking Rd cross-references ... OK
+* checking Rd cross-references ... WARNING
+Missing link or links in documentation object 'oecosimu.Rd':
+  '[labdsv]{rndtaxa}'
+
+See section 'Cross-references' in the 'Writing R Extensions' manual.
+
 * checking for missing documentation entries ... OK
 * checking for code/documentation mismatches ... OK
 * checking Rd \usage sections ... OK
 * checking Rd contents ... OK
 * checking for unstated dependencies in examples ... OK
-* checking line endings in shell scripts ... OK
+* checking contents of 'data' directory ... OK
+* checking data for non-ASCII characters ... OK
+* checking data for ASCII and uncompressed saves ... OK
 * checking line endings in C/C++/Fortran sources/headers ... OK
-* checking line endings in Makefiles ... WARNING
-Found the following Makefile(s) with CR or CRLF line endings:
-  src/Makevars
-Some Unix 'make' programs require LF line endings.
+* checking line endings in Makefiles ... OK
 * checking compilation flags in Makevars ... OK
-* checking for GNU extensions in Makefiles ... NOTE
-GNU make is a SystemRequirements.
+* checking for GNU extensions in Makefiles ... OK
 * checking for portable use of $(BLAS_LIBS) and $(LAPACK_LIBS) ... OK
 * checking use of PKG_*FLAGS in Makefiles ... OK
-* checking include directives in Makefiles ... OK
 * checking compiled code ... OK
+* checking sizes of PDF files under 'inst/doc' ... OK
+* checking installed files from 'inst/doc' ... OK
+* checking files in 'vignettes' ... OK
 * checking examples ...
 ** running examples for arch 'i386' ... OK
 ** running examples for arch 'x64' ... OK
 * checking for unstated dependencies in 'tests' ... OK
 * checking tests ...
 ** running tests for arch 'i386' ... OK
-  Running 'doRUnit.R'
+  Running 'cca-object-tests.R'
+  Comparing 'cca-object-tests.Rout' to 'cca-object-tests.Rout.save' ... OK
+  Running 'oecosimu-tests.R'
+  Comparing 'oecosimu-tests.Rout' to 'oecosimu-tests.Rout.save' ... OK
+  Running 'vegan-tests.R'
+  Comparing 'vegan-tests.Rout' to 'vegan-tests.Rout.save' ... OK
 ** running tests for arch 'x64' ... OK
-  Running 'doRUnit.R'
+  Running 'cca-object-tests.R'
+  Comparing 'cca-object-tests.Rout' to 'cca-object-tests.Rout.save' ... OK
+  Running 'oecosimu-tests.R'
+  Comparing 'oecosimu-tests.Rout' to 'oecosimu-tests.Rout.save' ... OK
+  Running 'vegan-tests.R'
+  Comparing 'vegan-tests.Rout' to 'vegan-tests.Rout.save' ... OK
+* checking for unstated dependencies in vignettes ... OK
+* checking package vignettes in 'inst/doc' ... OK
+* checking running R code from vignettes ... OK
+  'decision-vegan.Rnw'... OK
+  'diversity-vegan.Rnw'... OK
+  'intro-vegan.Rnw'... OK
+  'partitioning.Rnw'... OK
+  'FAQ-vegan.Rmd' using 'UTF-8'... OK
+* checking re-building of vignette outputs ... SKIPPED
 * DONE
-Status: 1 WARNING, 2 NOTEs
+Status: 1 WARNING

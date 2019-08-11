@@ -1,5 +1,5 @@
 * using log directory 'C:/Users/Jeroen/Documents/checks/lwgeom.Rcheck'
-* using R version 3.7.0 Under development (Testing Rtools) (2019-06-11 r76694)
+* using R version 3.7.0 Under development (Testing Rtools) (2019-07-30 r76907)
 * using platform: x86_64-w64-mingw32 (64-bit)
 * using session charset: ISO8859-1
 * using options '--no-manual --no-build-vignettes'
@@ -105,7 +105,7 @@ See 'C:/Users/Jeroen/Documents/checks/lwgeom.Rcheck/00install.out' for details.
 > Reading layer `nc.gpkg' from data source `/home/edzer/R/x86_64-pc-linux-gnu-library/3.5/sf/gpkg/nc.gpkg' using driver `GPKG'
 15,16c15,16
 < == testthat results  ===========================================================
-< OK: 60 SKIPPED: 2 WARNINGS: 0 FAILED: 0
+< [ OK: 60 | SKIPPED: 2 | WARNINGS: 0 | FAILED: 0 ]
 ---
 > ══ testthat results  ═══════════════════════════════════════════════════════════
 > OK: 50 SKIPPED: 3 FAILED: 0
@@ -133,7 +133,7 @@ See 'C:/Users/Jeroen/Documents/checks/lwgeom.Rcheck/00install.out' for details.
 > Reading layer `nc.gpkg' from data source `/home/edzer/R/x86_64-pc-linux-gnu-library/3.5/sf/gpkg/nc.gpkg' using driver `GPKG'
 15,16c15,16
 < == testthat results  ===========================================================
-< OK: 60 SKIPPED: 2 WARNINGS: 0 FAILED: 0
+< [ OK: 60 | SKIPPED: 2 | WARNINGS: 0 | FAILED: 0 ]
 ---
 > ══ testthat results  ═══════════════════════════════════════════════════════════
 > OK: 50 SKIPPED: 3 FAILED: 0

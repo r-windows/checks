@@ -1,10 +1,10 @@
 * using log directory 'C:/Users/Jeroen/Documents/checks/haven.Rcheck'
-* using R version 3.7.0 Under development (Testing Rtools) (2019-06-11 r76694)
+* using R version 3.7.0 Under development (Testing Rtools) (2019-07-30 r76907)
 * using platform: x86_64-w64-mingw32 (64-bit)
 * using session charset: ISO8859-1
 * using options '--no-manual --no-build-vignettes'
 * checking for file 'haven/DESCRIPTION' ... OK
-* this is package 'haven' version '2.1.0'
+* this is package 'haven' version '2.1.1'
 * package encoding: UTF-8
 * checking package namespace information ... OK
 * checking package dependencies ... OK
@@ -16,17 +16,8 @@
 * checking whether package 'haven' can be installed ... WARNING
 Found the following significant warnings:
   readstat/readstat_convert.c:18:42: warning: passing argument 2 of 'libiconv' from incompatible pointer type [-Wincompatible-pointer-types]
-  readstat/readstat_writer.c:82:9: warning: 'strncpy' output truncated before terminating nul copying as many bytes from a string as its length [-Wstringop-truncation]
-  readstat/readstat_writer.c:276:5: warning: 'strncpy' specified bound 256 equals destination size [-Wstringop-truncation]
-  readstat/readstat_writer.c:331:9: warning: 'strncpy' output truncated before terminating nul copying as many bytes from a string as its length [-Wstringop-truncation]
-  readstat/sas/readstat_sas.c:284:5: warning: 'strncpy' output may be truncated copying 64 bytes from a string of length 99 [-Wstringop-truncation]
-  readstat/sas/readstat_sas.c:337:5: warning: 'strncpy' output may be truncated copying 8 bytes from a string of length 31 [-Wstringop-truncation]
-  readstat/sas/readstat_sas7bcat_write.c:108:5: warning: 'strncpy' output may be truncated copying 64 bytes from a string of length 99 [-Wstringop-truncation]
   src/spss/readstat_sav_parse.rl:89:17: warning: passing argument 2 of 'libiconv' from incompatible pointer type [-Wincompatible-pointer-types]
   src/spss/readstat_sav_parse.rl:197:17: warning: passing argument 2 of 'libiconv' from incompatible pointer type [-Wincompatible-pointer-types]
-  readstat/spss/readstat_por_write.c:205:5: warning: 'strncpy' output truncated before terminating nul copying 20 bytes from a string of the same length [-Wstringop-truncation]
-  readstat/spss/readstat_sav_write.c:156:5: warning: 'strncpy' output may be truncated copying 9 bytes from a string of length 9 [-Wstringop-truncation]
-  readstat/spss/readstat_sav_write.c:164:5: warning: 'strncpy' output may be truncated copying 8 bytes from a string of length 8 [-Wstringop-truncation]
 See 'C:/Users/Jeroen/Documents/checks/haven.Rcheck/00install.out' for details.
 * checking installed package size ... OK
 * checking package directory ... OK

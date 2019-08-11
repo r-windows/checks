@@ -1,5 +1,5 @@
 # Check results
-Last update: Sat, Aug 10, 2019  4:57:10 PM
+Last update: Sun, Aug 11, 2019  1:17:09 PM
 
 ## Install failures
 ```
@@ -21,6 +21,7 @@ XLConnectJars.Rcheck/00check.log:Installation failed.
 adaptiveGPCA.Rcheck/00check.log:Status: 1 ERROR
 antaresProcessing.Rcheck/00check.log:Status: 1 ERROR, 1 NOTE
 BIEN.Rcheck/00check.log:Status: 1 ERROR
+callr.Rcheck/00check.log:Status: 1 ERROR
 colorplaner.Rcheck/00check.log:Status: 2 ERRORs
 dbarts.Rcheck/00check.log:Status: 2 ERRORs
 dyndimred.Rcheck/00check.log:Status: 1 ERROR, 2 NOTEs
@@ -115,6 +116,7 @@ svmpath.Rcheck/00check.log:Status: 1 WARNING
 text2vec.Rcheck/00check.log:Status: 1 WARNING, 3 NOTEs
 TPmsm.Rcheck/00check.log:Status: 1 WARNING, 1 NOTE
 tth.Rcheck/00check.log:Status: 1 WARNING, 1 NOTE
+vegan.Rcheck/00check.log:Status: 1 WARNING
 velox.Rcheck/00check.log:Status: 1 WARNING
 WhopGenome.Rcheck/00check.log:Status: 1 WARNING
 wrassp.Rcheck/00check.log:Status: 1 WARNING

@@ -4,3 +4,4 @@ export LIB_XML='/mingw${WIN}'
 export CLP_PATH='/mingw${WIN}'
 export _R_CHECK_FORCE_SUGGESTS_=0
 export R_BROWSER="echo"
+export R_PDFVIEWER="echo"

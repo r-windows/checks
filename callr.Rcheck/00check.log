@@ -1,0 +1,75 @@
+* using log directory 'C:/Users/Jeroen/Documents/checks/callr.Rcheck'
+* using R version 3.7.0 Under development (Testing Rtools) (2019-07-30 r76907)
+* using platform: x86_64-w64-mingw32 (64-bit)
+* using session charset: ISO8859-1
+* using options '--no-manual --no-build-vignettes'
+* checking for file 'callr/DESCRIPTION' ... OK
+* this is package 'callr' version '3.3.1'
+* package encoding: UTF-8
+* checking package namespace information ... OK
+* checking package dependencies ... OK
+* checking if this is a source package ... OK
+* checking if there is a namespace ... OK
+* checking for executable files ... OK
+* checking for hidden files and directories ... OK
+* checking for portable file names ... OK
+* checking whether package 'callr' can be installed ... OK
+* checking installed package size ... OK
+* checking package directory ... OK
+* checking 'build' directory ... OK
+* checking DESCRIPTION meta-information ... OK
+* checking top-level files ... OK
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* checking whether the package can be loaded ... OK
+* checking whether the package can be loaded with stated dependencies ... OK
+* checking whether the package can be unloaded cleanly ... OK
+* checking whether the namespace can be loaded with stated dependencies ... OK
+* checking whether the namespace can be unloaded cleanly ... OK
+* checking loading without being on the library search path ... OK
+* checking dependencies in R code ... OK
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... OK
+* checking Rd files ... OK
+* checking Rd metadata ... OK
+* checking Rd cross-references ... OK
+* checking for missing documentation entries ... OK
+* checking for code/documentation mismatches ... OK
+* checking Rd \usage sections ... OK
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... OK
+* checking installed files from 'inst/doc' ... OK
+* checking files in 'vignettes' ... OK
+* checking examples ... OK
+* checking for unstated dependencies in 'tests' ... OK
+* checking tests ... ERROR
+  Running 'testthat.R'
+Running the tests in 'tests/testthat.R' failed.
+Last 13 lines of output:
+  
+  == Failed ======================================================================
+  -- 1. Failure: traceback (@test-r-session.R#267)  ------------------------------
+  `tb <- rs$traceback()` does not match "1: f() at ".
+  Actual value: "4: c(".handleSimpleError(function (e) ", "{", "    {", "        callr_data <- as.environment(\\"tools:callr\\")$`__callr_data__`", \n   "        err <- callr_data$err", "        capture.output(assign(\\".Traceback\\", traceback(9), envir = baseenv()))", \n   "        dump.frames(\\"__callr_dump__\\")", "        assign(\\".Last.dump\\", .GlobalEnv$`__callr_dump__`, envir = callr_data)", \n   "        rm(\\"__callr_dump__\\", envir = .GlobalEnv)", "        calls <- sys.calls()", \n   "        dcframe <- which(vapply(calls, function(x) length(x) >= ", \n   "            1 && identical(x[[1]], quote(do.call)), logical(1)))[1]", \n   "        if (!is.na(dcframe)) ", "            e$`_ignore` <- list(c(1, dcframe + 1L))", \n   "        e$`_pid` <- Sys.getpid()", "        e$`_timestamp` <- Sys.time()", \n   "        e <- err$add_trace_back(e)", "        saveRDS(list(\\"error\\", e), file = paste0(\\"C:\\\\\\\\rtools40\\\\\\\\tmp\\\\\\\\RtmpiaWRmP\\\\\\\\file1c102a4d10d9\\", ", \n   "            \\".error\\"))", "    }", "}, \\"oops\\", base::quote(g()))"\n   )\n3: "stop(\\"oops\\")"\n2: "g()"\n1: "f()""
+  
+  -- 2. Failure: traceback (@test-r-session.R#268)  ------------------------------
+  c(tb[[4]]) not equal to "f()".
+  1/1 mismatches
+  x[1]: "\"f()\""
+  y[1]: "f()"
+  
+  == DONE ========================================================================
+  Error: Test failures
+  Execution halted
+* checking for unstated dependencies in vignettes ... OK
+* checking package vignettes in 'inst/doc' ... OK
+* checking running R code from vignettes ... NONE
+  'Task-queue-with-callr.Rmd' using 'UTF-8'... OK
+* checking re-building of vignette outputs ... SKIPPED
+* DONE
+Status: 1 ERROR
