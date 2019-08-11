@@ -14,7 +14,7 @@ gswin64c --version || exit 2
 mkdir -p "$R_LIBS"
 
 # Install "special" packages 
-#Rscript --no-save workarounds.R
+Rscript --no-save workarounds.R
 
 # Check packages in order of number of revdeps
 Rscript --no-save list-packages.R | sed 's/\r//' > pkg_names.txt
@@ -41,13 +41,16 @@ while read -r PKG; do
 	else
 	VIGNETTE_ARG="--no-build-vignettes"
 	fi
-	if [ $(grep "^$PKG\\W*$" ForceBiarch) ]; then
-		ARGS="--install-args='--force-biarch'"
-		OPTS=", INSTALL_opts='--force-biarch'"
-	fi
+#	if [ $(grep "^$PKG\\W*$" ForceBiarch) ]; then
+#		ARGS="--install-args='--force-biarch'"
+#		OPTS=", INSTALL_opts='--force-biarch'"
+#	fi
 	if [ $(grep "^$PKG\\W*$" MergeMultiarch) ]; then
 		ARGS="--install-args='--merge-multiarch'"
 		OPTS=", INSTALL_opts='--merge-multiarch'"
+	else
+		ARGS="--install-args='--force-biarch'"
+		OPTS=", INSTALL_opts='--force-biarch'"	
 	fi
 	echo "INSTALLING: $PKG $ARGS"
 	R --no-save -e "source('repos.R'); install.packages('$PKG', dependencies=TRUE, type = 'source' $OPTS )"
