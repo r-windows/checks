@@ -1,5 +1,5 @@
 # Check results
-Last update: Sun, Aug 11, 2019  8:47:26 PM
+Last update: Mon, Aug 12, 2019 11:37:56 AM
 
 ## Install failures
 ```
@@ -39,6 +39,7 @@ metR.Rcheck/00check.log:Status: 1 ERROR, 1 NOTE
 MonetDBLite.Rcheck/00check.log:Status: 2 ERRORs, 1 WARNING, 1 NOTE
 MSeasy.Rcheck/00check.log:Status: 1 ERROR
 NanoStringNorm.Rcheck/00check.log:Status: 1 ERROR
+nloptr.Rcheck/00check.log:Status: 2 ERRORs, 1 NOTE
 OutbreakTools.Rcheck/00check.log:Status: 1 ERROR
 pathological.Rcheck/00check.log:Status: 1 ERROR
 PlackettLuce.Rcheck/00check.log:Status: 1 ERROR

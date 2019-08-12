@@ -1,11 +1,11 @@
-* using log directory 'C:/Users/Jeroen/Documents/checks/haven.Rcheck'
+* using log directory 'C:/Users/Jeroen/Documents/checks/nloptr.Rcheck'
 * using R version 3.7.0 Under development (Testing Rtools) (2019-08-10 r76951)
 * using platform: x86_64-w64-mingw32 (64-bit)
 * using session charset: ISO8859-1
 * using options '--no-manual --no-build-vignettes'
-* checking for file 'haven/DESCRIPTION' ... OK
-* this is package 'haven' version '2.1.1'
-* package encoding: UTF-8
+* checking for file 'nloptr/DESCRIPTION' ... OK
+* checking extension type ... Package
+* this is package 'nloptr' version '1.2.1'
 * checking package namespace information ... OK
 * checking package dependencies ... OK
 * checking if this is a source package ... OK
@@ -13,12 +13,7 @@
 * checking for executable files ... OK
 * checking for hidden files and directories ... OK
 * checking for portable file names ... OK
-* checking whether package 'haven' can be installed ... WARNING
-Found the following significant warnings:
-  readstat/readstat_convert.c:18:42: warning: passing argument 2 of 'libiconv' from incompatible pointer type [-Wincompatible-pointer-types]
-  src/spss/readstat_sav_parse.rl:89:17: warning: passing argument 2 of 'libiconv' from incompatible pointer type [-Wincompatible-pointer-types]
-  src/spss/readstat_sav_parse.rl:197:17: warning: passing argument 2 of 'libiconv' from incompatible pointer type [-Wincompatible-pointer-types]
-See 'C:/Users/Jeroen/Documents/checks/haven.Rcheck/00install.out' for details.
+* checking whether package 'nloptr' can be installed ... OK
 * checking installed package size ... OK
 * checking package directory ... OK
 * checking 'build' directory ... OK
@@ -56,14 +51,19 @@ See 'C:/Users/Jeroen/Documents/checks/haven.Rcheck/00install.out' for details.
 * checking Rd \usage sections ... OK
 * checking Rd contents ... OK
 * checking for unstated dependencies in examples ... OK
-* checking line endings in C/C++/Fortran sources/headers ... OK
+* checking line endings in shell scripts ... OK
+* checking line endings in C/C++/Fortran sources/headers ... NOTE
+Found the following sources/headers with CR or CRLF line endings:
+  inst/include/nloptrAPI.h
+Some Unix compilers require LF line endings.
 * checking line endings in Makefiles ... OK
 * checking compilation flags in Makevars ... OK
-* checking for GNU extensions in Makefiles ... NOTE
-GNU make is a SystemRequirements.
+* checking for GNU extensions in Makefiles ... OK
 * checking for portable use of $(BLAS_LIBS) and $(LAPACK_LIBS) ... OK
 * checking use of PKG_*FLAGS in Makefiles ... OK
+* checking include directives in Makefiles ... OK
 * checking compiled code ... OK
+* checking sizes of PDF files under 'inst/doc' ... OK
 * checking installed files from 'inst/doc' ... OK
 * checking files in 'vignettes' ... OK
 * checking examples ...
@@ -71,15 +71,48 @@ GNU make is a SystemRequirements.
 ** running examples for arch 'x64' ... OK
 * checking for unstated dependencies in 'tests' ... OK
 * checking tests ...
-** running tests for arch 'i386' ... OK
-  Running 'testthat.R'
-** running tests for arch 'x64' ... OK
-  Running 'testthat.R'
+** running tests for arch 'i386' ... ERROR
+  Running 'test-all.R'
+Running the tests in 'tests/test-all.R' failed.
+Last 13 lines of output:
+  + } else {
+  +     print( "package 'testthat' not available, cannot run unit tests" )
+  + }
+  Loading required package: nloptr
+  -- 1. Failure: Test that solver stops when maxtime is reached. (@test-options-ma
+  `x` not equal to `expected`.
+  1/1 mismatches
+  [1] 1 - 6 == -5
+  
+  == testthat results  ===========================================================
+  [ OK: 46 | SKIPPED: 0 | WARNINGS: 10 | FAILED: 1 ]
+  1. Failure: Test that solver stops when maxtime is reached. (@test-options-maxtime.R#42) 
+  
+  Error: testthat unit tests failed
+  Execution halted
+** running tests for arch 'x64' ... ERROR
+  Running 'test-all.R'
+Running the tests in 'tests/test-all.R' failed.
+Last 13 lines of output:
+  + } else {
+  +     print( "package 'testthat' not available, cannot run unit tests" )
+  + }
+  Loading required package: nloptr
+  -- 1. Failure: Test that solver stops when maxtime is reached. (@test-options-ma
+  `x` not equal to `expected`.
+  1/1 mismatches
+  [1] 1 - 6 == -5
+  
+  == testthat results  ===========================================================
+  [ OK: 46 | SKIPPED: 0 | WARNINGS: 10 | FAILED: 1 ]
+  1. Failure: Test that solver stops when maxtime is reached. (@test-options-maxtime.R#42) 
+  
+  Error: testthat unit tests failed
+  Execution halted
 * checking for unstated dependencies in vignettes ... OK
 * checking package vignettes in 'inst/doc' ... OK
 * checking running R code from vignettes ... NONE
-  'datetimes.Rmd' using 'UTF-8'... OK
-  'semantics.Rmd' using 'UTF-8'... OK
+  'nloptr.Rmd' using 'UTF-8'... OK
 * checking re-building of vignette outputs ... SKIPPED
 * DONE
-Status: 1 WARNING, 1 NOTE
+Status: 2 ERRORs, 1 NOTE

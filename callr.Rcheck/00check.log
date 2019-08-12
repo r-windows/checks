@@ -1,5 +1,5 @@
 * using log directory 'C:/Users/Jeroen/Documents/checks/callr.Rcheck'
-* using R version 3.7.0 Under development (Testing Rtools) (2019-07-30 r76907)
+* using R version 3.7.0 Under development (Testing Rtools) (2019-08-10 r76951)
 * using platform: x86_64-w64-mingw32 (64-bit)
 * using session charset: ISO8859-1
 * using options '--no-manual --no-build-vignettes'
@@ -51,11 +51,10 @@
   Running 'testthat.R'
 Running the tests in 'tests/testthat.R' failed.
 Last 13 lines of output:
-  
   == Failed ======================================================================
   -- 1. Failure: traceback (@test-r-session.R#267)  ------------------------------
   `tb <- rs$traceback()` does not match "1: f() at ".
-  Actual value: "4: c(".handleSimpleError(function (e) ", "{", "    {", "        callr_data <- as.environment(\\"tools:callr\\")$`__callr_data__`", \n   "        err <- callr_data$err", "        capture.output(assign(\\".Traceback\\", traceback(9), envir = baseenv()))", \n   "        dump.frames(\\"__callr_dump__\\")", "        assign(\\".Last.dump\\", .GlobalEnv$`__callr_dump__`, envir = callr_data)", \n   "        rm(\\"__callr_dump__\\", envir = .GlobalEnv)", "        calls <- sys.calls()", \n   "        dcframe <- which(vapply(calls, function(x) length(x) >= ", \n   "            1 && identical(x[[1]], quote(do.call)), logical(1)))[1]", \n   "        if (!is.na(dcframe)) ", "            e$`_ignore` <- list(c(1, dcframe + 1L))", \n   "        e$`_pid` <- Sys.getpid()", "        e$`_timestamp` <- Sys.time()", \n   "        e <- err$add_trace_back(e)", "        saveRDS(list(\\"error\\", e), file = paste0(\\"C:\\\\\\\\rtools40\\\\\\\\tmp\\\\\\\\RtmpiaWRmP\\\\\\\\file1c102a4d10d9\\", ", \n   "            \\".error\\"))", "    }", "}, \\"oops\\", base::quote(g()))"\n   )\n3: "stop(\\"oops\\")"\n2: "g()"\n1: "f()""
+  Actual value: "4: c(".handleSimpleError(function (e) ", "{", "    {", "        callr_data <- as.environment(\\"tools:callr\\")$`__callr_data__`", \n   "        err <- callr_data$err", "        capture.output(assign(\\".Traceback\\", traceback(9), envir = baseenv()))", \n   "        dump.frames(\\"__callr_dump__\\")", "        assign(\\".Last.dump\\", .GlobalEnv$`__callr_dump__`, envir = callr_data)", \n   "        rm(\\"__callr_dump__\\", envir = .GlobalEnv)", "        calls <- sys.calls()", \n   "        dcframe <- which(vapply(calls, function(x) length(x) >= ", \n   "            1 && identical(x[[1]], quote(do.call)), logical(1)))[1]", \n   "        if (!is.na(dcframe)) ", "            e$`_ignore` <- list(c(1, dcframe + 1L))", \n   "        e$`_pid` <- Sys.getpid()", "        e$`_timestamp` <- Sys.time()", \n   "        e <- err$add_trace_back(e)", "        saveRDS(list(\\"error\\", e), file = paste0(\\"C:\\\\\\\\rtools40\\\\\\\\tmp\\\\\\\\RtmpIdi8iv\\\\\\\\file10bc17fe4292\\", ", \n   "            \\".error\\"))", "    }", "}, \\"oops\\", base::quote(g()))"\n   )\n3: "stop(\\"oops\\")"\n2: "g()"\n1: "f()""
   
   -- 2. Failure: traceback (@test-r-session.R#268)  ------------------------------
   c(tb[[4]]) not equal to "f()".
@@ -64,6 +63,7 @@ Last 13 lines of output:
   y[1]: "f()"
   
   == DONE ========================================================================
+  No one gets it right on their first try
   Error: Test failures
   Execution halted
 * checking for unstated dependencies in vignettes ... OK
