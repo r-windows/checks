@@ -1,5 +1,5 @@
 # Check results
-Last update: Mon, Aug 12, 2019 11:03:37 PM
+Last update: Tue, Aug 13, 2019  4:45:26 PM
 
 ## Install failures
 ```
@@ -30,6 +30,7 @@ estimatr.Rcheck/00check.log:Status: 1 ERROR
 fanovaGraph.Rcheck/00check.log:Status: 1 ERROR
 furrr.Rcheck/00check.log:Status: 1 ERROR
 GenomicTools.Rcheck/00check.log:Status: 1 ERROR
+ggstance.Rcheck/00check.log:Status: 1 ERROR
 gWidgets2RGtk2.Rcheck/00check.log:Status: 1 ERROR
 gWidgetsRGtk2.Rcheck/00check.log:Status: 1 ERROR
 h5.Rcheck/00check.log:Status: 2 ERRORs, 1 NOTE
@@ -44,6 +45,7 @@ NanoStringNorm.Rcheck/00check.log:Status: 1 ERROR
 nloptr.Rcheck/00check.log:Status: 2 ERRORs, 1 NOTE
 OutbreakTools.Rcheck/00check.log:Status: 1 ERROR
 pathological.Rcheck/00check.log:Status: 1 ERROR
+pkgconfig.Rcheck/00check.log:Status: 1 ERROR
 PlackettLuce.Rcheck/00check.log:Status: 1 ERROR
 prefmod.Rcheck/00check.log:Status: 1 ERROR
 proj4.Rcheck/00check.log:Status: 1 ERROR, 1 NOTE
@@ -63,7 +65,6 @@ survMisc.Rcheck/00check.log:Status: 1 ERROR, 6 WARNINGs, 3 NOTEs
 synbreed.Rcheck/00check.log:Status: 1 ERROR
 topologyGSA.Rcheck/00check.log:Status: 1 ERROR
 trackr.Rcheck/00check.log:Status: 1 ERROR
-vctrs.Rcheck/00check.log:Status: 2 ERRORs, 1 WARNING
 virtualspecies.Rcheck/00check.log:Status: 1 ERROR
 waterData.Rcheck/00check.log:Status: 1 ERROR
 wdman.Rcheck/00check.log:Status: 1 ERROR
