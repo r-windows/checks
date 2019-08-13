@@ -1,5 +1,5 @@
 # Check results
-Last update: Tue, Aug 13, 2019  4:45:26 PM
+Last update: Tue, Aug 13, 2019 10:47:42 PM
 
 ## Install failures
 ```
@@ -26,7 +26,6 @@ colorplaner.Rcheck/00check.log:Status: 2 ERRORs
 dbarts.Rcheck/00check.log:Status: 2 ERRORs
 dyndimred.Rcheck/00check.log:Status: 1 ERROR, 2 NOTEs
 energy.Rcheck/00check.log:Status: 1 ERROR
-estimatr.Rcheck/00check.log:Status: 1 ERROR
 fanovaGraph.Rcheck/00check.log:Status: 1 ERROR
 furrr.Rcheck/00check.log:Status: 1 ERROR
 GenomicTools.Rcheck/00check.log:Status: 1 ERROR
