@@ -1,5 +1,5 @@
 # Check results
-Last update: Tue, Aug 13, 2019 10:47:42 PM
+Last update: Wed, Aug 14, 2019 10:49:01 AM
 
 ## Install failures
 ```
@@ -26,6 +26,7 @@ colorplaner.Rcheck/00check.log:Status: 2 ERRORs
 dbarts.Rcheck/00check.log:Status: 2 ERRORs
 dyndimred.Rcheck/00check.log:Status: 1 ERROR, 2 NOTEs
 energy.Rcheck/00check.log:Status: 1 ERROR
+estimatr.Rcheck/00check.log:Status: 1 ERROR
 fanovaGraph.Rcheck/00check.log:Status: 1 ERROR
 furrr.Rcheck/00check.log:Status: 1 ERROR
 GenomicTools.Rcheck/00check.log:Status: 1 ERROR
@@ -41,6 +42,7 @@ metR.Rcheck/00check.log:Status: 1 ERROR, 1 NOTE
 MonetDBLite.Rcheck/00check.log:Status: 2 ERRORs, 1 WARNING, 1 NOTE
 MSeasy.Rcheck/00check.log:Status: 1 ERROR
 NanoStringNorm.Rcheck/00check.log:Status: 1 ERROR
+nat.Rcheck/00check.log:Status: 1 ERROR
 nloptr.Rcheck/00check.log:Status: 2 ERRORs, 1 NOTE
 OutbreakTools.Rcheck/00check.log:Status: 1 ERROR
 pathological.Rcheck/00check.log:Status: 1 ERROR

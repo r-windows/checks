@@ -1,12 +1,11 @@
-* using log directory 'C:/Users/Jeroen/Documents/checks/prefmod.Rcheck'
+* using log directory 'C:/Users/Jeroen/Documents/checks/estimatr.Rcheck'
 * using R version 3.7.0 Under development (Testing Rtools) (2019-08-10 r76951)
 * using platform: x86_64-w64-mingw32 (64-bit)
 * using session charset: ISO8859-1
 * using options '--no-manual --no-build-vignettes'
-* checking for file 'prefmod/DESCRIPTION' ... OK
+* checking for file 'estimatr/DESCRIPTION' ... OK
 * checking extension type ... Package
-* this is package 'prefmod' version '0.8-34'
-* package encoding: UTF-8
+* this is package 'estimatr' version '0.18.0'
 * checking package namespace information ... OK
 * checking package dependencies ... OK
 * checking if this is a source package ... OK
@@ -14,7 +13,7 @@
 * checking for executable files ... OK
 * checking for hidden files and directories ... OK
 * checking for portable file names ... OK
-* checking whether package 'prefmod' can be installed ... OK
+* checking whether package 'estimatr' can be installed ... OK
 * checking installed package size ... OK
 * checking package directory ... OK
 * checking DESCRIPTION meta-information ... OK
@@ -55,39 +54,49 @@
 * checking data for non-ASCII characters ... OK
 * checking data for ASCII and uncompressed saves ... OK
 * checking line endings in C/C++/Fortran sources/headers ... OK
+* checking line endings in Makefiles ... OK
+* checking compilation flags in Makevars ... OK
+* checking for GNU extensions in Makefiles ... OK
+* checking for portable use of $(BLAS_LIBS) and $(LAPACK_LIBS) ... OK
+* checking use of PKG_*FLAGS in Makefiles ... OK
 * checking compiled code ... OK
 * checking examples ...
-** running examples for arch 'i386' ... ERROR
-Running examples in 'prefmod-Ex.R' failed
-The error most likely occurred in:
-
-> ### Name: pattRrep.fit
-> ### Title: Function to fit a pattern model for repeated rankings)
-> ### Aliases: pattRrep.fit
-> ### Keywords: models multivariate
-> 
-> ### ** Examples
-> 
-> # simulated data: 3 items, 2 timepoints
-> dat1 <- simR(3, 100, c(.2, .7, .1))
-> dat2 <- simR(3, 100, c(.5, .4, .1))
-> dat  <- data.frame(dat1, dat2)
-> res  <- pattLrep.fit(dat, nitems = 3, tpoints = 2, iaT = TRUE)
-> res
-
-Results of pattern model for repeated ratings 
-
-Call:
-pattLrep.fit(obj = dat, nitems = 3, tpoints = 2, iaT = TRUE) 
-
-Deviance:  136.257 
-log likelihood:  -241.0372 
-
-no of iterations:  41  (Code: 1 )
-Error in solve.default(obj$hessian) : 
-  Lapack routine dgesv: system is exactly singular: U[6,6] = 0
-Calls: <Anonymous> -> print.pattMod -> diag -> solve -> solve.default
-Execution halted
+** running examples for arch 'i386' ... OK
 ** running examples for arch 'x64' ... OK
+* checking for unstated dependencies in 'tests' ... OK
+* checking tests ...
+** running tests for arch 'i386' ... ERROR
+  Running 'sleep.R'
+  Comparing 'sleep.Rout' to 'sleep.Rout.save' ...8,11d7
+< Warning message:
+< Assigning non-quosure objects to quosure lists is deprecated as of rlang 0.3.0.
+< Please coerce to a bare list beforehand with `as.list()`
+< This warning is displayed once per session. 
+  Running 'testthat.R'
+Running the tests in 'tests/testthat.R' failed.
+Last 13 lines of output:
+  [1] NA - 1.11e+16 == NA
+  
+  -- 3. Failure: commarobust works with regular lm (@test-starprep.R#90)  --------
+  ro$fstatistic not equal to clo$fstatistic.
+  1/3 mismatches
+  [1] NA - 9.11e+15 == NA
+  
+  == testthat results  ===========================================================
+  [ OK: 1308 | SKIPPED: 0 | WARNINGS: 8 | FAILED: 3 ]
+  1. Failure: commarobust works with regular lm (@test-starprep.R#90) 
+  2. Failure: commarobust works with regular lm (@test-starprep.R#90) 
+  3. Failure: commarobust works with regular lm (@test-starprep.R#90) 
+  
+  Error: testthat unit tests failed
+  Execution halted
+** running tests for arch 'x64' ... OK
+  Running 'sleep.R'
+  Comparing 'sleep.Rout' to 'sleep.Rout.save' ...8,11d7
+< Warning message:
+< Assigning non-quosure objects to quosure lists is deprecated as of rlang 0.3.0.
+< Please coerce to a bare list beforehand with `as.list()`
+< This warning is displayed once per session. 
+  Running 'testthat.R'
 * DONE
 Status: 1 ERROR
