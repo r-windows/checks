@@ -5,3 +5,4 @@ export CLP_PATH='/mingw${WIN}'
 export _R_CHECK_FORCE_SUGGESTS_=0
 export R_BROWSER="echo"
 export R_PDFVIEWER="echo"
+export GTK_PATH='C:/GTK${WIN}'
