@@ -5,13 +5,13 @@ options(repos = 'https://cloud.r-project.org')
 install.packages(c('mapdata', 'RBGL'), type = 'win.binary')
 
 # Install JAGS
-Sys.setenv(JAGS_ROOT="/c/progra~1/JAGS/JAGS-4.3.0")
-Sys.setenv(LOCAL_CPPFLAGS = "-D_GLIBCXX_USE_CXX11_ABI=0")
-install.packages(c("rjags", "runjags"))
-Sys.unsetenv("LOCAL_CPPFLAGS")
+#Sys.setenv(JAGS_ROOT="/c/progra~1/JAGS/JAGS-4.3.0")
+#Sys.setenv(LOCAL_CPPFLAGS = "-D_GLIBCXX_USE_CXX11_ABI=0")
+#install.packages(c("rjags", "runjags"))
+#Sys.unsetenv("LOCAL_CPPFLAGS")
 
 # Fixed Upstream
-install.packages('https://github.com/r-windows/RCurl/archive/master.tar.gz', repos = NULL)
+#install.packages('https://github.com/r-windows/RCurl/archive/master.tar.gz', repos = NULL)
 
 # Preinstall pkgs with special treatment
 fb_pkgs <- readLines("https://svn.r-project.org/R-dev-web/trunk/CRAN/QA/Uwe/make/config/ForceBiarch")
