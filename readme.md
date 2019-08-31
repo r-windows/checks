@@ -1,5 +1,5 @@
 # Check results
-Last update: Wed, Aug 14, 2019 10:49:01 AM
+Last update: Sat, Aug 31, 2019 11:50:28 AM
 
 ## Install failures
 ```
@@ -110,6 +110,7 @@ RPostgreSQL.Rcheck/00check.log:Status: 1 WARNING, 2 NOTEs
 RSclient.Rcheck/00check.log:Status: 1 WARNING
 Rserve.Rcheck/00check.log:Status: 1 WARNING, 4 NOTEs
 rstream.Rcheck/00check.log:Status: 1 WARNING
+scales.Rcheck/00check.log:Status: 1 WARNING, 1 NOTE
 ssh.Rcheck/00check.log:Status: 1 WARNING
 SSN.Rcheck/00check.log:Status: 1 WARNING
 stringi.Rcheck/00check.log:Status: 1 WARNING, 2 NOTEs
