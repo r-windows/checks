@@ -1,5 +1,5 @@
-* using log directory 'C:/Users/Jeroen/Documents/checks/XML.Rcheck'
-* using R version 3.7.0 Under development (Testing Rtools) (2019-08-10 r76951)
+* using log directory 'C:/Users/jeroen/Documents/checks/XML.Rcheck'
+* using R version 3.7.0 Under development (Testing Rtools) (2019-08-27 r77080)
 * using platform: x86_64-w64-mingw32 (64-bit)
 * using session charset: ISO8859-1
 * using options '--no-manual --no-build-vignettes'
@@ -16,7 +16,7 @@
 Found the following significant warnings:
   RSDTD.c:298:23: warning: passing argument 2 of 'xmlHashScan' from incompatible pointer type [-Wincompatible-pointer-types]
   RSDTD.c:372:23: warning: passing argument 2 of 'xmlHashScan' from incompatible pointer type [-Wincompatible-pointer-types]
-See 'C:/Users/Jeroen/Documents/checks/XML.Rcheck/00install.out' for details.
+See 'C:/Users/jeroen/Documents/checks/XML.Rcheck/00install.out' for details.
 * checking installed package size ... NOTE
   installed size is 11.7Mb
   sub-directories of 1Mb or more:

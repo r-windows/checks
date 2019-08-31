@@ -1,5 +1,5 @@
 # Check results
-Last update: Sat, Aug 31, 2019 11:50:28 AM
+Last update: Sat, Aug 31, 2019  1:38:44 PM
 
 ## Install failures
 ```
@@ -8,7 +8,6 @@ cairoDevice.Rcheck/00check.log:Installation failed.
 matchingMarkets.Rcheck/00check.log:Installation failed.
 RCurl.Rcheck/00check.log:Installation failed.
 RGtk2.Rcheck/00check.log:Installation failed.
-rjags.Rcheck/00check.log:Installation failed.
 RQuantLib.Rcheck/00check.log:Installation failed.
 superbiclust.Rcheck/00check.log:Installation failed.
 tabulizerjars.Rcheck/00check.log:Installation failed.
@@ -59,6 +58,7 @@ RSCABS.Rcheck/00check.log:Status: 1 ERROR
 rsgcc.Rcheck/00check.log:Status: 1 ERROR
 rstpm2.Rcheck/00check.log:Status: 1 ERROR, 1 NOTE
 rtext.Rcheck/00check.log:Status: 1 ERROR, 2 NOTEs
+runjags.Rcheck/00check.log:Status: 2 ERRORs, 2 NOTEs
 sessioninfo.Rcheck/00check.log:Status: 1 ERROR
 Smisc.Rcheck/00check.log:Status: 2 ERRORs
 SMITIDstruct.Rcheck/00check.log:Status: 1 ERROR
