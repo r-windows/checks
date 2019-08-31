@@ -1,5 +1,5 @@
-* using log directory 'C:/Users/Jeroen/Documents/checks/rJava.Rcheck'
-* using R version 3.7.0 Under development (Testing Rtools) (2019-08-10 r76951)
+* using log directory 'C:/Users/jeroen/Documents/checks/rJava.Rcheck'
+* using R version 3.7.0 Under development (Testing Rtools) (2019-08-27 r77080)
 * using platform: x86_64-w64-mingw32 (64-bit)
 * using session charset: ISO8859-1
 * using options '--no-manual --no-build-vignettes'
@@ -16,7 +16,7 @@
 Found the following significant warnings:
   Rinit.c:251:21: warning: assignment to 'blah1' {aka 'int (*)(const char *, char *, int,  int)'} from incompatible pointer type 'int (*)(const char *, unsigned char *, int,  int)' [-Wincompatible-pointer-types]
   Rinit.c:257:21: warning: assignment to 'blah5' {aka 'int (*)(const char *)'} from incompatible pointer type 'int (*)(char *)' [-Wincompatible-pointer-types]
-See 'C:/Users/Jeroen/Documents/checks/rJava.Rcheck/00install.out' for details.
+See 'C:/Users/jeroen/Documents/checks/rJava.Rcheck/00install.out' for details.
 * checking installed package size ... OK
 NB: this package is only installed for sub-architecture 'x64'
 * checking package directory ... OK
@@ -32,7 +32,6 @@ NB: this package is only installed for sub-architecture 'x64'
 * checking whether the package can be unloaded cleanly ... OK
 * checking whether the namespace can be loaded with stated dependencies ... OK
 * checking whether the namespace can be unloaded cleanly ... OK
-* checking loading without being on the library search path ... OK
 * checking dependencies in R code ... OK
 * checking S3 generic/method consistency ... OK
 * checking replacement functions ... OK
@@ -79,7 +78,7 @@ included automatically into top-level makefile of a package.
 More information can be found in 'Writing R Extensions'.
 * checking compiled code ... NOTE
 Note: information on .o files for x64 is not available
-File 'C:/Users/Jeroen/Documents/checks/rJava.Rcheck/rJava/libs/x64/rJava.dll':
+File 'C:/Users/jeroen/Documents/checks/rJava.Rcheck/rJava/libs/x64/rJava.dll':
   Found 'abort', possibly from 'abort' (C), 'runtime' (Fortran)
 File 'rJava/libs/x64/rJava.dll':
   Found non-API call to R: 'R_GlobalContext'

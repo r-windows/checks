@@ -1,5 +1,5 @@
-* using log directory 'C:/Users/Jeroen/Documents/checks/stringi.Rcheck'
-* using R version 3.7.0 Under development (Testing Rtools) (2019-08-10 r76951)
+* using log directory 'C:/Users/jeroen/Documents/checks/stringi.Rcheck'
+* using R version 3.7.0 Under development (Testing Rtools) (2019-08-27 r77080)
 * using platform: x86_64-w64-mingw32 (64-bit)
 * using session charset: ISO8859-1
 * using options '--no-manual --no-build-vignettes'
@@ -16,7 +16,7 @@
 * checking whether package 'stringi' can be installed ... WARNING
 Found the following significant warnings:
   icu61/common/cstring.h:43:70: warning: 'char* strncpy(char*, const char*, size_t)' output truncated before terminating nul copying as many bytes from a string as its length [-Wstringop-truncation]
-See 'C:/Users/Jeroen/Documents/checks/stringi.Rcheck/00install.out' for details.
+See 'C:/Users/jeroen/Documents/checks/stringi.Rcheck/00install.out' for details.
 * checking installed package size ... NOTE
   installed size is 35.6Mb
   sub-directories of 1Mb or more:
@@ -35,14 +35,12 @@ See 'C:/Users/Jeroen/Documents/checks/stringi.Rcheck/00install.out' for details.
 ** checking whether the package can be unloaded cleanly ... OK
 ** checking whether the namespace can be loaded with stated dependencies ... OK
 ** checking whether the namespace can be unloaded cleanly ... OK
-** checking loading without being on the library search path ... OK
 * loading checks for arch 'x64'
 ** checking whether the package can be loaded ... OK
 ** checking whether the package can be loaded with stated dependencies ... OK
 ** checking whether the package can be unloaded cleanly ... OK
 ** checking whether the namespace can be loaded with stated dependencies ... OK
 ** checking whether the namespace can be unloaded cleanly ... OK
-** checking loading without being on the library search path ... OK
 * checking dependencies in R code ... OK
 * checking S3 generic/method consistency ... OK
 * checking replacement functions ... OK
