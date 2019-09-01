@@ -1,5 +1,5 @@
 # Check results
-Last update: Sun, Sep 01, 2019 12:42:15 AM
+Last update: Sun, Sep 01, 2019 12:54:21 PM
 
 ## Install failures
 ```
@@ -49,6 +49,7 @@ PlackettLuce.Rcheck/00check.log:Status: 1 ERROR
 prefmod.Rcheck/00check.log:Status: 1 ERROR
 proj4.Rcheck/00check.log:Status: 1 ERROR, 1 NOTE
 rbi.Rcheck/00check.log:Status: 2 ERRORs
+RcppProgress.Rcheck/00check.log:Status: 1 ERROR
 rggobi.Rcheck/00check.log:Status: 1 ERROR
 RISmed.Rcheck/00check.log:Status: 1 ERROR, 1 NOTE
 RMark.Rcheck/00check.log:Status: 1 ERROR
@@ -74,6 +75,7 @@ AnalyzeFMRI.Rcheck/00check.log:Status: 1 WARNING
 audio.Rcheck/00check.log:Status: 1 WARNING
 BRugs.Rcheck/00check.log:Status: 1 WARNING, 1 NOTE
 Cairo.Rcheck/00check.log:Status: 1 WARNING, 1 NOTE
+cubature.Rcheck/00check.log:Status: 1 WARNING, 2 NOTEs
 DPpackage.Rcheck/00check.log:Status: 1 WARNING, 1 NOTE
 enviPat.Rcheck/00check.log:Status: 1 WARNING
 epanet2toolkit.Rcheck/00check.log:Status: 1 WARNING
@@ -81,8 +83,10 @@ fdasrvf.Rcheck/00check.log:Status: 1 WARNING, 2 NOTEs
 hashmap.Rcheck/00check.log:Status: 1 WARNING
 haven.Rcheck/00check.log:Status: 1 WARNING, 1 NOTE
 imager.Rcheck/00check.log:Status: 1 WARNING, 1 NOTE
+lpSolve.Rcheck/00check.log:Status: 1 WARNING
 lwgeom.Rcheck/00check.log:Status: 1 WARNING, 1 NOTE
 ManifoldOptim.Rcheck/00check.log:Status: 1 WARNING
+mapproj.Rcheck/00check.log:Status: 1 WARNING
 MetaSKAT.Rcheck/00check.log:Status: 1 WARNING
 MigClim.Rcheck/00check.log:Status: 1 WARNING, 3 NOTEs
 msgps.Rcheck/00check.log:Status: 1 WARNING
@@ -122,4 +126,5 @@ velox.Rcheck/00check.log:Status: 1 WARNING
 WhopGenome.Rcheck/00check.log:Status: 1 WARNING
 wrassp.Rcheck/00check.log:Status: 1 WARNING
 XML.Rcheck/00check.log:Status: 1 WARNING, 2 NOTEs
+yaml.Rcheck/00check.log:Status: 1 WARNING
 ```

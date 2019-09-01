@@ -1,10 +1,11 @@
-* using log directory 'C:/Users/jeroen/Documents/checks/haven.Rcheck'
+* using log directory 'C:/Users/jeroen/Documents/checks/cubature.Rcheck'
 * using R version 3.7.0 Under development (Testing Rtools) (2019-08-27 r77080)
 * using platform: x86_64-w64-mingw32 (64-bit)
 * using session charset: ISO8859-1
 * using options '--no-manual --no-build-vignettes'
-* checking for file 'haven/DESCRIPTION' ... OK
-* this is package 'haven' version '2.1.1'
+* checking for file 'cubature/DESCRIPTION' ... OK
+* checking extension type ... Package
+* this is package 'cubature' version '2.0.3'
 * package encoding: UTF-8
 * checking package namespace information ... OK
 * checking package dependencies ... OK
@@ -13,13 +14,16 @@
 * checking for executable files ... OK
 * checking for hidden files and directories ... OK
 * checking for portable file names ... OK
-* checking whether package 'haven' can be installed ... WARNING
+* checking whether package 'cubature' can be installed ... WARNING
 Found the following significant warnings:
-  readstat/readstat_convert.c:18:42: warning: passing argument 2 of 'libiconv' from incompatible pointer type [-Wincompatible-pointer-types]
-  src/spss/readstat_sav_parse.rl:89:17: warning: passing argument 2 of 'libiconv' from incompatible pointer type [-Wincompatible-pointer-types]
-  src/spss/readstat_sav_parse.rl:197:17: warning: passing argument 2 of 'libiconv' from incompatible pointer type [-Wincompatible-pointer-types]
-See 'C:/Users/jeroen/Documents/checks/haven.Rcheck/00install.out' for details.
-* checking installed package size ... OK
+  ./src/common/Random.c:105:5: warning: 'memcpy' pointer overflow between offset 0 and size [4294967292, 2147483647] [-Warray-bounds]
+  ./src/common/Random.c:105:5: warning: 'memcpy' pointer overflow between offset 0 and size [-4, 9223372036854775807] [-Warray-bounds]
+See 'C:/Users/jeroen/Documents/checks/cubature.Rcheck/00install.out' for details.
+* checking installed package size ... NOTE
+  installed size is  6.9Mb
+  sub-directories of 1Mb or more:
+    doc    1.3Mb
+    libs   5.5Mb
 * checking package directory ... OK
 * checking 'build' directory ... OK
 * checking DESCRIPTION meta-information ... OK
@@ -63,6 +67,7 @@ See 'C:/Users/jeroen/Documents/checks/haven.Rcheck/00install.out' for details.
 GNU make is a SystemRequirements.
 * checking for portable use of $(BLAS_LIBS) and $(LAPACK_LIBS) ... OK
 * checking use of PKG_*FLAGS in Makefiles ... OK
+* checking include directives in Makefiles ... OK
 * checking compiled code ... OK
 * checking installed files from 'inst/doc' ... OK
 * checking files in 'vignettes' ... OK
@@ -78,8 +83,8 @@ GNU make is a SystemRequirements.
 * checking for unstated dependencies in vignettes ... OK
 * checking package vignettes in 'inst/doc' ... OK
 * checking running R code from vignettes ... NONE
-  'datetimes.Rmd' using 'UTF-8'... OK
-  'semantics.Rmd' using 'UTF-8'... OK
+  'cubature.Rmd' using 'UTF-8'... OK
+  'version2.Rmd' using 'UTF-8'... OK
 * checking re-building of vignette outputs ... SKIPPED
 * DONE
-Status: 1 WARNING, 1 NOTE
+Status: 1 WARNING, 2 NOTEs

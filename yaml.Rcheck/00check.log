@@ -1,11 +1,11 @@
-* using log directory 'C:/Users/jeroen/Documents/checks/haven.Rcheck'
+* using log directory 'C:/Users/jeroen/Documents/checks/yaml.Rcheck'
 * using R version 3.7.0 Under development (Testing Rtools) (2019-08-27 r77080)
 * using platform: x86_64-w64-mingw32 (64-bit)
 * using session charset: ISO8859-1
 * using options '--no-manual --no-build-vignettes'
-* checking for file 'haven/DESCRIPTION' ... OK
-* this is package 'haven' version '2.1.1'
-* package encoding: UTF-8
+* checking for file 'yaml/DESCRIPTION' ... OK
+* checking extension type ... Package
+* this is package 'yaml' version '2.2.0'
 * checking package namespace information ... OK
 * checking package dependencies ... OK
 * checking if this is a source package ... OK
@@ -13,15 +13,12 @@
 * checking for executable files ... OK
 * checking for hidden files and directories ... OK
 * checking for portable file names ... OK
-* checking whether package 'haven' can be installed ... WARNING
+* checking whether package 'yaml' can be installed ... WARNING
 Found the following significant warnings:
-  readstat/readstat_convert.c:18:42: warning: passing argument 2 of 'libiconv' from incompatible pointer type [-Wincompatible-pointer-types]
-  src/spss/readstat_sav_parse.rl:89:17: warning: passing argument 2 of 'libiconv' from incompatible pointer type [-Wincompatible-pointer-types]
-  src/spss/readstat_sav_parse.rl:197:17: warning: passing argument 2 of 'libiconv' from incompatible pointer type [-Wincompatible-pointer-types]
-See 'C:/Users/jeroen/Documents/checks/haven.Rcheck/00install.out' for details.
+  emitter.c:28:6: warning: value computed is not used [-Wunused-value]
+See 'C:/Users/jeroen/Documents/checks/yaml.Rcheck/00install.out' for details.
 * checking installed package size ... OK
 * checking package directory ... OK
-* checking 'build' directory ... OK
 * checking DESCRIPTION meta-information ... OK
 * checking top-level files ... OK
 * checking for left-over files ... OK
@@ -35,14 +32,12 @@ See 'C:/Users/jeroen/Documents/checks/haven.Rcheck/00install.out' for details.
 ** checking whether the package can be unloaded cleanly ... OK
 ** checking whether the namespace can be loaded with stated dependencies ... OK
 ** checking whether the namespace can be unloaded cleanly ... OK
-** checking loading without being on the library search path ... OK
 * loading checks for arch 'x64'
 ** checking whether the package can be loaded ... OK
 ** checking whether the package can be loaded with stated dependencies ... OK
 ** checking whether the package can be unloaded cleanly ... OK
 ** checking whether the namespace can be loaded with stated dependencies ... OK
 ** checking whether the namespace can be unloaded cleanly ... OK
-** checking loading without being on the library search path ... OK
 * checking dependencies in R code ... OK
 * checking S3 generic/method consistency ... OK
 * checking replacement functions ... OK
@@ -59,27 +54,18 @@ See 'C:/Users/jeroen/Documents/checks/haven.Rcheck/00install.out' for details.
 * checking line endings in C/C++/Fortran sources/headers ... OK
 * checking line endings in Makefiles ... OK
 * checking compilation flags in Makevars ... OK
-* checking for GNU extensions in Makefiles ... NOTE
-GNU make is a SystemRequirements.
+* checking for GNU extensions in Makefiles ... OK
 * checking for portable use of $(BLAS_LIBS) and $(LAPACK_LIBS) ... OK
 * checking use of PKG_*FLAGS in Makefiles ... OK
 * checking compiled code ... OK
-* checking installed files from 'inst/doc' ... OK
-* checking files in 'vignettes' ... OK
 * checking examples ...
 ** running examples for arch 'i386' ... OK
 ** running examples for arch 'x64' ... OK
 * checking for unstated dependencies in 'tests' ... OK
 * checking tests ...
 ** running tests for arch 'i386' ... OK
-  Running 'testthat.R'
+  Running 'RUnit.R'
 ** running tests for arch 'x64' ... OK
-  Running 'testthat.R'
-* checking for unstated dependencies in vignettes ... OK
-* checking package vignettes in 'inst/doc' ... OK
-* checking running R code from vignettes ... NONE
-  'datetimes.Rmd' using 'UTF-8'... OK
-  'semantics.Rmd' using 'UTF-8'... OK
-* checking re-building of vignette outputs ... SKIPPED
+  Running 'RUnit.R'
 * DONE
-Status: 1 WARNING, 1 NOTE
+Status: 1 WARNING

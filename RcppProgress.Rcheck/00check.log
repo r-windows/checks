@@ -1,0 +1,60 @@
+* using log directory 'C:/Users/jeroen/Documents/checks/RcppProgress.Rcheck'
+* using R version 3.7.0 Under development (Testing Rtools) (2019-08-27 r77080)
+* using platform: x86_64-w64-mingw32 (64-bit)
+* using session charset: ISO8859-1
+* using options '--no-manual --no-build-vignettes'
+* checking for file 'RcppProgress/DESCRIPTION' ... OK
+* checking extension type ... Package
+* this is package 'RcppProgress' version '0.4.1'
+* checking package namespace information ... OK
+* checking package dependencies ... OK
+* checking if this is a source package ... OK
+* checking if there is a namespace ... OK
+* checking for executable files ... OK
+* checking for hidden files and directories ... OK
+* checking for portable file names ... OK
+* checking whether package 'RcppProgress' can be installed ... OK
+* checking installed package size ... OK
+* checking package directory ... OK
+* checking DESCRIPTION meta-information ... OK
+* checking top-level files ... OK
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking whether the package can be loaded ... OK
+* checking whether the package can be loaded with stated dependencies ... OK
+* checking whether the package can be unloaded cleanly ... OK
+* checking whether the namespace can be loaded with stated dependencies ... OK
+* checking whether the namespace can be unloaded cleanly ... OK
+* checking loading without being on the library search path ... OK
+* checking Rd files ... OK
+* checking Rd metadata ... OK
+* checking Rd cross-references ... OK
+* checking for code/documentation mismatches ... OK
+* checking Rd \usage sections ... OK
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... OK
+* checking line endings in C/C++/Fortran sources/headers ... OK
+* checking examples ... OK
+* checking for unstated dependencies in 'tests' ... OK
+* checking tests ... ERROR
+  Running 'testthat.R'
+Running the tests in 'tests/testthat.R' failed.
+Last 13 lines of output:
+  -- 4. Failure: eta_progress_bar (@test-pkg_examples.R#28)  ---------------------
+  `eta_progress_bar(nb = 1000)` threw an error.
+  Message: Could not find tools necessary to compile a package
+  Call `pkgbuild::check_build_tools(debug = TRUE)` to diagnose the problem.
+  Class:   simpleError/error/condition
+  
+  == testthat results  ===========================================================
+  [ OK: 0 | SKIPPED: 0 | WARNINGS: 0 | FAILED: 4 ]
+  1. Failure: test_sequential (@test-pkg_examples.R#6) 
+  2. Failure: test_multithreaded (@test-pkg_examples.R#13) 
+  3. Failure: amardillo_multithreaded (@test-pkg_examples.R#20) 
+  4. Failure: eta_progress_bar (@test-pkg_examples.R#28) 
+  
+  Error: testthat unit tests failed
+  Execution halted
+* DONE
+Status: 1 ERROR
