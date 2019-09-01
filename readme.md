@@ -1,13 +1,13 @@
 # Check results
-Last update: Sun, Sep 01, 2019 12:54:21 PM
+Last update: Sun, Sep 01, 2019 11:37:53 PM
 
 ## Install failures
 ```
 BIGL.Rcheck/00check.log:Installation failed.
 cairoDevice.Rcheck/00check.log:Installation failed.
 matchingMarkets.Rcheck/00check.log:Installation failed.
-RGtk2.Rcheck/00check.log:Installation failed.
 RQuantLib.Rcheck/00check.log:Installation failed.
+splancs.Rcheck/00check.log:Installation failed.
 superbiclust.Rcheck/00check.log:Installation failed.
 tabulizerjars.Rcheck/00check.log:Installation failed.
 TSsdmx.Rcheck/00check.log:Installation failed.
@@ -18,6 +18,7 @@ XLConnectJars.Rcheck/00check.log:Installation failed.
 ```
 adaptiveGPCA.Rcheck/00check.log:Status: 1 ERROR
 antaresProcessing.Rcheck/00check.log:Status: 1 ERROR, 1 NOTE
+aws.Rcheck/00check.log:Status: 1 ERROR
 BIEN.Rcheck/00check.log:Status: 1 ERROR
 callr.Rcheck/00check.log:Status: 1 ERROR
 colorplaner.Rcheck/00check.log:Status: 2 ERRORs
@@ -30,12 +31,13 @@ furrr.Rcheck/00check.log:Status: 1 ERROR
 GenomicTools.Rcheck/00check.log:Status: 1 ERROR
 ggstance.Rcheck/00check.log:Status: 1 ERROR
 gWidgets2RGtk2.Rcheck/00check.log:Status: 1 ERROR
-gWidgetsRGtk2.Rcheck/00check.log:Status: 1 ERROR
 h5.Rcheck/00check.log:Status: 2 ERRORs, 1 NOTE
 harvestr.Rcheck/00check.log:Status: 1 ERROR
 hyperSpec.Rcheck/00check.log:Status: 1 ERROR, 1 NOTE
+inline.Rcheck/00check.log:Status: 1 ERROR
 IsoGene.Rcheck/00check.log:Status: 1 ERROR
 LDheatmap.Rcheck/00check.log:Status: 1 ERROR
+metafor.Rcheck/00check.log:Status: 1 ERROR, 1 NOTE
 metR.Rcheck/00check.log:Status: 1 ERROR, 1 NOTE
 MonetDBLite.Rcheck/00check.log:Status: 2 ERRORs, 1 WARNING, 1 NOTE
 MSeasy.Rcheck/00check.log:Status: 1 ERROR
@@ -49,7 +51,6 @@ PlackettLuce.Rcheck/00check.log:Status: 1 ERROR
 prefmod.Rcheck/00check.log:Status: 1 ERROR
 proj4.Rcheck/00check.log:Status: 1 ERROR, 1 NOTE
 rbi.Rcheck/00check.log:Status: 2 ERRORs
-RcppProgress.Rcheck/00check.log:Status: 1 ERROR
 rggobi.Rcheck/00check.log:Status: 1 ERROR
 RISmed.Rcheck/00check.log:Status: 1 ERROR, 1 NOTE
 RMark.Rcheck/00check.log:Status: 1 ERROR
@@ -84,6 +85,7 @@ hashmap.Rcheck/00check.log:Status: 1 WARNING
 haven.Rcheck/00check.log:Status: 1 WARNING, 1 NOTE
 imager.Rcheck/00check.log:Status: 1 WARNING, 1 NOTE
 lpSolve.Rcheck/00check.log:Status: 1 WARNING
+lpSolveAPI.Rcheck/00check.log:Status: 1 WARNING
 lwgeom.Rcheck/00check.log:Status: 1 WARNING, 1 NOTE
 ManifoldOptim.Rcheck/00check.log:Status: 1 WARNING
 mapproj.Rcheck/00check.log:Status: 1 WARNING
@@ -100,6 +102,7 @@ RcppParallel.Rcheck/00check.log:Status: 1 WARNING, 2 NOTEs
 Rdsdp.Rcheck/00check.log:Status: 1 WARNING
 re2r.Rcheck/00check.log:Status: 1 WARNING, 2 NOTEs
 rgeolocate.Rcheck/00check.log:Status: 1 WARNING, 1 NOTE
+RGtk2.Rcheck/00check.log:Status: 1 WARNING, 3 NOTEs
 RhpcBLASctl.Rcheck/00check.log:Status: 1 WARNING
 RInside.Rcheck/00check.log:Status: 1 WARNING, 2 NOTEs
 rioja.Rcheck/00check.log:Status: 1 WARNING, 1 NOTE

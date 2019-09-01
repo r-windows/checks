@@ -1,19 +1,20 @@
-* using log directory 'C:/Users/jeroen/Documents/checks/callr.Rcheck'
+* using log directory 'C:/Users/jeroen/Documents/checks/metafor.Rcheck'
 * using R version 3.7.0 Under development (Testing Rtools) (2019-08-27 r77080)
 * using platform: x86_64-w64-mingw32 (64-bit)
 * using session charset: ISO8859-1
 * using options '--no-manual --no-build-vignettes'
-* checking for file 'callr/DESCRIPTION' ... OK
-* this is package 'callr' version '3.3.1'
+* checking for file 'metafor/DESCRIPTION' ... OK
+* this is package 'metafor' version '2.1-0'
 * package encoding: UTF-8
 * checking package namespace information ... OK
-* checking package dependencies ... OK
+* checking package dependencies ... NOTE
+Package suggested but not available for checking: 'BiasedUrn'
 * checking if this is a source package ... OK
 * checking if there is a namespace ... OK
 * checking for executable files ... OK
 * checking for hidden files and directories ... OK
 * checking for portable file names ... OK
-* checking whether package 'callr' can be installed ... OK
+* checking whether package 'metafor' can be installed ... OK
 * checking installed package size ... OK
 * checking package directory ... OK
 * checking 'build' directory ... OK
@@ -29,6 +30,7 @@
 * checking whether the package can be unloaded cleanly ... OK
 * checking whether the namespace can be loaded with stated dependencies ... OK
 * checking whether the namespace can be unloaded cleanly ... OK
+* checking loading without being on the library search path ... OK
 * checking dependencies in R code ... OK
 * checking S3 generic/method consistency ... OK
 * checking replacement functions ... OK
@@ -42,33 +44,44 @@
 * checking Rd \usage sections ... OK
 * checking Rd contents ... OK
 * checking for unstated dependencies in examples ... OK
+* checking contents of 'data' directory ... OK
+* checking data for non-ASCII characters ... OK
+* checking data for ASCII and uncompressed saves ... OK
+* checking sizes of PDF files under 'inst/doc' ... OK
 * checking installed files from 'inst/doc' ... OK
 * checking files in 'vignettes' ... OK
-* checking examples ... OK
+* checking examples ... ERROR
+Running examples in 'metafor-Ex.R' failed
+The error most likely occurred in:
+
+> ### Name: llplot
+> ### Title: Likelihood Plot of a Parameter Corresponding to an Effect Size
+> ###   or Outcome Measure
+> ### Aliases: llplot
+> ### Keywords: hplot
+> 
+> ### ** Examples
+> 
+> ### calculate log risk ratios and corresponding sampling variances
+> dat <- escalc(measure="RR", ai=tpos, bi=tneg, ci=cpos, di=cneg, data=dat.bcg)
+> 
+> ### draw likelihoods
+> llplot(measure="GEN", yi=yi, vi=vi, data=dat, lwd=1, refline=NA, xlim=c(-3,2))
+> 
+> ### create plot (Figure 2 in van Houwelingen, Zwinderman, & Stijnen, 1993)
+> llplot(measure="OR", ai=b.xci, n1i=nci, ci=b.xti, n2i=nti, data=dat.collins1985a,
++        lwd=1, refline=NA, xlim=c(-4,4), drop00=FALSE)
+Error in llplot(measure = "OR", ai = b.xci, n1i = nci, ci = b.xti, n2i = nti,  : 
+  Please install the 'BiasedUrn' package to use this function.
+Execution halted
 * checking for unstated dependencies in 'tests' ... OK
-* checking tests ... ERROR
+* checking tests ... OK
   Running 'testthat.R'
-Running the tests in 'tests/testthat.R' failed.
-Last 13 lines of output:
-  
-  == Failed ======================================================================
-  -- 1. Failure: traceback (@test-r-session.R#267)  ------------------------------
-  `tb <- rs$traceback()` does not match "1: f() at ".
-  Actual value: "4: c(".handleSimpleError(function (e) ", "{", "    {", "        callr_data <- as.environment(\\"tools:callr\\")$`__callr_data__`", \n   "        err <- callr_data$err", "        capture.output(assign(\\".Traceback\\", traceback(9), envir = baseenv()))", \n   "        dump.frames(\\"__callr_dump__\\")", "        assign(\\".Last.dump\\", .GlobalEnv$`__callr_dump__`, envir = callr_data)", \n   "        rm(\\"__callr_dump__\\", envir = .GlobalEnv)", "        calls <- sys.calls()", \n   "        dcframe <- which(vapply(calls, function(x) length(x) >= ", \n   "            1 && identical(x[[1]], quote(do.call)), logical(1)))[1]", \n   "        if (!is.na(dcframe)) ", "            e$`_ignore` <- list(c(1, dcframe + 1L))", \n   "        e$`_pid` <- Sys.getpid()", "        e$`_timestamp` <- Sys.time()", \n   "        e <- err$add_trace_back(e)", "        saveRDS(list(\\"error\\", e), file = paste0(\\"C:\\\\\\\\rtools40\\\\\\\\tmp\\\\\\\\Rtmp8itFRC\\\\\\\\file113041093df2\\", ", \n   "            \\".error\\"))", "    }", "}, \\"oops\\", base::quote(g()))"\n   )\n3: "stop(\\"oops\\")"\n2: "g()"\n1: "f()""
-  
-  -- 2. Failure: traceback (@test-r-session.R#268)  ------------------------------
-  c(tb[[4]]) not equal to "f()".
-  1/1 mismatches
-  x[1]: "\"f()\""
-  y[1]: "f()"
-  
-  == DONE ========================================================================
-  Error: Test failures
-  Execution halted
 * checking for unstated dependencies in vignettes ... OK
 * checking package vignettes in 'inst/doc' ... OK
 * checking running R code from vignettes ... NONE
-  'Task-queue-with-callr.Rmd' using 'UTF-8'... OK
+  'diagram.pdf.asis' using 'UTF-8'... OK
+  'metafor.pdf.asis' using 'UTF-8'... OK
 * checking re-building of vignette outputs ... SKIPPED
 * DONE
-Status: 1 ERROR
+Status: 1 ERROR, 1 NOTE

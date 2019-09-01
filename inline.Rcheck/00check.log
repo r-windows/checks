@@ -1,0 +1,158 @@
+* using log directory 'C:/Users/jeroen/Documents/checks/inline.Rcheck'
+* using R version 3.7.0 Under development (Testing Rtools) (2019-08-27 r77080)
+* using platform: x86_64-w64-mingw32 (64-bit)
+* using session charset: ISO8859-1
+* using options '--no-manual --no-build-vignettes'
+* checking for file 'inline/DESCRIPTION' ... OK
+* this is package 'inline' version '0.3.15'
+* checking package namespace information ... OK
+* checking package dependencies ... OK
+* checking if this is a source package ... OK
+* checking if there is a namespace ... OK
+* checking for executable files ... OK
+* checking for hidden files and directories ... OK
+* checking for portable file names ... OK
+* checking whether package 'inline' can be installed ... OK
+* checking installed package size ... OK
+* checking package directory ... OK
+* checking DESCRIPTION meta-information ... OK
+* checking top-level files ... OK
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* checking whether the package can be loaded ... OK
+* checking whether the package can be loaded with stated dependencies ... OK
+* checking whether the package can be unloaded cleanly ... OK
+* checking whether the namespace can be loaded with stated dependencies ... OK
+* checking whether the namespace can be unloaded cleanly ... OK
+* checking loading without being on the library search path ... OK
+* checking dependencies in R code ... OK
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... OK
+* checking Rd files ... OK
+* checking Rd metadata ... OK
+* checking Rd cross-references ... OK
+* checking for missing documentation entries ... OK
+* checking for code/documentation mismatches ... OK
+* checking Rd \usage sections ... OK
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... OK
+* checking examples ... ERROR
+Running examples in 'inline-Ex.R' failed
+The error most likely occurred in:
+
+> ### Name: cfunction
+> ### Title: Inline C, C++, Fortran function calls from R
+> ### Aliases: cfunction setCMethod
+> ### Keywords: file
+> 
+> ### ** Examples
+> 
+> 
+> x <- as.numeric(1:10)
+> n <- as.integer(10)
+> 
+> ## Not run: 
+> ##D ## A simple Fortran example - n and x: assumed-size vector
+> ##D code <- "
+> ##D       integer i
+> ##D       do 1 i=1, n(1)
+> ##D     1 x(i) = x(i)**3
+> ##D "
+> ##D cubefn <- cfunction(signature(n="integer", x="numeric"), code, convention=".Fortran")
+> ##D print(cubefn)
+> ##D 
+> ##D cubefn(n, x)$x
+> ##D 
+> ##D ## Same Fortran example - now n is one number
+> ##D code2 <- "
+> ##D       integer i
+> ##D       do 1 i=1, n 
+> ##D     1 x(i) = x(i)**3
+> ##D "
+> ##D cubefn2 <- cfunction(signature(n="integer", x="numeric"), implicit = "none", 
+> ##D   dim = c("", "(*)"), code2, convention=".Fortran")
+> ##D 
+> ##D cubefn2(n, x)$x
+> ##D 
+> ##D ## Same in F95, now x is fixed-size vector (length = n)
+> ##D code3 <- "x = x*x*x"
+> ##D cubefn3 <- cfunction(sig = signature(n="integer", x="numeric"), implicit = "none", 
+> ##D   dim = c("", "(n)"), code3, language="F95")
+> ##D cubefn3(20, 1:20)
+> ##D print(cubefn3)
+> ##D 
+> ##D ## Same example in C
+> ##D code4 <- "
+> ##D       int i;
+> ##D       for (i = 0; i < *n; i++) 
+> ##D         x[i] = x[i]*x[i]*x[i];
+> ##D "
+> ##D cubefn4 <- cfunction(signature(n="integer", x="numeric"), code4, language = "C", convention = ".C")
+> ##D cubefn4(20, 1:20)
+> ##D 
+> ## End(Not run)
+> 
+>  ## use of a module in F95
+> modct <- "module modcts
++ double precision, parameter :: pi = 3.14159265358979
++ double precision, parameter :: e = 2.71828182845905
++ end"
+> 
+> getconstants <- "x(1) = pi
++ x(2) = e"
+> 
+> cgetcts <- cfunction(getconstants, module = "modcts", implicit = "none",
++   includes = modct, sig = c(x = "double"), dim = c("(2)"), language = "F95")
+> 
+> cgetcts(x = 1:2)  
+$x
+[1] 3.141593 2.718282
+
+> print(cgetcts)
+An object of class 'CFunc'
+function (x) 
+.Primitive(".Fortran")(<pointer: 0x0000000074281430>, x = as.double(x))
+<environment: 0x0000000008f68758>
+code:
+  1: module modcts
+  2: double precision, parameter :: pi = 3.14159265358979
+  3: double precision, parameter :: e = 2.71828182845905
+  4: end
+  5:  SUBROUTINE filef5049186c00 ( x )
+  6: USE modcts
+  7: IMPLICIT none
+  8: DOUBLE PRECISION x(2)
+  9: x(1) = pi
+ 10: x(2) = e
+ 11: RETURN
+ 12: END
+ 13: 
+> 
+> ## Use of .C convention with C code
+> ## Defining two functions, one of which calls the other
+> sigSq <- signature(n="integer", x="numeric")
+> codeSq <- "
++   for (int i=0; i < *n; i++) {
++     x[i] = x[i]*x[i];
++   }"
+> sigQd <- signature(n="integer", x="numeric")
+> codeQd <- "
++   squarefn(n, x);
++   squarefn(n, x);
++ "
+> 
+> fns <- cfunction( list(squarefn=sigSq, quadfn=sigQd), 
++                   list(codeSq, codeQd), 
++                   convention=".C")
+> 
+> squarefn <- fns[["squarefn"]]
+> quadfn <- fns[["quadfn"]]
+> 
+> squarefn(n, x)$x
+* DONE
+Status: 1 ERROR

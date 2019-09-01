@@ -1,5 +1,5 @@
-* using log directory 'C:/Users/Jeroen/Documents/checks/Cairo.Rcheck'
-* using R version 3.7.0 Under development (Testing Rtools) (2019-08-10 r76951)
+* using log directory 'C:/Users/jeroen/Documents/checks/Cairo.Rcheck'
+* using R version 3.7.0 Under development (Testing Rtools) (2019-08-27 r77080)
 * using platform: x86_64-w64-mingw32 (64-bit)
 * using session charset: ISO8859-1
 * using options '--no-manual --no-build-vignettes'
@@ -16,7 +16,7 @@ Package which this enhances but not available for checking: 'FastRWeb'
 * checking whether package 'Cairo' can be installed ... WARNING
 Found the following significant warnings:
   w32-backend.c:24:5: warning: initialization of 'char **' from incompatible pointer type 'const char **' [-Wincompatible-pointer-types]
-See 'C:/Users/Jeroen/Documents/checks/Cairo.Rcheck/00install.out' for details.
+See 'C:/Users/jeroen/Documents/checks/Cairo.Rcheck/00install.out' for details.
 * checking installed package size ... OK
 NB: this package is only installed for sub-architecture 'x64'
 * checking package directory ... OK
