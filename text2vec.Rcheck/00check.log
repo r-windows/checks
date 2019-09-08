@@ -1,5 +1,5 @@
-* using log directory 'C:/Users/Jeroen/Documents/checks/text2vec.Rcheck'
-* using R version 3.7.0 Under development (Testing Rtools) (2019-08-10 r76951)
+* using log directory 'C:/Users/jeroen/Documents/checks/text2vec.Rcheck'
+* using R version 3.7.0 Under development (Testing Rtools) (2019-08-27 r77080)
 * using platform: x86_64-w64-mingw32 (64-bit)
 * using session charset: ISO8859-1
 * using options '--no-manual --no-build-vignettes'
@@ -18,7 +18,7 @@
 Found the following significant warnings:
   C:/R/library/sparsepp/include/sparsepp/spp_utils.h:422:44: warning: 'void* realloc(void*, size_t)' moving an object of non-trivially copyable type 'struct std::pair<const std::pair<unsigned int, unsigned int>, int>'; use 'new' and 'delete' instead [-Wclass-memaccess]
   C:/R/library/sparsepp/include/sparsepp/spp_utils.h:422:44: warning: 'void* realloc(void*, size_t)' moving an object of non-trivially copyable type 'struct std::pair<const std::pair<unsigned int, unsigned int>, float>'; use 'new' and 'delete' instead [-Wclass-memaccess]
-See 'C:/Users/Jeroen/Documents/checks/text2vec.Rcheck/00install.out' for details.
+See 'C:/Users/jeroen/Documents/checks/text2vec.Rcheck/00install.out' for details.
 * checking installed package size ... NOTE
   installed size is  9.5Mb
   sub-directories of 1Mb or more:

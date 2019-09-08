@@ -1,0 +1,36 @@
+* installing *source* package 'pbdDMAT' ...
+** package 'pbdDMAT' successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+
+*** arch - i386
+/mingw32/bin/gcc  -I"C:/progra~1/R/R-testing/include" -DNDEBUG -I../inst/RNACI         -O2 -Wall  -std=gnu99 -mtune=generic -c converters.c -o converters.o
+/mingw32/bin/gcc  -I"C:/progra~1/R/R-testing/include" -DNDEBUG -I../inst/RNACI         -O2 -Wall  -std=gnu99 -mtune=generic -c pbdDMAT_native.c -o pbdDMAT_native.o
+/mingw32/bin/gcc  -I"C:/progra~1/R/R-testing/include" -DNDEBUG -I../inst/RNACI         -O2 -Wall  -std=gnu99 -mtune=generic -c sparse_utils.c -o sparse_utils.o
+In file included from dmat.h:7,
+                 from sparse_utils.c:2:
+../inst/RNACI/RNACI.h:86:21: warning: 'RNACI_ptct' defined but not used [-Wunused-variable]
+ static unsigned int RNACI_ptct = 0;
+                     ^~~~~~~~~~
+/mingw32/bin/gcc -shared -s -static-libgcc -o pbdDMAT.dll tmp.def converters.o pbdDMAT_native.o sparse_utils.o -LC:/progra~1/R/R-testing/bin/i386 -lR
+installing to C:/Users/jeroen/Documents/checks/pbdDMAT.Rcheck/00LOCK-pbdDMAT/00new/pbdDMAT/libs/i386
+
+*** arch - x64
+/mingw64/bin/gcc  -I"C:/progra~1/R/R-testing/include" -DNDEBUG -I../inst/RNACI         -O2 -Wall  -std=gnu99 -mtune=generic -c converters.c -o converters.o
+/mingw64/bin/gcc  -I"C:/progra~1/R/R-testing/include" -DNDEBUG -I../inst/RNACI         -O2 -Wall  -std=gnu99 -mtune=generic -c pbdDMAT_native.c -o pbdDMAT_native.o
+/mingw64/bin/gcc  -I"C:/progra~1/R/R-testing/include" -DNDEBUG -I../inst/RNACI         -O2 -Wall  -std=gnu99 -mtune=generic -c sparse_utils.c -o sparse_utils.o
+In file included from dmat.h:7,
+                 from sparse_utils.c:2:
+../inst/RNACI/RNACI.h:86:21: warning: 'RNACI_ptct' defined but not used [-Wunused-variable]
+ static unsigned int RNACI_ptct = 0;
+                     ^~~~~~~~~~
+/mingw64/bin/gcc -shared -s -static-libgcc -o pbdDMAT.dll tmp.def converters.o pbdDMAT_native.o sparse_utils.o -LC:/progra~1/R/R-testing/bin/x64 -lR
+installing to C:/Users/jeroen/Documents/checks/pbdDMAT.Rcheck/00LOCK-pbdDMAT/00new/pbdDMAT/libs/x64
+** R
+** demo
+** inst
+** byte-compile and prepare package for lazy loading
+Error: package 'pbdBASE' is not installed for 'arch = x64'
+Execution halted
+ERROR: lazy loading failed for package 'pbdDMAT'
+* removing 'C:/Users/jeroen/Documents/checks/pbdDMAT.Rcheck/pbdDMAT'

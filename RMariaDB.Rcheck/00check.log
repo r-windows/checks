@@ -1,5 +1,5 @@
-* using log directory 'C:/Users/Jeroen/Documents/checks/RMariaDB.Rcheck'
-* using R version 3.7.0 Under development (Testing Rtools) (2019-08-10 r76951)
+* using log directory 'C:/Users/jeroen/Documents/checks/RMariaDB.Rcheck'
+* using R version 3.7.0 Under development (Testing Rtools) (2019-08-27 r77080)
 * using platform: x86_64-w64-mingw32 (64-bit)
 * using session charset: ISO8859-1
 * using options '--no-manual --no-build-vignettes'
@@ -15,8 +15,10 @@
 * checking for portable file names ... OK
 * checking whether package 'RMariaDB' can be installed ... WARNING
 Found the following significant warnings:
+  DbResult.cpp:19:8: warning: 'template<class> class std::auto_ptr' is deprecated [-Wdeprecated-declarations]
   DbResult.cpp:81:41: warning: catching polymorphic type 'class MariaResultPrep::UnsupportedPS' by value [-Wcatch-value=]
-See 'C:/Users/Jeroen/Documents/checks/RMariaDB.Rcheck/00install.out' for details.
+  connection.cpp:23:8: warning: 'template<class> class std::auto_ptr' is deprecated [-Wdeprecated-declarations]
+See 'C:/Users/jeroen/Documents/checks/RMariaDB.Rcheck/00install.out' for details.
 * checking installed package size ... NOTE
   installed size is  7.0Mb
   sub-directories of 1Mb or more:

@@ -1,5 +1,5 @@
-* using log directory 'C:/Users/Jeroen/Documents/checks/Rdsdp.Rcheck'
-* using R version 3.6.0 Under development (Testing Rtools) (2019-03-14 r76238)
+* using log directory 'C:/Users/jeroen/Documents/checks/Rdsdp.Rcheck'
+* using R version 3.7.0 Under development (Testing Rtools) (2019-08-27 r77080)
 * using platform: x86_64-w64-mingw32 (64-bit)
 * using session charset: ISO8859-1
 * using options '--no-manual --no-build-vignettes'
@@ -19,7 +19,7 @@ Found the following significant warnings:
   Rreadsdpa.c:1042:13: warning: 'strncpy' output may be truncated copying 39 bytes from a string of length 39 [-Wstringop-truncation]
   dsdpsetoptions.c:164:4: warning: 'strncpy' output may be truncated copying 39 bytes from a string of length 39 [-Wstringop-truncation]
   dsdpsetoptions.c:165:4: warning: 'strncpy' output may be truncated copying 39 bytes from a string of length 39 [-Wstringop-truncation]
-See 'C:/Users/Jeroen/Documents/checks/Rdsdp.Rcheck/00install.out' for details.
+See 'C:/Users/jeroen/Documents/checks/Rdsdp.Rcheck/00install.out' for details.
 * checking installed package size ... OK
 * checking package directory ... OK
 * checking DESCRIPTION meta-information ... OK
@@ -62,6 +62,7 @@ See 'C:/Users/Jeroen/Documents/checks/Rdsdp.Rcheck/00install.out' for details.
 * checking compilation flags in Makevars ... OK
 * checking for GNU extensions in Makefiles ... OK
 * checking for portable use of $(BLAS_LIBS) and $(LAPACK_LIBS) ... OK
+* checking use of PKG_*FLAGS in Makefiles ... OK
 * checking include directives in Makefiles ... OK
 * checking compiled code ... OK
 * checking examples ...

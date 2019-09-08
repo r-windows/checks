@@ -1,5 +1,5 @@
-* using log directory 'C:/Users/Jeroen/Documents/checks/imager.Rcheck'
-* using R version 3.7.0 Under development (Testing Rtools) (2019-08-10 r76951)
+* using log directory 'C:/Users/jeroen/Documents/checks/imager.Rcheck'
+* using R version 3.7.0 Under development (Testing Rtools) (2019-08-27 r77080)
 * using platform: x86_64-w64-mingw32 (64-bit)
 * using session charset: ISO8859-1
 * using options '--no-manual --no-build-vignettes'
@@ -66,7 +66,7 @@ Found the following significant warnings:
   ../inst/include/CImg.h:55934:41: warning: 'void* memcpy(void*, const void*, size_t)' writing to an object of type 'struct cimg_library::CImg<long long unsigned int>' with no trivial copy-assignment; use copy-assignment or copy-initialization instead [-Wclass-memaccess]
   ../inst/include/CImg.h:55935:52: warning: 'void* memset(void*, int, size_t)' clearing an object of type 'struct cimg_library::CImg<long long unsigned int>' with no trivial copy-assignment; use assignment or value-initialization instead [-Wclass-memaccess]
   ../inst/include/CImg.h:55936:22: warning: 'void* memset(void*, int, size_t)' clearing an object of type 'struct cimg_library::CImg<long long unsigned int>' with no trivial copy-assignment; use assignment or value-initialization instead [-Wclass-memaccess]
-See 'C:/Users/Jeroen/Documents/checks/imager.Rcheck/00install.out' for details.
+See 'C:/Users/jeroen/Documents/checks/imager.Rcheck/00install.out' for details.
 * checking installed package size ... NOTE
   installed size is 24.9Mb
   sub-directories of 1Mb or more:

@@ -1,0 +1,94 @@
+* using log directory 'C:/Users/jeroen/Documents/checks/pkgbuild.Rcheck'
+* using R version 3.7.0 Under development (Testing Rtools) (2019-08-27 r77080)
+* using platform: x86_64-w64-mingw32 (64-bit)
+* using session charset: ISO8859-1
+* using options '--no-manual --no-build-vignettes'
+* checking for file 'pkgbuild/DESCRIPTION' ... OK
+* this is package 'pkgbuild' version '1.0.5'
+* package encoding: UTF-8
+* checking package namespace information ... OK
+* checking package dependencies ... OK
+* checking if this is a source package ... OK
+* checking if there is a namespace ... OK
+* checking for executable files ... OK
+* checking for hidden files and directories ... OK
+* checking for portable file names ... OK
+* checking whether package 'pkgbuild' can be installed ... OK
+* checking installed package size ... OK
+* checking package directory ... OK
+* checking DESCRIPTION meta-information ... OK
+* checking top-level files ... OK
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* checking whether the package can be loaded ... OK
+* checking whether the package can be loaded with stated dependencies ... OK
+* checking whether the package can be unloaded cleanly ... OK
+* checking whether the namespace can be loaded with stated dependencies ... OK
+* checking whether the namespace can be unloaded cleanly ... OK
+* checking dependencies in R code ... OK
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... OK
+* checking Rd files ... OK
+* checking Rd metadata ... OK
+* checking Rd cross-references ... OK
+* checking for missing documentation entries ... OK
+* checking for code/documentation mismatches ... OK
+* checking Rd \usage sections ... OK
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... OK
+* checking examples ... ERROR
+Running examples in 'pkgbuild-Ex.R' failed
+The error most likely occurred in:
+
+> ### Name: has_build_tools
+> ### Title: Are build tools are available?
+> ### Aliases: has_build_tools check_build_tools with_build_tools
+> ###   local_build_tools
+> 
+> ### ** Examples
+> 
+> has_build_tools(debug = TRUE)
+Scanning R CMD config CC...
+cc_path: /mingw64/bin/gcc 
+'/mingw64/bin/gcc.exe' does not exist
+Scanning path...
+ls: C:\rtools40\usr\bin\ls.exe 
+gcc_path: C:\rtools40\mingw64\bin\gcc.exe 
+Scanning registry...
+WARNING: Rtools is required to build R packages, but is not currently installed.
+
+Please download and install Rtools 3.5 from http://cran.r-project.org/bin/windows/Rtools/.
+> check_build_tools()
+WARNING: Rtools is required to build R packages, but is not currently installed.
+
+Please download and install Rtools 3.5 from http://cran.r-project.org/bin/windows/Rtools/.
+Error: Could not find tools necessary to compile a package
+Call `pkgbuild::check_build_tools(debug = TRUE)` to diagnose the problem.
+Execution halted
+* checking for unstated dependencies in 'tests' ... OK
+* checking tests ... ERROR
+  Running 'build-tools.R'
+Running the tests in 'tests/build-tools.R' failed.
+Last 13 lines of output:
+  > 
+  > check_build_tools(debug = TRUE)
+  Scanning R CMD config CC...
+  cc_path: /mingw64/bin/gcc 
+  '/mingw64/bin/gcc.exe' does not exist
+  Scanning path...
+  ls: C:\rtools40\usr\bin\ls.exe 
+  gcc_path: C:\rtools40\mingw64\bin\gcc.exe 
+  Scanning registry...
+  WARNING: Rtools is required to build R packages, but is not currently installed.
+  
+  Please download and install Rtools 3.5 from http://cran.r-project.org/bin/windows/Rtools/.
+  Error: Could not find tools necessary to compile a package
+  Call `pkgbuild::check_build_tools(debug = TRUE)` to diagnose the problem.
+  Execution halted
+* DONE
+Status: 2 ERRORs

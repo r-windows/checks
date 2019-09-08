@@ -1,0 +1,74 @@
+* using log directory 'C:/Users/jeroen/Documents/checks/RSEIS.Rcheck'
+* using R version 3.7.0 Under development (Testing Rtools) (2019-08-27 r77080)
+* using platform: x86_64-w64-mingw32 (64-bit)
+* using session charset: ISO8859-1
+* using options '--no-manual --no-build-vignettes'
+* checking for file 'RSEIS/DESCRIPTION' ... OK
+* checking extension type ... Package
+* this is package 'RSEIS' version '3.8-3'
+* checking package namespace information ... OK
+* checking package dependencies ... OK
+* checking if this is a source package ... OK
+* checking if there is a namespace ... OK
+* checking for executable files ... OK
+* checking for hidden files and directories ... OK
+* checking for portable file names ... OK
+* checking whether package 'RSEIS' can be installed ... WARNING
+Found the following significant warnings:
+  LLNfilt.c:506:11: warning: array subscript -3 is below array bounds of 'char[30]' [-Warray-bounds]
+  LLNfilt.c:508:5: warning: array subscript -1 is below array bounds of 'complex[10]' {aka 'struct <anonymous>[10]'} [-Warray-bounds]
+  LLNfilt.c:416:11: warning: array subscript -3 is below array bounds of 'char[30]' [-Warray-bounds]
+  LLNfilt.c:417:5: warning: array subscript -1 is below array bounds of 'complex[10]' {aka 'struct <anonymous>[10]'} [-Warray-bounds]
+  LLNfilt.c:1179:5: warning: array subscript -1 is below array bounds of 'complex[10]' {aka 'struct <anonymous>[10]'} [-Warray-bounds]
+  LLNfilt.c:828:5: warning: array subscript -1 is below array bounds of 'complex[10]' {aka 'struct <anonymous>[10]'} [-Warray-bounds]
+  LLNfilt.c:950:5: warning: array subscript -1 is below array bounds of 'complex[10]' {aka 'struct <anonymous>[10]'} [-Warray-bounds]
+  LLNfilt.c:615:5: warning: array subscript -1 is below array bounds of 'complex[10]' {aka 'struct <anonymous>[10]'} [-Warray-bounds]
+  jpiki.c:118:5: warning: array subscript -1 is below array bounds of 'int[30]' [-Warray-bounds]
+  jpiki.c:117:5: warning: array subscript -1 is below array bounds of 'int[9]' [-Warray-bounds]
+See 'C:/Users/jeroen/Documents/checks/RSEIS.Rcheck/00install.out' for details.
+* checking installed package size ... OK
+* checking package directory ... OK
+* checking DESCRIPTION meta-information ... OK
+* checking top-level files ... OK
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* loading checks for arch 'i386'
+** checking whether the package can be loaded ... OK
+** checking whether the package can be loaded with stated dependencies ... OK
+** checking whether the package can be unloaded cleanly ... OK
+** checking whether the namespace can be loaded with stated dependencies ... OK
+** checking whether the namespace can be unloaded cleanly ... OK
+** checking loading without being on the library search path ... OK
+* loading checks for arch 'x64'
+** checking whether the package can be loaded ... OK
+** checking whether the package can be loaded with stated dependencies ... OK
+** checking whether the package can be unloaded cleanly ... OK
+** checking whether the namespace can be loaded with stated dependencies ... OK
+** checking whether the namespace can be unloaded cleanly ... OK
+** checking loading without being on the library search path ... OK
+* checking dependencies in R code ... OK
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... OK
+* checking Rd files ... OK
+* checking Rd metadata ... OK
+* checking Rd cross-references ... OK
+* checking for missing documentation entries ... OK
+* checking for code/documentation mismatches ... OK
+* checking Rd \usage sections ... OK
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... OK
+* checking contents of 'data' directory ... OK
+* checking data for non-ASCII characters ... OK
+* checking data for ASCII and uncompressed saves ... OK
+* checking line endings in C/C++/Fortran sources/headers ... OK
+* checking compiled code ... OK
+* checking examples ...
+** running examples for arch 'i386' ... OK
+** running examples for arch 'x64' ... OK
+* DONE
+Status: 1 WARNING

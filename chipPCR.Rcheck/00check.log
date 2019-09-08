@@ -1,0 +1,237 @@
+* using log directory 'C:/Users/jeroen/Documents/checks/chipPCR.Rcheck'
+* using R version 3.7.0 Under development (Testing Rtools) (2019-08-27 r77080)
+* using platform: x86_64-w64-mingw32 (64-bit)
+* using session charset: ISO8859-1
+* using options '--no-manual --no-build-vignettes'
+* checking for file 'chipPCR/DESCRIPTION' ... OK
+* checking extension type ... Package
+* this is package 'chipPCR' version '0.0.8-10'
+* checking package namespace information ... OK
+* checking package dependencies ... NOTE
+Package suggested but not available for checking: 'MBmca'
+* checking if this is a source package ... OK
+* checking if there is a namespace ... OK
+* checking for executable files ... OK
+* checking for hidden files and directories ... OK
+* checking for portable file names ... OK
+* checking whether package 'chipPCR' can be installed ... OK
+* checking installed package size ... OK
+* checking package directory ... OK
+* checking 'build' directory ... OK
+* checking DESCRIPTION meta-information ... OK
+* checking top-level files ... OK
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* checking whether the package can be loaded ... OK
+* checking whether the package can be loaded with stated dependencies ... OK
+* checking whether the package can be unloaded cleanly ... OK
+* checking whether the namespace can be loaded with stated dependencies ... OK
+* checking whether the namespace can be unloaded cleanly ... OK
+* checking loading without being on the library search path ... OK
+* checking dependencies in R code ... OK
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... NOTE
+AmpSim: no visible global function definition for 'sd'
+AmpSim: no visible global function definition for 'rnorm'
+RGt: no visible global function definition for 'na.omit'
+RGt : <anonymous>: no visible global function definition for 'lm'
+amptester: no visible global function definition for 'shapiro.test'
+amptester : <anonymous>: no visible global function definition for 'lm'
+amptester : <anonymous>: no visible global function definition for
+  'cor'
+amptester : <anonymous>: no visible global function definition for
+  'rstudent'
+amptester: no visible global function definition for 'na.omit'
+amptester: no visible global function definition for 'median'
+amptester: no visible global function definition for 'mad'
+amptester: no visible global function definition for 'rnorm'
+amptester: no visible global function definition for 'wilcox.test'
+amptester: no visible global function definition for 'head'
+amptester: no visible global function definition for 'tail'
+amptester : pco: no visible global function definition for 'predict'
+amptester : pco: no visible global function definition for
+  'smooth.spline'
+amptester: no visible global function definition for 'coef'
+amptester: no visible global function definition for 'lm'
+lm.coefs : lm.fit : <anonymous>: no visible global function definition
+  for 'lm'
+normalizer : <anonymous>: no visible global function definition for
+  'quantile'
+normalizer : <anonymous>: no visible global function definition for
+  'sd'
+plotCurves: no visible global function definition for 'matplot'
+plotCurves: no visible global function definition for 'par'
+plotCurves: no visible global function definition for 'layout'
+plotCurves : <anonymous>: no visible global function definition for
+  'rect'
+plotCurves : <anonymous>: no visible global function definition for
+  'par'
+plotCurves : <anonymous>: no visible global function definition for
+  'text'
+plotCurves : <anonymous>: no visible global function definition for
+  'rug'
+plotCurves : <anonymous>: no visible global function definition for
+  'axis'
+plotCurves : <anonymous>: no visible global function definition for
+  'lines'
+rtg.test : <anonymous>: no visible global function definition for 'lm'
+rtg.test : <anonymous>: no visible global function definition for 'cor'
+rtg.test : <anonymous>: no visible global function definition for
+  'rstudent'
+th.cyc: no visible global function definition for 'quantile'
+th.cyc: no visible global function definition for 'mad'
+th.est: no visible global function definition for 'tail'
+th.est: no visible global function definition for 'head'
+th.est: no visible global function definition for 'lm'
+plot,amptest-ANY: no visible global function definition for 'head'
+plot,amptest-ANY: no visible global function definition for 'tail'
+plot,amptest-ANY: no visible global function definition for 'median'
+plot,amptest-ANY: no visible global function definition for 'mad'
+plot,amptest-ANY: no visible global function definition for
+  'shapiro.test'
+plot,amptest-ANY: no visible global function definition for
+  'wilcox.test'
+plot,amptest-ANY: no visible global function definition for 'layout'
+plot,amptest-ANY: no visible global function definition for 'abline'
+plot,amptest-ANY: no visible global function definition for 'text'
+plot,amptest-ANY: no visible global function definition for 'arrows'
+plot,amptest-ANY: no visible global function definition for 'mtext'
+plot,amptest-ANY: no visible global function definition for 'axis'
+plot,bg-ANY: no visible global function definition for 'abline'
+plot,bg-ANY: no visible global function definition for 'text'
+plot,der-ANY: no visible global function definition for 'points'
+plot,eff-ANY: no visible global function definition for 'predict.lm'
+plot,eff-ANY: no visible global function definition for 'polygon'
+plot,eff-ANY: no visible global function definition for 'adjustcolor'
+plot,eff-ANY: no visible global function definition for 'arrows'
+plot,eff-ANY: no visible global function definition for 'abline'
+plot,eff-ANY: no visible global function definition for 'legend'
+plot,refMFI-ANY: no visible global function definition for 'par'
+plot,refMFI-ANY: no visible global function definition for 'layout'
+plot,refMFI-ANY: no visible global function definition for 'arrows'
+plot,refMFI-ANY: no visible global function definition for 'mtext'
+plot,refMFI-ANY: no visible global function definition for 'abline'
+plot,refMFI-refMFI: no visible global function definition for 'par'
+plot,refMFI-refMFI: no visible global function definition for 'layout'
+plot,refMFI-refMFI: no visible global function definition for 'points'
+plot,refMFI-refMFI: no visible global function definition for
+  'adjustcolor'
+plot,refMFI-refMFI: no visible global function definition for 'arrows'
+plot,refMFI-refMFI: no visible global function definition for 'mtext'
+plot,refMFI-refMFI: no visible global function definition for 'abline'
+plot,refMFI-refMFI: no visible global function definition for 'legend'
+plot,refMFI-refMFI: no visible global function definition for 'lines'
+qqline,refMFI: no visible binding for global variable 'qnorm'
+Undefined global functions or variables:
+  abline adjustcolor arrows axis coef cor head layout legend lines lm
+  mad matplot median mtext na.omit par points polygon predict
+  predict.lm qnorm quantile rect rnorm rstudent rug sd shapiro.test
+  smooth.spline tail text wilcox.test
+Consider adding
+  importFrom("grDevices", "adjustcolor")
+  importFrom("graphics", "abline", "arrows", "axis", "layout", "legend",
+             "lines", "matplot", "mtext", "par", "points", "polygon",
+             "rect", "rug", "text")
+  importFrom("stats", "coef", "cor", "lm", "mad", "median", "na.omit",
+             "predict", "predict.lm", "qnorm", "quantile", "rnorm",
+             "rstudent", "sd", "shapiro.test", "smooth.spline",
+             "wilcox.test")
+  importFrom("utils", "head", "tail")
+to your NAMESPACE file.
+* checking Rd files ... OK
+* checking Rd metadata ... OK
+* checking Rd cross-references ... NOTE
+Package unavailable to check Rd xrefs: 'MBmca'
+* checking for missing documentation entries ... OK
+* checking for code/documentation mismatches ... OK
+* checking Rd \usage sections ... OK
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... OK
+* checking contents of 'data' directory ... OK
+* checking data for non-ASCII characters ... OK
+* checking data for ASCII and uncompressed saves ... OK
+* checking sizes of PDF files under 'inst/doc' ... OK
+* checking installed files from 'inst/doc' ... OK
+* checking files in 'vignettes' ... OK
+* checking examples ... ERROR
+Running examples in 'chipPCR-Ex.R' failed
+The error most likely occurred in:
+
+> ### Name: effcalc
+> ### Title: Analysis of the amplification efficiency
+> ### Aliases: effcalc effcalc.numeric effcalc.matrix effcalc.data.frame
+> ###   effcalc,numeric,numeric-method effcalc,matrix,missing-method
+> ###   effcalc,data.frame,missing-method
+> ### Keywords: efficiency methods
+> 
+> ### ** Examples
+> 
+> ## Not run: 
+> # First Example
+> # Amplification efficiency plot 
+> 
+> require(MBmca)
+Loading required package: MBmca
+Warning in library(package, lib.loc = lib.loc, character.only = TRUE, logical.return = TRUE,  :
+  there is no package called 'MBmca'
+> par(mfrow = c(1,2), las = 0, bty = "n", cex.axis = 1.2, cex.lab = 1.2, 
++     font = 2, cex.main = 1, oma = c(0.1, 0.1, 0.5, 0.1))
+> 
+> # Simulate a qPCR reaction with AmpSim for 45 cycles and some noise.
+> # Define number of cycles
+> cyc.no <- 45
+> 
+> # Create an empty plot
+> plot(NA, NA, xlim = c(1,cyc.no), ylim = c(0.01,1.1), xlab = "Cycles", 
++      ylab = "Fluorescence", main = "")
+> mtext("A", cex = 2, side = 3, adj = 0, font = 2)
+> 
+> # Create a sequence of "whised" Cq value for the simulation
+> cycle <- rep(seq(15, 34, 3.5), 3)
+> 
+> # Define the levels for the decadic dilution with concentrations
+> # from 100 to 0.001 (six steps).
+> # The in-slico experiment is designed to have three replicates at
+> # six dilution steps.
+> dilution <-rep(c(100, 10, 1, 0.1, 0.01, 0.001), 3)
+> 
+> # Create an empty matrix for the results of the concentration
+> # dependent Cq values
+> ma.out <- matrix(data = NA, nrow = cyc.no, 
++ 		 ncol = length(cycle))
+> 
+> # Use AmpSim to simulate amplification curves at different 
+> # concentrations. The simulation is performed with the addition
+> # of some noise. This will do a generation of unique amplification
+> # curves, even under idential paramter settings. Calculate the 
+> # pseudo Second Derivative Maximum (SDM) (Cq) by using the the 
+> # diffQ2 function from the MBmca package.
+> 
+> Cq.out <- vector()
+> 
+> for (i in 1:18) {
++   ma.out[1:cyc.no, i] <- AmpSim(cyc = c(1:cyc.no), b.eff = -50, bl = 0.001, 
++ 				ampl = 1, Cq = cycle[i], noise = TRUE, 
++ 				nnl = 0.02)[, 2]
++   lines(1:cyc.no, ma.out[, i])
++   tmpP <- mcaSmoother(1:cyc.no, ma.out[, i])
++   #TURNED OFF INDER - NEW COMPATIBILITY TO MBmca STILL PENDING
++   Cq.tmp <- diffQ2(tmpP, inder = FALSE)$xTm1.2.D2[1]
++   abline(v = Cq.tmp)
++   Cq.out <- c(Cq.out, Cq.tmp)
++ }
+Error in mcaSmoother(1:cyc.no, ma.out[, i]) : 
+  could not find function "mcaSmoother"
+Execution halted
+* checking for unstated dependencies in vignettes ... OK
+* checking package vignettes in 'inst/doc' ... OK
+* checking running R code from vignettes ... NONE
+  'chipPCR.Rnw' using 'UTF-8'... OK
+* checking re-building of vignette outputs ... SKIPPED
+* DONE
+Status: 1 ERROR, 3 NOTEs

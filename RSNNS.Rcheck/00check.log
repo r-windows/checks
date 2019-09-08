@@ -1,0 +1,95 @@
+* using log directory 'C:/Users/jeroen/Documents/checks/RSNNS.Rcheck'
+* using R version 3.7.0 Under development (Testing Rtools) (2019-08-27 r77080)
+* using platform: x86_64-w64-mingw32 (64-bit)
+* using session charset: ISO8859-1
+* using options '--no-manual --no-build-vignettes'
+* checking for file 'RSNNS/DESCRIPTION' ... OK
+* checking extension type ... Package
+* this is package 'RSNNS' version '0.4-11'
+* package encoding: UTF-8
+* checking package namespace information ... OK
+* checking package dependencies ... OK
+* checking if this is a source package ... OK
+* checking if there is a namespace ... OK
+* checking for executable files ... OK
+* checking for hidden files and directories ... OK
+* checking for portable file names ... OK
+* checking whether package 'RSNNS' can be installed ... WARNING
+Found the following significant warnings:
+  kr_io.cpp:891:9: warning: 'char* strcat(char*, const char*)' accessing 631 or more bytes at offsets 5583 and 6213 may overlap 1 byte at offset 6213 [-Wrestrict]
+  kr_io.cpp:868:9: warning: 'char* strcat(char*, const char*)' accessing 631 or more bytes at offsets 5583 and 6213 may overlap 1 byte at offset 6213 [-Wrestrict]
+  kr_ui.cpp:4825:15: warning: 'char* strcat(char*, const char*)' accessing 513 or more bytes at offsets 656 and 1168 may overlap 1 byte at offset 1168 [-Wrestrict]
+  kr_ui.cpp:4911:14: warning: 'char* strcat(char*, const char*)' accessing 513 or more bytes at offsets 1680 and 2192 may overlap 1 byte at offset 2192 [-Wrestrict]
+  kr_ui.cpp:4918:15: warning: 'char* strcat(char*, const char*)' accessing 513 or more bytes at offsets 1680 and 2192 may overlap 1 byte at offset 2192 [-Wrestrict]
+  kr_ui.cpp:4925:15: warning: 'char* strcat(char*, const char*)' accessing 513 or more bytes at offsets 1680 and 2192 may overlap 1 byte at offset 2192 [-Wrestrict]
+  kr_ui.cpp:4879:9: warning: 'char* strcat(char*, const char*)' accessing 513 or more bytes at offsets 1680 and 2192 may overlap 1 byte at offset 2192 [-Wrestrict]
+  kr_ui.cpp:4884:9: warning: 'char* strcat(char*, const char*)' accessing 513 or more bytes at offsets 1680 and 2192 may overlap 1 byte at offset 2192 [-Wrestrict]
+  kr_ui.cpp:4937:11: warning: 'char* strcat(char*, const char*)' accessing 513 or more bytes at offsets 1680 and 2192 may overlap 1 byte at offset 2192 [-Wrestrict]
+  kr_io.cpp:891:9: warning: 'char* strcat(char*, const char*)' accessing 631 or more bytes at offsets 5695 and 6325 may overlap 1 byte at offset 6325 [-Wrestrict]
+  kr_io.cpp:868:9: warning: 'char* strcat(char*, const char*)' accessing 631 or more bytes at offsets 5695 and 6325 may overlap 1 byte at offset 6325 [-Wrestrict]
+  kr_ui.cpp:4825:15: warning: 'char* strcat(char*, const char*)' accessing 513 or more bytes at offsets 672 and 1184 may overlap 1 byte at offset 1184 [-Wrestrict]
+  kr_ui.cpp:4911:14: warning: 'char* strcat(char*, const char*)' accessing 513 or more bytes at offsets 1696 and 2208 may overlap 1 byte at offset 2208 [-Wrestrict]
+  kr_ui.cpp:4918:15: warning: 'char* strcat(char*, const char*)' accessing 513 or more bytes at offsets 1696 and 2208 may overlap 1 byte at offset 2208 [-Wrestrict]
+  kr_ui.cpp:4925:15: warning: 'char* strcat(char*, const char*)' accessing 513 or more bytes at offsets 1696 and 2208 may overlap 1 byte at offset 2208 [-Wrestrict]
+  kr_ui.cpp:4879:9: warning: 'char* strcat(char*, const char*)' accessing 513 or more bytes at offsets 1696 and 2208 may overlap 1 byte at offset 2208 [-Wrestrict]
+  kr_ui.cpp:4884:9: warning: 'char* strcat(char*, const char*)' accessing 513 or more bytes at offsets 1696 and 2208 may overlap 1 byte at offset 2208 [-Wrestrict]
+  kr_ui.cpp:4937:11: warning: 'char* strcat(char*, const char*)' accessing 513 or more bytes at offsets 1696 and 2208 may overlap 1 byte at offset 2208 [-Wrestrict]
+See 'C:/Users/jeroen/Documents/checks/RSNNS.Rcheck/00install.out' for details.
+* checking installed package size ... OK
+* checking package directory ... OK
+* checking DESCRIPTION meta-information ... OK
+* checking top-level files ... OK
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* loading checks for arch 'i386'
+** checking whether the package can be loaded ... OK
+** checking whether the package can be loaded with stated dependencies ... OK
+** checking whether the package can be unloaded cleanly ... OK
+** checking whether the namespace can be loaded with stated dependencies ... OK
+** checking whether the namespace can be unloaded cleanly ... OK
+** checking loading without being on the library search path ... OK
+* loading checks for arch 'x64'
+** checking whether the package can be loaded ... OK
+** checking whether the package can be loaded with stated dependencies ... OK
+** checking whether the package can be unloaded cleanly ... OK
+** checking whether the namespace can be loaded with stated dependencies ... OK
+** checking whether the namespace can be unloaded cleanly ... OK
+** checking loading without being on the library search path ... OK
+* checking dependencies in R code ... OK
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... OK
+* checking Rd files ... OK
+* checking Rd metadata ... OK
+* checking Rd cross-references ... OK
+* checking for missing documentation entries ... OK
+* checking for code/documentation mismatches ... OK
+* checking Rd \usage sections ... OK
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... OK
+* checking contents of 'data' directory ... OK
+* checking data for non-ASCII characters ... OK
+* checking data for ASCII and uncompressed saves ... OK
+* checking line endings in C/C++/Fortran sources/headers ... OK
+* checking line endings in Makefiles ... OK
+* checking compilation flags in Makevars ... OK
+* checking for GNU extensions in Makefiles ... OK
+* checking for portable use of $(BLAS_LIBS) and $(LAPACK_LIBS) ... OK
+* checking use of PKG_*FLAGS in Makefiles ... OK
+* checking compiled code ... OK
+* checking installed files from 'inst/doc' ... OK
+* checking examples ...
+** running examples for arch 'i386' ... OK
+** running examples for arch 'x64' ... OK
+* checking for unstated dependencies in 'tests' ... OK
+* checking tests ...
+** running tests for arch 'i386' ... OK
+  Running 'testAllDemos.R'
+** running tests for arch 'x64' ... OK
+  Running 'testAllDemos.R'
+* DONE
+Status: 1 WARNING

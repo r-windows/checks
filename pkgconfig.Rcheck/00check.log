@@ -1,5 +1,5 @@
-* using log directory 'C:/Users/Jeroen/Documents/checks/pkgconfig.Rcheck'
-* using R version 3.7.0 Under development (Testing Rtools) (2019-08-10 r76951)
+* using log directory 'C:/Users/jeroen/Documents/checks/pkgconfig.Rcheck'
+* using R version 3.7.0 Under development (Testing Rtools) (2019-08-27 r77080)
 * using platform: x86_64-w64-mingw32 (64-bit)
 * using session charset: ISO8859-1
 * using options '--no-manual --no-build-vignettes'
@@ -28,7 +28,6 @@
 * checking whether the package can be unloaded cleanly ... OK
 * checking whether the namespace can be loaded with stated dependencies ... OK
 * checking whether the namespace can be unloaded cleanly ... OK
-* checking loading without being on the library search path ... OK
 * checking dependencies in R code ... OK
 * checking S3 generic/method consistency ... OK
 * checking replacement functions ... OK

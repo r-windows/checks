@@ -1,0 +1,15 @@
+* installing *source* package 'rggobi' ...
+** package 'rggobi' successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+
+*** arch - i386
+/mingw32/bin/gcc  -I"C:/progra~1/R/R-testing/include" -DNDEBUG -D_R_=1 -DUSE_R=1 -mms-bitfields -I/include/gtk-2.0 -I/include/gdk-pixbuf-2.0 -I/../lib/gtk-2.0/include -I/include/atk-1.0 -I/include/cairo -I/include/pango-1.0 -I/include/glib-2.0 -I/../lib/glib-2.0/include -I/include/libxml2 -I/include -I/include/ggobi -IC:/progra~1/R/R-testing/include -I/include/libxml         -O2 -Wall  -std=gnu99 -mtune=generic -c RSEval.c -o RSEval.o
+In file included from RSEval.c:6:
+RSGGobi.h:5:10: fatal error: GGobiAPI.h: No such file or directory
+ #include "GGobiAPI.h"
+          ^~~~~~~~~~~~
+compilation terminated.
+make: *** [C:/progra~1/R/R-testing/etc/i386/Makeconf:208: RSEval.o] Error 1
+ERROR: compilation failed for package 'rggobi'
+* removing 'C:/Users/jeroen/Documents/checks/rggobi.Rcheck/rggobi'

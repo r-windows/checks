@@ -1,0 +1,97 @@
+* using log directory 'C:/Users/jeroen/Documents/checks/pkgload.Rcheck'
+* using R version 3.7.0 Under development (Testing Rtools) (2019-08-27 r77080)
+* using platform: x86_64-w64-mingw32 (64-bit)
+* using session charset: ISO8859-1
+* using options '--no-manual --no-build-vignettes'
+* checking for file 'pkgload/DESCRIPTION' ... OK
+* this is package 'pkgload' version '1.0.2'
+* package encoding: UTF-8
+* checking package namespace information ... OK
+* checking package dependencies ... OK
+* checking if this is a source package ... OK
+* checking if there is a namespace ... OK
+* checking for executable files ... OK
+* checking for hidden files and directories ... OK
+* checking for portable file names ... OK
+* checking whether package 'pkgload' can be installed ... OK
+* checking installed package size ... OK
+* checking package directory ... OK
+* checking DESCRIPTION meta-information ... OK
+* checking top-level files ... OK
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* loading checks for arch 'i386'
+** checking whether the package can be loaded ... OK
+** checking whether the package can be loaded with stated dependencies ... OK
+** checking whether the package can be unloaded cleanly ... OK
+** checking whether the namespace can be loaded with stated dependencies ... OK
+** checking whether the namespace can be unloaded cleanly ... OK
+* loading checks for arch 'x64'
+** checking whether the package can be loaded ... OK
+** checking whether the package can be loaded with stated dependencies ... OK
+** checking whether the package can be unloaded cleanly ... OK
+** checking whether the namespace can be loaded with stated dependencies ... OK
+** checking whether the namespace can be unloaded cleanly ... OK
+* checking dependencies in R code ... OK
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... OK
+* checking Rd files ... OK
+* checking Rd metadata ... OK
+* checking Rd cross-references ... OK
+* checking for missing documentation entries ... OK
+* checking for code/documentation mismatches ... OK
+* checking Rd \usage sections ... OK
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... OK
+* checking line endings in C/C++/Fortran sources/headers ... OK
+* checking compiled code ... OK
+* checking examples ...
+** running examples for arch 'i386' ... OK
+** running examples for arch 'x64' ... OK
+* checking for unstated dependencies in 'tests' ... OK
+* checking tests ...
+** running tests for arch 'i386' ... ERROR
+  Running 'testthat.R'
+Running the tests in 'tests/testthat.R' failed.
+Last 13 lines of output:
+  Call `pkgbuild::check_build_tools(debug = TRUE)` to diagnose the problem.
+  1: load_all("testDllRcpp", reset = TRUE, quiet = TRUE) at testthat/test-dll.r:108
+  2: pkgbuild::compile_dll(path, quiet = quiet)
+  3: check_build_tools(quiet = TRUE)
+  4: stop("Could not find tools necessary to compile a package\n", "Call `pkgbuild::check_build_tools(debug = TRUE)` to diagnose the problem.", 
+         call. = FALSE)
+  
+  == testthat results  ===========================================================
+  [ OK: 292 | SKIPPED: 0 | WARNINGS: 0 | FAILED: 3 ]
+  1. Error: load_all() compiles and loads DLLs (@test-dll.r#44) 
+  2. Error: Specific functions from DLLs listed in NAMESPACE can be called (@test-dll.r#82) 
+  3. Error: load_all() can compile and load DLLs linked to Rcpp (@test-dll.r#108) 
+  
+  Error: testthat unit tests failed
+  Execution halted
+** running tests for arch 'x64' ... ERROR
+  Running 'testthat.R'
+Running the tests in 'tests/testthat.R' failed.
+Last 13 lines of output:
+  Call `pkgbuild::check_build_tools(debug = TRUE)` to diagnose the problem.
+  1: load_all("testDllRcpp", reset = TRUE, quiet = TRUE) at testthat/test-dll.r:108
+  2: pkgbuild::compile_dll(path, quiet = quiet)
+  3: check_build_tools(quiet = TRUE)
+  4: stop("Could not find tools necessary to compile a package\n", "Call `pkgbuild::check_build_tools(debug = TRUE)` to diagnose the problem.", 
+         call. = FALSE)
+  
+  == testthat results  ===========================================================
+  [ OK: 292 | SKIPPED: 0 | WARNINGS: 0 | FAILED: 3 ]
+  1. Error: load_all() compiles and loads DLLs (@test-dll.r#44) 
+  2. Error: Specific functions from DLLs listed in NAMESPACE can be called (@test-dll.r#82) 
+  3. Error: load_all() can compile and load DLLs linked to Rcpp (@test-dll.r#108) 
+  
+  Error: testthat unit tests failed
+  Execution halted
+* DONE
+Status: 2 ERRORs

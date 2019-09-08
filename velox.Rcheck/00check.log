@@ -1,5 +1,5 @@
-* using log directory 'C:/Users/Jeroen/Documents/checks/velox.Rcheck'
-* using R version 3.6.0 Under development (Testing Rtools) (2019-03-14 r76238)
+* using log directory 'C:/Users/jeroen/Documents/checks/velox.Rcheck'
+* using R version 3.7.0 Under development (Testing Rtools) (2019-08-27 r77080)
 * using platform: x86_64-w64-mingw32 (64-bit)
 * using session charset: ISO8859-1
 * using options '--no-manual --no-build-vignettes'
@@ -21,7 +21,7 @@ Found the following significant warnings:
   C:/R/library/BH/include/boost/geometry/index/detail/varray_detail.hpp:237:13: warning: 'void* memcpy(void*, const void*, size_t)' writing to an object of type 'class boost::geometry::model::segment<boost::geometry::model::d2::point_xy<double> >' with no trivial copy-assignment; use copy-assignment or copy-initialization instead [-Wclass-memaccess]
   C:/R/library/BH/include/boost/geometry/index/detail/varray_detail.hpp:237:13: warning: 'void* memcpy(void*, const void*, size_t)' writing to an object of type 'struct std::pair<boost::geometry::model::box<boost::geometry::model::d2::point_xy<double> >, std::pair<unsigned int, unsigned int> >' with no trivial copy-assignment; use copy-assignment or copy-initialization instead [-Wclass-memaccess]
   C:/R/library/BH/include/boost/geometry/index/detail/varray_detail.hpp:237:13: warning: 'void* memcpy(void*, const void*, size_t)' writing to an object of type 'struct std::pair<boost::geometry::model::d2::point_xy<double>, std::pair<unsigned int, unsigned int> >' with no trivial copy-assignment; use copy-assignment or copy-initialization instead [-Wclass-memaccess]
-See 'C:/Users/Jeroen/Documents/checks/velox.Rcheck/00install.out' for details.
+See 'C:/Users/jeroen/Documents/checks/velox.Rcheck/00install.out' for details.
 * checking installed package size ... OK
 * checking package directory ... OK
 * checking DESCRIPTION meta-information ... OK
@@ -63,6 +63,7 @@ See 'C:/Users/Jeroen/Documents/checks/velox.Rcheck/00install.out' for details.
 * checking compilation flags in Makevars ... OK
 * checking for GNU extensions in Makefiles ... OK
 * checking for portable use of $(BLAS_LIBS) and $(LAPACK_LIBS) ... OK
+* checking use of PKG_*FLAGS in Makefiles ... OK
 * checking compiled code ... OK
 * checking examples ...
 ** running examples for arch 'i386' ... OK

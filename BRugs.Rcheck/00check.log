@@ -1,5 +1,5 @@
-* using log directory 'C:/Users/Jeroen/Documents/checks/BRugs.Rcheck'
-* using R version 3.7.0 Under development (Testing Rtools) (2019-08-10 r76951)
+* using log directory 'C:/Users/jeroen/Documents/checks/BRugs.Rcheck'
+* using R version 3.7.0 Under development (Testing Rtools) (2019-08-27 r77080)
 * using platform: x86_64-w64-mingw32 (64-bit)
 * using session charset: ISO8859-1
 * using options '--no-manual --no-build-vignettes'
@@ -89,14 +89,26 @@ More information can be found in 'Writing R Extensions'.
 < Welcome to BRugs connected to OpenBUGS version 3.2.3
 ---
 > Welcome to BRugs connected to OpenBUGS version 3.2.2
-205c205
-< 20000 updates took 2 s
----
-> 20000 updates took 3 s
-218c218
-< 20000 updates took 1 s
+106c106
+< 20000 updates took 3 s
 ---
 > 20000 updates took 2 s
+165c165
+< 20000 updates took 1 s
+---
+> 20000 updates took 0 s
+178c178
+< 20000 updates took 2 s
+---
+> 20000 updates took 1 s
+205c205
+< 20000 updates took 4 s
+---
+> 20000 updates took 3 s
+258c258
+< 20000 updates took 2 s
+---
+> 20000 updates took 1 s
   Running 'examples.stats.R'
   Running 'functions.R'
   Comparing 'functions.Rout' to 'functions.Rout.save' ...136c136

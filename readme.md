@@ -1,12 +1,14 @@
 # Check results
-Last update: Sun, Sep 01, 2019 11:37:53 PM
+Last update: Sun, Sep 08, 2019  6:26:05 PM
 
 ## Install failures
 ```
 BIGL.Rcheck/00check.log:Installation failed.
-cairoDevice.Rcheck/00check.log:Installation failed.
 matchingMarkets.Rcheck/00check.log:Installation failed.
-RQuantLib.Rcheck/00check.log:Installation failed.
+pbdBASE.Rcheck/00check.log:Installation failed.
+pbdDMAT.Rcheck/00check.log:Installation failed.
+phateR.Rcheck/00check.log:Installation failed.
+rggobi.Rcheck/00check.log:Installation failed.
 splancs.Rcheck/00check.log:Installation failed.
 superbiclust.Rcheck/00check.log:Installation failed.
 tabulizerjars.Rcheck/00check.log:Installation failed.
@@ -21,37 +23,35 @@ antaresProcessing.Rcheck/00check.log:Status: 1 ERROR, 1 NOTE
 aws.Rcheck/00check.log:Status: 1 ERROR
 BIEN.Rcheck/00check.log:Status: 1 ERROR
 callr.Rcheck/00check.log:Status: 1 ERROR
+chipPCR.Rcheck/00check.log:Status: 1 ERROR, 3 NOTEs
 colorplaner.Rcheck/00check.log:Status: 2 ERRORs
 dbarts.Rcheck/00check.log:Status: 2 ERRORs
 dyndimred.Rcheck/00check.log:Status: 1 ERROR, 2 NOTEs
-energy.Rcheck/00check.log:Status: 1 ERROR
 estimatr.Rcheck/00check.log:Status: 1 ERROR
 fanovaGraph.Rcheck/00check.log:Status: 1 ERROR
-furrr.Rcheck/00check.log:Status: 1 ERROR
 GenomicTools.Rcheck/00check.log:Status: 1 ERROR
-ggstance.Rcheck/00check.log:Status: 1 ERROR
-gWidgets2RGtk2.Rcheck/00check.log:Status: 1 ERROR
 h5.Rcheck/00check.log:Status: 2 ERRORs, 1 NOTE
 harvestr.Rcheck/00check.log:Status: 1 ERROR
 hyperSpec.Rcheck/00check.log:Status: 1 ERROR, 1 NOTE
 inline.Rcheck/00check.log:Status: 1 ERROR
 IsoGene.Rcheck/00check.log:Status: 1 ERROR
+laGP.Rcheck/00check.log:Status: 1 ERROR
 LDheatmap.Rcheck/00check.log:Status: 1 ERROR
 metafor.Rcheck/00check.log:Status: 1 ERROR, 1 NOTE
 metR.Rcheck/00check.log:Status: 1 ERROR, 1 NOTE
 MonetDBLite.Rcheck/00check.log:Status: 2 ERRORs, 1 WARNING, 1 NOTE
+move.Rcheck/00check.log:Status: 2 ERRORs, 1 NOTE
 MSeasy.Rcheck/00check.log:Status: 1 ERROR
 NanoStringNorm.Rcheck/00check.log:Status: 1 ERROR
-nat.Rcheck/00check.log:Status: 1 ERROR
 nloptr.Rcheck/00check.log:Status: 2 ERRORs, 1 NOTE
 OutbreakTools.Rcheck/00check.log:Status: 1 ERROR
 pathological.Rcheck/00check.log:Status: 1 ERROR
+pkgbuild.Rcheck/00check.log:Status: 2 ERRORs
 pkgconfig.Rcheck/00check.log:Status: 1 ERROR
-PlackettLuce.Rcheck/00check.log:Status: 1 ERROR
+pkgload.Rcheck/00check.log:Status: 2 ERRORs
 prefmod.Rcheck/00check.log:Status: 1 ERROR
 proj4.Rcheck/00check.log:Status: 1 ERROR, 1 NOTE
 rbi.Rcheck/00check.log:Status: 2 ERRORs
-rggobi.Rcheck/00check.log:Status: 1 ERROR
 RISmed.Rcheck/00check.log:Status: 1 ERROR, 1 NOTE
 RMark.Rcheck/00check.log:Status: 1 ERROR
 rosr.Rcheck/00check.log:Status: 1 ERROR, 1 NOTE
@@ -69,20 +69,24 @@ trackr.Rcheck/00check.log:Status: 1 ERROR
 virtualspecies.Rcheck/00check.log:Status: 1 ERROR
 waterData.Rcheck/00check.log:Status: 1 ERROR
 wdman.Rcheck/00check.log:Status: 1 ERROR
+WikidataR.Rcheck/00check.log:Status: 2 ERRORs, 1 NOTE
+zip.Rcheck/00check.log:Status: 1 ERROR
 ```
 ## Warnings
 ```
 AnalyzeFMRI.Rcheck/00check.log:Status: 1 WARNING
 audio.Rcheck/00check.log:Status: 1 WARNING
 BRugs.Rcheck/00check.log:Status: 1 WARNING, 1 NOTE
+C50.Rcheck/00check.log:Status: 1 WARNING
 Cairo.Rcheck/00check.log:Status: 1 WARNING, 1 NOTE
+clv.Rcheck/00check.log:Status: 1 WARNING
 cubature.Rcheck/00check.log:Status: 1 WARNING, 2 NOTEs
+Cubist.Rcheck/00check.log:Status: 1 WARNING
 DPpackage.Rcheck/00check.log:Status: 1 WARNING, 1 NOTE
-enviPat.Rcheck/00check.log:Status: 1 WARNING
 epanet2toolkit.Rcheck/00check.log:Status: 1 WARNING
-fdasrvf.Rcheck/00check.log:Status: 1 WARNING, 2 NOTEs
 hashmap.Rcheck/00check.log:Status: 1 WARNING
 haven.Rcheck/00check.log:Status: 1 WARNING, 1 NOTE
+highlight.Rcheck/00check.log:Status: 1 WARNING
 imager.Rcheck/00check.log:Status: 1 WARNING, 1 NOTE
 lpSolve.Rcheck/00check.log:Status: 1 WARNING
 lpSolveAPI.Rcheck/00check.log:Status: 1 WARNING
@@ -91,31 +95,40 @@ ManifoldOptim.Rcheck/00check.log:Status: 1 WARNING
 mapproj.Rcheck/00check.log:Status: 1 WARNING
 MetaSKAT.Rcheck/00check.log:Status: 1 WARNING
 MigClim.Rcheck/00check.log:Status: 1 WARNING, 3 NOTEs
-msgps.Rcheck/00check.log:Status: 1 WARNING
+mixAK.Rcheck/00check.log:Status: 1 WARNING
 odbc.Rcheck/00check.log:Status: 1 WARNING
+OpenMx.Rcheck/00check.log:Status: 1 WARNING, 2 NOTEs
 pbdRPC.Rcheck/00check.log:Status: 1 WARNING, 1 NOTE
 pbdSLAP.Rcheck/00check.log:Status: 1 WARNING, 1 NOTE
+poibin.Rcheck/00check.log:Status: 1 WARNING
 portes.Rcheck/00check.log:Status: 1 WARNING, 2 NOTEs
 R2Cuba.Rcheck/00check.log:Status: 1 WARNING
 Rblpapi.Rcheck/00check.log:Status: 1 WARNING, 3 NOTEs
 RcppParallel.Rcheck/00check.log:Status: 1 WARNING, 2 NOTEs
+rcrossref.Rcheck/00check.log:Status: 1 WARNING
 Rdsdp.Rcheck/00check.log:Status: 1 WARNING
 re2r.Rcheck/00check.log:Status: 1 WARNING, 2 NOTEs
+redland.Rcheck/00check.log:Status: 1 WARNING, 1 NOTE
 rgeolocate.Rcheck/00check.log:Status: 1 WARNING, 1 NOTE
 RGtk2.Rcheck/00check.log:Status: 1 WARNING, 3 NOTEs
 RhpcBLASctl.Rcheck/00check.log:Status: 1 WARNING
 RInside.Rcheck/00check.log:Status: 1 WARNING, 2 NOTEs
-rioja.Rcheck/00check.log:Status: 1 WARNING, 1 NOTE
 rJava.Rcheck/00check.log:Status: 1 WARNING, 4 NOTEs
 rlecuyer.Rcheck/00check.log:Status: 1 WARNING
+Rmalschains.Rcheck/00check.log:Status: 1 WARNING
 RMariaDB.Rcheck/00check.log:Status: 1 WARNING, 1 NOTE
 rncl.Rcheck/00check.log:Status: 1 WARNING
 rphast.Rcheck/00check.log:Status: 1 WARNING
 RPostgreSQL.Rcheck/00check.log:Status: 1 WARNING, 2 NOTEs
 RSclient.Rcheck/00check.log:Status: 1 WARNING
+RSEIS.Rcheck/00check.log:Status: 1 WARNING
 Rserve.Rcheck/00check.log:Status: 1 WARNING, 4 NOTEs
+RSNNS.Rcheck/00check.log:Status: 1 WARNING
 rstream.Rcheck/00check.log:Status: 1 WARNING
+Rvcg.Rcheck/00check.log:Status: 1 WARNING, 2 NOTEs
 scales.Rcheck/00check.log:Status: 1 WARNING, 1 NOTE
+snakecase.Rcheck/00check.log:Status: 1 WARNING
+SpatialExtremes.Rcheck/00check.log:Status: 1 WARNING
 ssh.Rcheck/00check.log:Status: 1 WARNING
 SSN.Rcheck/00check.log:Status: 1 WARNING
 stringi.Rcheck/00check.log:Status: 1 WARNING, 2 NOTEs
