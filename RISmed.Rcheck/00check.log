@@ -62,12 +62,12 @@ The error most likely occurred in:
 > 
 > summary(res)
 Query:
-myeloma[ti] AND 2018/09/04[EDAT] : 2019/09/04[EDAT] 
+myeloma[ti] AND 2018/09/09[EDAT] : 2019/09/09[EDAT] 
 
-Result count:  1612> 
+Result count:  1602> 
 > fetch <- EUtilsGet(res)
 Warning in file(con, "r") :
-  cannot open URL 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=31477451,31475039&retmode=xml': HTTP status was '429 Too Many Requests'
+  cannot open URL 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=31493537,31492570&retmode=xml': HTTP status was '429 Too Many Requests'
 Error in file(con, "r") : cannot open the connection
 Calls: EUtilsGet -> lapply -> FUN -> readLines -> file
 Execution halted

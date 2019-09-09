@@ -1,5 +1,5 @@
 # Check results
-Last update: Mon, Sep 09, 2019  9:34:13 AM
+Last update: Mon, Sep 09, 2019 10:24:59 PM
 
 ## Install failures
 ```
@@ -9,7 +9,6 @@ pbdBASE.Rcheck/00check.log:Installation failed.
 pbdDMAT.Rcheck/00check.log:Installation failed.
 phateR.Rcheck/00check.log:Installation failed.
 rggobi.Rcheck/00check.log:Installation failed.
-splancs.Rcheck/00check.log:Installation failed.
 superbiclust.Rcheck/00check.log:Installation failed.
 tabulizerjars.Rcheck/00check.log:Installation failed.
 TSsdmx.Rcheck/00check.log:Installation failed.
@@ -20,14 +19,11 @@ XLConnectJars.Rcheck/00check.log:Installation failed.
 ```
 adaptiveGPCA.Rcheck/00check.log:Status: 1 ERROR
 antaresProcessing.Rcheck/00check.log:Status: 1 ERROR, 1 NOTE
-aws.Rcheck/00check.log:Status: 1 ERROR
 BIEN.Rcheck/00check.log:Status: 1 ERROR
 callr.Rcheck/00check.log:Status: 1 ERROR
-chipPCR.Rcheck/00check.log:Status: 1 ERROR, 3 NOTEs
 colorplaner.Rcheck/00check.log:Status: 2 ERRORs
 dbarts.Rcheck/00check.log:Status: 2 ERRORs
 dyndimred.Rcheck/00check.log:Status: 1 ERROR, 2 NOTEs
-estimatr.Rcheck/00check.log:Status: 1 ERROR
 fanovaGraph.Rcheck/00check.log:Status: 1 ERROR
 GenomicTools.Rcheck/00check.log:Status: 1 ERROR
 h5.Rcheck/00check.log:Status: 2 ERRORs, 1 NOTE
@@ -35,15 +31,11 @@ harvestr.Rcheck/00check.log:Status: 1 ERROR
 hyperSpec.Rcheck/00check.log:Status: 1 ERROR, 1 NOTE
 inline.Rcheck/00check.log:Status: 1 ERROR
 IsoGene.Rcheck/00check.log:Status: 1 ERROR
-laGP.Rcheck/00check.log:Status: 1 ERROR
 LDheatmap.Rcheck/00check.log:Status: 1 ERROR
-metafor.Rcheck/00check.log:Status: 1 ERROR, 1 NOTE
 metR.Rcheck/00check.log:Status: 1 ERROR, 1 NOTE
 MonetDBLite.Rcheck/00check.log:Status: 2 ERRORs, 1 WARNING, 1 NOTE
-move.Rcheck/00check.log:Status: 2 ERRORs, 1 NOTE
 MSeasy.Rcheck/00check.log:Status: 1 ERROR
 NanoStringNorm.Rcheck/00check.log:Status: 1 ERROR
-nloptr.Rcheck/00check.log:Status: 2 ERRORs, 1 NOTE
 OutbreakTools.Rcheck/00check.log:Status: 1 ERROR
 pathological.Rcheck/00check.log:Status: 1 ERROR
 pkgbuild.Rcheck/00check.log:Status: 2 ERRORs
@@ -69,8 +61,6 @@ trackr.Rcheck/00check.log:Status: 1 ERROR
 virtualspecies.Rcheck/00check.log:Status: 1 ERROR
 waterData.Rcheck/00check.log:Status: 1 ERROR
 wdman.Rcheck/00check.log:Status: 1 ERROR
-WikidataR.Rcheck/00check.log:Status: 2 ERRORs, 1 NOTE
-zip.Rcheck/00check.log:Status: 1 ERROR
 ```
 ## Warnings
 ```
@@ -127,6 +117,7 @@ RSNNS.Rcheck/00check.log:Status: 1 WARNING
 rstream.Rcheck/00check.log:Status: 1 WARNING
 Rvcg.Rcheck/00check.log:Status: 1 WARNING, 2 NOTEs
 scales.Rcheck/00check.log:Status: 1 WARNING, 1 NOTE
+smoothSurv.Rcheck/00check.log:Status: 1 WARNING
 snakecase.Rcheck/00check.log:Status: 1 WARNING
 SpatialExtremes.Rcheck/00check.log:Status: 1 WARNING
 ssh.Rcheck/00check.log:Status: 1 WARNING

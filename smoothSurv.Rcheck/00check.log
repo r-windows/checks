@@ -1,11 +1,11 @@
-* using log directory 'C:/Users/jeroen/Documents/checks/move.Rcheck'
+* using log directory 'C:/Users/jeroen/Documents/checks/smoothSurv.Rcheck'
 * using R version 3.7.0 Under development (Testing Rtools) (2019-08-27 r77080)
 * using platform: x86_64-w64-mingw32 (64-bit)
 * using session charset: ISO8859-1
 * using options '--no-manual --no-build-vignettes'
-* checking for file 'move/DESCRIPTION' ... OK
-* checking extension type ... Package
-* this is package 'move' version '3.2.0'
+* checking for file 'smoothSurv/DESCRIPTION' ... OK
+* this is package 'smoothSurv' version '2.0.1'
+* package encoding: UTF-8
 * checking package namespace information ... OK
 * checking package dependencies ... OK
 * checking if this is a source package ... OK
@@ -13,15 +13,12 @@
 * checking for executable files ... OK
 * checking for hidden files and directories ... OK
 * checking for portable file names ... OK
-* checking whether package 'move' can be installed ... OK
-* checking installed package size ... NOTE
-  installed size is  5.6Mb
-  sub-directories of 1Mb or more:
-    R      1.0Mb
-    data   1.6Mb
-    libs   1.9Mb
+* checking whether package 'smoothSurv' can be installed ... WARNING
+Found the following significant warnings:
+  createPosDef.cpp:84:13: warning: statement has no effect [-Wunused-value]
+See 'C:/Users/jeroen/Documents/checks/smoothSurv.Rcheck/00install.out' for details.
+* checking installed package size ... OK
 * checking package directory ... OK
-* checking 'build' directory ... OK
 * checking DESCRIPTION meta-information ... OK
 * checking top-level files ... OK
 * checking for left-over files ... OK
@@ -56,62 +53,11 @@
 * checking Rd \usage sections ... OK
 * checking Rd contents ... OK
 * checking for unstated dependencies in examples ... OK
-* checking contents of 'data' directory ... OK
-* checking data for non-ASCII characters ... OK
-* checking data for ASCII and uncompressed saves ... OK
 * checking line endings in C/C++/Fortran sources/headers ... OK
 * checking compiled code ... OK
-* checking sizes of PDF files under 'inst/doc' ... OK
 * checking installed files from 'inst/doc' ... OK
-* checking files in 'vignettes' ... OK
 * checking examples ...
 ** running examples for arch 'i386' ... OK
 ** running examples for arch 'x64' ... OK
-* checking for unstated dependencies in 'tests' ... OK
-* checking tests ...
-** running tests for arch 'i386' ... ERROR
-  Running 'test-all.R'
-Running the tests in 'tests/test-all.R' failed.
-Last 13 lines of output:
-  password:
-  username:
-  password:
-  username:
-  password:
-  username:
-  password:
-  username:
-  password:
-  == testthat results  ===========================================================
-  [ OK: 487 | SKIPPED: 4 | WARNINGS: 5 | FAILED: 1 ]
-  1. Error: subset unused (@test.subSet.R#88) 
-  
-  Error: testthat unit tests failed
-  Execution halted
-** running tests for arch 'x64' ... ERROR
-  Running 'test-all.R'
-Running the tests in 'tests/test-all.R' failed.
-Last 13 lines of output:
-  password:
-  username:
-  password:
-  username:
-  password:
-  username:
-  password:
-  username:
-  password:
-  == testthat results  ===========================================================
-  [ OK: 487 | SKIPPED: 4 | WARNINGS: 6 | FAILED: 1 ]
-  1. Error: subset unused (@test.subSet.R#88) 
-  
-  Error: testthat unit tests failed
-  Execution halted
-* checking for unstated dependencies in vignettes ... OK
-* checking package vignettes in 'inst/doc' ... OK
-* checking running R code from vignettes ... OK
-  'browseMovebank.Rnw'... OK
-  'move.Rnw'... OK
-* checking re-building of vignette outputs ... SKIPPED
 * DONE
-Status: 2 ERRORs, 1 NOTE
+Status: 1 WARNING
