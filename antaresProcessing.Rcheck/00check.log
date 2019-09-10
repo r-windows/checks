@@ -1,5 +1,5 @@
-* using log directory 'C:/Users/Jeroen/Documents/checks/antaresProcessing.Rcheck'
-* using R version 3.7.0 Under development (Testing Rtools) (2019-07-30 r76907)
+* using log directory 'C:/Users/jeroen/Documents/checks/antaresProcessing.Rcheck'
+* using R version 3.7.0 Under development (Testing Rtools) (2019-08-27 r77080)
 * using platform: x86_64-w64-mingw32 (64-bit)
 * using session charset: ISO8859-1
 * using options '--no-manual --no-build-vignettes'
@@ -54,7 +54,7 @@ Package suggested but not available for checking: 'rhdf5'
 Running the tests in 'tests/testthat.R' failed.
 Last 13 lines of output:
   == testthat results  ===========================================================
-  OK: 380 SKIPPED: 0 WARNINGS: 0 FAILED: 25
+  [ OK: 380 | SKIPPED: 0 | WARNINGS: 0 | FAILED: 25 ]
   1. Error: h5 : processing correctBalance when mcYear is set to NULL (@test-correctBalance.R#72) 
   2. Error: h5 : processing correctBalance when mcYear is set to 1 (@test-correctBalance.R#108) 
   3. Error: h5 : processing correctBalance when mcYear is set to 1 for weekly or monthly data (@test-correctBalance.R#146) 

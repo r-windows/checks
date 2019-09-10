@@ -1,10 +1,10 @@
-* using log directory 'C:/Users/Jeroen/Documents/checks/vegan3d.Rcheck'
-* using R version 3.7.0 Under development (Testing Rtools) (2019-07-30 r76907)
+* using log directory 'C:/Users/jeroen/Documents/checks/BcDiag.Rcheck'
+* using R version 3.7.0 Under development (Testing Rtools) (2019-08-27 r77080)
 * using platform: x86_64-w64-mingw32 (64-bit)
 * using session charset: ISO8859-1
 * using options '--no-manual --no-build-vignettes'
-* checking for file 'vegan3d/DESCRIPTION' ... OK
-* this is package 'vegan3d' version '1.1-2'
+* checking for file 'BcDiag/DESCRIPTION' ... OK
+* this is package 'BcDiag' version '1.0.10'
 * checking package namespace information ... OK
 * checking package dependencies ... OK
 * checking if this is a source package ... OK
@@ -12,8 +12,8 @@
 * checking for executable files ... OK
 * checking for hidden files and directories ... OK
 * checking for portable file names ... OK
-* checking whether package 'vegan3d' can be installed ... ERROR
+* checking whether package 'BcDiag' can be installed ... ERROR
 Installation failed.
-See 'C:/Users/Jeroen/Documents/checks/vegan3d.Rcheck/00install.out' for details.
+See 'C:/Users/jeroen/Documents/checks/BcDiag.Rcheck/00install.out' for details.
 * DONE
 Status: 1 ERROR

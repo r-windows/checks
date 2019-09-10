@@ -1,8 +1,9 @@
 # Check results
-Last update: Mon, Sep 09, 2019 10:24:59 PM
+Last update: Tue, Sep 10, 2019 12:05:54 PM
 
 ## Install failures
 ```
+BcDiag.Rcheck/00check.log:Installation failed.
 BIGL.Rcheck/00check.log:Installation failed.
 matchingMarkets.Rcheck/00check.log:Installation failed.
 pbdBASE.Rcheck/00check.log:Installation failed.
@@ -12,14 +13,12 @@ rggobi.Rcheck/00check.log:Installation failed.
 superbiclust.Rcheck/00check.log:Installation failed.
 tabulizerjars.Rcheck/00check.log:Installation failed.
 TSsdmx.Rcheck/00check.log:Installation failed.
-vegan3d.Rcheck/00check.log:Installation failed.
 XLConnectJars.Rcheck/00check.log:Installation failed.
 ```
 ## Check failures
 ```
 adaptiveGPCA.Rcheck/00check.log:Status: 1 ERROR
 antaresProcessing.Rcheck/00check.log:Status: 1 ERROR, 1 NOTE
-BIEN.Rcheck/00check.log:Status: 1 ERROR
 callr.Rcheck/00check.log:Status: 1 ERROR
 colorplaner.Rcheck/00check.log:Status: 2 ERRORs
 dbarts.Rcheck/00check.log:Status: 2 ERRORs
@@ -64,6 +63,7 @@ wdman.Rcheck/00check.log:Status: 1 ERROR
 ```
 ## Warnings
 ```
+AMORE.Rcheck/00check.log:Status: 1 WARNING, 1 NOTE
 AnalyzeFMRI.Rcheck/00check.log:Status: 1 WARNING
 audio.Rcheck/00check.log:Status: 1 WARNING
 BRugs.Rcheck/00check.log:Status: 1 WARNING, 1 NOTE
