@@ -1,5 +1,5 @@
 # Check results
-Last update: Thu, Oct 10, 2019  6:45:01 PM
+Last update: Thu, Oct 10, 2019 11:35:06 PM
 
 ## Install failures
 ```
@@ -12,7 +12,6 @@ rggobi.Rcheck/00check.log:Installation failed.
 ```
 adaptiveGPCA.Rcheck/00check.log:Status: 1 ERROR
 antaresProcessing.Rcheck/00check.log:Status: 1 ERROR, 1 NOTE
-BIEN.Rcheck/00check.log:Status: 1 ERROR
 BIGL.Rcheck/00check.log:Status: 1 ERROR
 colorplaner.Rcheck/00check.log:Status: 2 ERRORs
 dbarts.Rcheck/00check.log:Status: 2 ERRORs
