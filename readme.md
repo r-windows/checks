@@ -1,5 +1,5 @@
 # Check results
-Last update: Thu, Oct 10, 2019  3:38:22 PM
+Last update: Thu, Oct 10, 2019  6:26:31 PM
 
 ## Install failures
 ```
@@ -14,7 +14,6 @@ adaptiveGPCA.Rcheck/00check.log:Status: 1 ERROR
 antaresProcessing.Rcheck/00check.log:Status: 1 ERROR, 1 NOTE
 BIEN.Rcheck/00check.log:Status: 1 ERROR
 BIGL.Rcheck/00check.log:Status: 1 ERROR
-callr.Rcheck/00check.log:Status: 1 ERROR
 colorplaner.Rcheck/00check.log:Status: 2 ERRORs
 dbarts.Rcheck/00check.log:Status: 2 ERRORs
 dyndimred.Rcheck/00check.log:Status: 1 ERROR, 2 NOTEs
@@ -23,7 +22,6 @@ GenomicTools.Rcheck/00check.log:Status: 1 ERROR
 h5.Rcheck/00check.log:Status: 2 ERRORs, 1 NOTE
 harvestr.Rcheck/00check.log:Status: 1 ERROR
 hyperSpec.Rcheck/00check.log:Status: 1 ERROR, 1 NOTE
-inline.Rcheck/00check.log:Status: 1 ERROR
 IsoGene.Rcheck/00check.log:Status: 1 ERROR
 LDheatmap.Rcheck/00check.log:Status: 1 ERROR
 MonetDBLite.Rcheck/00check.log:Status: 2 ERRORs, 1 WARNING, 1 NOTE
@@ -31,8 +29,6 @@ MSeasy.Rcheck/00check.log:Status: 1 ERROR
 NanoStringNorm.Rcheck/00check.log:Status: 1 ERROR
 OutbreakTools.Rcheck/00check.log:Status: 1 ERROR
 pathological.Rcheck/00check.log:Status: 1 ERROR
-pkgconfig.Rcheck/00check.log:Status: 1 ERROR
-pkgload.Rcheck/00check.log:Status: 2 ERRORs
 prefmod.Rcheck/00check.log:Status: 1 ERROR
 proj4.Rcheck/00check.log:Status: 1 ERROR, 1 NOTE
 RISmed.Rcheck/00check.log:Status: 1 ERROR, 1 NOTE
@@ -40,7 +36,6 @@ RMark.Rcheck/00check.log:Status: 1 ERROR
 rosr.Rcheck/00check.log:Status: 1 ERROR, 1 NOTE
 RSCABS.Rcheck/00check.log:Status: 1 ERROR
 rsgcc.Rcheck/00check.log:Status: 1 ERROR
-rstpm2.Rcheck/00check.log:Status: 1 ERROR, 1 NOTE
 rtext.Rcheck/00check.log:Status: 1 ERROR, 2 NOTEs
 sessioninfo.Rcheck/00check.log:Status: 1 ERROR
 Smisc.Rcheck/00check.log:Status: 2 ERRORs

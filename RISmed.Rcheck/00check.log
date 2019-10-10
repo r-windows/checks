@@ -1,5 +1,5 @@
 * using log directory 'C:/Users/jeroen/Documents/checks/RISmed.Rcheck'
-* using R version 3.7.0 Under development (Testing Rtools) (2019-08-27 r77080)
+* using R version 4.0.0 Under development (Testing Rtools) (2019-10-01 r77242)
 * using platform: x86_64-w64-mingw32 (64-bit)
 * using session charset: ISO8859-1
 * using options '--no-manual --no-build-vignettes'
@@ -50,26 +50,18 @@
 Running examples in 'RISmed-Ex.R' failed
 The error most likely occurred in:
 
-> ### Name: EUtilsGet
-> ### Title: Results of an NCBI EUtils query
-> ### Aliases: EUtilsGet
+> ### Name: Cited
+> ### Title: Number of citations
+> ### Aliases: Cited
 > 
 > ### ** Examples
 > 
-> 
-> # PUBMED QUERY FOR MYELOMA ARTICLES FOR LAST YEAR
-> res <- EUtilsSummary("myeloma[ti]",retmax=2,reldate=365)
-> 
-> summary(res)
-Query:
-myeloma[ti] AND 2018/09/09[EDAT] : 2019/09/09[EDAT] 
-
-Result count:  1602> 
-> fetch <- EUtilsGet(res)
-Warning in file(con, "r") :
-  cannot open URL 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=31493537,31492570&retmode=xml': HTTP status was '429 Too Many Requests'
-Error in file(con, "r") : cannot open the connection
-Calls: EUtilsGet -> lapply -> FUN -> readLines -> file
+> res <- EUtilsSummary("myeloma[ti]", mindate = "2002/01/01", maxdate = "2002/02/01", retmax = 5)
+> Cited(res)
+Warning in readLines(the_url) :
+  cannot open URL 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/elink.fcgi?retmode=xml&dbfrom=pubmed&id=11815718&cmd=neighbor': HTTP status was '429 Too Many Requests'
+Error in readLines(the_url) : cannot open the connection
+Calls: Cited -> Cited -> sapply -> lapply -> FUN -> readLines
 Execution halted
 * DONE
 Status: 1 ERROR, 1 NOTE
