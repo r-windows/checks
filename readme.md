@@ -1,18 +1,12 @@
 # Check results
-Last update: Thu, Oct 10, 2019  2:39:58 PM
+Last update: Thu, Oct 10, 2019  3:38:22 PM
 
 ## Install failures
 ```
-BcDiag.Rcheck/00check.log:Installation failed.
 matchingMarkets.Rcheck/00check.log:Installation failed.
 pbdBASE.Rcheck/00check.log:Installation failed.
-pbdDMAT.Rcheck/00check.log:Installation failed.
 phateR.Rcheck/00check.log:Installation failed.
 rggobi.Rcheck/00check.log:Installation failed.
-superbiclust.Rcheck/00check.log:Installation failed.
-tabulizerjars.Rcheck/00check.log:Installation failed.
-TSsdmx.Rcheck/00check.log:Installation failed.
-XLConnectJars.Rcheck/00check.log:Installation failed.
 ```
 ## Check failures
 ```
