@@ -1,10 +1,10 @@
-* using log directory 'C:/Users/Jeroen/Documents/checks/rbi.Rcheck'
-* using R version 3.7.0 Under development (Testing Rtools) (2019-07-30 r76907)
+* using log directory 'C:/Users/jeroen/Documents/checks/BIEN.Rcheck'
+* using R version 3.7.0 Under development (Testing Rtools) (2019-08-27 r77080)
 * using platform: x86_64-w64-mingw32 (64-bit)
 * using session charset: ISO8859-1
 * using options '--no-manual --no-build-vignettes'
-* checking for file 'rbi/DESCRIPTION' ... OK
-* this is package 'rbi' version '0.10.2'
+* checking for file 'BIEN/DESCRIPTION' ... OK
+* this is package 'BIEN' version '1.2.3'
 * checking package namespace information ... OK
 * checking package dependencies ... OK
 * checking if this is a source package ... OK
@@ -12,7 +12,7 @@
 * checking for executable files ... OK
 * checking for hidden files and directories ... OK
 * checking for portable file names ... OK
-* checking whether package 'rbi' can be installed ... OK
+* checking whether package 'BIEN' can be installed ... OK
 * checking installed package size ... OK
 * checking package directory ... OK
 * checking 'build' directory ... OK
@@ -44,47 +44,32 @@
 * checking for unstated dependencies in examples ... OK
 * checking installed files from 'inst/doc' ... OK
 * checking files in 'vignettes' ... OK
-* checking examples ... ERROR
-Running examples in 'rbi-Ex.R' failed
-The error most likely occurred in:
-
-> ### Name: attach_data
-> ### Title: Attach a new file or data set to a 'libbi' object
-> ### Aliases: attach_data attach_data.libbi
-> 
-> ### ** Examples
-> 
-> bi <- libbi(model = system.file(package="rbi", "PZ.bi"))
-> example_output <- bi_read(system.file(package="rbi", "example_output.nc"))
-Error in R_nc4_open: NetCDF: Unknown file format
-Error in nc_open(tools::file_path_as_absolute(x)) : 
-  Error in nc_open trying to open file C:/Users/Jeroen/Documents/checks/rbi.Rcheck/rbi/example_output.nc
-Calls: bi_read -> bi_open -> nc_open
-Execution halted
+* checking examples ... OK
 * checking for unstated dependencies in 'tests' ... OK
 * checking tests ... ERROR
   Running 'testthat.R'
 Running the tests in 'tests/testthat.R' failed.
 Last 13 lines of output:
-  > test_check("rbi")
-  Error in R_nc4_open: NetCDF: Unknown file format
-  -- 1. Error: (unknown) (@test-samples.r#4)  ------------------------------------
-  Error in nc_open trying to open file C:/Users/Jeroen/Documents/checks/rbi.Rcheck/rbi/example_output.nc
-  1: bi_read(system.file(package = "rbi", "example_output.nc")) at testthat/test-samples.r:4
-  2: bi_open(x)
-  3: nc_open(tools::file_path_as_absolute(x))
-  4: stop(paste("Error in nc_open trying to open file", filename))
+  )
+  -- 6. Failure: Trait functions return a dataframe (@test-BIEN.r#82)  -----------
+  `x` inherits from `NULL` not `data.frame`.
   
   == testthat results  ===========================================================
-  OK: 145 SKIPPED: 6 WARNINGS: 0 FAILED: 1
-  1. Error: (unknown) (@test-samples.r#4) 
+  [ OK: 35 | SKIPPED: 0 | WARNINGS: 7 | FAILED: 6 ]
+  1. Failure: Occurrence functions return a dataframe (@test-BIEN.r#27) 
+  2. Failure: Plot functions return a dataframe (@test-BIEN.r#49) 
+  3. Failure: Plot functions return a dataframe (@test-BIEN.r#56) 
+  4. Failure: Stem functions return a dataframe (@test-BIEN.r#67) 
+  5. Failure: Trait functions return a dataframe (@test-BIEN.r#81) 
+  6. Failure: Trait functions return a dataframe (@test-BIEN.r#82) 
   
   Error: testthat unit tests failed
   Execution halted
 * checking for unstated dependencies in vignettes ... OK
 * checking package vignettes in 'inst/doc' ... OK
 * checking running R code from vignettes ... NONE
-  'introduction.Rmd.rsp'... OK
+  'BIEN.Rmd' using 'UTF-8'... OK
+  'BIEN_tutorial.Rmd' using 'UTF-8'... OK
 * checking re-building of vignette outputs ... SKIPPED
 * DONE
-Status: 2 ERRORs
+Status: 1 ERROR

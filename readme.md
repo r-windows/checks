@@ -1,10 +1,9 @@
 # Check results
-Last update: Tue, Sep 10, 2019 12:05:54 PM
+Last update: Thu, Oct 10, 2019  2:39:58 PM
 
 ## Install failures
 ```
 BcDiag.Rcheck/00check.log:Installation failed.
-BIGL.Rcheck/00check.log:Installation failed.
 matchingMarkets.Rcheck/00check.log:Installation failed.
 pbdBASE.Rcheck/00check.log:Installation failed.
 pbdDMAT.Rcheck/00check.log:Installation failed.
@@ -19,6 +18,8 @@ XLConnectJars.Rcheck/00check.log:Installation failed.
 ```
 adaptiveGPCA.Rcheck/00check.log:Status: 1 ERROR
 antaresProcessing.Rcheck/00check.log:Status: 1 ERROR, 1 NOTE
+BIEN.Rcheck/00check.log:Status: 1 ERROR
+BIGL.Rcheck/00check.log:Status: 1 ERROR
 callr.Rcheck/00check.log:Status: 1 ERROR
 colorplaner.Rcheck/00check.log:Status: 2 ERRORs
 dbarts.Rcheck/00check.log:Status: 2 ERRORs
@@ -31,18 +32,15 @@ hyperSpec.Rcheck/00check.log:Status: 1 ERROR, 1 NOTE
 inline.Rcheck/00check.log:Status: 1 ERROR
 IsoGene.Rcheck/00check.log:Status: 1 ERROR
 LDheatmap.Rcheck/00check.log:Status: 1 ERROR
-metR.Rcheck/00check.log:Status: 1 ERROR, 1 NOTE
 MonetDBLite.Rcheck/00check.log:Status: 2 ERRORs, 1 WARNING, 1 NOTE
 MSeasy.Rcheck/00check.log:Status: 1 ERROR
 NanoStringNorm.Rcheck/00check.log:Status: 1 ERROR
 OutbreakTools.Rcheck/00check.log:Status: 1 ERROR
 pathological.Rcheck/00check.log:Status: 1 ERROR
-pkgbuild.Rcheck/00check.log:Status: 2 ERRORs
 pkgconfig.Rcheck/00check.log:Status: 1 ERROR
 pkgload.Rcheck/00check.log:Status: 2 ERRORs
 prefmod.Rcheck/00check.log:Status: 1 ERROR
 proj4.Rcheck/00check.log:Status: 1 ERROR, 1 NOTE
-rbi.Rcheck/00check.log:Status: 2 ERRORs
 RISmed.Rcheck/00check.log:Status: 1 ERROR, 1 NOTE
 RMark.Rcheck/00check.log:Status: 1 ERROR
 rosr.Rcheck/00check.log:Status: 1 ERROR, 1 NOTE
@@ -66,6 +64,7 @@ wdman.Rcheck/00check.log:Status: 1 ERROR
 AMORE.Rcheck/00check.log:Status: 1 WARNING, 1 NOTE
 AnalyzeFMRI.Rcheck/00check.log:Status: 1 WARNING
 audio.Rcheck/00check.log:Status: 1 WARNING
+blockseg.Rcheck/00check.log:Status: 1 WARNING, 1 NOTE
 BRugs.Rcheck/00check.log:Status: 1 WARNING, 1 NOTE
 C50.Rcheck/00check.log:Status: 1 WARNING
 Cairo.Rcheck/00check.log:Status: 1 WARNING, 1 NOTE
@@ -78,6 +77,7 @@ hashmap.Rcheck/00check.log:Status: 1 WARNING
 haven.Rcheck/00check.log:Status: 1 WARNING, 1 NOTE
 highlight.Rcheck/00check.log:Status: 1 WARNING
 imager.Rcheck/00check.log:Status: 1 WARNING, 1 NOTE
+landsepi.Rcheck/00check.log:Status: 1 WARNING, 1 NOTE
 lpSolve.Rcheck/00check.log:Status: 1 WARNING
 lpSolveAPI.Rcheck/00check.log:Status: 1 WARNING
 lwgeom.Rcheck/00check.log:Status: 1 WARNING, 1 NOTE
@@ -101,6 +101,7 @@ re2r.Rcheck/00check.log:Status: 1 WARNING, 2 NOTEs
 redland.Rcheck/00check.log:Status: 1 WARNING, 1 NOTE
 rgeolocate.Rcheck/00check.log:Status: 1 WARNING, 1 NOTE
 RGtk2.Rcheck/00check.log:Status: 1 WARNING, 3 NOTEs
+Rhpc.Rcheck/00check.log:Status: 1 WARNING
 RhpcBLASctl.Rcheck/00check.log:Status: 1 WARNING
 RInside.Rcheck/00check.log:Status: 1 WARNING, 2 NOTEs
 rJava.Rcheck/00check.log:Status: 1 WARNING, 4 NOTEs

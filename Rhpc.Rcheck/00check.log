@@ -1,10 +1,9 @@
-* using log directory 'C:/Users/jeroen/Documents/checks/h5.Rcheck'
+* using log directory 'C:/Users/jeroen/Documents/checks/Rhpc.Rcheck'
 * using R version 4.0.0 Under development (Testing Rtools) (2019-10-01 r77242)
 * using platform: x86_64-w64-mingw32 (64-bit)
 * using session charset: ISO8859-1
-* checking for file 'h5/DESCRIPTION' ... OK
-* checking extension type ... Package
-* this is package 'h5' version '0.9.9'
+* checking for file 'Rhpc/DESCRIPTION' ... OK
+* this is package 'Rhpc' version '0.19-276'
 * checking package namespace information ... OK
 * checking package dependencies ... OK
 * checking if this is a source package ... OK
@@ -12,13 +11,12 @@
 * checking for executable files ... OK
 * checking for hidden files and directories ... OK
 * checking for portable file names ... OK
-* checking whether package 'h5' can be installed ... OK
-* checking installed package size ... NOTE
-  installed size is 11.2Mb
-  sub-directories of 1Mb or more:
-    libs  10.3Mb
+* checking whether package 'Rhpc' can be installed ... WARNING
+Found the following significant warnings:
+  fakemaster.c:82:57: warning: embedded '\0' in format [-Wformat-contains-nul]
+See 'C:/Users/jeroen/Documents/checks/Rhpc.Rcheck/00install.out' for details.
+* checking installed package size ... OK
 * checking package directory ... OK
-* checking 'build' directory ... OK
 * checking DESCRIPTION meta-information ... OK
 * checking top-level files ... OK
 * checking for left-over files ... OK
@@ -32,12 +30,14 @@
 ** checking whether the package can be unloaded cleanly ... OK
 ** checking whether the namespace can be loaded with stated dependencies ... OK
 ** checking whether the namespace can be unloaded cleanly ... OK
+** checking loading without being on the library search path ... OK
 * loading checks for arch 'x64'
 ** checking whether the package can be loaded ... OK
 ** checking whether the package can be loaded with stated dependencies ... OK
 ** checking whether the package can be unloaded cleanly ... OK
 ** checking whether the namespace can be loaded with stated dependencies ... OK
 ** checking whether the namespace can be unloaded cleanly ... OK
+** checking loading without being on the library search path ... OK
 * checking dependencies in R code ... OK
 * checking S3 generic/method consistency ... OK
 * checking replacement functions ... OK
@@ -58,58 +58,11 @@
 * checking for GNU extensions in Makefiles ... OK
 * checking for portable use of $(BLAS_LIBS) and $(LAPACK_LIBS) ... OK
 * checking use of PKG_*FLAGS in Makefiles ... OK
+* checking include directives in Makefiles ... OK
 * checking compiled code ... OK
-* checking installed files from 'inst/doc' ... OK
-* checking files in 'vignettes' ... OK
 * checking examples ...
 ** running examples for arch 'i386' ... OK
 ** running examples for arch 'x64' ... OK
-* checking for unstated dependencies in 'tests' ... OK
-* checking tests ...
-** running tests for arch 'i386' ... ERROR
-  Running 'testthat.R'
-Running the tests in 'tests/testthat.R' failed.
-Last 13 lines of output:
-  == testthat results  ===========================================================
-  [ OK: 134 | SKIPPED: 0 | WARNINGS: 97 | FAILED: 68 ]
-  1. Failure: Attribute-Errors (@test-Attribute.R#66) 
-  2. Failure: Attribute-H5Type-File (@test-Attribute.R#123) 
-  3. Error: Attribute-list-attributes (@test-Attribute.R#129) 
-  4. Failure: Bug_AttributeGroupSubset (@test-Attribute.R#170) 
-  5. Error: DataSet-Vector-NA (@test-DataSet-IO-NA.R#19) 
-  6. Error: DataSet-Vector (@test-DataSet-IO.R#15) 
-  7. Failure: DataSet-Vector-boundaries (@test-DataSet-IO.R#120) 
-  8. Error: datatypes-Matrix (@test-DataSet-IO.R#137) 
-  9. Error: datatypes-Array (@test-DataSet-IO.R#203) 
-  1. ...
-  
-  Error: testthat unit tests failed
-  Execution halted
-** running tests for arch 'x64' ... ERROR
-  Running 'testthat.R'
-Running the tests in 'tests/testthat.R' failed.
-Last 13 lines of output:
-  == testthat results  ===========================================================
-  [ OK: 134 | SKIPPED: 0 | WARNINGS: 97 | FAILED: 68 ]
-  1. Failure: Attribute-Errors (@test-Attribute.R#66) 
-  2. Failure: Attribute-H5Type-File (@test-Attribute.R#123) 
-  3. Error: Attribute-list-attributes (@test-Attribute.R#129) 
-  4. Failure: Bug_AttributeGroupSubset (@test-Attribute.R#170) 
-  5. Error: DataSet-Vector-NA (@test-DataSet-IO-NA.R#19) 
-  6. Error: DataSet-Vector (@test-DataSet-IO.R#15) 
-  7. Failure: DataSet-Vector-boundaries (@test-DataSet-IO.R#120) 
-  8. Error: datatypes-Matrix (@test-DataSet-IO.R#137) 
-  9. Error: datatypes-Array (@test-DataSet-IO.R#203) 
-  1. ...
-  
-  Error: testthat unit tests failed
-  Execution halted
-* checking for unstated dependencies in vignettes ... OK
-* checking package vignettes in 'inst/doc' ... OK
-* checking running R code from vignettes ... NONE
-  'RFin16.Rmd' using 'UTF-8'... OK
-  'h5-Intro.Rmd' using 'UTF-8'... OK
-* checking re-building of vignette outputs ... OK
 * checking PDF version of manual ... OK
 * DONE
-Status: 2 ERRORs, 1 NOTE
+Status: 1 WARNING
