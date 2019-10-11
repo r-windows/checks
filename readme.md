@@ -1,8 +1,9 @@
 # Check results
-Last update: Thu, Oct 10, 2019 11:35:06 PM
+Last update: Fri, Oct 11, 2019 10:47:54 AM
 
 ## Install failures
 ```
+brainGraph.Rcheck/00check.log:Installation failed.
 matchingMarkets.Rcheck/00check.log:Installation failed.
 pbdBASE.Rcheck/00check.log:Installation failed.
 phateR.Rcheck/00check.log:Installation failed.
@@ -12,8 +13,11 @@ rggobi.Rcheck/00check.log:Installation failed.
 ```
 adaptiveGPCA.Rcheck/00check.log:Status: 1 ERROR
 antaresProcessing.Rcheck/00check.log:Status: 1 ERROR, 1 NOTE
+BIEN.Rcheck/00check.log:Status: 1 ERROR
 BIGL.Rcheck/00check.log:Status: 1 ERROR
+cate.Rcheck/00check.log:Status: 1 ERROR
 colorplaner.Rcheck/00check.log:Status: 2 ERRORs
+CoreGx.Rcheck/00check.log:Status: 1 ERROR
 dbarts.Rcheck/00check.log:Status: 2 ERRORs
 dyndimred.Rcheck/00check.log:Status: 1 ERROR, 2 NOTEs
 fanovaGraph.Rcheck/00check.log:Status: 1 ERROR

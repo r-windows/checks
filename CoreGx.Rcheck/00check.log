@@ -1,0 +1,19 @@
+* using log directory 'C:/Users/jeroen/Documents/checks/CoreGx.Rcheck'
+* using R version 4.0.0 Under development (Testing Rtools) (2019-10-01 r77242)
+* using platform: x86_64-w64-mingw32 (64-bit)
+* using session charset: ISO8859-1
+* using options '--no-manual --no-build-vignettes'
+* checking for file 'CoreGx/DESCRIPTION' ... OK
+* checking extension type ... Package
+* this is package 'CoreGx' version '0.1.0'
+* package encoding: UTF-8
+* checking package namespace information ... OK
+* checking package dependencies ... ERROR
+Package required but not available: 'piano'
+
+Package suggested but not available for checking: 'PharmacoGx'
+
+See section 'The DESCRIPTION file' in the 'Writing R Extensions'
+manual.
+* DONE
+Status: 1 ERROR

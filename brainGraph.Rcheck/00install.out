@@ -1,0 +1,12 @@
+* installing *source* package 'brainGraph' ...
+** package 'brainGraph' successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+Error: object 'summary.mediate' is not exported by 'namespace:mediation'
+Execution halted
+ERROR: lazy loading failed for package 'brainGraph'
+* removing 'C:/Users/jeroen/Documents/checks/brainGraph.Rcheck/brainGraph'
