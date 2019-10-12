@@ -14,7 +14,7 @@ gswin64c --version || exit 2
 mkdir -p "$R_LIBS"
 
 # Install "special" packages 
-Rscript --no-save workarounds.R
+# Rscript --no-save workarounds.R
 
 # Check packages in order of number of revdeps
 Rscript --no-save list-packages.R | sed 's/\r//' > pkg_names.txt

@@ -1,11 +1,11 @@
-* using log directory 'C:/Users/Jeroen/Documents/checks/dyndimred.Rcheck'
-* using R version 3.7.0 Under development (Testing Rtools) (2019-07-30 r76907)
+* using log directory 'C:/Users/jeroen/Documents/checks/dyndimred.Rcheck'
+* using R version 4.0.0 Under development (Testing Rtools) (2019-10-01 r77242)
 * using platform: x86_64-w64-mingw32 (64-bit)
 * using session charset: ISO8859-1
 * using options '--no-manual --no-build-vignettes'
 * checking for file 'dyndimred/DESCRIPTION' ... OK
 * checking extension type ... Package
-* this is package 'dyndimred' version '1.0.1'
+* this is package 'dyndimred' version '1.0.2'
 * package encoding: UTF-8
 * checking package namespace information ... OK
 * checking package dependencies ... NOTE
@@ -31,9 +31,7 @@ Package suggested but not available for checking: 'destiny'
 * checking whether the namespace can be loaded with stated dependencies ... OK
 * checking whether the namespace can be unloaded cleanly ... OK
 * checking loading without being on the library search path ... OK
-* checking dependencies in R code ... NOTE
-Namespace in Imports field not imported from: 'Matrix'
-  All declared Imports should be used.
+* checking dependencies in R code ... OK
 * checking S3 generic/method consistency ... OK
 * checking replacement functions ... OK
 * checking foreign function calls ... OK
@@ -61,11 +59,11 @@ Last 13 lines of output:
   14: doWithOneRestart(return(expr), restart)
   
   == testthat results  ===========================================================
-  OK: 191 SKIPPED: 0 WARNINGS: 4 FAILED: 2
+  [ OK: 191 | SKIPPED: 0 | WARNINGS: 2 | FAILED: 2 ]
   1. Error: Perform dimred dm_destiny (@test-dimred.R#13) 
   2. Error: Perform dimred dm_destiny (@test-sparse_matrices.R#12) 
   
   Error: testthat unit tests failed
   Execution halted
 * DONE
-Status: 1 ERROR, 2 NOTEs
+Status: 1 ERROR, 1 NOTE

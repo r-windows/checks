@@ -59,7 +59,7 @@ The error most likely occurred in:
 > res <- EUtilsSummary("myeloma[ti]", mindate = "2002/01/01", maxdate = "2002/02/01", retmax = 5)
 > Cited(res)
 Warning in readLines(the_url) :
-  cannot open URL 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/elink.fcgi?retmode=xml&dbfrom=pubmed&id=11815718&cmd=neighbor': HTTP status was '429 Too Many Requests'
+  cannot open URL 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/elink.fcgi?retmode=xml&dbfrom=pubmed&id=11818668&cmd=neighbor': HTTP status was '429 Too Many Requests'
 Error in readLines(the_url) : cannot open the connection
 Calls: Cited -> Cited -> sapply -> lapply -> FUN -> readLines
 Execution halted

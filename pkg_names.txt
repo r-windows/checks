@@ -66,13 +66,13 @@ rgeos
 nnet
 BH
 sf
-gtools
 crayon
+gtools
 fields
 maptools
 abind
-maps
 spelling
+maps
 DBI
 htmlwidgets
 glue
@@ -102,32 +102,32 @@ rvest
 quadprog
 robustbase
 quantreg
+yaml
 foreign
 spatstat
 checkmate
 lazyeval
-yaml
 reshape
 readxl
 mclust
+viridis
 corpcor
 future
 iterators
-viridis
 VGAM
 pbapply
 lmtest
 forecast
 KernSmooth
+microbenchmark
 pander
 leaflet
-microbenchmark
 shinyjs
-ggrepel
 deSolve
+ggrepel
+RcppParallel
 lavaan
 progress
-RcppParallel
 gamlss
 kernlab
 nloptr
@@ -146,20 +146,20 @@ latticeExtra
 matrixcalc
 pROC
 lintr
+msm
 tidyverse
 cli
 MCMCpack
-msm
 ROCR
 jpeg
+kableExtra
 ade4
 fda
-kableExtra
+mlbench
 rjags
 statmod
 assertive
 GGally
-mlbench
 class
 miniUI
 memoise
@@ -175,23 +175,23 @@ tidyselect
 mnormt
 rms
 gtable
-ncdf4
 ranger
+ncdf4
 copula
 pls
 tkrplot
 combinat
 crul
 rootSolve
+ellipse
+openxlsx
 slam
 cubature
-ellipse
 geosphere
-openxlsx
-gstat
 mice
-reticulate
 FNN
+gstat
+reticulate
 geometry
 ggthemes
 magick
@@ -205,11 +205,11 @@ shinythemes
 xgboost
 haven
 lars
+lhs
 RJSONIO
 sna
 snowfall
 corrplot
-lhs
 Rcmdr
 sfsmisc
 fs
@@ -247,6 +247,7 @@ vcd
 whisker
 DiagrammeR
 gsl
+maxLik
 phytools
 stringdist
 timeDate
@@ -254,7 +255,6 @@ dbplyr
 deldir
 FactoMineR
 formatR
-maxLik
 Rmpfr
 RSpectra
 timeSeries
@@ -275,12 +275,12 @@ leaps
 plot3D
 polynom
 Rglpk
+spam
 bit64
 bitops
+callr
 ggpubr
 hexbin
-spam
-callr
 codetools
 phangorn
 quantmod
@@ -319,19 +319,19 @@ qgraph
 qtl
 rhandsontable
 RODBC
+earth
 gee
 nortest
 pheatmap
+processx
 pryr
 arules
 caTools
 colourpicker
-earth
 irlba
 limSolve
 minqa
 nycflights13
-processx
 strucchange
 testit
 wordcloud
@@ -351,6 +351,7 @@ inline
 mapdata
 officer
 pbkrtest
+RandomFields
 RPostgreSQL
 rrcov
 shinycssloaders
@@ -365,7 +366,6 @@ imager
 lpSolveAPI
 ordinal
 partitions
-RandomFields
 rgenoud
 snow
 actuar
@@ -379,6 +379,7 @@ fastICA
 ggraph
 GPArotation
 httptest
+kinship2
 locfit
 lwgeom
 misc3d
@@ -392,9 +393,9 @@ cairoDevice
 circlize
 dendextend
 DescTools
-kinship2
 miscTools
 mlr
+rbenchmark
 rworldmap
 shinyAce
 sqldf
@@ -409,10 +410,11 @@ fastmatch
 fpc
 here
 loo
+mda
 mlogit
 networkD3
 orthopolynom
-rbenchmark
+rasterVis
 taxize
 tidytext
 vcr
@@ -423,11 +425,9 @@ gridBase
 keras
 ltm
 MCMCglmm
-mda
 mime
 paws
 prodlim
-rasterVis
 statnet
 tinytest
 VennDiagram
@@ -486,6 +486,7 @@ gdtools
 ineq
 ipred
 kknn
+klaR
 mapview
 mitools
 mosaic
@@ -503,7 +504,6 @@ directlabels
 functional
 gdalUtils
 gsubfn
-klaR
 knitcitations
 LaplacesDemon
 ParamHelpers
@@ -526,6 +526,7 @@ mc2d
 mixtools
 parallelMap
 PerformanceAnalytics
+pkgload
 polycor
 R2HTML
 recipes
@@ -540,6 +541,7 @@ topicmodels
 waveslim
 zip
 amap
+Amelia
 BiasedUrn
 biglm
 BiocManager
@@ -555,7 +557,6 @@ googleVis
 kohonen
 pbivnorm
 pkgbuild
-pkgload
 psychotools
 randomForestSRC
 RcppRoll
@@ -566,7 +567,6 @@ sys
 trust
 TSP
 xfun
-Amelia
 DiceDesign
 extraDistr
 fftw
@@ -586,6 +586,7 @@ pingr
 rmutil
 rsvg
 sem
+tmap
 tokenizers
 vctrs
 ada
@@ -617,7 +618,7 @@ systemfit
 tensorflow
 texreg
 tgp
-tmap
+tidygraph
 carData
 clinfun
 crosstalk
@@ -660,7 +661,6 @@ smoof
 sodium
 stargazer
 svMisc
-tidygraph
 tis
 TSA
 writexl
@@ -704,6 +704,7 @@ rlecuyer
 RNetCDF
 rsample
 sjlabelled
+survminer
 sybil
 tframePlus
 truncdist
@@ -734,6 +735,7 @@ listenv
 logging
 logistf
 manipulate
+MatchIt
 mcmc
 modelr
 MplusAutomation
@@ -751,8 +753,8 @@ seewave
 sensitivity
 shapefiles
 som
+stars
 styler
-survminer
 timereg
 TSdbi
 tsibble
@@ -793,7 +795,6 @@ lamW
 lbfgs
 lda
 ltsa
-MatchIt
 pec
 photobiology
 pipeR
@@ -812,7 +813,6 @@ semPlot
 shapes
 shinystan
 spls
-stars
 tictoc
 tigris
 tikzDevice
@@ -915,6 +915,7 @@ Deducer
 demography
 DiagrammeRsvg
 dynlm
+dynutils
 EbayesThresh
 emdbook
 epiR
@@ -934,6 +935,7 @@ gridSVG
 grpreg
 gWidgetstcltk
 IDPmisc
+igraphdata
 ISLR
 jmvcore
 kSamples
@@ -1039,7 +1041,6 @@ DistributionUtils
 dlm
 doMPI
 DoseFinding
-dynutils
 eRm
 etm
 eventdataR
@@ -1059,7 +1060,6 @@ heatmaply
 hellno
 HH
 highr
-igraphdata
 interval
 irtoys
 JavaGD
@@ -1256,6 +1256,7 @@ OpenImageR
 outbreaks
 oz
 parcor
+parsnip
 PearsonDS
 phonTools
 phylolm
@@ -1396,6 +1397,7 @@ fts
 ftsa
 fuzzyjoin
 geigen
+geodist
 ggalt
 ggcorrplot
 ggiraphExtra
@@ -1472,12 +1474,12 @@ NMOF
 ontologyIndex
 openNLP
 optimbase
+osmdata
 packrat
 pagedown
 parallelDist
 paramlink
 parmigene
-parsnip
 PBSmodelling
 phia
 pkgKitten
@@ -1676,7 +1678,6 @@ fasttime
 fclust
 fds
 feasts
-findpython
 fingerprint
 fishMod
 FITSio
@@ -1694,7 +1695,6 @@ gcookbook
 geeM
 GenBinomApps
 GenKern
-geodist
 ggetho
 ggimage
 gglasso
@@ -1714,6 +1714,7 @@ gsheet
 GSIF
 HardyWeinberg
 hashmap
+hdf5r
 highcharter
 HistData
 histogram
@@ -1796,6 +1797,7 @@ mosaicCalc
 mratios
 msgps
 MSwM
+MTS
 mtsdi
 multgee
 multigroup
@@ -1819,7 +1821,6 @@ OpenMPController
 optextras
 optimr
 orloca
-osmdata
 ouch
 packagedocs
 pageviews
@@ -2068,6 +2069,7 @@ cleangeo
 clustMD
 CNLTreg
 coala
+cobalt
 cOde
 coefplot
 cointReg
@@ -2102,6 +2104,7 @@ depmixS4
 dexter
 dHSIC
 diagis
+dials
 DiceEval
 diffusionMap
 DiffusionRgqd
@@ -2117,6 +2120,7 @@ docxtractr
 drgee
 DRR
 dtt
+dyndimred
 dynsurv
 easycsv
 ebal
@@ -2153,6 +2157,7 @@ fiery
 filematrix
 FinCal
 finch
+findpython
 FitARMA
 FKF
 fma
@@ -2214,7 +2219,6 @@ gutenbergr
 gvc
 gWidgets2tcltk
 harmonicmeanp
-hdf5r
 heavy
 HelpersMG
 hermite
@@ -2268,6 +2272,7 @@ joineR
 jointDiag
 jointseg
 jomo
+jpmesh
 kde1d
 kdecopula
 kernelFactory
@@ -2341,7 +2346,6 @@ mpmi
 mrfDepth
 mRm
 msigdbr
-MTS
 multiApply
 multicolor
 MultiLCIRT
@@ -2525,6 +2529,7 @@ ROptEst
 ROptSpace
 rotationForest
 rPref
+RPtests
 RQuantLib
 rredis
 rrlda
@@ -2702,6 +2707,7 @@ vroom
 wbstats
 WDI
 websocket
+WeightIt
 wellknown
 WhatIf
 widyr
@@ -2781,6 +2787,7 @@ aweek
 AzureKeyVault
 AzureVM
 AzureVMmetadata
+babelwhale
 backShift
 balance
 bamlss
@@ -2936,7 +2943,6 @@ CMLS
 cmm
 cmrutils
 coarseDataTools
-cobalt
 COCONUT
 coenocliner
 collapsibleTree
@@ -3050,7 +3056,6 @@ dga
 dgodata
 diagonals
 dialrjars
-dials
 dielectric
 DIFboost
 diffeR
@@ -3079,6 +3084,7 @@ do
 dockerfiler
 document
 Dodge
+dodgr
 doRedis
 dosresmeta
 DOT
@@ -3097,7 +3103,7 @@ dtwclust
 dummy
 dwapi
 DWreg
-dyndimred
+dynparam
 dynpred
 DynTxRegime
 eaf
@@ -3441,7 +3447,6 @@ jdx
 jetset
 jiebaRD
 joineRML
-jpmesh
 jrc
 jskm
 jstable
@@ -3808,6 +3813,7 @@ PDSCE
 PeakError
 PeakSegDP
 pedgene
+pedmut
 penalizedSVM
 peperr
 PermAlgo
@@ -4088,7 +4094,6 @@ rplos
 rpms
 rpostgis
 rprintf
-RPtests
 rptR
 Rraven
 rrcovHD
@@ -4457,7 +4462,6 @@ wavemulcor
 wCorr
 wdm
 webchem
-WeightIt
 weightr
 WeMix
 wgaim
@@ -4473,6 +4477,7 @@ woeBinning
 womblR
 wordspace
 worrms
+wpp2019
 wqs
 wrangle
 wrassp
@@ -4489,6 +4494,7 @@ xptr
 XRJulia
 xtensor
 xtermStyle
+xyz
 yacca
 YaleToolkit
 yarrr

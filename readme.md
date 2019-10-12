@@ -1,5 +1,5 @@
 # Check results
-Last update: Fri, Oct 11, 2019 10:47:54 AM
+Last update: Sat, Oct 12, 2019 12:44:26 PM
 
 ## Install failures
 ```
@@ -19,7 +19,8 @@ cate.Rcheck/00check.log:Status: 1 ERROR
 colorplaner.Rcheck/00check.log:Status: 2 ERRORs
 CoreGx.Rcheck/00check.log:Status: 1 ERROR
 dbarts.Rcheck/00check.log:Status: 2 ERRORs
-dyndimred.Rcheck/00check.log:Status: 1 ERROR, 2 NOTEs
+dyndimred.Rcheck/00check.log:Status: 1 ERROR, 1 NOTE
+enviGCMS.Rcheck/00check.log:Status: 1 ERROR
 fanovaGraph.Rcheck/00check.log:Status: 1 ERROR
 GenomicTools.Rcheck/00check.log:Status: 1 ERROR
 h5.Rcheck/00check.log:Status: 2 ERRORs, 1 NOTE
@@ -63,6 +64,7 @@ Cairo.Rcheck/00check.log:Status: 1 WARNING, 1 NOTE
 clv.Rcheck/00check.log:Status: 1 WARNING
 cubature.Rcheck/00check.log:Status: 1 WARNING, 2 NOTEs
 Cubist.Rcheck/00check.log:Status: 1 WARNING
+divest.Rcheck/00check.log:Status: 1 WARNING
 DPpackage.Rcheck/00check.log:Status: 1 WARNING, 1 NOTE
 epanet2toolkit.Rcheck/00check.log:Status: 1 WARNING
 hashmap.Rcheck/00check.log:Status: 1 WARNING
