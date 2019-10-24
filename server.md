@@ -10,6 +10,9 @@ Software installed on the server besides R and Rtools40:
  - [OpenBugs](http://www.openbugs.net/w/Downloads) (needed for BRugs)
  - [InnoSetup](http://www.jrsoftware.org/isdl.php#stable)
  - [Microsoft MPI SDK](https://docs.microsoft.com/en-us/message-passing-interface/microsoft-mpi#ms-mpi-downloads)
+ - GTK+ 2.22 [win32](http://ftp.acc.umu.se/pub/gnome/binaries/win32/gtk+/2.22/gtk+-bundle_2.22.1-20101227_win32.zip) 
+   and [win64](http://ftp.acc.umu.se/pub/gnome/binaries/win64/gtk+/2.22/gtk+-bundle_2.22.1-20101229_win64.zip) 
+   (extract to `C:\GTK32` and `C:\GTK64`) 
 
 ## Run
 
